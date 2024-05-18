@@ -84,7 +84,7 @@ SWEP.PhysBulletDrag = 1.15
 
 SWEP.Ammo = "smg1" -- What ammo type this gun uses.
 
-SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
+SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 30 -- Self-explanatory.
 SWEP.SupplyLimit = 4 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate. 
 
@@ -98,13 +98,6 @@ SWEP.RPM = 545
 SWEP.Firemodes = {
     {
         Mode = -1,
-    },
-    {
-        Mode = -1,
-		Silencer = true,
-		-- MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle",
-		-- MuzzleParticleOverride_Priority = 5,
-		ActivateElements = {"suppressor"}
     },
 }
 
@@ -122,7 +115,7 @@ SWEP.RecoilSide = 0.75 -- Multiplier for vertical recoil
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.1
-SWEP.RecoilRandomSide = 0.25
+SWEP.RecoilRandomSide = 0.66
 
 SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
@@ -205,8 +198,8 @@ SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(14, 50, 5)
-SWEP.CustomizeRotateAnchor = Vector(13.5, -4, -4)
+SWEP.CustomizePos = Vector(16, 50, 5)
+SWEP.CustomizeRotateAnchor = Vector(16, -4.25, -4)
 SWEP.CustomizeSnapshotFOV = 65
 SWEP.CustomizeSnapshotPos = Vector(3, 25, 2.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -227,13 +220,13 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "AC_muzzle_rifle_fp"
-SWEP.AfterShotParticle = "AC_muzzle_smoke_barrel"
+SWEP.MuzzleParticle = "port_smoke_heavy"
+SWEP.AfterShotParticle = nil
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
 SWEP.CamQCA = 3
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA_Mult = 1
 
 SWEP.ShellModel = "models/weapons/cod2019/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
@@ -263,10 +256,15 @@ SWEP.BulletBones = {
     [1] = {"tag_clip_bullet","tag_bullet_extmag"},
 }
 
-SWEP.HideBones  = {
-    "tag_silencer"
-}
+-- SWEP.HideBones  = {
+    -- "tag_silencer"
+-- }
 
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "tag_silencer",
+    },
+}
 SWEP.ReloadHideBoneTables = {
     -- [1] = {
         -- "j_mag2",
@@ -299,6 +297,27 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reg_reload_empty",
+		MinProgress = 0.85,
+		RefillProgress = 0.725,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_empty_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_empty_magin.ogg", t = 1},
+            {s = path .. "wpn_greasegun_empty_charge.ogg", t = 1.65},
+        },
+    },
+    ["reload_ext"] = {
+        Source = "reg_reload_ext",
+		MinProgress = 0.825,
+		RefillProgress = 0.625,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_tac_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_tac_magin.ogg", t = 1},
+        },
+    },
+    ["reload_empty_ext"] = {
+        Source = "reg_reload_ext_empty",
 		MinProgress = 0.85,
 		RefillProgress = 0.725,
 		FireASAP = true,
@@ -358,18 +377,250 @@ SWEP.Animations = {
         Source = {"reg_melee"},
     },
     ["firemode_1"] = {
-        Source = "reg_suppressor_on",
-        HideBoneIndex = 1,
-        EventTable = {
-            {s = path .. "wpn_gg_supp_on.ogg", t = 0/30},
-        },
-    },
-    ["firemode_2"] = {
         Source = "reg_suppressor_off",
-        -- HideBoneIndex = 1,
         EventTable = {
             {s = path .. "wpn_gg_supp_off.ogg", t = 0/30},
         },
+        IKTimeLine = { { t = 0, lhik = 1 }, { t = 1, lhik = 1 } },
+    },
+    ["firemode_2"] = {
+        Source = "reg_suppressor_on",
+        EventTable = {
+            {s = path .. "wpn_gg_supp_on.ogg", t = 0/30},
+        },
+        IKTimeLine = { { t = 0, lhik = 1 }, { t = 1, lhik = 1 } },
+    },
+
+-- Marksman Animations
+    ["marksman_enter_sights"] = {
+        Source = "mm_idle",
+    },
+    ["marksman_fire"] = {
+        Source = "mm_fire",
+    },
+    ["marksman_fire_sights"] = {
+        Source = "mm_fire_ads",
+    },
+    ["marksman_reload"] = {
+        Source = "mm_reload",
+		MinProgress = 0.825,
+		RefillProgress = 0.625,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_tac_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_tac_magin.ogg", t = 1},
+        },
+    },
+    ["marksman_reload_empty"] = {
+        Source = "mm_reload_empty",
+		MinProgress = 0.85,
+		RefillProgress = 0.725,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_empty_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_empty_magin.ogg", t = 1},
+            {s = path .. "wpn_greasegun_empty_charge.ogg", t = 1.65},
+        },
+    },
+    ["marksman_reload_ext"] = {
+        Source = "mm_reload_ext",
+		MinProgress = 0.825,
+		RefillProgress = 0.625,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_tac_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_tac_magin.ogg", t = 1},
+        },
+    },
+    ["marksman_reload_empty_ext"] = {
+        Source = "mm_reload_ext_empty",
+		MinProgress = 0.85,
+		RefillProgress = 0.725,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_empty_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_empty_magin.ogg", t = 1},
+            {s = path .. "wpn_greasegun_empty_charge.ogg", t = 1.65},
+        },
+    },
+    ["marksman_ready"] = {
+        Source = "mm_draw_first",
+		MinProgress = 0.95,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_greasegun_fpo_charge.ogg", t = 0.1},
+        },
+    },
+    ["marksman_draw"] = {
+        Source = "mm_draw",
+		MinProgress = 0.3,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Small.Raise", t = 0},
+            {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
+        },
+    },
+    ["marksman_holster"] = {
+        Source = "mm_holster",
+        EventTable = {
+            {s = "CoDWW2.Small.Holster", t = 0},
+        },
+    },
+    ["marksman_idle"] = {
+        Source = "mm_idle",
+    },
+    ["marksman_idle_sprint"] = {
+        Source = "mm_sprint",
+    },
+    ["marksman_exit_sprint"] = {
+        Source = "mm_sprint_out",
+		Time = 1.75,
+    },
+    ["marksman_enter_sprint"] = {
+        Source = "mm_sprint_in",
+		Time = 1.75,
+    },
+    ["marksman_inspect"] = {
+        Source = "mm_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_gg_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_gg_inspect_stndrd_pt_02.ogg", t = 2},
+        },
+    },
+    ["marksman_bash"] = {
+        Source = {"mm_melee"},
+    },
+    ["marksman_firemode_1"] = {
+        Source = "mm_suppressor_off",
+        EventTable = {
+            {s = path .. "wpn_gg_supp_off.ogg", t = 0/30},
+        },
+        IKTimeLine = { { t = 0, lhik = 1 }, { t = 1, lhik = 1 } },
+    },
+    ["marksman_firemode_2"] = {
+        Source = "mm_suppressor_on",
+        EventTable = {
+            {s = path .. "wpn_gg_supp_on.ogg", t = 0/30},
+        },
+        IKTimeLine = { { t = 0, lhik = 1 }, { t = 1, lhik = 1 } },
+    },
+	
+-- CQB Animations
+    ["cqb_enter_sights"] = {
+        Source = "cqb_idle",
+    },
+    ["cqb_fire"] = {
+        Source = "cqb_fire",
+    },
+    ["cqb_fire_sights"] = {
+        Source = "cqb_fire_ads",
+    },
+    ["cqb_reload"] = {
+        Source = "cqb_reload",
+		MinProgress = 0.825,
+		RefillProgress = 0.625,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_tac_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_tac_magin.ogg", t = 1},
+        },
+    },
+    ["cqb_reload_empty"] = {
+        Source = "cqb_reload_empty",
+		MinProgress = 0.85,
+		RefillProgress = 0.725,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_empty_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_empty_magin.ogg", t = 1},
+            {s = path .. "wpn_greasegun_empty_charge.ogg", t = 1.65},
+        },
+    },
+    ["cqb_reload_ext"] = {
+        Source = "cqb_reload_ext",
+		MinProgress = 0.825,
+		RefillProgress = 0.625,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_tac_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_tac_magin.ogg", t = 1},
+        },
+    },
+    ["cqb_reload_empty_ext"] = {
+        Source = "cqb_reload_ext_empty",
+		MinProgress = 0.85,
+		RefillProgress = 0.725,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_greasegun_empty_magout.ogg", t = 0.15},
+            {s = path .. "wpn_greasegun_empty_magin.ogg", t = 1},
+            {s = path .. "wpn_greasegun_empty_charge.ogg", t = 1.65},
+        },
+    },
+    ["cqb_ready"] = {
+        Source = "cqb_draw_first",
+		MinProgress = 0.95,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_greasegun_fpo_charge.ogg", t = 0.1},
+        },
+    },
+    ["cqb_draw"] = {
+        Source = "cqb_draw",
+		MinProgress = 0.3,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Small.Raise", t = 0},
+            {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
+        },
+    },
+    ["cqb_holster"] = {
+        Source = "cqb_holster",
+        EventTable = {
+            {s = "CoDWW2.Small.Holster", t = 0},
+        },
+    },
+    ["cqb_idle"] = {
+        Source = "cqb_idle",
+    },
+    ["cqb_idle_sprint"] = {
+        Source = "cqb_sprint",
+    },
+    ["cqb_exit_sprint"] = {
+        Source = "cqb_sprint_out",
+		Time = 1.75,
+    },
+    ["cqb_enter_sprint"] = {
+        Source = "cqb_sprint_in",
+		Time = 1.75,
+    },
+    ["cqb_inspect"] = {
+        Source = "epic_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_gg_inspect_epic_pt_01.ogg", t = 0},
+			{s = path .. "wpn_gg_inspect_epic_pt_02.ogg", t = 1.5},
+        },
+    },
+    ["cqb_bash"] = {
+        Source = {"cqb_melee"},
+    },
+    ["cqb_firemode_1"] = {
+        Source = "epic_suppressor_off",
+        EventTable = {
+            {s = path .. "wpn_gg_supp_off.ogg", t = 0/30},
+        },
+        IKTimeLine = { { t = 0, lhik = 1 }, { t = 1, lhik = 1 } },
+    },
+    ["cqb_firemode_2"] = {
+        Source = "epic_suppressor_on",
+        EventTable = {
+            {s = path .. "wpn_gg_supp_on.ogg", t = 0/30},
+        },
+        IKTimeLine = { { t = 0, lhik = 1 }, { t = 1, lhik = 1 } },
     },
 }
 
@@ -377,15 +628,11 @@ SWEP.Animations = {
 
 -- SWEP.Hook_Think	= ARC9.COD2019.BlendSights2
 
-SWEP.Hook_TranslateAnimation = function(wep, anim)
-
-end
-
 SWEP.DefaultBodygroups = "000000"
 
 SWEP.AttachmentTableOverrides = {
     ["cod2019_griptape_01"] = {
-		Model = "models/weapons/cod2019/attachs/weapons/ak47/attachment_vm_pistolgrip_tape_akilo47.mdl",
+		Model = "models/model.mdl",
     },
 }
 
@@ -394,9 +641,22 @@ SWEP.AttachmentElements = {
     ["sights_none"] = { Bodygroups = { {1,1} } },
     ["barrel"] = { Bodygroups = { {2,1} } },
     ["stock"] = { Bodygroups = { {3,1} } },
-    ["mag_ext"] = { Bodygroups = { {4,1} } },
+    ["mag_ext"] = { Bodygroups = { {4,1} }, ClipSizeAdd = 15 },
     ["mag_none"] = { Bodygroups = { {4,2} } },
     ["suppressor"] = { Bodygroups = { {5,1} } },
+
+	["rpm"] = { RPMOverride = 580 },
+    ["highcal"] = {
+		BodyDamageMults = {
+			[HITGROUP_HEAD] = 2,
+			[HITGROUP_CHEST] = 1,
+			[HITGROUP_STOMACH] = 1,
+			[HITGROUP_LEFTARM] = 1,
+			[HITGROUP_RIGHTARM] = 1,
+			[HITGROUP_LEFTLEG] = 1,
+			[HITGROUP_RIGHTLEG] = 1,
+		}
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -410,39 +670,39 @@ end
 
 SWEP.Attachments = {
     { -- 1
-        PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " I",
-        Category = "codww2_attachments_smg",
-		Bone = "tag_weapon",
-        Pos = Vector(0, 0, 0),
-		Icon_Offset = Vector(7, 0, 6.5),
-    },
-    { -- 2
-        PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " II",
-        Category = "codww2_attachments_smg",
-		Bone = "tag_weapon",
-        Pos = Vector(0, 0, 0),
-		Icon_Offset = Vector(5, 0, 6.5),
-    },
-    { -- 3
-        PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " III",
-        Category = "codww2_attachments_smg",
-		Bone = "tag_weapon",
-        Pos = Vector(0, 0, 0),
-		Icon_Offset = Vector(3, 0, 6.5),
-    },
-    { -- 4
-        PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " IV",
-        Category = "codww2_attachments_smg",
-		Bone = "tag_weapon",
-        Pos = Vector(0, 0, 0),
-		Icon_Offset = Vector(1, 0, 6.5),
-    },
-    { -- 5
         PrintName = ARC9:GetPhrase("codww2_category_training"),
         Category = {"codww2_training"},
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(4, 0, 8.5),
+    },
+    { -- 2
+        PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " I",
+        Category = {"codww2_atts", "codww2_atts_smg"},
+		Bone = "tag_weapon",
+        Pos = Vector(0, 0, 0),
+		Icon_Offset = Vector(7, 0, 6.5),
+    },
+    { -- 3
+        PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " II",
+        Category = {"codww2_atts2", "codww2_atts2_smg"},
+		Bone = "tag_weapon",
+        Pos = Vector(0, 0, 0),
+		Icon_Offset = Vector(5, 0, 6.5),
+    },
+    { -- 4
+        PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " III",
+        Category = {"codww2_atts3", "codww2_atts3_smg"},
+		Bone = "tag_weapon",
+        Pos = Vector(0, 0, 0),
+		Icon_Offset = Vector(3, 0, 6.5),
+    },
+    { -- 5
+        PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " IV",
+        Category = {"codww2_atts4", "codww2_atts4_smg"},
+		Bone = "tag_weapon",
+        Pos = Vector(0, 0, 0),
+		Icon_Offset = Vector(1, 0, 6.5),
     },
 
 	-- Cosmetics

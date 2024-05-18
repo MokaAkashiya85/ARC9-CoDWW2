@@ -100,21 +100,42 @@ SWEP.FiremodeAnimLock = true -- Firemode animation cannot be interrupted
 SWEP.UBGLCancelAnim = true
 SWEP.CantPeek = true
 
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+	local animation = anim
+
+	if wep:HasElement("anim_mm") then
+		animation =  "marksman_" .. animation
+	end
+	
+	if wep:HasElement("anim_cqb") then
+		animation =  "cqb_" .. animation
+	end
+	
+	if wep:HasElement("mag_ext") then
+		if anim == "reload" or anim == "reload_empty" then
+			animation = animation .. "_ext"
+		end
+	end
+	
+	return animation
+end
+
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
 
-	-- Assault Rifle, Grau 5.56
-	if att["cod2019_grau556_barrel_long"] then
-		name = string.Replace(name, "56", "50")
-	end	
-	
-	if att["cod2019_grau556_barrel_heavy"] then
-		name = "IMBEL IA2"
-	end
+	-- if att["cod2019_grau556_barrel_long"] then
+		-- name = string.Replace(name, "56", "50")
+	-- end	
 
-	if att["arc9_stat_stattrak"] then
-		name = "StatTrak™ " .. name
-	end
+	-- if att["arc9_stat_stattrak"] then
+		-- name = "StatTrak™ " .. name
+	-- end
 
     return name
+end
+
+SWEP.Hook_HideBones = function(self, bones)
+    local att = self:GetElements()
+
+    return bones
 end
