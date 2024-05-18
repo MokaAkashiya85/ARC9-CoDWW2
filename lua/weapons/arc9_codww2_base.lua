@@ -28,6 +28,7 @@ SWEP.BashCancelsReload = true
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 SWEP.DefaultBodygroups = "0000000000"
+SWEP.ReloadInSights = false
 
 SWEP.AlwaysPhysBullet = false
 SWEP.NeverPhysBullet = true

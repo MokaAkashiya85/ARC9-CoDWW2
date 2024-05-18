@@ -1,0 +1,40 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "mokaww2\textures\greasegun\mag_ext_d"
+    "$bumpmap" "mokaww2\textures\greasegun\mag_ext_n"
+    "$phongexponenttexture" "mokaww2\textures\greasegun\mag_ext_e"
+
+    "$color2" "[1 1 1]"                                     //do not touch this
+    "$blendtintbybasealpha" "1"                             //do not touch this
+
+    "$phong" "1"
+    "$phongboost" "1"
+    "$phongalbedotint" "1"
+    "$phongalbedoboost" "30"                                //toy around with this
+    "$phongfresnelranges" "[1 0.1 0]"
+       
+    "$normalmapalphaenvmapmask" "1"                         //do not touch this
+
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.165 0.161 0.165]"                 
+
+    "$detailblendmode" "4"
+    "$detailblendfactor" "0.7"
+
+    "Proxies"
+    {
+        "Arc9EnvMapTint"
+        {
+            "min" "0"
+            "max" "1"
+            "color" "[0.165 0.161 0.165]"
+        }
+	   "CustomCamo" 
+        {
+		  "camoTexture" $detail
+	       "camoScale" $detailscale
+            "blend" $detailblendfactor
+            "color" "[0.8 0.8 0.8]"
+	   }
+    }
+}

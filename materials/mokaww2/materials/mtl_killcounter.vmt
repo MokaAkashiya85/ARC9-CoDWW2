@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "mokaww2\textures\killcountinvis"
+	"$translucent" "1"
+}

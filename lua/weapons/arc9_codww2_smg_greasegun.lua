@@ -101,7 +101,10 @@ SWEP.Firemodes = {
     },
     {
         Mode = -1,
-		Silencer = true
+		Silencer = true,
+		-- MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle",
+		-- MuzzleParticleOverride_Priority = 5,
+		ActivateElements = {"suppressor"}
     },
 }
 
@@ -142,10 +145,10 @@ SWEP.Spread = 0.02
 SWEP.SpreadAddRecoil = 0.01
 
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddMove = SWEP.Spread * 1.5
-SWEP.SpreadAddMidAir = SWEP.Spread * 2.5
+SWEP.SpreadAddMove = SWEP.Spread * 1
+SWEP.SpreadAddMidAir = SWEP.Spread * 1
 SWEP.SpreadAddCrouch = -SWEP.Spread * 0.4
-SWEP.SpreadAddSights = -SWEP.Spread * 1.25
+SWEP.SpreadAddSights = -SWEP.Spread * 1
 
 SWEP.SpreadMultRecoil = 1
 SWEP.RecoilModifierCap = 3
@@ -257,27 +260,17 @@ SWEP.EnterSightsSound = "CoDWW2.ADS.Up"
 SWEP.ExitSightsSound = "CoDWW2.ADS.Down"
 
 SWEP.BulletBones = {
-    [1] = {"j_bullet1","j_ammo1"},
-    [2] = {"j_bullet2","j_ammo2"},
-    [3] = {"j_bullet3","j_ammo3"},
-    [4] = {"j_bullet4","j_ammo4"}
+    [1] = {"tag_clip_bullet","tag_bullet_extmag"},
 }
 
 SWEP.HideBones  = {
-    [1] = "j_mag2",
-    [2] = "j_bullet_secondary",
-    [3] = "j_bullet2_secondary",
+    "tag_silencer"
 }
 
 SWEP.ReloadHideBoneTables = {
-    [1] = {
-        "j_mag2",
-    },
-    [2] = {
-        "j_mag1",
-        "j_bullet_secondary",
-        "j_bullet2_secondary",
-    },
+    -- [1] = {
+        -- "j_mag2",
+    -- },
 }
 
 SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
@@ -366,12 +359,14 @@ SWEP.Animations = {
     },
     ["firemode_1"] = {
         Source = "reg_suppressor_on",
+        HideBoneIndex = 1,
         EventTable = {
             {s = path .. "wpn_gg_supp_on.ogg", t = 0/30},
         },
     },
     ["firemode_2"] = {
         Source = "reg_suppressor_off",
+        -- HideBoneIndex = 1,
         EventTable = {
             {s = path .. "wpn_gg_supp_off.ogg", t = 0/30},
         },
@@ -386,7 +381,7 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 
 end
 
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "000000"
 
 SWEP.AttachmentTableOverrides = {
     ["cod2019_griptape_01"] = {
@@ -401,14 +396,15 @@ SWEP.AttachmentElements = {
     ["stock"] = { Bodygroups = { {3,1} } },
     ["mag_ext"] = { Bodygroups = { {4,1} } },
     ["mag_none"] = { Bodygroups = { {4,2} } },
+    ["suppressor"] = { Bodygroups = { {5,1} } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
 
-    if wep:HasElement("reciever_custom") then 
-		model:SetBodygroup(5,0) 
-	end
+    -- if wep:HasElement("reciever_custom") then 
+		-- model:SetBodygroup(5,0) 
+	-- end
 
 end
 
