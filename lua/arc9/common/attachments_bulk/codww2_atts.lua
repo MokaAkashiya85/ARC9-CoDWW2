@@ -10,6 +10,42 @@ ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
 ATT.ActivateElements = {"reflex"}
 
+-- ATT.Model = "models/mokaww2/atts/gen_lens.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("codww2_category_reticle"),
+        Category = "codww2_reticle_reflex",
+        Pos = Vector(0, 0, 0),
+		Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(7, 0, 6.5),
+		CosmeticOnly = true,
+    },
+}
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+local sa = swep:GetSightAmount()
+
+	if sa >= 0.85 then
+		model:SetBodygroup(1, 1)
+	else
+		model:SetBodygroup(1, 0)
+	end
+
+-- Custom Reticles?
+
+    for ind = 0, 10 do
+        local val = eles["reflexreticle_" .. ind]
+        if val then
+            model:SetSubMaterial(3, "mokaww2/materials/customreticle/reflex_" .. ind)
+        end
+    end
+
+end
+
 ARC9.LoadAttachment(ATT, "codww2_aperture_sight")
 ------------------------------------------------------------------
 ATT = {}
@@ -33,6 +69,27 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
 ATT.ActivateElements = {"lens"}
+
+ATT.Model = "models/mokaww2/atts/lens_sight.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+local sa = swep:GetSightAmount()
+	
+	if eles["lens_small"] then
+		modelsizeads = 3
+		modelsize = 2
+	end
+	
+	if sa >= 0.85 then
+		model:SetBodygroup(0, modelsizeads or 1)
+	else
+		model:SetBodygroup(0, modelsize or 0)
+	end
+		
+end
 
 ARC9.LoadAttachment(ATT, "codww2_lens_sight")
 ------------------------------------------------------------------
@@ -313,3 +370,125 @@ ATT.ExcludeElements = {"tacknife2", "tacknife3", "tacknife4"}
 ARC9.LoadAttachment(ATT, "codww2_tactical_knife")
 ------------------------------------------------------------------
 -- TODO: Crossbow Attachments.
+
+
+------------------------------------------------------------------ Debug Reflex Reticles
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 1"
+ATT.Icon = Material("mokaww2/reticles/png/reflex01.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_1"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_01")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 2"
+ATT.Icon = Material("mokaww2/reticles/png/reflex02.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_2"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_02")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 3"
+ATT.Icon = Material("mokaww2/reticles/png/reflex03.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_3"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_03")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 4"
+ATT.Icon = Material("mokaww2/reticles/png/reflex04.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_4"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_04")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 5"
+ATT.Icon = Material("mokaww2/reticles/png/reflex05.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_5"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_05")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 6"
+ATT.Icon = Material("mokaww2/reticles/png/reflex06.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_6"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_06")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 7"
+ATT.Icon = Material("mokaww2/reticles/png/reflex07.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_7"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_07")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 8"
+ATT.Icon = Material("mokaww2/reticles/png/reflex08.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_8"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_08")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 9"
+ATT.Icon = Material("mokaww2/reticles/png/reflex09.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_9"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_09")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Reflex Reticle 10"
+ATT.Icon = Material("mokaww2/reticles/png/reflex10.png")
+ATT.Description = ""
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
+ATT.Category = {"codww2_reticle_reflex"}
+ATT.ActivateElements = {"reflexreticle_10"}
+
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_10")

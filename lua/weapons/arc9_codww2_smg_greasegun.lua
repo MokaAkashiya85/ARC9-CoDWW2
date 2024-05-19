@@ -160,18 +160,29 @@ SWEP.SprintToFireTime = 0.19 -- How long it takes to go from sprinting to being 
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.2
-SWEP.PostBashTime = 0.2
+SWEP.PreBashTime = 0.1	
+SWEP.PostBashTime = 0.75
 
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.1, -4.3, 1.0349),
+    Pos = Vector(-4.1011, -4.3, 1.0349),
     Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     ViewModelFOV = 65,
-	CrosshairInSights = false
 }
+
+SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
+    local attached = self:GetElements()
+     if attached["reflex"] then
+        return {
+			Pos = Vector(-4.1011, -5.0079, 0.5829),
+			Ang = Angle(0, 0, 0),
+			Magnification = 1.1,
+			ViewModelFOV = 65,
+        }
+    end
+end
 
 SWEP.ViewModelFOVBase = 65
 
@@ -375,6 +386,7 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"reg_melee"},
+		Mult = 0.75,
     },
     ["firemode_1"] = {
         Source = "reg_suppressor_off",
@@ -491,6 +503,7 @@ SWEP.Animations = {
     },
     ["marksman_bash"] = {
         Source = {"mm_melee"},
+		Mult = 0.75,
     },
     ["marksman_firemode_1"] = {
         Source = "mm_suppressor_off",
@@ -607,6 +620,7 @@ SWEP.Animations = {
     },
     ["cqb_bash"] = {
         Source = {"cqb_melee"},
+		Mult = 0.75,
     },
     ["cqb_firemode_1"] = {
         Source = "epic_suppressor_off",
@@ -631,8 +645,11 @@ SWEP.Animations = {
 SWEP.DefaultBodygroups = "000000"
 
 SWEP.AttachmentTableOverrides = {
-    ["cod2019_griptape_01"] = {
-		Model = "models/model.mdl",
+    ["codww2_aperture_sight"] = {
+		Model = "models/mokaww2/atts/greasegun_reflex.mdl",
+    },
+    ["codww2_lens_sight"] = {
+		ActivateElements = {"lens", "lens_small"}
     },
 }
 
@@ -644,6 +661,8 @@ SWEP.AttachmentElements = {
     ["mag_ext"] = { Bodygroups = { {4,1} }, ClipSizeAdd = 15 },
     ["mag_none"] = { Bodygroups = { {4,2} } },
     ["suppressor"] = { Bodygroups = { {5,1} } },
+
+    ["reflex"] = { Bodygroups = { {1,1} } },
 
 	["rpm"] = { RPMOverride = 580 },
     ["highcal"] = {
