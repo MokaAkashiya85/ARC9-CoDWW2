@@ -735,9 +735,11 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("codww2_category_variant"),
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
-        Category = "codww2_greasegun",
+        Category = "codww2_var_greasegun",
 		CosmeticOnly = true,
 		Icon_Offset = Vector(5, 0, 6.5),
+		Installed = "codww2_variant_greasegun",
+		Integral = true,
     },
     { -- 7
         PrintName = ARC9:GetPhrase("codww2_category_camouflage"),

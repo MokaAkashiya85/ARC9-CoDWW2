@@ -40,6 +40,13 @@ local ww2rare = {
 	heroic = "<color=135,0,0>ヒロイック</color>",
 }
 
+L["codww2_rarity_default"] = ww2rare.default
+L["codww2_rarity_common"] = ww2rare.common
+L["codww2_rarity_rare"] = ww2rare.rare
+L["codww2_rarity_legendary"] = ww2rare.legendary
+L["codww2_rarity_epic"] = ww2rare.epic
+L["codww2_rarity_heroic"] = ww2rare.heroic
+
 //////////////////// Operations
 
 local ww2op = {

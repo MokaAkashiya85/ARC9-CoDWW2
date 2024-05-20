@@ -28,6 +28,7 @@ ATT.Attachments = {
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
 local sa = swep:GetSightAmount()
+local skinval = swep.WW2ReflexReticleMat
 
 	if sa >= 0.85 then
 		model:SetBodygroup(1, 1)
@@ -40,6 +41,9 @@ local sa = swep:GetSightAmount()
         if val then
             model:SetSubMaterial(swep.ReflexReticleMatNum or 3, "mokaww2/materials/customreticle/reflex_" .. ind)
         end
+		-- if skinval then
+            -- model:SetSubMaterial(swep.ReflexReticleMatNum or 3, skinval)
+		-- end
     end
 
 end
