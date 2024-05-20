@@ -680,11 +680,17 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
+	local gfat = wep:GetFinishFiremodeAnimTime()
+	local ct = CurTime()
 
-    -- if wep:HasElement("reciever_custom") then 
-		-- model:SetBodygroup(5,0) 
+    -- if !wep:HasElement("base_none") and wep:HasElement("suppressor") then
+		-- if gfat < ct + 1 then -- Suppressor ON > OFF
+			-- model:SetBodygroup(5,0)
+		-- end
 	-- end
-
+	
+	-- print(wep:GetFinishFiremodeAnimTime())
+	
 end
 
 SWEP.Attachments = {

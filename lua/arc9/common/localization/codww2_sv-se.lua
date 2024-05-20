@@ -390,7 +390,7 @@ L["codww2_wep_wimmer_desc"] = "Automatgevär med hög skada och måttlig eldhast
 
 //////////////////// Submachine Guns
 //////////// Base
-L["codww2_wep_greasegun"] = "Grease Gun"
+L["codww2_wep_greasegun"] = "M3"
 L["codww2_wep_greasegun_desc"] = "Helautomatisk kulsprutepistol med låg rekyl och stadig eldhastighet."
 
 L["codww2_wep_ppsh41"] = "PPSh-41"
