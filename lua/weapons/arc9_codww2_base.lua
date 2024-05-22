@@ -40,7 +40,7 @@ SWEP.TracerNum = 0
 
 SWEP.DamageRand = 0
 
-SWEP.BashDamage = 55
+SWEP.BashDamage = 50
 SWEP.BashLungeRange = 0
 SWEP.BashRange = 64
 SWEP.PreBashTime = 0.1
@@ -114,6 +114,12 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 	if wep:HasElement("mag_ext") then
 		if anim == "reload" or anim == "reload_empty" then
 			animation = animation .. "_ext"
+		end
+	end
+		
+	if wep:HasElement("bayonet") then
+		if anim == "bash" then
+			animation = animation .. "_bayonet"
 		end
 	end
 	

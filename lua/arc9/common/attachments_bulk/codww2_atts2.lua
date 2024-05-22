@@ -232,18 +232,21 @@ ATT.Category = {"codww2_atts2_rifle"}
 ATT.ActivateElements = {"bayonet", "bayonet2"}
 ATT.ExcludeElements = {"bayonet1", "bayonet3", "bayonet4", "gl"}
 
--- TODO: Add code for Bayonet
+ATT.BashDamageOverride = 100
+ATT.BashLungeRangeOverride = 3 / ARC9.HUToM
+ATT.PreBashTimeMult = 1.25
+ATT.PostBashTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "codww2_bayonet2")
 ------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = "Tactical Knife"
-ATT.Icon = Material("mokaww2/icons/atts/bayonet.png")
+ATT.Icon = Material("mokaww2/icons/atts/tacknife.png")
 ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 2"
-ATT.Category = {"codww2_atts2_rifle"}
+ATT.Category = {"codww2_atts2_pistol"}
 ATT.ActivateElements = {"tacknife", "tacknife2"}
 ATT.ExcludeElements = {"tacknife1", "tacknife3", "tacknife4"}
 

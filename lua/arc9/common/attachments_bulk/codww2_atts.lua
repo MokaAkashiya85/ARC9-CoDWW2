@@ -123,6 +123,58 @@ ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_rifle"}
 ATT.ActivateElements = {"telescopic"}
 
+-- ATT.Model = "models/mokaww2/atts/gen_lens.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("codww2_category_reticle"),
+        Category = "codww2_reticle_scope",
+        Pos = Vector(0, 0, 0),
+		Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(7, 0, 6.5),
+		CosmeticOnly = true,
+    },
+}
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+local sa = swep:GetSightAmount()
+local skinval = swep.WW2ScopeReticleMat
+
+	if sa >= 0.85 then
+		model:SetBodygroup(1, 1)
+	else
+		model:SetBodygroup(1, 0)
+	end
+
+    for ind = 0, 10 do -- Reticles
+        local val = eles["scopereticle_" .. ind]
+        if val then
+            model:SetSubMaterial(swep.ScopeReticleMatNum or 3, "mokaww2/materials/customreticle/scope_" .. ind)
+        end
+		-- if skinval then
+            -- model:SetSubMaterial(swep.ScopeReticleMatNum or 3, skinval)
+		-- end
+    end
+
+end
+
+-- ATT.Sights = { -- Handled by the weapon itself, due to models being different.
+    -- {
+        -- Pos = Vector(-8.5, 0.625, -7),
+        -- Ang = Angle(0, 90, 0),
+        -- ViewModelFOV = 30,
+        -- Magnification = 4,
+        -- Blur = true,
+    -- },
+-- }
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 1
+ATT.RTScopeFOV = 30 / 4
+
 ARC9.LoadAttachment(ATT, "codww2_telescopic_sight")
 ------------------------------------------------------------------
 ATT = {}
@@ -310,6 +362,10 @@ ATT.Category = {"codww2_atts_rifle"}
 ATT.ActivateElements = {"gl", "gl1"}
 ATT.ExcludeElements = {"gl2", "gl3", "gl4", "bayonet"}
 
+ATT.Model = "models/mokaww2/atts/riflegrenade.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
 -- TODO: Add code for Grenade Launcher
 
 ARC9.LoadAttachment(ATT, "codww2_grenade_launcher")
@@ -342,6 +398,22 @@ ATT.ExcludeElements = {"suppressor2", "suppressor3", "suppressor4"}
 
 -- TODO: Add code for Toggleable Suppressor
 
+-- ATT.Model = "models/mokaww2/atts/gen_lens.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+local sa = swep:GetSightAmount()
+
+	if sa >= 0.85 then
+		model:SetBodygroup(0, 0)
+	else
+		model:SetBodygroup(0, 1)
+	end
+
+end
+
 ATT.Firemodes = {
     {
 		-- PrintName = "S.",
@@ -370,18 +442,21 @@ ATT.Category = {"codww2_atts_rifle"}
 ATT.ActivateElements = {"bayonet", "bayonet1"}
 ATT.ExcludeElements = {"bayonet2", "bayonet3", "bayonet4", "gl"}
 
--- TODO: Add code for Bayonet
+ATT.BashDamageOverride = 100
+ATT.BashLungeRangeOverride = 3 / ARC9.HUToM
+ATT.PreBashTimeMult = 1.25
+ATT.PostBashTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "codww2_bayonet")
 ------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = "Tactical Knife"
-ATT.Icon = Material("mokaww2/icons/atts/bayonet.png")
+ATT.Icon = Material("mokaww2/icons/atts/tacknife.png")
 ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
-ATT.Category = {"codww2_atts_rifle"}
+ATT.Category = {"codww2_atts_pistol"}
 ATT.ActivateElements = {"tacknife", "tacknife1"}
 ATT.ExcludeElements = {"tacknife2", "tacknife3", "tacknife4"}
 
