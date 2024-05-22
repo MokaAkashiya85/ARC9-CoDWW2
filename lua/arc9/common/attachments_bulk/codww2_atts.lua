@@ -41,9 +41,6 @@ local skinval = swep.WW2ReflexReticleMat
         if val then
             model:SetSubMaterial(swep.ReflexReticleMatNum or 3, "mokaww2/materials/customreticle/reflex_" .. ind)
         end
-		-- if skinval then
-            -- model:SetSubMaterial(swep.ReflexReticleMatNum or 3, skinval)
-		-- end
     end
 
 end
@@ -123,20 +120,24 @@ ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_rifle"}
 ATT.ActivateElements = {"telescopic"}
 
--- ATT.Model = "models/mokaww2/atts/gen_lens.mdl"
+-- ATT.Model = "models/mokaww2/atts/m1941_scope.mdl"
 ATT.BoneMerge = true
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("codww2_category_reticle"),
-        Category = "codww2_reticle_scope",
+        Category = "codww2_reticle_telescopic",
         Pos = Vector(0, 0, 0),
 		Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(7, 0, 6.5),
 		CosmeticOnly = true,
     },
 }
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 1
+ATT.RTScopeFOV = 30 / 4
 
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
@@ -150,13 +151,10 @@ local skinval = swep.WW2ScopeReticleMat
 	end
 
     for ind = 0, 10 do -- Reticles
-        local val = eles["scopereticle_" .. ind]
+        local val = eles["telescopicreticle_" .. ind]
         if val then
-            model:SetSubMaterial(swep.ScopeReticleMatNum or 3, "mokaww2/materials/customreticle/scope_" .. ind)
+            model:SetSubMaterial(swep.ScopeReticleMatNum or 2, "mokaww2/materials/customreticle/scope_" .. ind)
         end
-		-- if skinval then
-            -- model:SetSubMaterial(swep.ScopeReticleMatNum or 3, skinval)
-		-- end
     end
 
 end
@@ -170,10 +168,6 @@ end
         -- Blur = true,
     -- },
 -- }
-
-ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 30 / 4
 
 ARC9.LoadAttachment(ATT, "codww2_telescopic_sight")
 ------------------------------------------------------------------

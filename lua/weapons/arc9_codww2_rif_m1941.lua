@@ -15,6 +15,9 @@ SWEP.PrintName = ARC9:GetPhrase("codww2_wep_m1941") or "M1941"
 
 SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_ar") or "Rifle"
 
+SWEP.ReflexReticleMatNum = 2
+SWEP.ScopeReticleMatNum = 2
+
 --[[
 SWEP.Trivia = {
     [ ARC9:GetPhrase("codww2_country") ] = ARC9:GetPhrase("codww2_country_sovietunion"),
@@ -109,13 +112,13 @@ SWEP.Recoil = 1.15
 SWEP.RecoilPatternDrift = 0
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.75 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.65 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 1.5 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.1
-SWEP.RecoilRandomSide = 0.66
+SWEP.RecoilRandomSide = 0.85
 
 SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
@@ -130,6 +133,26 @@ SWEP.RecoilMultMove = 1.25
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMax = 3
+
+-------------------------- VISUAL RECOIL
+
+SWEP.UseVisualRecoil = true
+SWEP.PhysicalVisualRecoil = false
+SWEP.VisualRecoilCenter = Vector(7, 5, 5)
+
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = 0.25
+SWEP.VisualRecoilRoll = 7.5
+SWEP.VisualRecoilSide = -0.1
+
+SWEP.VisualRecoilPositionBump = 1.33
+SWEP.VisualRecoilPositionBumpUp = 0.66
+SWEP.VisualRecoilMultCrouch = .85
+SWEP.VisualRecoilMultSights = 0
+
+SWEP.VisualRecoilSpringPunchDamping = 11
+SWEP.VisualRecoilDampingConst = 80
+SWEP.VisualRecoilDampingConstSights = 80
 
 -------------------------- SPREAD
 

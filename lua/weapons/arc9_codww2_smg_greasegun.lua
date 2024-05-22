@@ -15,6 +15,9 @@ SWEP.PrintName = ARC9:GetPhrase("codww2_wep_greasegun") or "Grease Gun"
 
 SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_smg") or "Submachine Gun"
 
+-- SWEP.ReflexReticleMatNum = 2
+-- SWEP.ScopeReticleMatNum = 2
+
 --[[
 SWEP.Trivia = {
     [ ARC9:GetPhrase("codww2_country") ] = ARC9:GetPhrase("codww2_country_sovietunion"),
@@ -130,6 +133,26 @@ SWEP.RecoilMultMove = 1.25
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMax = 3
+
+-------------------------- VISUAL RECOIL
+
+SWEP.UseVisualRecoil = true
+SWEP.PhysicalVisualRecoil = false
+SWEP.VisualRecoilCenter = Vector(6, 5, 5)
+
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = -0.25
+SWEP.VisualRecoilRoll = 7.5
+SWEP.VisualRecoilSide = -0.1
+
+SWEP.VisualRecoilPositionBump = 1.25
+SWEP.VisualRecoilPositionBumpUp = 0.66
+SWEP.VisualRecoilMultCrouch = .85
+SWEP.VisualRecoilMultSights = 0
+
+SWEP.VisualRecoilSpringPunchDamping = 11
+SWEP.VisualRecoilDampingConst = 80
+SWEP.VisualRecoilDampingConstSights = 80
 
 -------------------------- SPREAD
 
