@@ -18,10 +18,10 @@ SWEP.SecondarySupplyLimit = 6
 
 -------------------------- MELEE
 
-SWEP.MeleeHitSound = "COD2019.Melee.HitBody"
-SWEP.MeleeHitWallSound = "COD2019.Melee.HitWall"
-SWEP.MeleeSwingSound = "COD2019.Melee.Swing"
-SWEP.BackstabSound = "COD2019.Melee.HitBody"
+SWEP.MeleeHitSound = "CoDWW2.Melee.Hit.Player"
+SWEP.MeleeHitWallSound = "CoDWW2.Melee.Hit"
+SWEP.MeleeSwingSound = "CoDWW2.Melee.Swing.Pistol"
+SWEP.BackstabSound = "CoDWW2.Melee.Hit.Player"
 
 SWEP.BashWhileSprint = true
 SWEP.BashCancelsReload = true
@@ -45,12 +45,6 @@ SWEP.BashLungeRange = 0
 SWEP.BashRange = 64
 SWEP.PreBashTime = 0.1
 SWEP.PostBashTime = 0.65
-
-SWEP.Bash2Damage = 45
-SWEP.Bash2LungeRange = 0
-SWEP.Bash2Range = 64
-SWEP.PreBash2Time = 0.1
-SWEP.PostBash2Time = 0.65
 
 SWEP.SpeedMultMelee = 1
 SWEP.SpeedMultSights = 0.95
@@ -100,6 +94,36 @@ SWEP.FiremodeAnimLock = true -- Firemode animation cannot be interrupted
 SWEP.UBGLCancelAnim = true
 SWEP.CantPeek = true
 
+-------------------------- GL Stats
+
+SWEP.UBGLAmmo = "smg1_grenade"
+SWEP.UBGLClipSize = 1
+SWEP.UBGLFiremode = 1
+SWEP.UBGLFiremodeName = ARC9:GetPhrase("codww2_grenade_launcher.printname")
+SWEP.UBGLChamberSize = 0
+SWEP.ShootVolumeUBGL = 130
+
+SWEP.SpreadUBGL = 0
+
+local glspath = "mokaww2/wpn/bazooka/"
+
+SWEP.ShootSoundUBGL = {
+glspath .. "wpn_bzka_metal_01.ogg",
+glspath .. "wpn_bzka_metal_02.ogg",
+}
+
+SWEP.LayerSoundUBGL = glspath .. "wpn_bzka_trans_01.ogg"
+
+SWEP.DistantShootSoundUBGL = "CoDWW2.RifleGrenade.Tail"
+
+SWEP.HasSightsUBGL = false
+SWEP.TriggerDelayUBGL = false
+
+SWEP.ShootEntUBGL = "codww2_rifle_grenade"
+SWEP.ShootEntForceUBGL = 2500
+
+SWEP.MuzzleParticleUBGL = "muzzleflash_suppressed"
+
 SWEP.Hook_TranslateAnimation = function(wep, anim)
 	local animation = anim
 
@@ -120,6 +144,12 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 	if wep:HasElement("bayonet") then
 		if anim == "bash" then
 			animation = animation .. "_bayonet"
+		end
+	end
+	
+	if wep:HasElement("gl") then
+		if wep:Clip2() == 0 and (anim == "enter_ubgl" or anim == "exit_ubgl") then
+			animation = animation .. "_empty"
 		end
 	end
 	

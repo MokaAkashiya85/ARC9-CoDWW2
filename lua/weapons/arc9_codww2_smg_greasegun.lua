@@ -181,10 +181,10 @@ SWEP.SprintToFireTime = 0.19 -- How long it takes to go from sprinting to being 
 
 -------------------------- MELEE
 
-SWEP.Bash = true
-SWEP.PrimaryBash = false
 SWEP.PreBashTime = 0.1	
 SWEP.PostBashTime = 0.75
+
+SWEP.MeleeSwingSound = "CoDWW2.Melee.Swing.SMG"
 
 -------------------------- POSITIONS
 
@@ -273,9 +273,20 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 local path = "mokaww2/wpn/greasegun/"
 local paths = "mokaww2/wpn/suppressed/"
 
-SWEP.ShootSound = path .. "wpn_grease_lyr_1_01.ogg"
+SWEP.ShootSound = {
+path .. "wpn_grease_lyr_1_01.ogg",
+path .. "wpn_grease_lyr_1_02.ogg",
+path .. "wpn_grease_lyr_1_03.ogg"
+}
+
 SWEP.LayerSound = path .. "wpn_grease_lyr_2_01.ogg"
-SWEP.DistantShootSound = path .. "wpn_grease_tail_lyr_01.ogg"
+
+SWEP.DistantShootSound = {
+path .. "wpn_grease_tail_lyr_01.ogg",
+path .. "wpn_grease_tail_lyr_02.ogg",
+path .. "wpn_grease_tail_lyr_03.ogg",
+path .. "wpn_grease_tail_lyr_04.ogg"
+}
 
 -- Suppressed
 SWEP.ShootSoundSilenced = paths .. "wpn_plr_supp_smg_1.ogg"
@@ -673,6 +684,18 @@ SWEP.AttachmentTableOverrides = {
     },
     ["codww2_lens_sight"] = {
 		ActivateElements = {"lens", "lens_small"}
+    },
+    ["codww2_suppressor_smg"] = {
+		Model = "models/mokaww2/atts/greasegun_suppressor.mdl",
+    },
+    ["codww2_suppressor_smg2"] = {
+		Model = "models/mokaww2/atts/greasegun_suppressor.mdl",
+    },
+    ["codww2_suppressor_smg3"] = {
+		Model = "models/mokaww2/atts/greasegun_suppressor.mdl",
+    },
+    ["codww2_suppressor_smg4"] = {
+		Model = "models/mokaww2/atts/greasegun_suppressor.mdl",
     },
 }
 

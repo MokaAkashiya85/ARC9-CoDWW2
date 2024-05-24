@@ -288,6 +288,91 @@ sound.Add( {
     }
 } )
 
+------------ Melee ------------
+sound.Add( {
+    name = "CoDWW2.Melee.Hit",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {
+        "mokaww2/wpn/melee/wpn_melee_hit_01.ogg",
+        "mokaww2/wpn/melee/wpn_melee_hit_03.ogg",
+        "mokaww2/wpn/melee/wpn_melee_hit_05.ogg",
+        "mokaww2/wpn/melee/wpn_melee_hit_06.ogg",
+        "mokaww2/wpn/melee/wpn_melee_hit_07.ogg",
+        "mokaww2/wpn/melee/wpn_melee_hit_08.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CoDWW2.Melee.Hit.Player",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {
+        "mokaww2/wpn/melee/wpn_melee_plr_hit_01.ogg",
+        "mokaww2/wpn/melee/wpn_melee_plr_hit_02.ogg",
+        "mokaww2/wpn/melee/wpn_melee_plr_hit_03.ogg",
+        "mokaww2/wpn/melee/wpn_melee_plr_hit_04.ogg",
+        "mokaww2/wpn/melee/wpn_melee_plr_hit_05.ogg",
+        "mokaww2/wpn/melee/wpn_melee_plr_hit_06.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CoDWW2.Melee.Hit.Player.Pistol",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {
+        "mokaww2/wpn/melee/wpn_melee_pistol_plr_hit_03.ogg",
+        "mokaww2/wpn/melee/wpn_melee_pistol_plr_hit_04.ogg",
+        "mokaww2/wpn/melee/wpn_melee_pistol_plr_hit_05.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CoDWW2.Melee.Swing.Pistol",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {
+        "mokaww2/wpn/melee/wpn_melee_swing_handgun_01.ogg",
+        "mokaww2/wpn/melee/wpn_melee_swing_handgun_02.ogg",
+        "mokaww2/wpn/melee/wpn_melee_swing_handgun_03.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CoDWW2.Melee.Swing.Large",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {
+        "mokaww2/wpn/melee/wpn_melee_swing_lrg_01.ogg",
+        "mokaww2/wpn/melee/wpn_melee_swing_lrg_02.ogg",
+        "mokaww2/wpn/melee/wpn_melee_swing_lrg_03.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CoDWW2.Melee.Swing.Rifle",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {
+        "mokaww2/wpn/melee/wpn_melee_swing_rifle_01.ogg",
+        "mokaww2/wpn/melee/wpn_melee_swing_rifle_02.ogg",
+        "mokaww2/wpn/melee/wpn_melee_swing_rifle_03.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CoDWW2.Melee.Swing.SMG",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {
+        "mokaww2/wpn/melee/wpn_melee_swing_smg_01.ogg",
+        "mokaww2/wpn/melee/wpn_melee_swing_smg_02.ogg",
+        "mokaww2/wpn/melee/wpn_melee_swing_smg_03.ogg",
+        "mokaww2/wpn/melee/wpn_melee_swing_smg_04.ogg",
+    }
+} )
+
 ------------ Casings --------------
 ARC9.COD2019_9mm_Table = {
     "weapons/cod2019/shared/casings/blt_case_bounce_9_01.ogg",
@@ -312,6 +397,7 @@ ARC9.COD2019_Shotgun_Table = {
 }
 
 ------------ Firing Sounds (That require additional settings) ------------
+------------ Suppressed SMG ------------
 sound.Add( {
     name = "CoDWW2.Suppressed.SMG.Tail",
     channel = CHAN_AUTO,
@@ -323,5 +409,19 @@ sound.Add( {
         "mokaww2/wpn/suppressed/wpn_plr_supp_gen_tail_2.ogg",
         "mokaww2/wpn/suppressed/wpn_plr_supp_gen_tail_4.ogg",
         "mokaww2/wpn/suppressed/wpn_plr_supp_gen_tail_5.ogg",
+    }
+} )
+
+------------ Rifle Grenade ------------
+sound.Add( {
+    name = "CoDWW2.RifleGrenade.Tail",
+    channel = CHAN_AUTO,
+    volume = 0.4,
+    level = 120,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "mokaww2/wpn/bazooka/wpn_bzka_tail_01.ogg",
+        "mokaww2/wpn/bazooka/wpn_bzka_tail_02.ogg",
     }
 } )

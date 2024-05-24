@@ -361,6 +361,22 @@ ATT.BoneMerge = true
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
 -- TODO: Add code for Grenade Launcher
+ATT.UBGL = true
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+
+	if eles["gl_ger"] then
+		model:SetBodygroup(0, 1)
+	end
+
+	-- if !swep:GetUBGL() or swep:Clip2() == 0 then
+		-- model:SetBodygroup(1, 2)
+	-- else
+		-- model:SetBodygroup(1, 0)
+	-- end
+
+end
 
 ARC9.LoadAttachment(ATT, "codww2_grenade_launcher")
 ------------------------------------------------------------------
@@ -398,29 +414,47 @@ ATT.ModelAngleOffset = Angle(0, -90, 0)
 
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
-local sa = swep:GetSightAmount()
 
-	if sa >= 0.85 then
-		model:SetBodygroup(0, 0)
-	else
-		model:SetBodygroup(0, 1)
-	end
+-- local function suppcode()
+	-- local fmodes = swep:GetValue("Firemodes")
+	-- if swep:StillWaiting() then return end
+	
+	-- if swep:GetOwner():KeyPressed(IN_ZOOM) then
+		-- return CurTime() + 2
+	-- end
+
+-- end
+
+-- local suppon = math.Clamp(1 - (suppcode() - CurTime()) / swep:GetAnimationTime("firemode_1"), 0, 1)
+-- local suppoff = math.Clamp(1 - (suppcode() - CurTime()) / swep:GetAnimationTime("firemode_2"), 0, 1)
+
+	-- if suppoff > 0.666 then
+		-- model:SetBodygroup(0, 1)
+	-- end
+
+	-- if suppon > 0.666 then
+		-- model:SetBodygroup(0, 0)
+	-- end
+
+	-- if self:GetAnimationEntry("idle")
 
 end
 
+ATT.Silencer = true
+		
 ATT.Firemodes = {
     {
 		-- PrintName = "S.",
         Mode = -1,
-		Silencer = true,
 		NoFlash = true,
 		MuzzleParticleOverride = "muzzleflash_suppressed",
 		MuzzleParticleOverride_Priority = 5,
     },
-    -- {
+    {
 		-- PrintName = "N.S.",
-        -- Mode = -1,
-    -- },
+        Mode = -1,
+		Silencer = false,
+    },
 }
 
 ARC9.LoadAttachment(ATT, "codww2_suppressor_smg")
@@ -435,6 +469,19 @@ ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_rifle"}
 ATT.ActivateElements = {"bayonet", "bayonet1"}
 ATT.ExcludeElements = {"bayonet2", "bayonet3", "bayonet4", "gl"}
+
+ATT.Model = "models/mokaww2/atts/bayonet.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+
+	if eles["bayonet_ger"] then
+		model:SetBodygroup(0, 1)
+	end
+
+end
 
 ATT.BashDamageOverride = 100
 ATT.BashLungeRangeOverride = 3 / ARC9.HUToM

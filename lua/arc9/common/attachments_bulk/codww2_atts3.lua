@@ -204,19 +204,37 @@ ATT.ExcludeElements = {"suppressor1", "suppressor2", "suppressor4"}
 
 -- TODO: Add code for Toggleable Suppressor
 
+-- ATT.Model = "models/mokaww2/atts/gen_lens.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+local sa = swep:GetSightAmount()
+
+	-- if sa >= 0.85 then
+		-- model:SetBodygroup(0, 0)
+	-- else
+		-- model:SetBodygroup(0, 1)
+	-- end
+
+end
+
+ATT.Silencer = true
+		
 ATT.Firemodes = {
     {
 		-- PrintName = "S.",
         Mode = -1,
-		Silencer = true,
 		NoFlash = true,
 		MuzzleParticleOverride = "muzzleflash_suppressed",
 		MuzzleParticleOverride_Priority = 5,
     },
-    -- {
+    {
 		-- PrintName = "N.S.",
-        -- Mode = -1,
-    -- },
+        Mode = -1,
+		Silencer = false,
+    },
 }
 
 ARC9.LoadAttachment(ATT, "codww2_suppressor_smg3")
@@ -231,6 +249,19 @@ ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 3"
 ATT.Category = {"codww2_atts3_rifle"}
 ATT.ActivateElements = {"bayonet", "bayonet3"}
 ATT.ExcludeElements = {"bayonet1", "bayonet2", "bayonet4", "gl"}
+
+ATT.Model = "models/mokaww2/atts/bayonet.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+
+	if eles["bayonet_ger"] then
+		model:SetBodygroup(0, 1)
+	end
+
+end
 
 ATT.BashDamageOverride = 100
 ATT.BashLungeRangeOverride = 3 / ARC9.HUToM

@@ -181,10 +181,10 @@ SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being 
 
 -------------------------- MELEE
 
-SWEP.Bash = true
-SWEP.PrimaryBash = false
 SWEP.PreBashTime = 0.1	
 SWEP.PostBashTime = 0.65
+
+SWEP.MeleeSwingSound = "CoDWW2.Melee.Swing.Rifle"
 
 -------------------------- POSITIONS
 
@@ -272,7 +272,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 -------------------------- SOUNDS
 
 local path = "mokaww2/wpn/m1941/"
-local paths = "mokaww2/wpn/suppressed/"
+local paths = "mokaww2/wpn/riflegrenade/"
 
 SWEP.ShootSound = {
 path .. "wpn_1941_plr_trans_01.ogg",
@@ -418,6 +418,97 @@ SWEP.Animations = {
     ["bash_bayonet"] = {
         Source = {"reg_melee_bayonet"},
 		Mult = 0.85,
+    },
+
+-- Rifle Grenade
+    ["fire_ubgl"] = {
+        Source = "reg_gl_fire",
+    },
+    ["reload_ubgl"] = {
+        Source = "reg_gl_reload",
+		MinProgress = 0.825,
+		RefillProgress = 0.425,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+			{s = paths .. "wpn_rifle_grenade_on.ogg", t = 0.9},
+        },
+    },
+    ["draw_ubgl"] = {
+        Source = "reg_gl_draw",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+            {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
+        },
+    },
+    ["holster_ubgl"] = {
+        Source = "reg_gl_holster",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["idle_ubgl"] = {
+        Source = "reg_gl_idle",
+    },
+    ["idle_sprint_ubgl"] = {
+        Source = "reg_gl_sprint",
+    },
+    ["exit_sprint_ubgl"] = {
+        Source = "reg_gl_sprint_out",
+		Time = 3.25,
+    },
+    ["enter_sprint_ubgl"] = {
+        Source = "reg_gl_sprint_in",
+		Time = 1.25,
+    },
+    ["inspect_ubgl"] = {
+        Source = "reg_gl_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_john_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_john_inspect_stndrd_pt_02.ogg", t = 3},
+        },
+    },
+    ["bash_ubgl"] = {
+        Source = {"reg_gl_melee"},
+		Mult = 1,
+    },
+    ["enter_ubgl"] = {
+        Source = {"reg_gl_enter"},
+		MinProgress = 0.9,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+			{s = paths .. "wpn_rifle_grenade_on.ogg", t = 0.9},
+        },
+    },
+    ["exit_ubgl"] = {
+        Source = {"reg_gl_exit"},
+		MinProgress = 0.85,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+			{s = paths .. "wpn_rifle_grenade_off.ogg", t = 0.7},
+        },
+    },
+    ["enter_empty_ubgl"] = {
+        Source = {"reg_gl_enter_empty"},
+		MinProgress = 0.9,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+        },
+    },
+    ["exit_empty_ubgl"] = {
+        Source = {"reg_gl_exit_empty"},
+		MinProgress = 0.85,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+        },
     },
 }
 
