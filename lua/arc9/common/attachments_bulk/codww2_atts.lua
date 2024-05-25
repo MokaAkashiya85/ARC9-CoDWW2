@@ -30,13 +30,20 @@ local eles = swep:GetElements()
 local sa = swep:GetSightAmount()
 local skinval = swep.WW2ReflexReticleMat
 
+	local function findbone()
+		bn = model:LookupBone("tag_reticle_default")
+		return bn
+	end
+
+	model:ManipulateBoneAngles(findbone(), Angle( 0, 0, -90 ) ) -- Rotates the reticle bone as it is not aligned correctly by default.
+
 	if sa >= 0.85 then
 		model:SetBodygroup(1, 1)
 	else
 		model:SetBodygroup(1, 0)
 	end
 
-    for ind = 0, 10 do -- Reticles
+    for ind = 0, 999 do -- Reticles
         local val = eles["reflexreticle_" .. ind]
         if val then
             model:SetSubMaterial(swep.ReflexReticleMatNum or 3, "mokaww2/materials/customreticle/reflex_" .. ind)
@@ -99,7 +106,7 @@ local sa = swep:GetSightAmount()
 		model:SetBodygroup(0, modelsize or 0)
 	end
 
-    for ind = 0, 10 do -- Reticles
+    for ind = 0, 999 do -- Reticles
         local val = eles["lensreticle_" .. ind]
         if val then
             model:SetSubMaterial(3, "mokaww2/materials/customreticle/lens_" .. ind)
@@ -137,7 +144,7 @@ ATT.Attachments = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 30 / 4
+ATT.RTScopeFOV = 10 / 1.5
 
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
@@ -150,7 +157,7 @@ local skinval = swep.WW2ScopeReticleMat
 		model:SetBodygroup(1, 0)
 	end
 
-    for ind = 0, 10 do -- Reticles
+    for ind = 0, 999 do -- Reticles
         local val = eles["telescopicreticle_" .. ind]
         if val then
             model:SetSubMaterial(swep.ScopeReticleMatNum or 2, "mokaww2/materials/customreticle/scope_" .. ind)
@@ -161,11 +168,11 @@ end
 
 -- ATT.Sights = { -- Handled by the weapon itself, due to models being different.
     -- {
-        -- Pos = Vector(-8.5, 0.625, -7),
-        -- Ang = Angle(0, 90, 0),
-        -- ViewModelFOV = 30,
-        -- Magnification = 4,
-        -- Blur = true,
+		-- Pos = Vector(-15, 0.625, -7.0075),
+		-- Ang = Angle(0, 90, 0),
+		-- ViewModelFOV = 10,
+		-- Magnification = 1.1,
+		-- Blur = true,
     -- },
 -- }
 
@@ -180,6 +187,55 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_sniper"}
 ATT.ActivateElements = {"telescopic"}
+
+-- ATT.Model = "models/mokaww2/atts/m1941_scope.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("codww2_category_reticle"),
+        Category = "codww2_reticle_telescopic",
+        Pos = Vector(0, 0, 0),
+		Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(7, 0, 6.5),
+		CosmeticOnly = true,
+    },
+}
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 1
+ATT.RTScopeFOV = 10 / 1.5
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+local sa = swep:GetSightAmount()
+local skinval = swep.WW2ScopeReticleMat
+
+	if sa >= 0.85 then
+		model:SetBodygroup(1, 1)
+	else
+		model:SetBodygroup(1, 0)
+	end
+
+    for ind = 0, 999 do -- Reticles
+        local val = eles["telescopicreticle_" .. ind]
+        if val then
+            model:SetSubMaterial(swep.ScopeReticleMatNum or 2, "mokaww2/materials/customreticle/scope_" .. ind)
+        end
+    end
+
+end
+
+-- ATT.Sights = { -- Handled by the weapon itself, due to models being different.
+    -- {
+		-- Pos = Vector(-15, 0.625, -7.0075),
+		-- Ang = Angle(0, 90, 0),
+		-- ViewModelFOV = 10,
+		-- Magnification = 1.1,
+		-- Blur = true,
+    -- },
+-- }
 
 ARC9.LoadAttachment(ATT, "codww2_telescopic_sight_sniper")
 ------------------------------------------------------------------
@@ -354,20 +410,21 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_rifle"}
 ATT.ActivateElements = {"gl", "gl1"}
-ATT.ExcludeElements = {"gl2", "gl3", "gl4", "bayonet"}
+ATT.ExcludeElements = {"gl2", "gl3", "gl4", "bayonet2", "bayonet3", "bayonet4"}
 
 ATT.Model = "models/mokaww2/atts/riflegrenade.mdl"
 ATT.BoneMerge = true
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
--- TODO: Add code for Grenade Launcher
 ATT.UBGL = true
+ATT.NoAimAssistUBGL = true
 
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
 
 	if eles["gl_ger"] then
 		model:SetBodygroup(0, 1)
+		model:SetBodygroup(1, 1)
 	end
 
 	-- if !swep:GetUBGL() then
@@ -468,7 +525,7 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_rifle"}
 ATT.ActivateElements = {"bayonet", "bayonet1"}
-ATT.ExcludeElements = {"bayonet2", "bayonet3", "bayonet4", "gl"}
+ATT.ExcludeElements = {"bayonet2", "bayonet3", "bayonet4", "gl2", "gl3", "gl4"}
 
 ATT.Model = "models/mokaww2/atts/bayonet.mdl"
 ATT.BoneMerge = true

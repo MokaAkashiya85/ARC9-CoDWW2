@@ -107,7 +107,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.15
+SWEP.Recoil = 0.66
 
 SWEP.RecoilPatternDrift = 0
 
@@ -233,8 +233,8 @@ SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17, 50, 5)
-SWEP.CustomizeRotateAnchor = Vector(17, -3, -4)
+SWEP.CustomizePos = Vector(19, 50, 5)
+SWEP.CustomizeRotateAnchor = Vector(19, -3, -4)
 SWEP.CustomizeSnapshotFOV = 65
 SWEP.CustomizeSnapshotPos = Vector(1, 25, 2.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -527,9 +527,9 @@ SWEP.AttachmentTableOverrides = {
 		Model = "models/mokaww2/atts/m1941_scope.mdl",
 		Sights = {
 			{
-				Pos = Vector(-6.5, 0.625, -7),
+				Pos = Vector(-15, 0.625, -7.0075),
 				Ang = Angle(0, 90, 0),
-				ViewModelFOV = 30,
+				ViewModelFOV = 10,
 				Magnification = 1.1,
 				Blur = true,
 			},

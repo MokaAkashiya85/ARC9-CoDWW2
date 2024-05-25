@@ -170,9 +170,29 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 4"
 ATT.Category = {"codww2_atts4_rifle"}
 ATT.ActivateElements = {"gl", "gl4"}
-ATT.ExcludeElements = {"gl1", "gl2", "gl3", "bayonet"}
+ATT.ExcludeElements = {"gl1", "gl2", "gl3", "bayonet1", "bayonet2", "bayonet3"}
 
--- TODO: Add code for Grenade Launcher
+ATT.Model = "models/mokaww2/atts/riflegrenade.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.UBGL = true
+ATT.NoAimAssistUBGL = true
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+
+	if eles["gl_ger"] then
+		model:SetBodygroup(0, 1)
+	end
+
+	-- if !swep:GetUBGL() then
+		-- model:SetBodygroup(1, 2)
+	-- else
+		-- model:SetBodygroup(1, 0)
+	-- end
+
+end
 
 ARC9.LoadAttachment(ATT, "codww2_grenade_launcher4")
 ------------------------------------------------------------------
@@ -248,7 +268,7 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 4"
 ATT.Category = {"codww2_atts4_rifle"}
 ATT.ActivateElements = {"bayonet", "bayonet4"}
-ATT.ExcludeElements = {"bayonet1", "bayonet2", "bayonet3", "gl"}
+ATT.ExcludeElements = {"bayonet1", "bayonet2", "bayonet3", "gl1", "gl2", "gl3"}
 
 ATT.Model = "models/mokaww2/atts/bayonet.mdl"
 ATT.BoneMerge = true
