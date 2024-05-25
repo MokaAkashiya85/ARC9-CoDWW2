@@ -370,7 +370,7 @@ local eles = swep:GetElements()
 		model:SetBodygroup(0, 1)
 	end
 
-	-- if !swep:GetUBGL() or swep:Clip2() == 0 then
+	-- if !swep:GetUBGL() then
 		-- model:SetBodygroup(1, 2)
 	-- else
 		-- model:SetBodygroup(1, 0)

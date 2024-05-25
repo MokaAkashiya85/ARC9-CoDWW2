@@ -374,26 +374,34 @@ sound.Add( {
 } )
 
 ------------ Casings --------------
-ARC9.COD2019_9mm_Table = {
-    "weapons/cod2019/shared/casings/blt_case_bounce_9_01.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_9_02.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_9_03.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_9_04.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_9_01.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_9_02.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_9_03.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_9_04.ogg"
+ARC9.CoDWW2_ShellsTable_Large = {
+    "mokaww2/shells/shell_bounce_lg01.ogg",
+    "mokaww2/shells/shell_bounce_lg02.ogg",
+    "mokaww2/shells/shell_bounce_lg03.ogg",
+    "mokaww2/shells/shell_bounce_lg04.ogg",
+    "mokaww2/shells/shell_bounce_lg05.ogg",
+    "mokaww2/shells/shell_bounce_lg06.ogg",
 }
 
-ARC9.COD2019_Shotgun_Table = {
-    "weapons/cod2019/shared/casings/blt_case_bounce_shotgun_01.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_shotgun_02.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_shotgun_03.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_shotgun_04.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_shotgun_01.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_shotgun_02.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_shotgun_03.ogg",
-    "weapons/cod2019/shared/casings/blt_case_bounce_shotgun_04.ogg"
+ARC9.CoDWW2_ShellsTable_Shotgun = {
+    "mokaww2/shells/shell_bounce_sg01.ogg",
+    "mokaww2/shells/shell_bounce_sg02.ogg",
+    "mokaww2/shells/shell_bounce_sg03.ogg",
+    "mokaww2/shells/shell_bounce_sg04.ogg",
+    "mokaww2/shells/shell_bounce_sg05.ogg",
+    "mokaww2/shells/shell_bounce_sg06.ogg",
+    "mokaww2/shells/shell_bounce_sg07.ogg",
+}
+
+ARC9.CoDWW2_ShellsTable_Small = {
+    "mokaww2/shells/shell_bounce_sm01.ogg",
+    "mokaww2/shells/shell_bounce_sm02.ogg",
+    "mokaww2/shells/shell_bounce_sm03.ogg",
+    "mokaww2/shells/shell_bounce_sm04.ogg",
+    "mokaww2/shells/shell_bounce_sm05.ogg",
+    "mokaww2/shells/shell_bounce_sm06.ogg",
+    "mokaww2/shells/shell_bounce_sm07.ogg",
+    "mokaww2/shells/shell_bounce_sm08.ogg",
 }
 
 ------------ Firing Sounds (That require additional settings) ------------

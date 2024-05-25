@@ -262,11 +262,12 @@ SWEP.ProceduralViewQCA = 1
 SWEP.CamQCA = 3
 SWEP.CamQCA_Mult = 1
 
-SWEP.ShellModel = "models/weapons/cod2019/shared/shell_762_hr.mdl"
+SWEP.ShellModel = "models/mokaww2/shells/9.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.08
+SWEP.ShellScale = 1.5
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
--- SWEP.ShellSounds = ARC9.COD2019_556_Table
+SWEP.ShellSounds = ARC9.CoDWW2_ShellsTable_Small
+SWEP.ShellVolume = 0.15
 
 -------------------------- SOUNDS
 

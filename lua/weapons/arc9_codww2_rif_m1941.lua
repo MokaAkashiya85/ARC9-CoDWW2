@@ -263,11 +263,12 @@ SWEP.ProceduralViewQCA = 1
 SWEP.CamQCA = 3
 SWEP.CamQCA_Mult = 1
 
-SWEP.ShellModel = "models/weapons/cod2019/shared/shell_762_hr.mdl"
+SWEP.ShellModel = "models/mokaww2/shells/556.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.08
+SWEP.ShellScale = 1.5
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
--- SWEP.ShellSounds = ARC9.COD2019_556_Table
+SWEP.ShellSounds = ARC9.CoDWW2_ShellsTable_Large
+SWEP.ShellVolume = 0.25
 
 -------------------------- SOUNDS
 
@@ -494,7 +495,7 @@ SWEP.Animations = {
 			{s = paths .. "wpn_rifle_grenade_off.ogg", t = 0.7},
         },
     },
-    ["enter_empty_ubgl"] = {
+    ["enter_ubgl_empty"] = {
         Source = {"reg_gl_enter_empty"},
 		MinProgress = 0.9,
 		FireASAP = true,
@@ -502,7 +503,7 @@ SWEP.Animations = {
             {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
         },
     },
-    ["exit_empty_ubgl"] = {
+    ["exit_ubgl_empty"] = {
         Source = {"reg_gl_exit_empty"},
 		MinProgress = 0.85,
 		FireASAP = true,
