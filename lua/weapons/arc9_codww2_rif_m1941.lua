@@ -453,7 +453,7 @@ SWEP.Animations = {
     ["idle_ubgl"] = {
         Source = "reg_gl_idle",
     },
-    ["idle_sprint_ubgl"] = {
+    ["idle_ubgl_sprint"] = {
         Source = "reg_gl_sprint",
     },
     ["exit_sprint_ubgl"] = {
