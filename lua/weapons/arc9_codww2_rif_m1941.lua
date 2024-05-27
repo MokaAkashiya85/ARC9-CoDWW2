@@ -565,13 +565,6 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.Hook_TranslateAnimation = function(swep, anim)
-    local elements = swep:GetElements()
-    if anim == "exit_ubgl" or anim == "exit_ubgl_empty" then
-        swep.funnyexitubgl = true
-    end
-end
-
 SWEP.lastfunnyubgl = false
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
