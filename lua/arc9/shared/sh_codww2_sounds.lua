@@ -404,7 +404,7 @@ ARC9.CoDWW2_ShellsTable_Small = {
     "mokaww2/shells/shell_bounce_sm08.ogg",
 }
 
------------- Firing Sounds (That require additional settings) ------------
+------------ Weapon Audio (That require additional settings) ------------
 ------------ Suppressed SMG ------------
 sound.Add( {
     name = "CoDWW2.Suppressed.SMG.Tail",
@@ -431,5 +431,34 @@ sound.Add( {
     sound = {
         "mokaww2/wpn/bazooka/wpn_bzka_tail_01.ogg",
         "mokaww2/wpn/bazooka/wpn_bzka_tail_02.ogg",
+    }
+} )
+
+------------ Shotgun Shell Insert ------------
+sound.Add( {
+    name = "CoDWW2.Shotgun.Shellin",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {
+        "mokaww2/wpn/winchester1897/wpn_win_shell_insert_01.ogg",
+        "mokaww2/wpn/winchester1897/wpn_win_shell_insert_02.ogg",
+        "mokaww2/wpn/winchester1897/wpn_win_shell_insert_03.ogg",
+        "mokaww2/wpn/winchester1897/wpn_win_shell_insert_04.ogg",
+        "mokaww2/wpn/winchester1897/wpn_win_shell_insert_05.ogg",
+    }
+} )
+
+------------ Incendiary Shotgun Blast ------------
+sound.Add( {
+    name = "CoDWW2.Shotgun.Incendiary.Blast",
+    channel = CHAN_AUTO,
+    volume = 0.5,
+    level = 120,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+		"mokaww2/wpn/shotgun/wpn_shotgun_fire_lyr_01.ogg",
+		"mokaww2/wpn/shotgun/wpn_shotgun_fire_lyr_02.ogg",
+		"mokaww2/wpn/shotgun/wpn_shotgun_fire_lyr_04.ogg",
     }
 } )

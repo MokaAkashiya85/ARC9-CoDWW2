@@ -62,7 +62,52 @@ ATT.Category = {"codww2_atts2_shotgun"}
 ATT.ActivateElements = {"incendiary", "incendiary2"}
 ATT.ExcludeElements = {"incendiary1", "incendiary3", "incendiary4"}
 
--- TODO: Add code for Incendiary Shells
+ATT.RangeMaxMult = 0.33
+
+ATT.ShellModelOverride = "models/mokaww2/shells/sg_inc.mdl"
+ATT.LayerSoundOverride = "CoDWW2.Shotgun.Incendiary.Blast"
+
+ATT.ImpactDecal = "FadingScorch"
+
+ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
+ATT.MuzzleParticleOverride_Priority = 1
+
+ATT.CustomCons = {
+	[ ARC9:GetPhrase("autostat.clipsize") .. " (" .. ARC9:GetPhrase("codww2_wep_winchester1897") .. ")" ] = "3+1",
+}
+
+-- This is code from the CoD2019 pack - consider replacing at some point
+local cov = 1 -- ??
+
+local badblood = { -- it's actually the good type
+    [-1] = true,
+    [3] = true,
+}
+
+ATT.Hook_BulletImpact = function(wep,data)
+    if CLIENT then return end
+    local ent = data.tr.Entity
+
+    local test1 = !(ent:IsNPC() or ent:IsPlayer() or ent:IsNextBot()) and true or false
+    local test2 = (!ent:GetBloodColor() or badblood[ent:GetBloodColor()]) and true or false
+
+    if IsValid(ent) and !test1 then
+        -- if math.Rand(0, 1) <= 0.25 then
+            if vFireInstalled then
+                CreateVFire(ent, data.tr.HitPos, data.tr.HitNormal, data.dmg:GetDamage() * 0.02)
+            else
+                ent:Ignite(1.5, 0)
+            end
+        -- end
+    end
+
+    if IsValid(ent) and (test1 or test2) then
+        data.dmg:SetDamage(data.dmg:GetDamage() * cov)
+        local eff = EffectData()
+        eff:SetOrigin(data.tr.HitPos)
+        util.Effect("cball_bounce", eff)
+    end
+end
 
 ARC9.LoadAttachment(ATT, "codww2_dragon_breath2")
 ------------------------------------------------------------------

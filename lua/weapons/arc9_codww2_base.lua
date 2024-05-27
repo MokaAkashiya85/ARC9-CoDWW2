@@ -131,6 +131,16 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 	if wep:HasElement("anim_cqb") then
 		animation =  "cqb_" .. animation
 	end
+		
+	if wep:HasElement("incendiary") then
+		if anim == "reload_start" or anim == "reload_insert" or anim == "reload_finish" then
+			if wep:Clip1() == 0 then
+				animation = "inc_" .. animation .. "_empty"
+			else
+				animation = "inc_" .. animation
+			end
+		end
+	end
 	
 	if wep:HasElement("mag_ext") then
 		if anim == "reload" or anim == "reload_empty" then
