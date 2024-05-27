@@ -263,7 +263,7 @@ SWEP.CamQCA = 3
 SWEP.CamQCA_Mult = 1
 
 SWEP.ShellModel = "models/mokaww2/shells/556.mdl"
-SWEP.ShellCorrectAng = Angle(0, 0, 0)
+SWEP.ShellCorrectAng = Angle(90, 0, 0)
 SWEP.ShellScale = 1.5
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.ShellSounds = ARC9.CoDWW2_ShellsTable_Large
@@ -457,7 +457,7 @@ SWEP.Animations = {
     },
     ["exit_sprint_ubgl"] = {
         Source = "reg_gl_sprint_out",
-		Time = 3.25,
+		Time = 6,
     },
     ["enter_sprint_ubgl"] = {
         Source = "reg_gl_sprint_in",

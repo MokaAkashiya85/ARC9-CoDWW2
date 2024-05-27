@@ -262,7 +262,7 @@ SWEP.CamQCA = 3
 SWEP.CamQCA_Mult = 1
 
 SWEP.ShellModel = "models/mokaww2/shells/9.mdl"
-SWEP.ShellCorrectAng = Angle(0, 0, 0)
+SWEP.ShellCorrectAng = Angle(-90, 0, 0)
 SWEP.ShellScale = 1.5
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.ShellSounds = ARC9.CoDWW2_ShellsTable_Small
