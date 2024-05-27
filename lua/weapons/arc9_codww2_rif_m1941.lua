@@ -494,7 +494,7 @@ SWEP.Animations = {
 			{s = paths .. "wpn_rifle_grenade_off.ogg", t = 0.7},
         },
     },
-    ["enter_ubgl_empty"] = {
+    ["enter_ubgl_glempty"] = {
         Source = {"reg_gl_enter_empty"},
 		MinProgress = 0.9,
 		FireASAP = true,
@@ -502,7 +502,7 @@ SWEP.Animations = {
             {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
         },
     },
-    ["exit_ubgl_empty"] = {
+    ["exit_ubgl_glempty"] = {
         Source = {"reg_gl_exit_empty"},
 		MinProgress = 0.85,
 		FireASAP = true,
@@ -565,19 +565,34 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local model = data.model
-	local gfat = wep:GetFinishFiremodeAnimTime()
-	local ct = CurTime()
+SWEP.Hook_TranslateAnimation = function(swep, anim)
+    local elements = swep:GetElements()
+    if anim == "exit_ubgl" or anim == "exit_ubgl_empty" then
+        swep.funnyexitubgl = true
+    end
+end
 
-    -- if !wep:HasElement("base_none") and wep:HasElement("suppressor") then
-		-- if gfat < ct + 1 then -- Suppressor ON > OFF
-			-- model:SetBodygroup(5,0)
-		-- end
-	-- end
-	
-	-- print(wep:GetFinishFiremodeAnimTime())
-	
+SWEP.lastfunnyubgl = false
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local eles = data.elements
+    local model = data.model
+    local ubgl = wep:GetUBGL()
+
+    if ubgl then
+        wep.hideubglthing = false
+    elseif wep.lastfunnyubgl then
+        timer.Simple(wep:Clip2() > 0 and 1.5 or 0, function()
+            if IsValid(wep) then
+                wep.hideubglthing = true
+            end
+        end)
+    end
+    
+    wep.lastfunnyubgl = ubgl
+
+    if eles["gl"] and ((wep:GetUBGL() and wep:Clip2() > 0) or (wep:StillWaiting() and !wep.hideubglthing)) then
+        model:SetBodygroup(5, 2)
+    end
 end
 
 SWEP.Attachments = {

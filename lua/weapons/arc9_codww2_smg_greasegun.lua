@@ -694,7 +694,7 @@ SWEP.AttachmentElements = {
     ["stock"] = { Bodygroups = { {3,1} } },
     ["mag_ext"] = { Bodygroups = { {4,1} }, ClipSizeAdd = 15 },
     ["mag_none"] = { Bodygroups = { {4,2} } },
-    ["suppressor"] = { Bodygroups = { {5,1} } },
+    ["suppressor"] = { Bodygroups = { {5,0} } },
 
     ["reflex"] = { Bodygroups = { {1,1} } },
 
@@ -713,18 +713,15 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local eles = data.elements
     local model = data.model
-	local gfat = wep:GetFinishFiremodeAnimTime()
-	local ct = CurTime()
+	local gfat = wep:GetFinishFiremodeAnimTime() - CurTime()
 
-    -- if !wep:HasElement("base_none") and wep:HasElement("suppressor") then
-		-- if gfat < ct + 1 then -- Suppressor ON > OFF
-			-- model:SetBodygroup(5,0)
-		-- end
-	-- end
-	
-	-- print(wep:GetFinishFiremodeAnimTime())
-	
+    local silfiremode = wep:GetFiremode() == 1
+
+    if eles["suppressor"] and (silfiremode or gfat > 0.5) then
+        model:SetBodygroup(5, 1)
+    end
 end
 
 SWEP.Attachments = {
