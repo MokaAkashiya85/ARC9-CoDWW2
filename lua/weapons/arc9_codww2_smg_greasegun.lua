@@ -172,9 +172,8 @@ SWEP.RecoilModifierCapSights = 0.25
 
 -------------------------- HANDLING
 
-SWEP.SpeedMult = 1 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.9 -- When aiming
-SWEP.SpeedMultShooting = 0.9
+SWEP.SpeedMult = 0.95 -- Walk speed multiplier
+SWEP.SpeedMultSights = 0.8 -- When aiming
 
 SWEP.AimDownSightsTime = 0.19 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.19 -- How long it takes to go from sprinting to being able to fire.
@@ -685,18 +684,6 @@ SWEP.AttachmentTableOverrides = {
     },
     ["codww2_lens_sight"] = {
 		ActivateElements = {"lens", "lens_small"}
-    },
-    ["codww2_suppressor_smg"] = {
-		Model = "models/mokaww2/atts/greasegun_suppressor.mdl",
-    },
-    ["codww2_suppressor_smg2"] = {
-		Model = "models/mokaww2/atts/greasegun_suppressor.mdl",
-    },
-    ["codww2_suppressor_smg3"] = {
-		Model = "models/mokaww2/atts/greasegun_suppressor.mdl",
-    },
-    ["codww2_suppressor_smg4"] = {
-		Model = "models/mokaww2/atts/greasegun_suppressor.mdl",
     },
 }
 

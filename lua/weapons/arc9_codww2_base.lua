@@ -85,9 +85,6 @@ SWEP.DryFireSound = ""
 SWEP.IndoorSoundHardCutoff = true
 --SWEP.IndoorSoundHardCutoffRatio = 0.1
 
-SWEP.MovePoseParam = 0
-SWEP.WalkPoseParam = 0
-SWEP.IdlePoseParam = 0
 SWEP.HasSights = !SWEP.Akimbo
 
 SWEP.FiremodeAnimLock = true -- Firemode animation cannot be interrupted

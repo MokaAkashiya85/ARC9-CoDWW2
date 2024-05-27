@@ -172,27 +172,8 @@ ATT.Category = {"codww2_atts2_rifle"}
 ATT.ActivateElements = {"gl", "gl2"}
 ATT.ExcludeElements = {"gl1", "gl3", "gl4", "bayonet1", "bayonet3", "bayonet4"}
 
-ATT.Model = "models/mokaww2/atts/riflegrenade.mdl"
-ATT.BoneMerge = true
-ATT.ModelAngleOffset = Angle(0, -90, 0)
-
 ATT.UBGL = true
 ATT.NoAimAssistUBGL = true
-
-ATT.DrawFunc = function(swep, model) 
-local eles = swep:GetElements()
-
-	if eles["gl_ger"] then
-		model:SetBodygroup(0, 1)
-	end
-
-	-- if !swep:GetUBGL() then
-		-- model:SetBodygroup(1, 2)
-	-- else
-		-- model:SetBodygroup(1, 0)
-	-- end
-
-end
 
 ARC9.LoadAttachment(ATT, "codww2_grenade_launcher2")
 ------------------------------------------------------------------
@@ -223,22 +204,6 @@ ATT.ActivateElements = {"suppressor", "suppressor2"}
 ATT.ExcludeElements = {"suppressor1", "suppressor3", "suppressor4"}
 
 -- TODO: Add code for Toggleable Suppressor
-
--- ATT.Model = "models/mokaww2/atts/gen_lens.mdl"
-ATT.BoneMerge = true
-ATT.ModelAngleOffset = Angle(0, -90, 0)
-
-ATT.DrawFunc = function(swep, model) 
-local eles = swep:GetElements()
-local sa = swep:GetSightAmount()
-
-	-- if sa >= 0.85 then
-		-- model:SetBodygroup(0, 0)
-	-- else
-		-- model:SetBodygroup(0, 1)
-	-- end
-
-end
 
 ATT.Silencer = true
 		

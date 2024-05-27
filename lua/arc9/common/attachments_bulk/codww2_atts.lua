@@ -412,28 +412,8 @@ ATT.Category = {"codww2_atts_rifle"}
 ATT.ActivateElements = {"gl", "gl1"}
 ATT.ExcludeElements = {"gl2", "gl3", "gl4", "bayonet2", "bayonet3", "bayonet4"}
 
-ATT.Model = "models/mokaww2/atts/riflegrenade.mdl"
-ATT.BoneMerge = true
-ATT.ModelAngleOffset = Angle(0, -90, 0)
-
 ATT.UBGL = true
 ATT.NoAimAssistUBGL = true
-
-ATT.DrawFunc = function(swep, model) 
-local eles = swep:GetElements()
-
-	if eles["gl_ger"] then
-		model:SetBodygroup(0, 1)
-		model:SetBodygroup(1, 1)
-	end
-
-	-- if !swep:GetUBGL() then
-		-- model:SetBodygroup(1, 2)
-	-- else
-		-- model:SetBodygroup(1, 0)
-	-- end
-
-end
 
 ARC9.LoadAttachment(ATT, "codww2_grenade_launcher")
 ------------------------------------------------------------------
@@ -464,38 +444,6 @@ ATT.ActivateElements = {"suppressor", "suppressor1"}
 ATT.ExcludeElements = {"suppressor2", "suppressor3", "suppressor4"}
 
 -- TODO: Add code for Toggleable Suppressor
-
--- ATT.Model = "models/mokaww2/atts/gen_lens.mdl"
-ATT.BoneMerge = true
-ATT.ModelAngleOffset = Angle(0, -90, 0)
-
-ATT.DrawFunc = function(swep, model) 
-local eles = swep:GetElements()
-
--- local function suppcode()
-	-- local fmodes = swep:GetValue("Firemodes")
-	-- if swep:StillWaiting() then return end
-	
-	-- if swep:GetOwner():KeyPressed(IN_ZOOM) then
-		-- return CurTime() + 2
-	-- end
-
--- end
-
--- local suppon = math.Clamp(1 - (suppcode() - CurTime()) / swep:GetAnimationTime("firemode_1"), 0, 1)
--- local suppoff = math.Clamp(1 - (suppcode() - CurTime()) / swep:GetAnimationTime("firemode_2"), 0, 1)
-
-	-- if suppoff > 0.666 then
-		-- model:SetBodygroup(0, 1)
-	-- end
-
-	-- if suppon > 0.666 then
-		-- model:SetBodygroup(0, 0)
-	-- end
-
-	-- if self:GetAnimationEntry("idle")
-
-end
 
 ATT.Silencer = true
 		
