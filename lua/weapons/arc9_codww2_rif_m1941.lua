@@ -8,7 +8,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_codww2_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - CoDWW2"
+SWEP.Category = "ARC9 - CoD: WWII"
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_ar") or "Rifle"
 
 SWEP.PrintName = ARC9:GetPhrase("codww2_wep_m1941") or "M1941"

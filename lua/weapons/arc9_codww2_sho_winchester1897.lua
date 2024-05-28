@@ -12,7 +12,7 @@ SWEP.CustomCrosshairMaterial = Material("hud/arc9_cod2019/shotguncrosshair.png",
 SWEP.CustomCrosshairSize = 30
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - CoDWW2"
+SWEP.Category = "ARC9 - CoD: WWII"
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_shotgun") or "Shotgun"
 
 SWEP.PrintName = ARC9:GetPhrase("codww2_wep_winchester1897") or "Combat Shotgun"
@@ -42,7 +42,7 @@ SWEP.Description = ARC9:GetPhrase("codww2_wep_winchester1897_desc") or "Pump-act
 SWEP.ViewModel = "models/mokaww2/weapons/winchester1897.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true

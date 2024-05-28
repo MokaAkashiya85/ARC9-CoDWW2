@@ -8,7 +8,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_codww2_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - CoDWW2"
+SWEP.Category = "ARC9 - CoD: WWII"
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_smg") or "Submachine Gun"
 
 SWEP.PrintName = ARC9:GetPhrase("codww2_wep_greasegun") or "Grease Gun"
@@ -719,7 +719,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local silfiremode = wep:GetFiremode() == 1
 
-    if eles["suppressor"] and (silfiremode or gfat > 0.5) then
+    if eles["suppressor"] and (silfiremode or gfat > 1) then
         model:SetBodygroup(5, 1)
     end
 end

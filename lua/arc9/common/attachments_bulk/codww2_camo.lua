@@ -6,8 +6,8 @@ local universalshit = {
 	Description = "",
 	MenuCategory = "ARC9 - Camos",
 	CustomCamoScale = 2,
-	Folder = "CoD: WW2"
-	-- Folder = "CoD: WW2/" .. ARC9:GetPhrase("codww2_camo_category_challenges"),
+	Folder = "CoD: WWII"
+	-- Folder = "CoD: WWII/" .. ARC9:GetPhrase("codww2_camo_category_challenges"),
 }
 
 local sortingorder = 0
