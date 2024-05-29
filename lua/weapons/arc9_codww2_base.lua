@@ -72,9 +72,9 @@ SWEP.EnterBipodSound = "Viewmodel.BipodDeploy"
 SWEP.ExitBipodSound = "Viewmodel.BipodExit"
 
 SWEP.RicochetChance = 0.01
-SWEP.SwayMultSights = 0
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
+-- SWEP.SwayMultSights = 0
+SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 
 SWEP.CamQCA_Mult_ADS = 1
 
@@ -123,15 +123,19 @@ SWEP.MuzzleParticleUBGL = "muzzleflash_suppressed"
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
 	local animation = anim
+		
+	if wep:HasElement("anim_epic") then
+		animation =  "epic_" .. animation
+	end
 
 	if wep:HasElement("anim_mm") then
-		animation =  "marksman_" .. animation
+		animation =  "mm_" .. animation
 	end
 	
 	if wep:HasElement("anim_cqb") then
 		animation =  "cqb_" .. animation
 	end
-		
+
 	if wep:HasElement("incendiary") then
 		if anim == "reload_start" or anim == "reload_insert" or anim == "reload_finish" then
 			if wep:Clip1() == 0 then

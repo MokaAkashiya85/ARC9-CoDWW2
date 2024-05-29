@@ -7,37 +7,32 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_codww2_base"
 
-SWEP.CustomCrosshair = true
-SWEP.CustomCrosshairMaterial = Material("hud/arc9_cod2019/shotguncrosshair.png", "mips smooth")
-SWEP.CustomCrosshairSize = 30
-
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - CoD: WWII"
-SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_shotgun") or "Shotgun"
 
 SWEP.PrintName = ARC9:GetPhrase("codww2_wep_winchester1897") or "Combat Shotgun"
+SWEP.Description = ARC9:GetPhrase("codww2_wep_winchester1897_desc") or "Pump-action shotgun with high damage that delivers one hit kills in close quarters."
 
-SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_shotgun") or "Shotgun"
-
-SWEP.ReflexReticleMatNum = 2
-
---[[
-SWEP.Trivia = {
-    [ ARC9:GetPhrase("codww2_country") ] = ARC9:GetPhrase("codww2_country_sovietunion"),
-    [ ARC9:GetPhrase("codww2_caliber") ] = ARC9:GetPhrase("codww2_caliber_762soviet"),
-    [ ARC9:GetPhrase("codww2_weight") ] = string.format(ARC9:GetPhrase("codww2_weight_val"), 4.79, 4.79 * 2.20),
-    [ ARC9:GetPhrase("codww2_weight_projectile") ] = string.format(ARC9:GetPhrase("codww2_weight_projectile_val"), 121.9), 
-    -- [ ARC9:GetPhrase("codww2_muzzle_energy") ] = "2,350 ft/s",
-    -- [ ARC9:GetPhrase("codww2_muzzle_velocity") ] = "2,027 joules"
-}
-]]--
+SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_shotgun") or "Shotgun"
+SWEP.Class = SWEP.SubCategory
 
 SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_author") ] = "Moka",
     [ ARC9:GetPhrase("codww2_assets") ] = "Sledgehammer Games"
 }
 
-SWEP.Description = ARC9:GetPhrase("codww2_wep_winchester1897_desc") or "Pump-action shotgun with high damage that delivers one hit kills in close quarters."
+SWEP.ReflexReticleMat = 2
+-- SWEP.ReflexReticlePos = 0
+-- SWEP.ReflexReticleRotate = -90
+
+SWEP.Credits = {
+    [ ARC9:GetPhrase("codww2_author") ] = "Moka",
+    [ ARC9:GetPhrase("codww2_assets") ] = "Sledgehammer Games"
+}
+
+SWEP.CustomCrosshair = true
+SWEP.CustomCrosshairMaterial = Material("hud/arc9_cod2019/shotguncrosshair.png", "mips smooth")
+SWEP.CustomCrosshairSize = 30
 
 SWEP.ViewModel = "models/mokaww2/weapons/winchester1897.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -242,7 +237,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(14, 50, 5)
 SWEP.CustomizeRotateAnchor = Vector(14, -3, -4)
 SWEP.CustomizeSnapshotFOV = 65
-SWEP.CustomizeSnapshotPos = Vector(1, 25, 2.5)
+SWEP.CustomizeSnapshotPos = Vector(-1, 30, 2.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -413,7 +408,7 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_win_inspect_stndrd_pt_01.ogg", t = 0},
-			{s = path .. "wpn_win_inspect_stndrd_pt_02.ogg", t = 1.75},
+			{s = path .. "wpn_win_inspect_stndrd_pt_02.ogg", t = 1.625},
         },
     },
     ["bash"] = {
@@ -424,6 +419,7 @@ SWEP.Animations = {
 	-- Incendiary Reloads
     ["inc_reload_start"] = {
         Source = "reg_reload_start_inc",
+		Mult = 0.7,
 		MinProgress = 0.65,
 		RestoreAmmo = 1,
         EventTable = {
@@ -455,6 +451,18 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_win_shell_foley_start.ogg", t = 0.45},
+        },
+    },
+	
+-- Epic Animations
+
+    ["epic_inspect"] = {
+        Source = "epic_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_win_inspect_epic_pt_01.ogg", t = 0},
+			{s = path .. "wpn_win_inspect_epic_pt_02.ogg", t = 2.65},
         },
     },
 }

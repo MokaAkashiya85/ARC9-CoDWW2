@@ -137,7 +137,7 @@ ATT.Category = {"codww2_atts2_sniper"}
 ATT.ActivateElements = {"lowsway", "lowsway2"}
 ATT.ExcludeElements = {"lowsway1", "lowsway3", "lowsway4"}
 
-ATT.SwayMult = 0.75
+ATT.SwayMult = 0.5
 
 ARC9.LoadAttachment(ATT, "codww2_reduced_sway2")
 ------------------------------------------------------------------

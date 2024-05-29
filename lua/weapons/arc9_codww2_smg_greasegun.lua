@@ -9,32 +9,21 @@ SWEP.Base = "arc9_codww2_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - CoD: WWII"
-SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_smg") or "Submachine Gun"
 
 SWEP.PrintName = ARC9:GetPhrase("codww2_wep_greasegun") or "Grease Gun"
+SWEP.Description = ARC9:GetPhrase("codww2_wep_greasegun_desc") or "Automatic SMG with low recoil and steady fire rate."
 
-SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_smg") or "Submachine Gun"
-
--- SWEP.ReflexReticleMatNum = 2
--- SWEP.ScopeReticleMatNum = 2
-
---[[
-SWEP.Trivia = {
-    [ ARC9:GetPhrase("codww2_country") ] = ARC9:GetPhrase("codww2_country_sovietunion"),
-    [ ARC9:GetPhrase("codww2_caliber") ] = ARC9:GetPhrase("codww2_caliber_762soviet"),
-    [ ARC9:GetPhrase("codww2_weight") ] = string.format(ARC9:GetPhrase("codww2_weight_val"), 4.79, 4.79 * 2.20),
-    [ ARC9:GetPhrase("codww2_weight_projectile") ] = string.format(ARC9:GetPhrase("codww2_weight_projectile_val"), 121.9), 
-    -- [ ARC9:GetPhrase("codww2_muzzle_energy") ] = "2,350 ft/s",
-    -- [ ARC9:GetPhrase("codww2_muzzle_velocity") ] = "2,027 joules"
-}
-]]--
+SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_smg") or "Submachine Gun"
+SWEP.Class = SWEP.SubCategory
 
 SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_author") ] = "Moka",
     [ ARC9:GetPhrase("codww2_assets") ] = "Sledgehammer Games"
 }
 
-SWEP.Description = ARC9:GetPhrase("codww2_wep_greasegun_desc") or "Automatic SMG with low recoil and steady fire rate."
+SWEP.ReflexReticleMat = 2
+-- SWEP.ReflexReticlePos = 0
+-- SWEP.ReflexReticleRotate = -90
 
 SWEP.ViewModel = "models/mokaww2/weapons/greasegun.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -234,7 +223,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(16, 50, 5)
 SWEP.CustomizeRotateAnchor = Vector(16, -4.25, -4)
 SWEP.CustomizeSnapshotFOV = 65
-SWEP.CustomizeSnapshotPos = Vector(3, 25, 2.5)
+SWEP.CustomizeSnapshotPos = Vector(1, 25, 2.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -438,16 +427,16 @@ SWEP.Animations = {
     },
 
 -- Marksman Animations
-    ["marksman_enter_sights"] = {
+    ["mm_enter_sights"] = {
         Source = "mm_idle",
     },
-    ["marksman_fire"] = {
+    ["mm_fire"] = {
         Source = "mm_fire",
     },
-    ["marksman_fire_sights"] = {
+    ["mm_fire_sights"] = {
         Source = "mm_fire_ads",
     },
-    ["marksman_reload"] = {
+    ["mm_reload"] = {
         Source = "mm_reload",
 		MinProgress = 0.825,
 		RefillProgress = 0.625,
@@ -457,7 +446,7 @@ SWEP.Animations = {
             {s = path .. "wpn_greasegun_tac_magin.ogg", t = 1},
         },
     },
-    ["marksman_reload_empty"] = {
+    ["mm_reload_empty"] = {
         Source = "mm_reload_empty",
 		MinProgress = 0.85,
 		RefillProgress = 0.725,
@@ -468,7 +457,7 @@ SWEP.Animations = {
             {s = path .. "wpn_greasegun_empty_charge.ogg", t = 1.65},
         },
     },
-    ["marksman_reload_ext"] = {
+    ["mm_reload_ext"] = {
         Source = "mm_reload_ext",
 		MinProgress = 0.825,
 		RefillProgress = 0.625,
@@ -478,7 +467,7 @@ SWEP.Animations = {
             {s = path .. "wpn_greasegun_tac_magin.ogg", t = 1},
         },
     },
-    ["marksman_reload_empty_ext"] = {
+    ["mm_reload_empty_ext"] = {
         Source = "mm_reload_ext_empty",
 		MinProgress = 0.85,
 		RefillProgress = 0.725,
@@ -489,7 +478,7 @@ SWEP.Animations = {
             {s = path .. "wpn_greasegun_empty_charge.ogg", t = 1.65},
         },
     },
-    ["marksman_ready"] = {
+    ["mm_ready"] = {
         Source = "mm_draw_first",
 		MinProgress = 0.95,
 		FireASAP = true,
@@ -497,7 +486,7 @@ SWEP.Animations = {
             {s = path .. "wpn_greasegun_fpo_charge.ogg", t = 0.1},
         },
     },
-    ["marksman_draw"] = {
+    ["mm_draw"] = {
         Source = "mm_draw",
 		MinProgress = 0.75,
 		FireASAP = true,
@@ -506,27 +495,27 @@ SWEP.Animations = {
             {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
         },
     },
-    ["marksman_holster"] = {
+    ["mm_holster"] = {
         Source = "mm_holster",
         EventTable = {
             {s = "CoDWW2.Small.Holster", t = 0},
         },
     },
-    ["marksman_idle"] = {
+    ["mm_idle"] = {
         Source = "mm_idle",
     },
-    ["marksman_idle_sprint"] = {
+    ["mm_idle_sprint"] = {
         Source = "mm_sprint",
     },
-    ["marksman_exit_sprint"] = {
+    ["mm_exit_sprint"] = {
         Source = "mm_sprint_out",
 		Time = 3,
     },
-    ["marksman_enter_sprint"] = {
+    ["mm_enter_sprint"] = {
         Source = "mm_sprint_in",
 		Time = 2,
     },
-    ["marksman_inspect"] = {
+    ["mm_inspect"] = {
         Source = "mm_inspect",
 		MinProgress = 0.1,
 		FireASAP = true,
@@ -535,18 +524,18 @@ SWEP.Animations = {
 			{s = path .. "wpn_gg_inspect_stndrd_pt_02.ogg", t = 2},
         },
     },
-    ["marksman_bash"] = {
+    ["mm_bash"] = {
         Source = {"mm_melee"},
 		Mult = 0.75,
     },
-    ["marksman_firemode_1"] = {
+    ["mm_firemode_1"] = {
         Source = "mm_suppressor_off",
         EventTable = {
             {s = path .. "wpn_gg_supp_off.ogg", t = 0/30},
         },
         IKTimeLine = { { t = 0, lhik = 1 }, { t = 1, lhik = 1 } },
     },
-    ["marksman_firemode_2"] = {
+    ["mm_firemode_2"] = {
         Source = "mm_suppressor_on",
         EventTable = {
             {s = path .. "wpn_gg_supp_on.ogg", t = 0/30},
@@ -649,7 +638,7 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_gg_inspect_epic_pt_01.ogg", t = 0},
-			{s = path .. "wpn_gg_inspect_epic_pt_02.ogg", t = 1.5},
+			{s = path .. "wpn_gg_inspect_epic_pt_02.ogg", t = 1.65},
         },
     },
     ["cqb_bash"] = {
@@ -669,6 +658,17 @@ SWEP.Animations = {
             {s = path .. "wpn_gg_supp_on.ogg", t = 0/30},
         },
         IKTimeLine = { { t = 0, lhik = 1 }, { t = 1, lhik = 1 } },
+    },
+	
+	-- Epic Animations
+    ["epic_inspect"] = {
+        Source = "epic_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_gg_inspect_epic_pt_01.ogg", t = 0},
+			{s = path .. "wpn_gg_inspect_epic_pt_02.ogg", t = 1.65},
+        },
     },
 }
 

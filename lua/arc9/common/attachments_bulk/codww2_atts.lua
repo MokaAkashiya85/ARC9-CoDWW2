@@ -2,6 +2,45 @@
 ///////////////////////////// -- Sights
 local ATT = {}
 
+ATT.PrintName = "Default Sniper Scope"
+ATT.Icon = Material("mokaww2/icons/atts/reflex.png")
+ATT.Description = "Default scope attachment for sniper rifles.\n<color=255,100,100>This should not be visible.</color>"
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Attachments (Default)"
+ATT.Category = {"codww2_atts_default"}
+
+-- ATT.Model = "models/mokaww2/atts/gen_lens.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 1
+ATT.RTScopeFOV = 10 / 2.5
+
+ATT.DrawFunc = function(swep, model) 
+local eles = swep:GetElements()
+local sa = swep:GetSightAmount()
+
+	local function findbone()
+		bn = model:LookupBone("tag_reticle_default")
+		return bn
+	end
+
+	model:ManipulateBonePosition(findbone(), Vector( swep.SScopeReticlePos or 0, 0, 0 ) ) -- Moves the reticle bone if it is too far forward or back.
+	model:ManipulateBoneAngles(findbone(), Angle( 0, 0, swep.SScopeReticleRotate or 0 ) ) -- Rotates the reticle bone if it is not aligned correctly by default.
+		
+	if sa >= 0.85 then
+		model:SetBodygroup(1, 1)
+	else
+		model:SetBodygroup(1, 0)
+	end
+
+end
+
+ARC9.LoadAttachment(ATT, "codww2_sniper_scope")
+------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "Reflex Sight"
 ATT.Icon = Material("mokaww2/icons/atts/reflex.png")
 ATT.Description = ""
@@ -28,15 +67,16 @@ ATT.Attachments = {
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
 local sa = swep:GetSightAmount()
-local skinval = swep.WW2ReflexReticleMat
+local skinval = swep.ReflexReticleMaterial
 
 	local function findbone()
 		bn = model:LookupBone("tag_reticle_default")
 		return bn
 	end
 
-	model:ManipulateBoneAngles(findbone(), Angle( 0, 0, -90 ) ) -- Rotates the reticle bone as it is not aligned correctly by default.
-
+	model:ManipulateBonePosition(findbone(), Vector( swep.ReflexReticlePos or 0, 0, 0 ) ) -- Moves the reticle bone if it is too far forward or back.
+	model:ManipulateBoneAngles(findbone(), Angle( 0, 0, swep.ReflexReticleRotate or -90 ) ) -- Rotates the reticle bone if it is not aligned correctly by default.
+		
 	if sa >= 0.85 then
 		model:SetBodygroup(1, 1)
 	else
@@ -46,7 +86,7 @@ local skinval = swep.WW2ReflexReticleMat
     for ind = 0, 999 do -- Reticles
         local val = eles["reflexreticle_" .. ind]
         if val then
-            model:SetSubMaterial(swep.ReflexReticleMatNum or 3, "mokaww2/materials/customreticle/reflex_" .. ind)
+            model:SetSubMaterial(swep.ReflexReticleMat or 3, "mokaww2/materials/customreticle/reflex_" .. ind)
         end
     end
 
@@ -63,6 +103,8 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_sniper"}
 ATT.ActivateElements = {"irons"}
+
+ATT.SwayMult = 0.1
 
 ARC9.LoadAttachment(ATT, "codww2_iron_sight")
 ------------------------------------------------------------------
@@ -151,6 +193,14 @@ local eles = swep:GetElements()
 local sa = swep:GetSightAmount()
 local skinval = swep.WW2ScopeReticleMat
 
+	local function findbone()
+		bn = model:LookupBone("tag_reticle_default")
+		return bn
+	end
+
+	model:ManipulateBonePosition(findbone(), Vector( swep.ScopeReticlePos or 0, 0, 0 ) ) -- Moves the reticle bone if it is too far forward or back.
+	model:ManipulateBoneAngles(findbone(), Angle( 0, 0, swep.ScopeReticleRotate or 0 ) ) -- Rotates the reticle bone if it is not aligned correctly by default.
+		
 	if sa >= 0.85 then
 		model:SetBodygroup(1, 1)
 	else
@@ -160,7 +210,7 @@ local skinval = swep.WW2ScopeReticleMat
     for ind = 0, 999 do -- Reticles
         local val = eles["telescopicreticle_" .. ind]
         if val then
-            model:SetSubMaterial(swep.ScopeReticleMatNum or 2, "mokaww2/materials/customreticle/scope_" .. ind)
+            model:SetSubMaterial(swep.ScopeReticleMat or 2, "mokaww2/materials/customreticle/scope_" .. ind)
         end
     end
 
@@ -212,6 +262,14 @@ local eles = swep:GetElements()
 local sa = swep:GetSightAmount()
 local skinval = swep.WW2ScopeReticleMat
 
+	local function findbone()
+		bn = model:LookupBone("tag_reticle_default")
+		return bn
+	end
+
+	model:ManipulateBonePosition(findbone(), Vector( swep.ScopeReticlePos or 0, 0, 0 ) ) -- Moves the reticle bone if it is too far forward or back.
+	model:ManipulateBoneAngles(findbone(), Angle( 0, 0, swep.ScopeReticleRotate or 0 ) ) -- Rotates the reticle bone if it is not aligned correctly by default.
+		
 	if sa >= 0.85 then
 		model:SetBodygroup(1, 1)
 	else
@@ -221,7 +279,7 @@ local skinval = swep.WW2ScopeReticleMat
     for ind = 0, 999 do -- Reticles
         local val = eles["telescopicreticle_" .. ind]
         if val then
-            model:SetSubMaterial(swep.ScopeReticleMatNum or 2, "mokaww2/materials/customreticle/scope_" .. ind)
+            model:SetSubMaterial(swep.ScopeReticleMat or 2, "mokaww2/materials/customreticle/scope_" .. ind)
         end
     end
 
@@ -377,7 +435,7 @@ ATT.Category = {"codww2_atts_sniper"}
 ATT.ActivateElements = {"lowsway", "lowsway1"}
 ATT.ExcludeElements = {"lowsway2", "lowsway3", "lowsway4"}
 
-ATT.SwayMult = 0.75
+ATT.SwayMult = 0.5
 
 ARC9.LoadAttachment(ATT, "codww2_reduced_sway")
 ------------------------------------------------------------------
@@ -556,3 +614,42 @@ ATT.ExcludeElements = {"tacknife2", "tacknife3", "tacknife4"}
 ARC9.LoadAttachment(ATT, "codww2_tactical_knife")
 ------------------------------------------------------------------
 -- TODO: Crossbow Attachments.
+
+
+------------------------------------------------------------------ DEBUG
+ATT = {}
+
+ATT.PrintName = "\"Marksman\" Animation Override"
+ATT.Description = "Overrides animations to use \"Marksman\" animations (if they exist).\nIntended for <color=255,255,100>debugging</color>!"
+ATT.Folder = "DEBUG"
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
+ATT.Category = {"codww2_atts4"}
+ATT.ActivateElements = {"anim_mm"}
+
+ARC9.LoadAttachment(ATT, "codww2_debug_anim_mm")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "\"CQB\" Animation Override"
+ATT.Description = "Overrides animations to use \"CQB\" animations (if they exist).\nIntended for <color=255,255,100>debugging</color>!"
+ATT.Folder = "DEBUG"
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
+ATT.Category = {"codww2_atts4"}
+ATT.ActivateElements = {"anim_cqb"}
+
+ARC9.LoadAttachment(ATT, "codww2_debug_anim_cqb")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "\"Epic\" Animation Override"
+ATT.Description = "Overrides animations to use \"Epic\" animations (if they exist).\nIntended for <color=255,255,100>debugging</color>!"
+ATT.Folder = "DEBUG"
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
+ATT.Category = {"codww2_atts4"}
+ATT.ActivateElements = {"anim_epic"}
+
+ARC9.LoadAttachment(ATT, "codww2_debug_anim_epic")
+------------------------------------------------------------------
