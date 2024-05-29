@@ -56,7 +56,7 @@ SWEP.DamageMin = 40 -- Damage done at maximum range
 
 SWEP.DamageRand = 0 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 1 / ARC9.HUToM
+SWEP.RangeMin = 25 / ARC9.HUToM
 SWEP.RangeMax = 100 / ARC9.HUToM
 
 SWEP.Penetration = 6.5 -- Units of wood that can be penetrated by this gun.
@@ -104,12 +104,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 0.55
 
 SWEP.RecoilPatternDrift = 0
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 1.33 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.66 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -138,12 +138,12 @@ SWEP.PhysicalVisualRecoil = false
 SWEP.VisualRecoilCenter = Vector(7, 5, 5)
 
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = 0.25
-SWEP.VisualRecoilRoll = 7.5
+SWEP.VisualRecoilUp = -1
+SWEP.VisualRecoilRoll = 10
 SWEP.VisualRecoilSide = -0.1
 
-SWEP.VisualRecoilPositionBump = 1.33
-SWEP.VisualRecoilPositionBumpUp = 0.66
+SWEP.VisualRecoilPositionBump = 0.75
+SWEP.VisualRecoilPositionBumpUp = -1.25
 SWEP.VisualRecoilMultCrouch = .85
 SWEP.VisualRecoilMultSights = 0
 
@@ -155,7 +155,7 @@ SWEP.VisualRecoilDampingConstSights = 80
 
 SWEP.Spread = 0.066
 
-SWEP.SpreadAddRecoil = 0.015
+SWEP.SpreadAddRecoil = 0.0075
 
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddMove = SWEP.Spread * 0.66
@@ -179,7 +179,7 @@ SWEP.Sway = 4.5
 SWEP.SwayMultSights = 1
 SWEP.SwayMultHipFire = 0
 
-SWEP.NoAimAssist = true
+-- SWEP.NoAimAssist = false
 
 -------------------------- MELEE
 

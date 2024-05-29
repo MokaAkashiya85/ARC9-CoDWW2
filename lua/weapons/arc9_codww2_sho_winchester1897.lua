@@ -505,6 +505,8 @@ SWEP.AttachmentElements = {
 
     ["reflex"] = { Bodygroups = { {1,1} } },
     ["telescopic"] = { Bodygroups = { {1,1} } },
+	
+    ["incendiary"] = { ClipSizeOverride = 3 },
 
 	["rpm"] = { RPMMult = 1.4 },
     ["highcal"] = {
@@ -518,7 +520,6 @@ SWEP.AttachmentElements = {
 			[HITGROUP_RIGHTLEG] = 1,
 		}
     },
-    ["incendiary"] = { ClipSizeOverride = 3 },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)

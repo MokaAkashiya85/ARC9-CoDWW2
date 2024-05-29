@@ -1,4 +1,4 @@
-////////////////////////////////////////////////////////////////////// -- General Attachments in Slot 1
+////////////////////////////////////////////////////////////////////// -- Optics & General Attachments in Slot 1
 ///////////////////////////// -- Sights
 local ATT = {}
 
@@ -15,7 +15,7 @@ ATT.ModelAngleOffset = Angle(0, -90, 0)
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 10 / 2.5
+ATT.RTScopeFOV = 10 / 1.1
 
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
@@ -106,6 +106,8 @@ ATT.ActivateElements = {"irons"}
 
 ATT.SwayMult = 0.1
 
+ATT.NoAimAssist = false
+
 ARC9.LoadAttachment(ATT, "codww2_iron_sight")
 ------------------------------------------------------------------
 ATT = {}
@@ -186,7 +188,7 @@ ATT.Attachments = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 10 / 1.5
+ATT.RTScopeFOV = 10 / 1
 
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
@@ -255,7 +257,9 @@ ATT.Attachments = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 10 / 1.5
+ATT.RTScopeFOV = 10 / 1
+
+ATT.NoAimAssist = false
 
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
