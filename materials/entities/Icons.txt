@@ -1,0 +1,5 @@
+1) Make white image of weapon.
+2) Clone and invert colour.
+3) On inverted layer, go to "Effects", then "Blurs", then "Fragment".
+4) Set "Distance" to 2 and "Rotation" to 90.
+5) Merge with inverted layer as background, then save.

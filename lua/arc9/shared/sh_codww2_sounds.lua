@@ -420,6 +420,33 @@ sound.Add( {
     }
 } )
 
+------------ Suppressed Handguns ------------
+sound.Add( {
+    name = "CoDWW2.Suppressed.Pistol.Tail",
+    channel = CHAN_AUTO,
+    volume = 0.3,
+    level = 120,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "mokaww2/wpn/suppressed/wpn_plr_supp_pistol_tail.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CoDWW2.Suppressed.Pistol.Layer",
+    channel = CHAN_AUTO,
+    volume = 0.2,
+    level = 120,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "mokaww2/wpn/suppressed/wpn_suppressed_pew_01.ogg",
+        "mokaww2/wpn/suppressed/wpn_suppressed_pew_02.ogg",
+        "mokaww2/wpn/suppressed/wpn_suppressed_pew_03.ogg",
+    }
+} )
+
 ------------ Rifle Grenade ------------
 sound.Add( {
     name = "CoDWW2.RifleGrenade.Tail",

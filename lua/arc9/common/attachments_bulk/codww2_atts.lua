@@ -535,7 +535,14 @@ ATT.Category = {"codww2_atts_pistol"}
 ATT.ActivateElements = {"suppressor", "suppressor1"}
 ATT.ExcludeElements = {"suppressor2", "suppressor3", "suppressor4"}
 
--- TODO: Add code for Suppressor
+ATT.Model = "models/mokaww2/atts/tacknife.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.Silencer = true
+ATT.NoFlash = true
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride_Priority = 5
 
 ARC9.LoadAttachment(ATT, "codww2_suppressor")
 ------------------------------------------------------------------
@@ -613,7 +620,14 @@ ATT.Category = {"codww2_atts_pistol"}
 ATT.ActivateElements = {"tacknife", "tacknife1"}
 ATT.ExcludeElements = {"tacknife2", "tacknife3", "tacknife4"}
 
--- TODO: Add code for Tac. Knife
+ATT.Model = "models/mokaww2/atts/tacknife.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.BashDamageOverride = 100
+ATT.BashLungeRangeOverride = 3 / ARC9.HUToM
+-- ATT.PreBashTimeMult = 1.25
+-- ATT.PostBashTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "codww2_tactical_knife")
 ------------------------------------------------------------------
@@ -656,4 +670,16 @@ ATT.Category = {"codww2_atts4"}
 ATT.ActivateElements = {"anim_epic"}
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_epic")
+------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "\"Grip\" Animation Override"
+ATT.Description = "Overrides animations to use \"Grip\" animations (if they exist).\nIntended for <color=255,255,100>debugging handguns</color>!"
+ATT.Folder = "DEBUG"
+
+ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
+ATT.Category = {"codww2_atts4"}
+ATT.ActivateElements = {"grip"}
+
+ARC9.LoadAttachment(ATT, "codww2_debug_anim_grip")
 ------------------------------------------------------------------

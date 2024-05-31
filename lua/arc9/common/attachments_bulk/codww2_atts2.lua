@@ -311,7 +311,14 @@ ATT.Category = {"codww2_atts2_pistol"}
 ATT.ActivateElements = {"tacknife", "tacknife2"}
 ATT.ExcludeElements = {"tacknife1", "tacknife3", "tacknife4"}
 
--- TODO: Add code for Tac. Knife
+ATT.Model = "models/mokaww2/atts/tacknife.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.BashDamageOverride = 100
+ATT.BashLungeRangeOverride = 3 / ARC9.HUToM
+-- ATT.PreBashTimeMult = 1.25
+-- ATT.PostBashTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "codww2_tactical_knife2")
 ------------------------------------------------------------------

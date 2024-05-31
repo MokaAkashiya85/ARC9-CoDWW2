@@ -123,20 +123,7 @@ SWEP.MuzzleParticleUBGL = "muzzleflash_suppressed"
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
 	local animation = anim
-		
-	if wep:HasElement("anim_epic") then
-		animation =  "epic_" .. animation
-	end
-
-	if wep:HasElement("anim_mm") then
-		animation =  "mm_" .. animation
-	end
-	
-	if wep:HasElement("anim_cqb") then
-		animation =  "cqb_" .. animation
-	end
-
-	if wep:HasElement("incendiary") then
+	if wep:HasElement("incendiary") then -- Shotgun Incendiary Shells
 		if anim == "reload_start" or anim == "reload_insert" or anim == "reload_finish" then
 			if wep:Clip1() == 0 then
 				animation = "inc_" .. animation .. "_empty"
@@ -144,6 +131,22 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 				animation = "inc_" .. animation
 			end
 		end
+	end
+	
+	if wep:HasElement("tacknife") then -- Handgun Tactical Knife
+		animation =  "tacknife_" .. animation
+	end
+
+	if wep:HasElement("anim_epic") then -- "Epic" rarity weapon variant; usually only an inspect animation using this
+		animation =  "epic_" .. animation
+	end
+
+	if wep:HasElement("anim_mm") then -- "Marksman" weapon variant
+		animation =  "mm_" .. animation
+	end
+	
+	if wep:HasElement("anim_cqb") then -- "CQB" weapon variant
+		animation =  "cqb_" .. animation
 	end
 	
 	if wep:HasElement("mag_ext") then
@@ -162,6 +165,10 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 		if wep:Clip2() == 0 and (anim == "enter_ubgl" or anim == "exit_ubgl") then
 			animation = animation .. "_empty"
 		end
+	end
+		
+	if wep:HasElement("grip") and anim == "inspect" then
+		animation = animation .. "_grip"
 	end
 	
 	return animation
