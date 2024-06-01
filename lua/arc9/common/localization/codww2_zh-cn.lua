@@ -168,6 +168,8 @@ L["codww2_suppressor.description"] = "降低武器声音，并且让您可以在
 
 L["codww2_suppressor_smg.printname"] = "微冲消音器"
 
+L["codww2_suppressor.short"] = "消"
+
 L["codww2_bayonet.printname"] = "刺刀"
 L["codww2_bayonet.description"] = "安装在步枪枪管下的刺刀，能够在近战中一击杀敌。"
 
@@ -647,6 +649,13 @@ L["codww2_wep_tabun_flavor"] = "作用半径4米，持续5秒"
 L["codww2_wep_signal_flare"] = "信号弹"
 L["codww2_wep_signal_flare_desc"] = "战术型装备，靠产生强光让作用范围内的目标失明并迷失方向。"
 L["codww2_wep_signal_flare_flavor"] = "效果半径6米，持续5秒。\n\n只会影响面朝该装置方向的敌人。"
+
+///////////////////////////////////////// Realistic Weapon Names
+//////////////////////////////// Settings
+-- L["settings.codww2"] = "Addon - CoD: WWII" -- UO
+-- L["settings.codww2.realnames"] = "Realistic Names" -- UO
+-- L["settings.codww2.realnames.title"] = "Enable Realistic Names" -- UO
+-- L["settings.codww2.realnames.desc"] = "Changes the names on some weapons to be more accurate to their real-life counterparts.\n\nThis is a server variable. Requires restart to take affect." -- UO
 
 ///////////////////////////////////////// Additional Content / DLC
 ///////////////////////////// Weapon Variants

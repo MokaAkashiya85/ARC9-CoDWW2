@@ -170,6 +170,8 @@ L["codww2_suppressor.description"] = "Reduces weapon sound and you remain hidden
 L["codww2_suppressor_smg.printname"] = "SMG Suppressor"
 L["codww2_suppressor_smg.description"] = ARC9:GetPhrase("codww2_suppressor.description") or "Reduces weapon sound and you remain hidden from radar when firing."
 
+L["codww2_suppressor.short"] = "S"
+
 L["codww2_bayonet.printname"] = "Bayonet"
 L["codww2_bayonet.description"] = "Bayonet mounted at end of rifle which provides one-hit kill melee attacks."
 
@@ -651,6 +653,70 @@ L["codww2_wep_signal_flare"] = "Signal Flare"
 L["codww2_wep_signal_flare_desc"] = "Device that produces an intense light, blinding and disorienting targets that are in its field of view."
 L["codww2_wep_signal_flare_flavor"] = "6 Meter Effect Radius, Lasts for 5 Seconds\n\nOnly affects enemies looking in direction of device."
 L["codww2_wep_signal_flare_type"] = ARC9:GetPhrase("codww2_wep_smoke_grenade_type") or "Tactical Area of Effect Grenade"
+
+///////////////////////////////////////// Realistic Weapon Names
+//////////////////////////////// Settings
+L["settings.codww2"] = "Addon - CoD: WWII" -- UO
+L["settings.codww2.realnames"] = "Realistic Names" -- UO
+L["settings.codww2.realnames.title"] = "Enable Realistic Names" -- UO
+L["settings.codww2.realnames.desc"] = "Changes the names on some weapons to be more accurate to their real-life counterparts.\n\nThis is a server variable. Requires restart to take affect." -- UO
+
+//////////////////// Rifles
+//////////// Base
+L["codww2_wep_m1941_real"] = "M1941 Johnson Rifle"
+L["codww2_wep_stg44_real"] = "Sturmgewehr 44"
+L["codww2_wep_bar_real"] = "Browning Automatic Rifle"
+
+//////////// DLC
+L["codww2_wep_m1935_real"] = "Breda PG"
+L["codww2_wep_federov_real"] = "Federov"
+L["codww2_wep_charlton_real"] = "Charlton Automatic Rifle"
+L["codww2_wep_grofuss_real"] = "Grossfuss Sturmgewehr"
+
+//////////////////// Submachine Guns
+//////////// Base
+L["codww2_wep_greasegun_real"] = "M3 Grease Gun"
+L["codww2_wep_mp28_real"] = "MP-28"
+L["codww2_wep_thompson_real"] = "Thompson"
+
+//////////// DLC
+L["codww2_wep_beretta_real"] = "Beretta Modello 38"
+L["codww2_wep_mas38_real"] = "MAS-38"
+L["codww2_wep_ribeyrolles_real"] = "Chauchat-Ribeyrolles 1918 SMG"
+L["codww2_wep_tokyo_real"] = "Tokyo Arsenal Model 1927"
+L["codww2_wep_m2hyde_real"] = "M2 Hyde"
+
+//////////////////// Light Machine Guns
+//////////// DLC
+L["codww2_wep_breda30_real"] = "Breda M1930"
+L["codww2_wep_m1919_real"] = "M2 Stinger"
+L["codww2_wep_chatellerault_real"] = "FM 24/29"
+
+//////////////////// Sniper Rifles
+//////////// Base
+L["codww2_wep_karabin_real"] = "Kbsp wz.38M"
+L["codww2_wep_springfield_real"] = "M1903 Springfield"
+
+//////////// DLC
+L["codww2_wep_leveraction_real"] = "Winchester Model 1894"
+L["codww2_wep_mosin_real"] = "Mosin-Nagant"
+L["codww2_wep_mas36_real"] = "MAS-36"
+
+//////////////////// Shotguns
+//////////// Base
+L["codww2_wep_winchester1897_real"] = "Winchester 1897 \"Trench Gun\""
+L["codww2_wep_walther_real"] = "Walther Automatic Shotgun"
+L["codww2_wep_model21_real"] = "Winchester Model 21"
+
+//////////////////// Pistols
+//////////// Base
+L["codww2_wep_luger_real"] = "Luger P08"
+L["codww2_wep_m1911_real"] = "Colt 1911"
+L["codww2_wep_m712_real"] = "Mauser M712 Schnellfeuer"
+
+//////////// DLC
+L["codww2_wep_p38_real"] = "Walther P38"
+L["codww2_wep_reich_real"] = "M1879 Reichsrevolver"
 
 ///////////////////////////////////////// Additional Content / DLC
 ///////////////////////////// Weapon Variants

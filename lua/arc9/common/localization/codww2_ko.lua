@@ -168,6 +168,8 @@ L["codww2_suppressor.description"] = "무기 격발음을 줄이고 사격 시�
 
 L["codww2_suppressor_smg.printname"] = "기관단총 소음기"
 
+L["codww2_suppressor.short"] = "소"
+
 L["codww2_bayonet.printname"] = "총검"
 L["codww2_bayonet.description"] = "소총 끝에 장착한 총검으로 적을 한 번에 처치할 수 있습니다."
 
@@ -647,6 +649,13 @@ L["codww2_wep_tabun_flavor"] = "효과 반경은 4미터이며 5초간 지속합
 L["codww2_wep_signal_flare"] = "신호탄"
 L["codww2_wep_signal_flare_desc"] = "섬광에 노출된 적의 시야를 일시적으로 마비시킵니다."
 L["codww2_wep_signal_flare_flavor"] = "효과 반경은 6미터이며 5초간 지속합니다.\n\n신호탄을 향한 적에게만 효과가 적용됩니다."
+
+///////////////////////////////////////// Realistic Weapon Names
+//////////////////////////////// Settings
+-- L["settings.codww2"] = "Addon - CoD: WWII" -- UO
+-- L["settings.codww2.realnames"] = "Realistic Names" -- UO
+-- L["settings.codww2.realnames.title"] = "Enable Realistic Names" -- UO
+-- L["settings.codww2.realnames.desc"] = "Changes the names on some weapons to be more accurate to their real-life counterparts.\n\nThis is a server variable. Requires restart to take affect." -- UO
 
 ///////////////////////////////////////// Additional Content / DLC
 ///////////////////////////// Weapon Variants

@@ -168,6 +168,8 @@ L["codww2_suppressor.description"] = "Уменьшает шум от выстр�
 
 L["codww2_suppressor_smg.printname"] = "Глушитель для ПП"
 
+L["codww2_suppressor.short"] = "Г"
+
 L["codww2_bayonet.printname"] = "Штык"
 L["codww2_bayonet.description"] = "Штык, закрепленный на стволе винтовки, позволяет убивать врагов с одного удара в рукопашной."
 
@@ -647,6 +649,13 @@ L["codww2_wep_tabun_flavor"] = "Радиус поражения 4 метра, в
 L["codww2_wep_signal_flare"] = "Сигнальная ракета"
 L["codww2_wep_signal_flare_desc"] = "Это взрывное устройство излучает яркий свет, который ослепляет и дезориентирует увидевших его противников."
 L["codww2_wep_signal_flare_flavor"] = "Радиус поражения 6 метров, время действия 5 секунд.\n\nДействует только на противников, смотрящих в направлении устройства."
+
+///////////////////////////////////////// Realistic Weapon Names
+//////////////////////////////// Settings
+-- L["settings.codww2"] = "Addon - CoD: WWII" -- UO
+-- L["settings.codww2.realnames"] = "Realistic Names" -- UO
+-- L["settings.codww2.realnames.title"] = "Enable Realistic Names" -- UO
+-- L["settings.codww2.realnames.desc"] = "Changes the names on some weapons to be more accurate to their real-life counterparts.\n\nThis is a server variable. Requires restart to take affect." -- UO
 
 ///////////////////////////////////////// Additional Content / DLC
 ///////////////////////////// Weapon Variants

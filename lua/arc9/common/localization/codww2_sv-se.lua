@@ -168,6 +168,8 @@ L["codww2_suppressor.description"] = "Sänker vapnets ljud och du håller dig g�
 
 L["codww2_suppressor_smg.printname"] = "KPist. Ljuddämpare"
 
+L["codww2_suppressor.short"] = "L"
+
 L["codww2_bayonet.printname"] = "Bajonett"
 L["codww2_bayonet.description"] = "Bajonett monterat på gevärets ände erbjuder enkelträff dödande närstridsanfall."
 
@@ -648,6 +650,13 @@ L["codww2_wep_tabun_flavor"] = "4 Meter Effektradie. Gäller i 5 Sekunder."
 L["codww2_wep_signal_flare"] = "Handbloss"
 L["codww2_wep_signal_flare_desc"] = "Enhet som skapar otroligt ljus som bländer och förvirrar dem som är i dess synfält."
 L["codww2_wep_signal_flare_flavor"] = "6 Meter Effektradie, Gäller i 5 Sekunder\n\nPåverkar endast fiender som kollar på enheten."
+
+///////////////////////////////////////// Realistic Weapon Names
+//////////////////////////////// Settings
+L["settings.codww2"] = "Tillägg - CoD: WWII" -- UO
+L["settings.codww2.realnames"] = "Realistiska Namn" -- UO
+L["settings.codww2.realnames.title"] = "Aktivera Realistiska Namn" -- UO
+L["settings.codww2.realnames.desc"] = "Ändrar namnet på vissa vapen för att vara mer likt deras riktiga motsvarigheter.\n\nDetta är en servervariabel. Kräver omstart för att tillämpas." -- UO
 
 ///////////////////////////////////////// Additional Content / DLC
 ///////////////////////////// Weapon Variants

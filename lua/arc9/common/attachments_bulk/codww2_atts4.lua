@@ -12,7 +12,7 @@ ATT.ActivateElements = {"mag_ext", "extmag4"}
 ATT.ExcludeElements = {"extmag1", "extmag2", "extmag3"}
 
 ATT.CustomPros = {
-	[ ARC9:GetPhrase("autostat.clipsize") ] = "+50%",
+	[ ARC9:GetPhrase("autostat.clipsize") ] = "+33%",
 },
 
 -- Apply ClipSizeAdd manually per weapon.
@@ -30,8 +30,8 @@ ATT.Category = {"codww2_atts4"}
 ATT.ActivateElements = {"grip", "grip4"}
 ATT.ExcludeElements = {"grip1", "grip2", "grip3"}
 
-ATT.RecoilMultSights = 0.8
-ATT.VisualRecoilMultSights = 0.8
+ATT.RecoilMultSights = 0.925
+ATT.VisualRecoilMultSights = 0.925
 
 ARC9.LoadAttachment(ATT, "codww2_grip4")
 ------------------------------------------------------------------
@@ -46,8 +46,7 @@ ATT.Category = {"codww2_atts4"}
 ATT.ActivateElements = {"advrif", "advrif4"}
 ATT.ExcludeElements = {"advrif1", "advrif2", "advrif3"}
 
-ATT.RangeMinMult = 1.15
-ATT.RangeMaxMult = 1.15
+ATT.RangeMaxMult = 2
 
 ARC9.LoadAttachment(ATT, "codww2_extended_range4")
 ------------------------------------------------------------------
@@ -122,7 +121,7 @@ ATT.Category = {"codww2_atts4"}
 ATT.ActivateElements = {"fastads", "fastads4"}
 ATT.ExcludeElements = {"fastads1", "fastads2", "fastads3"}
 
-ATT.AimDownSightsTimeMult = 0.75
+ATT.AimDownSightsTimeMult = 0.5
 
 ARC9.LoadAttachment(ATT, "codww2_fast_ads4")
 ------------------------------------------------------------------
@@ -137,7 +136,7 @@ ATT.Category = {"codww2_atts4_sniper"}
 ATT.ActivateElements = {"lowsway", "lowsway4"}
 ATT.ExcludeElements = {"lowsway1", "lowsway2", "lowsway3"}
 
-ATT.SwayMult = 0.5
+ATT.SwayMult = 0.6
 
 ARC9.LoadAttachment(ATT, "codww2_reduced_sway4")
 ------------------------------------------------------------------
@@ -183,7 +182,7 @@ ATT.Category = {"codww2_atts4"}
 ATT.ActivateElements = {"hipfire", "hipfire4"}
 ATT.ExcludeElements = {"hipfire1", "hipfire2", "hipfire3"}
 
-ATT.SpreadMultHipFire = 0.33
+ATT.SpreadMultHipFire = 0.45
 
 ARC9.LoadAttachment(ATT, "codww2_hipfire4")
 ------------------------------------------------------------------
@@ -233,7 +232,17 @@ ATT.Category = {"codww2_atts4_pistol"}
 ATT.ActivateElements = {"suppressor", "suppressor4"}
 ATT.ExcludeElements = {"suppressor1", "suppressor2", "suppressor3"}
 
--- TODO: Add code for Suppressor
+ATT.Model = "models/mokaww2/atts/suppressor.mdl"
+ATT.BoneMerge = true
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.Silencer = true
+ATT.NoFlash = true
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride_Priority = 5
+
+ATT.RangeMaxMult = 0.7
+ATT.RangeMinMult = 0.7
 
 ARC9.LoadAttachment(ATT, "codww2_suppressor4")
 ------------------------------------------------------------------
@@ -248,17 +257,22 @@ ATT.Category = {"codww2_atts4_smg"}
 ATT.ActivateElements = {"suppressor", "suppressor4"}
 ATT.ExcludeElements = {"suppressor1", "suppressor2", "suppressor3"}
 
--- TODO: Add code for Toggleable Suppressor
-
 ATT.Silencer = true
-		
+
+ATT.CustomCons = {
+	[	ARC9:GetPhrase("autostat.rangemax") .. " (" .. ARC9:GetPhrase("codww2_suppressor.printname") .. ")" ] = "-30%",
+	[	ARC9:GetPhrase("autostat.rangemin") .. " (" .. ARC9:GetPhrase("codww2_suppressor.printname") .. ")" ] = "-30%",
+}
+
 ATT.Firemodes = {
     {
-		-- PrintName = "S.",
+		PrintName = ARC9:GetPhrase("hud.firemode.auto") .. " (" .. ARC9:GetPhrase("codww2_suppressor.short") .. ")",
         Mode = -1,
 		NoFlash = true,
 		MuzzleParticleOverride = "muzzleflash_suppressed",
 		MuzzleParticleOverride_Priority = 5,
+		RangeMaxMult = 0.7,
+		RangeMinMult = 0.7,
     },
     {
 		-- PrintName = "N.S.",

@@ -168,6 +168,8 @@ L["codww2_suppressor.description"] = "Étouffe le bruit des coups de feu. Vous n
 
 L["codww2_suppressor_smg.printname"] = "Silencieux mitraillette"
 
+L["codww2_suppressor.short"] = "S"
+
 L["codww2_bayonet.printname"] = "Baïonnette"
 L["codww2_bayonet.description"] = "Baïonnette montée au bout d'un fusil qui permet de tuer les ennemis en un coup au corps à corps."
 
@@ -647,6 +649,13 @@ L["codww2_wep_tabun_flavor"] = "Rayon d'action : 4 mètres. Durée : 5 secondes.
 L["codww2_wep_signal_flare"] = "Fusée éclairante"
 L["codww2_wep_signal_flare_desc"] = "Produit une puissante lumière qui éblouit et désoriente les cibles à proximité."
 L["codww2_wep_signal_flare_flavor"] = "Rayon d'action : 6 mètres. Durée : 5 secondes.\n\nN'affecte que les ennemis qui regardent en direction de la fusée."
+
+///////////////////////////////////////// Realistic Weapon Names
+//////////////////////////////// Settings
+-- L["settings.codww2"] = "Addon - CoD: WWII" -- UO
+-- L["settings.codww2.realnames"] = "Realistic Names" -- UO
+-- L["settings.codww2.realnames.title"] = "Enable Realistic Names" -- UO
+-- L["settings.codww2.realnames.desc"] = "Changes the names on some weapons to be more accurate to their real-life counterparts.\n\nThis is a server variable. Requires restart to take affect." -- UO
 
 ///////////////////////////////////////// Additional Content / DLC
 ///////////////////////////// Weapon Variants

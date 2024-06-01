@@ -168,6 +168,8 @@ L["codww2_suppressor.description"] = "Tłumi dźwięki wystrzału i sprawia, że
 
 L["codww2_suppressor_smg.printname"] = "Tłumik"
 
+L["codww2_suppressor.short"] = "T"
+
 L["codww2_bayonet.printname"] = "Bagnet"
 L["codww2_bayonet.description"] = "Bagnet mocowany na lufie karabinu, zapewniający zabójstwo jednym atakiem wręcz."
 
@@ -647,6 +649,13 @@ L["codww2_wep_tabun_flavor"] = "4-metrowy promień rażenia, czas trwania: 5 sek
 L["codww2_wep_signal_flare"] = "Flara sygnalizacyjna"
 L["codww2_wep_signal_flare_desc"] = "Urządzenie emitujące intensywne światło, oślepiające i dezorientujące cele w zasięgu."
 L["codww2_wep_signal_flare_flavor"] = "6-metrowy promień rażenia, czas trwania: 5 sekund\n\nWpływa tylko na wrogów zwróconych w stronę flary."
+
+///////////////////////////////////////// Realistic Weapon Names
+//////////////////////////////// Settings
+-- L["settings.codww2"] = "Addon - CoD: WWII" -- UO
+-- L["settings.codww2.realnames"] = "Realistic Names" -- UO
+-- L["settings.codww2.realnames.title"] = "Enable Realistic Names" -- UO
+-- L["settings.codww2.realnames.desc"] = "Changes the names on some weapons to be more accurate to their real-life counterparts.\n\nThis is a server variable. Requires restart to take affect." -- UO
 
 ///////////////////////////////////////// Additional Content / DLC
 ///////////////////////////// Weapon Variants

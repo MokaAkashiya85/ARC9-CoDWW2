@@ -168,6 +168,8 @@ L["codww2_suppressor.description"] = "武器が発する音を抑え、発砲時
 
 L["codww2_suppressor_smg.printname"] = "SMGサプレッサー"
 
+L["codww2_suppressor.short"] = "サ"
+
 L["codww2_bayonet.printname"] = "銃剣"
 L["codww2_bayonet.description"] = "ライフルの先に銃剣が付いており、1回の近接攻撃でキルが可能"
 
@@ -647,6 +649,13 @@ L["codww2_wep_tabun_flavor"] = "有効半径4メートル、5秒間持続"
 L["codww2_wep_signal_flare"] = "信号フレア"
 L["codww2_wep_signal_flare_desc"] = "強烈な光を放ち、視野内のターゲットの視界を奪って混乱させる"
 L["codww2_wep_signal_flare_flavor"] = "有効半径6メートル、5秒間持続\n\n装置の方を見ている敵にのみ効果を及ぼす"
+
+///////////////////////////////////////// Realistic Weapon Names
+//////////////////////////////// Settings
+-- L["settings.codww2"] = "Addon - CoD: WWII" -- UO
+-- L["settings.codww2.realnames"] = "Realistic Names" -- UO
+-- L["settings.codww2.realnames.title"] = "Enable Realistic Names" -- UO
+-- L["settings.codww2.realnames.desc"] = "Changes the names on some weapons to be more accurate to their real-life counterparts.\n\nThis is a server variable. Requires restart to take affect." -- UO
 
 ///////////////////////////////////////// Additional Content / DLC
 ///////////////////////////// Weapon Variants

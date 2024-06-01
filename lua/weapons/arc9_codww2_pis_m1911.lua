@@ -31,7 +31,7 @@ SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
-SWEP.NoTPIKVMPos = false
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/mokaww2/weapons/m1911.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-7, 4.75, -6),
@@ -164,8 +164,8 @@ SWEP.RecoilModifierCapSights = 0.25
 SWEP.SpeedMult = 0.95 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.8 -- When aiming
 
-SWEP.AimDownSightsTime = 0.19 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.19 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.1 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
 
@@ -179,7 +179,7 @@ SWEP.MeleeSwingSound = "CoDWW2.Melee.Swing.Pistol"
 
 SWEP.IronSights = {
     Pos = Vector(-4.067, -4.7, 0.7418), -- Location (-2 | 1 | 3) from Blender on bone tag_ads
-    Ang = Angle(0, 0.7, 0), -- Rotation (NONE | 3 | NONE) from Blender on bone tag_ads; Remove two zeroes after point when applying.
+    Ang = Angle(0, 0.8, 0), -- Rotation (NONE | 3 | NONE) from Blender on bone tag_ads; Remove two zeroes after point when applying.
     Magnification = 1.1,
     ViewModelFOV = 65,
 }
@@ -189,7 +189,7 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
      if attached["tacknife"] then
         return {
 			Pos = Vector(-4.283, -3.3016, 0.26241),
-			Ang = Angle(0, 0, 0),
+			Ang = Angle(0, 0.8, 0),
 			Magnification = 1.1,
 			ViewModelFOV = 65,
         }
@@ -237,7 +237,7 @@ SWEP.HoldTypeSights = "revolver"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
@@ -326,8 +326,8 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reg_reload",
-		MinProgress = 0.825,
-		RefillProgress = 0.625,
+		MinProgress = 0.95,
+		RefillProgress = 0.75,
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_1911_tac_magout.ogg", t = 0.25},
@@ -336,8 +336,8 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reg_reload_empty",
-		MinProgress = 0.85,
-		RefillProgress = 0.725,
+		MinProgress = 0.95,
+		RefillProgress = 0.8,
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_1911_empty_magout.ogg", t = 0.25},
@@ -347,8 +347,8 @@ SWEP.Animations = {
     },
     ["reload_ext"] = {
         Source = "reg_reload_ext",
-		MinProgress = 0.825,
-		RefillProgress = 0.625,
+		MinProgress = 0.95,
+		RefillProgress = 0.75,
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_1911_tac_magout.ogg", t = 0.25},
@@ -357,8 +357,8 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reg_reload_ext_empty",
-		MinProgress = 0.85,
-		RefillProgress = 0.725,
+		MinProgress = 0.95,
+		RefillProgress = 0.8,
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_1911_empty_magout.ogg", t = 0.25},
@@ -491,8 +491,8 @@ SWEP.Animations = {
     },
     ["tacknife_reload"] = {
         Source = "reg_knife_reload",
-		MinProgress = 0.825,
-		RefillProgress = 0.625,
+		MinProgress = 0.95,
+		RefillProgress = 0.75,
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_1911_tac_magout.ogg", t = 0.25},
@@ -501,8 +501,8 @@ SWEP.Animations = {
     },
     ["tacknife_reload_empty"] = {
         Source = "reg_knife_reload_empty",
-		MinProgress = 0.85,
-		RefillProgress = 0.725,
+		MinProgress = 0.95,
+		RefillProgress = 0.8,
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_1911_empty_magout.ogg", t = 0.25},
@@ -512,8 +512,8 @@ SWEP.Animations = {
     },
     ["tacknife_reload_ext"] = {
         Source = "reg_knife_reload_ext",
-		MinProgress = 0.825,
-		RefillProgress = 0.625,
+		MinProgress = 0.95,
+		RefillProgress = 0.75,
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_1911_tac_magout.ogg", t = 0.25},
@@ -522,8 +522,8 @@ SWEP.Animations = {
     },
     ["tacknife_reload_empty_ext"] = {
         Source = "reg_knife_reload_ext_empty",
-		MinProgress = 0.85,
-		RefillProgress = 0.725,
+		MinProgress = 0.95,
+		RefillProgress = 0.8,
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_1911_empty_magout.ogg", t = 0.25},
@@ -643,6 +643,348 @@ SWEP.Animations = {
     ["tacknife_bash_empty"] = {
         Source = {"reg_knife_melee_empty"},
     },
+	
+	-- Marksman Animations
+    ["mm_enter_sights"] = {
+        Source = "mm_idle",
+    },
+    ["mm_fire"] = {
+        Source = "mm_fire",
+    },
+    ["mm_fire_sights"] = {
+        Source = "mm_fire_ads",
+    },
+    ["mm_reload"] = {
+        Source = "mm_reload",
+		MinProgress = 0.95,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_1911_tac_magout.ogg", t = 0.25},
+            {s = path .. "wpn_1911_tac_magin.ogg", t = 0.825},
+        },
+    },
+    ["mm_reload_empty"] = {
+        Source = "mm_reload_empty",
+		MinProgress = 0.95,
+		RefillProgress = 0.8,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_1911_empty_magout.ogg", t = 0.25},
+            {s = path .. "wpn_1911_empty_magin.ogg", t = 0.825},
+            {s = path .. "wpn_1911_empty_charge.ogg", t = 1.4},
+        },
+    },
+    ["mm_reload_ext"] = {
+        Source = "mm_reload_ext",
+		MinProgress = 0.95,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_1911_tac_magout.ogg", t = 0.25},
+            {s = path .. "wpn_1911_tac_magin.ogg", t = 0.825},
+        },
+    },
+    ["mm_reload_empty_ext"] = {
+        Source = "mm_reload_ext_empty",
+		MinProgress = 0.85,
+		RefillProgress = 0.8,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_1911_empty_magout.ogg", t = 0.25},
+            {s = path .. "wpn_1911_empty_magin.ogg", t = 0.825},
+            {s = path .. "wpn_1911_empty_charge.ogg", t = 1.4},
+        },
+    },
+    ["mm_draw"] = {
+        Source = "mm_draw",
+		Mult = 0.65,
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Small.Raise", t = 0},
+        },
+    },
+    ["mm_holster"] = {
+        Source = "mm_holster",
+		Mult = 0.65,
+        EventTable = {
+            {s = "CoDWW2.Small.Holster", t = 0},
+        },
+    },
+    ["mm_idle"] = {
+        Source = "mm_idle",
+    },
+    ["mm_idle_sprint"] = {
+        Source = "mm_sprint",
+    },
+    ["mm_exit_sprint"] = {
+        Source = "mm_sprint_out",
+		Time = 3,
+    },
+    ["mm_enter_sprint"] = {
+        Source = "mm_sprint_in",
+		Time = 2,
+    },
+    ["mm_inspect"] = {
+        Source = "mm_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_1911_inspect_stndrd_pt_02.ogg", t = 1.7},
+        },
+    },
+    ["mm_inspect_grip"] = {
+        Source = "mm_inspect_grip",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_1911_inspect_stndrd_pt_02.ogg", t = 1.7},
+        },
+    },
+    ["mm_bash"] = {
+        Source = {"mm_melee"},
+    },
+
+ -- Empty Marksman Enimations
+    ["mm_enter_sights_empty"] = {
+        Source = "mm_idle_empty",
+    },
+    ["mm_fire_empty"] = {
+        Source = "mm_fire_empty",
+    },
+    ["mm_fire_sights_empty"] = {
+        Source = "mm_fire_ads_empty",
+    },
+    ["mm_draw_empty"] = {
+        Source = "mm_draw_empty",
+		Mult = 0.65,
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Small.Raise", t = 0},
+        },
+    },
+    ["mm_holster_empty"] = {
+        Source = "mm_holster_empty",
+		Mult = 0.65,
+        EventTable = {
+            {s = "CoDWW2.Small.Holster", t = 0},
+        },
+    },
+    ["mm_idle_empty"] = {
+        Source = "mm_idle_empty",
+    },
+    ["mm_idle_sprint_empty"] = {
+        Source = "mm_sprint_empty",
+    },
+    ["mm_exit_sprint_empty"] = {
+        Source = "mm_sprint_out_empty",
+		Time = 3,
+    },
+    ["mm_enter_sprint_empty"] = {
+        Source = "mm_sprint_in_empty",
+		Time = 2,
+    },
+    ["mm_inspect_empty"] = {
+        Source = "mm_inspect_empty",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_1911_inspect_stndrd_pt_02.ogg", t = 1.7},
+        },
+    },
+    ["mm_inspect_grip_empty"] = {
+        Source = "mm_inspect_empty_grip",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_1911_inspect_stndrd_pt_02.ogg", t = 1.7},
+        },
+    },
+    ["mm_bash_empty"] = {
+        Source = {"mm_melee_empty"},
+    },
+
+-- Tac. Knife Marksman
+    ["mm_tacknife_enter_sights"] = {
+        Source = "mm_knife_idle",
+    },
+    ["mm_tacknife_fire"] = {
+        Source = "mm_knife_fire",
+    },
+    ["mm_tacknife_fire_sights"] = {
+        Source = "mm_knife_fire_ads",
+    },
+    ["mm_tacknife_reload"] = {
+        Source = "mm_knife_reload",
+		MinProgress = 0.95,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_1911_tac_magout.ogg", t = 0.25},
+            {s = path .. "wpn_1911_tac_magin.ogg", t = 0.825},
+        },
+    },
+    ["mm_tacknife_reload_empty"] = {
+        Source = "mm_knife_reload_empty",
+		MinProgress = 0.85,
+		RefillProgress = 0.8,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_1911_empty_magout.ogg", t = 0.25},
+            {s = path .. "wpn_1911_empty_magin.ogg", t = 0.825},
+            {s = path .. "wpn_1911_empty_charge.ogg", t = 1.4},
+        },
+    },
+    ["mm_tacknife_reload_ext"] = {
+        Source = "mm_knife_reload_ext",
+		MinProgress = 0.95,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_1911_tac_magout.ogg", t = 0.25},
+            {s = path .. "wpn_1911_tac_magin.ogg", t = 0.825},
+        },
+    },
+    ["mm_tacknife_reload_empty_ext"] = {
+        Source = "mm_knife_reload_ext_empty",
+		MinProgress = 0.85,
+		RefillProgress = 0.8,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_1911_empty_magout.ogg", t = 0.25},
+            {s = path .. "wpn_1911_empty_magin.ogg", t = 0.825},
+            {s = path .. "wpn_1911_empty_charge.ogg", t = 1.4},
+        },
+    },
+    ["mm_tacknife_draw"] = {
+        Source = "mm_knife_draw",
+		Mult = 0.65,
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Small.Raise", t = 0},
+        },
+    },
+    ["mm_tacknife_holster"] = {
+        Source = "mm_knife_holster",
+		Mult = 0.65,
+        EventTable = {
+            {s = "CoDWW2.Small.Holster", t = 0},
+        },
+    },
+    ["mm_tacknife_idle"] = {
+        Source = "mm_knife_idle",
+    },
+    ["mm_tacknife_idle_sprint"] = {
+        Source = "mm_knife_sprint",
+    },
+    ["mm_tacknife_exit_sprint"] = {
+        Source = "mm_knife_sprint_out",
+		Time = 3,
+    },
+    ["mm_tacknife_enter_sprint"] = {
+        Source = "mm_knife_sprint_in",
+		Time = 2,
+    },
+    ["mm_tacknife_inspect"] = {
+        Source = "mm_knife_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_1911_inspect_stndrd_pt_02.ogg", t = 1.7},
+        },
+    },
+    ["mm_tacknife_inspect_grip"] = {
+        Source = "mm_knife_inspect_grip",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_1911_inspect_stndrd_pt_02.ogg", t = 1.7},
+        },
+    },
+    ["mm_tacknife_bash"] = {
+        Source = {"mm_knife_melee"},
+    },
+ -- Empty Marksman Enimations
+    ["mm_tacknife_enter_sights_empty"] = {
+        Source = "mm_knife_idle_empty",
+    },
+    ["mm_tacknife_fire_empty"] = {
+        Source = "mm_knife_fire_empty",
+    },
+    ["mm_tacknife_fire_sights_empty"] = {
+        Source = "mm_knife_fire_ads_empty",
+    },
+    ["mm_tacknife_draw_empty"] = {
+        Source = "mm_knife_draw_empty",
+		Mult = 0.65,
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Small.Raise", t = 0},
+        },
+    },
+    ["mm_tacknife_holster_empty"] = {
+        Source = "mm_knife_holster_empty",
+		Mult = 0.65,
+        EventTable = {
+            {s = "CoDWW2.Small.Holster", t = 0},
+        },
+    },
+    ["mm_tacknife_idle_empty"] = {
+        Source = "mm_knife_idle_empty",
+    },
+    ["mm_tacknife_idle_sprint_empty"] = {
+        Source = "mm_knife_sprint_empty",
+    },
+    ["mm_tacknife_exit_sprint_empty"] = {
+        Source = "mm_knife_sprint_out_empty",
+		Time = 3,
+    },
+    ["mm_tacknife_enter_sprint_empty"] = {
+        Source = "mm_knife_sprint_in_empty",
+		Time = 2,
+    },
+    ["mm_tacknife_inspect_empty"] = {
+        Source = "mm_knife_inspect_empty",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_1911_inspect_stndrd_pt_02.ogg", t = 1.7},
+        },
+    },
+    ["mm_tacknife_inspect_grip_empty"] = {
+        Source = "mm_knife_inspect_empty_grip",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_1911_inspect_stndrd_pt_02.ogg", t = 1.7},
+        },
+    },
+    ["mm_tacknife_bash_empty"] = {
+        Source = {"mm_knife_melee_empty"},
+    },
+	
+	-- Epic Animations
+    ["epic_inspect"] = {
+        Source = "reg_inspect_epic",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_1911_inspect_epic_pt_01.ogg", t = 0},
+			{s = path .. "wpn_1911_inspect_epic_pt_02.ogg", t = 1.7},
+        },
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -689,6 +1031,10 @@ SWEP.Attachments = {
     { -- 2
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " I",
         Category = {"codww2_atts", "codww2_atts_pistol"},
+		RejectAttachments = { 
+			["codww2_lens_sight"] = true,
+			["codww2_aperture_sight"] = true,
+		},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(3.5, 0, 6.5),
