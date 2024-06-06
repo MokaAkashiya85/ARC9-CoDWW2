@@ -57,6 +57,20 @@ SWEP.ViewRecoilUpMultSights = 10
 
 SWEP.PhysicalVisualRecoil = true
 
+SWEP.MovingMidPoint = {
+    Pos = Vector(0, 0, 0),
+    Ang = Angle(0, 0, 0)
+}
+
+SWEP.MovingPos = Vector(-0.25, 0, -0.5)
+SWEP.MovingAng = Angle(0, 0, 0)
+
+SWEP.CrouchPos = Vector(0, -0.25, -0.5)
+SWEP.CrouchAng = Angle(0, 0, -2)
+
+SWEP.SprintPos = Vector(0, 0, 0)
+SWEP.SprintAng = Angle(0, 0, 0)
+
 -- Extras
 
 SWEP.VManipOffsetPos = Vector(1, -2, -0.5)
@@ -67,9 +81,6 @@ SWEP.BobSprintMult = 0.1
 
 SWEP.SprintVerticalOffset = false
 SWEP.CanBlindFire = false
-
-SWEP.EnterBipodSound = "Viewmodel.BipodDeploy"
-SWEP.ExitBipodSound = "Viewmodel.BipodExit"
 
 SWEP.RicochetChance = 0.01
 SWEP.Sway = 0 -- How much the gun sways.
@@ -121,6 +132,19 @@ SWEP.ShootEntForceUBGL = 2500
 
 SWEP.MuzzleParticleUBGL = "muzzleflash_suppressed"
 
+-------------------------- Bipod (LMG) Stats
+
+SWEP.EnterBipodSound = "CoDWW2.Small.Raise"
+SWEP.ExitBipodSound = "CoDWW2.Small.Holster"
+
+SWEP.Bipod = false
+SWEP.RecoilMultBipod = 0.25
+SWEP.RecoilPerShotMultBipod = 0.75
+SWEP.SwayAddBipod = -9999 -- SwayMultBipod doesn't work for some reason
+SWEP.SpreadAddBipod = -0.05
+SWEP.AimDownSightsTimeMultBipod = 0.5
+SWEP.ReloadTimeMultBipod = 0.75
+
 SWEP.Hook_TranslateAnimation = function(wep, anim)
 	local animation = anim
 	if wep:HasElement("incendiary") then -- Shotgun Incendiary Shells
@@ -150,7 +174,7 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 	end
 	
 	if wep:HasElement("mag_ext") then
-		if anim == "reload" or anim == "reload_empty" then
+		if anim == "reload" or anim == "reload_empty" or anim == "fire" or anim == "fire_sights" then
 			animation = animation .. "_ext"
 		end
 	end
@@ -170,7 +194,11 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 	if wep:HasElement("grip") and anim == "inspect" then
 		animation = animation .. "_grip"
 	end
-	
+		
+	if wep:GetBipod() then
+		animation = "bipod_" .. animation
+	end
+		
 	return animation
 end
 

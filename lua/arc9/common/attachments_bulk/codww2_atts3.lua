@@ -312,6 +312,8 @@ ATT.BashLungeRangeOverride = 3 / ARC9.HUToM
 ATT.PreBashTimeMult = 1.25
 ATT.PostBashTimeMult = 1.25
 
+ATT.MeleeHitSound = "CoDWW2.Melee.Hit.Player.Bayonet"
+
 ARC9.LoadAttachment(ATT, "codww2_bayonet3")
 ------------------------------------------------------------------
 ATT = {}

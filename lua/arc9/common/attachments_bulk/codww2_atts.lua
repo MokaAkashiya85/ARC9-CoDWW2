@@ -168,7 +168,7 @@ ATT.Icon = Material("mokaww2/icons/atts/4xscope.png")
 ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
-ATT.Category = {"codww2_atts_rifle"}
+ATT.Category = {"codww2_atts_rifle", "codww2_atts_lmg"}
 ATT.ActivateElements = {"telescopic"}
 
 -- ATT.Model = "models/mokaww2/atts/m1941_scope.mdl"
@@ -613,6 +613,8 @@ ATT.BashDamageOverride = 100
 ATT.BashLungeRangeOverride = 3 / ARC9.HUToM
 ATT.PreBashTimeMult = 1.25
 ATT.PostBashTimeMult = 1.25
+
+ATT.MeleeHitSound = "CoDWW2.Melee.Hit.Player.Bayonet"
 
 ARC9.LoadAttachment(ATT, "codww2_bayonet")
 ------------------------------------------------------------------

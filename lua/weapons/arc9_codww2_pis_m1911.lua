@@ -21,10 +21,6 @@ SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_assets") ] = "Sledgehammer Games"
 }
 
-SWEP.ReflexReticleMat = 2
--- SWEP.ReflexReticlePos = 0
--- SWEP.ReflexReticleRotate = -90
-
 SWEP.ViewModel = "models/mokaww2/weapons/m1911.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
@@ -38,7 +34,7 @@ SWEP.WorldModelOffset = {
     Ang = Angle(-5, 0, 180),
     TPIKPos = Vector(-18, 2, 0),
     TPIKAng = Angle(-12.5, -1, 172.5),
-    Scale = 1
+    Scale = 0.85
 }
 
 -------------------------- DAMAGE PROFILE
@@ -185,15 +181,21 @@ SWEP.IronSights = {
 }
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
-    local attached = self:GetElements()
-     if attached["tacknife"] then
-        return {
-			Pos = Vector(-4.283, -3.3016, 0.26241),
-			Ang = Angle(0, 0.8, 0),
-			Magnification = 1.1,
-			ViewModelFOV = 65,
-        }
-    end
+local attached = self:GetElements()
+local V = Vector(-4.067, -4.7, 0.7418)
+local A = Angle(0, 0.8, 0)
+
+if attached["tacknife"] then
+	V = Vector(-4.283, -3.3016, 0.26241)
+end
+
+return {
+	Pos = V,
+	Ang = Angle(0, 0, 0),
+	Magnification = 1.1,
+	ViewModelFOV = 65,
+}
+
 end
 
 SWEP.ViewModelFOVBase = 65
@@ -205,20 +207,6 @@ SWEP.SprintMidPoint = {
 
 SWEP.ActivePos = Vector(0, -2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
-
-SWEP.MovingMidPoint = {
-    Pos = Vector(-0.5, -0.5, -0.5),
-    Ang = Angle(0, 0, -5)
-}
-
-SWEP.MovingPos = Vector(-1, -0.8, -1)
-SWEP.MovingAng = Angle(0, 0, -10)
-
-SWEP.CrouchPos = Vector(-1, -0.5, -1)
-SWEP.CrouchAng = Angle(0, 0, -5)
-
-SWEP.SprintPos = Vector(0, 0, 0)
-SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(20, 35, 2.5)

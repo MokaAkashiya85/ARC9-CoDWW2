@@ -10,10 +10,10 @@ SWEP.Base = "arc9_codww2_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - CoD: WWII"
 
-SWEP.PrintName = ARC9:GetPhrase("codww2_wep_karabin") or "Karabin"
-SWEP.Description = ARC9:GetPhrase("codww2_wep_karabin_desc") or "Semi-automatic sniper rifle that delivers two shot kills from hip and above."
+SWEP.PrintName = ARC9:GetPhrase("codww2_wep_lewis") or "Lewis"
+SWEP.Description = ARC9:GetPhrase("codww2_wep_lewis_desc") or "Full-auto LMG with moderate recoil and high damage."
 
-SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_sniper") or "Sniper Rifle"
+SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_lmg") or "Light Machine Gun"
 SWEP.Class = SWEP.SubCategory
 
 SWEP.Credits = {
@@ -26,37 +26,33 @@ SWEP.ReflexReticleMat = 2
 -- SWEP.ReflexReticleRotate = -90
 
 SWEP.ScopeReticleMat = 2
-SWEP.ScopeReticlePos = -0.225
+SWEP.ScopeReticlePos = -0.2
 SWEP.ScopeReticleRotate = 0
 
--- SWEP.SScopeReticleMat = 2
-SWEP.SScopeReticlePos = -0.225
--- SWEP.SScopeReticleRotate = 0
-
-SWEP.ViewModel = "models/mokaww2/weapons/karabin.mdl"
+SWEP.ViewModel = "models/mokaww2/weapons/lewis.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
-SWEP.Slot = 3
+SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-SWEP.WorldModelMirror = "models/mokaww2/weapons/karabin.mdl"
+SWEP.WorldModelMirror = "models/mokaww2/weapons/lewis.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-7, 4.75, -6),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-12, 7, -4.25),
+    TPIKPos = Vector(-7, 7, -7),
     TPIKAng = Angle(-12.5, -1, 172.5),
     Scale = 0.85
 }
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 80 -- Damage done at point blank range
-SWEP.DamageMin = 40 -- Damage done at maximum range
+SWEP.DamageMax = 40 -- Damage done at point blank range
+SWEP.DamageMin = 30 -- Damage done at maximum range
 
 SWEP.DamageRand = 0 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 25 / ARC9.HUToM
+SWEP.RangeMin = 1 / ARC9.HUToM
 SWEP.RangeMax = 100 / ARC9.HUToM
 
 SWEP.Penetration = 6.5 -- Units of wood that can be penetrated by this gun.
@@ -65,18 +61,18 @@ SWEP.RicochetChance = 0.25
 SWEP.ImpactForce = 11
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2,
+    [HITGROUP_HEAD] = 1.1,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
-    [HITGROUP_LEFTARM] = 0.9,
-    [HITGROUP_RIGHTARM] = 0.9,
-    [HITGROUP_LEFTLEG] = 0.9,
-    [HITGROUP_RIGHTLEG] = 0.9,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 1,
+    [HITGROUP_RIGHTLEG] = 1,
 }
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 866 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 744 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.15
 
@@ -85,7 +81,7 @@ SWEP.PhysBulletDrag = 1.15
 SWEP.Ammo = "ar2" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 10 -- Self-explanatory.
+SWEP.ClipSize = 47 -- Self-explanatory.
 SWEP.SupplyLimit = 4 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate. 
 
 SWEP.DrawCrosshair = true
@@ -93,24 +89,24 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 234
+SWEP.RPM = 517
 
 SWEP.Firemodes = {
     {
-        Mode = 1,
+        Mode = -1,
     },
 }
 
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.55
+SWEP.Recoil = 0.66
 
 SWEP.RecoilPatternDrift = 0
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.66 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.65 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 1.5 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -128,7 +124,7 @@ SWEP.RecoilMultCrouch = 0.8
 
 SWEP.RecoilMultMove = 1.25
 
-SWEP.RecoilPerShot = 2
+SWEP.RecoilPerShot = 1
 SWEP.RecoilMax = 3
 
 -------------------------- VISUAL RECOIL
@@ -138,12 +134,12 @@ SWEP.PhysicalVisualRecoil = false
 SWEP.VisualRecoilCenter = Vector(7, 5, 5)
 
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = -1
-SWEP.VisualRecoilRoll = 10
+SWEP.VisualRecoilUp = 0.25
+SWEP.VisualRecoilRoll = 7.5
 SWEP.VisualRecoilSide = -0.1
 
-SWEP.VisualRecoilPositionBump = 0.75
-SWEP.VisualRecoilPositionBumpUp = -1.25
+SWEP.VisualRecoilPositionBump = 1.33
+SWEP.VisualRecoilPositionBumpUp = 0.66
 SWEP.VisualRecoilMultCrouch = .85
 SWEP.VisualRecoilMultSights = 0
 
@@ -153,9 +149,9 @@ SWEP.VisualRecoilDampingConstSights = 80
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.066
+SWEP.Spread = 0.035
 
-SWEP.SpreadAddRecoil = 0.0075
+SWEP.SpreadAddRecoil = 0.015
 
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddMove = SWEP.Spread * 0.66
@@ -172,41 +168,52 @@ SWEP.RecoilModifierCapSights = 0.25
 SWEP.SpeedMult = 0.9 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
 
-SWEP.AimDownSightsTime = 0.22 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.35 -- How long it takes to go from sprinting to being able to fire.
 
-SWEP.Sway = 4.5
-SWEP.SwayMultSights = 1
-SWEP.SwayMultHipFire = 0
-
--- SWEP.NoAimAssist = false
+SWEP.Bipod = true
 
 -------------------------- MELEE
 
 SWEP.PreBashTime = 0.1	
 SWEP.PostBashTime = 0.65
 
-SWEP.MeleeSwingSound = "CoDWW2.Melee.Swing.Rifle"
+SWEP.MeleeSwingSound = "CoDWW2.Melee.Swing.Large"
 
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.5, -5.3733, 1.1005), -- Location (-2 | 1 | 3) from Blender on bone tag_ads
+    Pos = Vector(-4.97, -2.905, 1.8214), -- Location (-2 | 1 | 3) from Blender on bone tag_ads
     Ang = Angle(0, 0, 0), -- Rotation (NONE | 3 | NONE) from Blender on bone tag_ads; Remove two zeroes after point when applying.
     Magnification = 1.1,
-    ViewModelFOV = 65,
+    ViewModelFOV = 50,
 }
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
-    local attached = self:GetElements()
-     -- if attached["reflex"] then
-        -- return {
-			-- Pos = Vector(-4.0019, -6.5781, 0.9581),
-			-- Ang = Angle(0, 0, 0),
-			-- Magnification = 1.1,
-			-- ViewModelFOV = 65,
-        -- }
-    -- end
+local attached = self:GetElements()
+local V, A, Mag, FOV = Vector(-4.97, -2.905, 1.8214), Angle(0, 0, 0), 1.1, 50
+local bipod = self:GetBipod()
+
+if bipod then
+	if attached["reflex"] then -- Bipod and Reflex
+		V = Vector(-2.3, -2.5386, 1.0803)
+		FOV = 50
+	else -- Bipod and no Reflex
+		V = Vector(-2.3, -1, 1.1933)
+	end
+else
+	if attached["reflex"] then -- Reflex
+		V = Vector(-4.965, -3.3433, 1.60571)
+		FOV = 50
+	end
+end
+
+return {
+	Pos = V,
+	Ang = A,
+	Magnification = Mag,
+	ViewModelFOV = FOV,
+}
 
 end
 
@@ -217,14 +224,14 @@ SWEP.SprintMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.ActivePos = Vector(0, -2, 0)
+SWEP.ActivePos = Vector(-0.75, -1.25, -0.25)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(20, 50, 5)
-SWEP.CustomizeRotateAnchor = Vector(20, -5, -4)
+SWEP.CustomizePos = Vector(21, 50, 5)
+SWEP.CustomizeRotateAnchor = Vector(21, -5, -4)
 SWEP.CustomizeSnapshotFOV = 65
-SWEP.CustomizeSnapshotPos = Vector(-1, 35, 2.5)
+SWEP.CustomizeSnapshotPos = Vector(-1, 25, 2.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -252,7 +259,7 @@ SWEP.CamQCA = 3
 SWEP.CamQCA_Mult = 1
 
 SWEP.ShellModel = "models/mokaww2/shells/556.mdl"
-SWEP.ShellCorrectAng = Angle(90, 0, 0)
+SWEP.ShellCorrectAng = Angle(-90, 0, 0)
 SWEP.ShellScale = 1.5
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.ShellSounds = ARC9.CoDWW2_ShellsTable_Large
@@ -260,32 +267,21 @@ SWEP.ShellVolume = 0.25
 
 -------------------------- SOUNDS
 
-local path = "mokaww2/wpn/karabin/"
-local paths = "mokaww2/wpn/ak47/"
+local path = "mokaww2/wpn/lewis/"
+local pathr = "mokaww2/wpn/lewis/r/"
 
 SWEP.ShootSound = {
-paths .. "wpn_ak47_crack_01.ogg",
-paths .. "wpn_ak47_crack_02.ogg",
-paths .. "wpn_ak47_crack_03.ogg",
-paths .. "wpn_ak47_crack_04.ogg",
-paths .. "wpn_ak47_crack_05.ogg",
+path .. "wpn_lewis_lyr_1_01.ogg",
 }
 
 SWEP.LayerSound = {
-paths .. "wpn_ak47_high_01.ogg",
-paths .. "wpn_ak47_high_02.ogg",
-paths .. "wpn_ak47_high_03.ogg",
-paths .. "wpn_ak47_high_04.ogg",
-paths .. "wpn_ak47_high_05.ogg",
-paths .. "wpn_ak47_high_06.ogg",
-paths .. "wpn_ak47_high_07.ogg",
-paths .. "wpn_ak47_high_08.ogg"
+path .. "wpn_lewis_plr_low_01.ogg",
 }
 
 SWEP.DistantShootSound = {
-paths .. "wpn_ak47_blast_tail_01.ogg",
-paths .. "wpn_ak47_blast_tail_02.ogg",
-paths .. "wpn_ak47_blast_tail_03.ogg"
+path .. "wpn_lewis_tail_lyr_01.ogg",
+path .. "wpn_lewis_tail_lyr_02.ogg",
+path .. "wpn_lewis_tail_lyr_03.ogg",
 }
 
 ---------------------------------------------------
@@ -302,12 +298,17 @@ SWEP.BulletBones = {
 -- }
 
 SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "tag_silencer",
+    },
+}
+SWEP.ReloadHideBoneTables = {
     -- [1] = {
         -- "j_mag2",
     -- },
 }
 
-SWEP.TriggerDelay = false -- Add a delay before the weapon fires.
+SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
 SWEP.TriggerDelayCancellable = false
 SWEP.TriggerDelayTime = 0.05 -- Time until weapon fires.
 
@@ -321,35 +322,46 @@ SWEP.Animations = {
     ["fire_sights"] = {
         Source = "reg_fire_ads",
     },
+    ["fire_ext"] = {
+        Source = "reg_fire_ext",
+    },
+    ["fire_sights_ext"] = {
+        Source = "reg_fire_ads_ext",
+    },
     ["reload"] = {
         Source = "reg_reload",
-		MinProgress = 0.875,
-		RefillProgress = 0.675,
+		MinProgress = 0.925,
+		RefillProgress = 0.8,
 		FireASAP = true,
         EventTable = {
-			{s = path .. "wpn_karabin_tac_magout.ogg", t = 0.325},
-            {s = path .. "wpn_karabin_tac_magin.ogg", t = 1.2},
+			{s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2},
+            {s = pathr .. "wpn_rhino_empty_magin.ogg", t = 4.5},
+            {s = pathr .. "wpn_thor_empty_magin.ogg", t = 5},
+            {s = pathr .. "wpn_thor_tac_smack.ogg", t = 5.8},
         },
     },
     ["reload_empty"] = {
         Source = "reg_reload_empty",
-		MinProgress = 0.925,
-		RefillProgress = 0.75,
+		MinProgress = 0.95,
+		RefillProgress = 0.85,
 		FireASAP = true,
         EventTable = {
-			{s = path .. "wpn_karabin_empty_magout.ogg", t = 0.375},
-            {s = path .. "wpn_karabin_empty_magin.ogg", t = 1.25},
-            {s = path .. "wpn_karabin_empty_charge.ogg", t = 2.15},
+			{s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2},
+            {s = pathr .. "wpn_rhino_empty_magin.ogg", t = 4.5},
+            {s = pathr .. "wpn_thor_empty_magin.ogg", t = 5},
+            {s = pathr .. "wpn_thor_tac_smack.ogg", t = 5.8},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 6.7},
         },
     },
     ["reload_ext"] = {
         Source = "reg_reload_ext",
-		MinProgress = 0.925,
-		RefillProgress = 0.725,
+		MinProgress = 0.95,
+		RefillProgress = 0.825,
 		FireASAP = true,
         EventTable = {
-			{s = path .. "wpn_karabin_tac_magout.ogg", t = 0.325},
-            {s = path .. "wpn_karabin_tac_magin.ogg", t = 1.2},
+			{s = path .. "wpn_lewis_tac_ext_unlock.ogg", t = 1},
+            {s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2.75},
+            {s = path .. "wpn_lewis_tac_ext_magin.ogg", t = 4.75},
         },
     },
     ["reload_empty_ext"] = {
@@ -358,9 +370,10 @@ SWEP.Animations = {
 		RefillProgress = 0.75,
 		FireASAP = true,
         EventTable = {
-			{s = path .. "wpn_karabin_empty_magout.ogg", t = 0.375},
-            {s = path .. "wpn_karabin_empty_magin.ogg", t = 1.25},
-            {s = path .. "wpn_karabin_empty_charge.ogg", t = 2.15},
+			{s = path .. "wpn_lewis_empty_ext_unlock.ogg", t = 1},
+            {s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2.75},
+            {s = path .. "wpn_lewis_empty_ext_magin.ogg", t = 4.75},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 6.5},
         },
     },
     ["ready"] = {
@@ -368,8 +381,8 @@ SWEP.Animations = {
 		MinProgress = 0.95,
 		FireASAP = true,
         EventTable = {
-            {s = "CoDWW2.Rifle.Raise", t = 0},
-            {s = path .. "wpn_karabin_fpo_charge.ogg", t = 0.66},
+            {s = "CoDWW2.Large.Raise", t = 0},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 0.4},
         },
     },
     ["draw"] = {
@@ -377,13 +390,13 @@ SWEP.Animations = {
 		MinProgress = 0.75,
 		FireASAP = true,
         EventTable = {
-            {s = "CoDWW2.Rifle.Raise", t = 0},
+            {s = "CoDWW2.Large.Raise", t = 0},
         },
     },
     ["holster"] = {
         Source = "reg_holster",
         EventTable = {
-            {s = "CoDWW2.Rifle.Holster", t = 0},
+            {s = "CoDWW2.Large.Holster", t = 0},
         },
     },
     ["idle"] = {
@@ -394,76 +407,105 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "reg_sprint_out",
-		Time = 4.25,
+		Time = 3,
     },
     ["enter_sprint"] = {
         Source = "reg_sprint_in",
-		Time = 1.25,
+		Time = 0.8,
     },
     ["inspect"] = {
         Source = "reg_inspect",
 		MinProgress = 0.1,
 		FireASAP = true,
         EventTable = {
-            {s = path .. "wpn_karabin_inspect_stndrd_pt_01.ogg", t = 0},
-			{s = path .. "wpn_karabin_inspect_stndrd_pt_02.ogg", t = 2.25},
+            {s = path .. "wpn_lewis_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_lewis_inspect_stndrd_pt_02.ogg", t = 3.3},
         },
     },
     ["bash"] = {
         Source = {"reg_melee"},
-		Mult = 0.8,
+		Mult = 1,
     },
-
--- Empty Animations
-    ["enter_sights_empty"] = {
-        Source = "reg_idle_empty",
-    },
-    ["fire_empty"] = {
-        Source = "reg_fire_last",
-    },
-    ["fire_sights_empty"] = {
-        Source = "reg_fire_ads_last",
-    },
-    ["draw_empty"] = {
-        Source = "reg_draw_empty",
+ -- Bipod Animations
+    ["enter_bipod"] = {
+        Source = "bipod_draw",
 		MinProgress = 0.75,
 		FireASAP = true,
         EventTable = {
-            {s = "CoDWW2.Rifle.Raise", t = 0},
+            {s = "mokaww2/wpn/mg/mp_wpn_mounted_mg_equip.ogg", t = 0.15},
         },
     },
-    ["holster_empty"] = {
-        Source = "reg_holster_empty",
-        EventTable = {
-            {s = "CoDWW2.Rifle.Holster", t = 0},
-        },
+    ["exit_bipod"] = {
+        Source = "reg_draw",
+		MinProgress = 0.75,
+		FireASAP = true,
+		Mult = 0.75,
     },
-    ["idle_empty"] = {
-        Source = "reg_idle_empty",
+    ["bipod_enter_sights"] = {
+        Source = "bipod_idle",
     },
-    ["idle_sprint_empty"] = {
-        Source = "reg_sprint_empty",
+    ["bipod_fire"] = {
+        Source = "bipod_fire",
     },
-    ["exit_sprint_empty"] = {
-        Source = "reg_sprint_out_empty",
-		Time = 3.25,
+    ["bipod_fire_sights"] = {
+        Source = "bipod_fire",
     },
-    ["enter_sprint_empty"] = {
-        Source = "reg_sprint_in_empty",
-		Time = 1.25,
+    ["bipod_fire_ext"] = {
+        Source = "bipod_fire_ext",
     },
-    ["inspect_empty"] = {
-        Source = "reg_inspect_empty",
-		MinProgress = 0.1,
+    ["bipod_fire_sights_ext"] = {
+        Source = "bipod_fire_ext",
+    },
+    ["bipod_reload"] = {
+        Source = "bipod_reload",
+		MinProgress = 0.925,
+		RefillProgress = 0.8,
 		FireASAP = true,
         EventTable = {
-            {s = path .. "wpn_karabin_inspect_stndrd_pt_01.ogg", t = 0},
-			{s = path .. "wpn_karabin_inspect_stndrd_pt_02.ogg", t = 2.25},
+			{s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2},
+            {s = pathr .. "wpn_rhino_empty_magin.ogg", t = 4.5},
+            {s = pathr .. "wpn_thor_empty_magin.ogg", t = 5},
+            {s = pathr .. "wpn_thor_tac_smack.ogg", t = 5.8},
         },
     },
-    ["bash_empty"] = {
-        Source = {"reg_melee_empty"},
-		Mult = 0.8,
+    ["bipod_reload_empty"] = {
+        Source = "bipod_reload_empty",
+		MinProgress = 0.95,
+		RefillProgress = 0.85,
+		FireASAP = true,
+        EventTable = {
+			{s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2},
+            {s = pathr .. "wpn_rhino_empty_magin.ogg", t = 4.5},
+            {s = pathr .. "wpn_thor_empty_magin.ogg", t = 5},
+            {s = pathr .. "wpn_thor_tac_smack.ogg", t = 5.8},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 6.7},
+        },
+    },
+    ["bipod_reload_ext"] = {
+        Source = "bipod_reload_ext",
+		MinProgress = 0.95,
+		RefillProgress = 0.825,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_lewis_tac_ext_unlock.ogg", t = 1},
+            {s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2.75},
+            {s = path .. "wpn_lewis_tac_ext_magin.ogg", t = 4.75},
+        },
+    },
+    ["bipod_reload_empty_ext"] = {
+        Source = "bipod_reload_ext_empty",
+		MinProgress = 0.925,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_lewis_empty_ext_unlock.ogg", t = 1},
+            {s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2.75},
+            {s = path .. "wpn_lewis_empty_ext_magin.ogg", t = 4.75},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 6.5},
+        },
+    },
+    ["bipod_idle"] = {
+        Source = "bipod_idle",
     },
 }
 
@@ -474,25 +516,15 @@ SWEP.Animations = {
 SWEP.DefaultBodygroups = "000000"
 
 SWEP.AttachmentTableOverrides = {
-    ["codww2_sniper_scope"] = {
-		Model = "models/mokaww2/atts/karabin_sniperscope.mdl",
-		RTScopeSubmatIndex = 0,
-		Sights = {
-			{
-				Pos = Vector(-2.5, 0, -6.312),
-				Ang = Angle(0, 90, 0),
-				ViewModelFOV = 30,
-				Magnification = 1.1,
-				Blur = false,
-			},
-		}
+    ["codww2_aperture_sight"] = {
+		Model = "models/mokaww2/atts/lewis_reflex.mdl",
     },
-    ["codww2_telescopic_sight_sniper"] = {
-		Model = "models/mokaww2/atts/karabin_scope.mdl",
+    ["codww2_telescopic_sight"] = {
+		Model = "models/mokaww2/atts/lewis_scope.mdl",
 		RTScopeSubmatIndex = 0,
 		Sights = {
 			{
-				Pos = Vector(-3.5, 0.91, -6.525),
+				Pos = Vector(-8.5, 0.7, -8.0425),
 				Ang = Angle(0, 90, 0),
 				ViewModelFOV = 30,
 				Magnification = 1.1,
@@ -500,52 +532,35 @@ SWEP.AttachmentTableOverrides = {
 			},
 		},
     },
+    ["codww2_lens_sight"] = {
+		-- ActivateElements = {"lens", "lens_small"}
+    },
 }
 
 SWEP.AttachmentElements = {
     ["base_none"] = { Bodygroups = { {0,1} } },
-    -- ["sights_none"] = { Bodygroups = { {1,1} } },
-    ["barrel"] = { Bodygroups = { {1,1} } },
-    ["stock"] = { Bodygroups = { {2,1} } },
-    ["mag_ext"] = { Bodygroups = { {3,1} }, ClipSizeAdd = 5 },
-    ["mag_none"] = { Bodygroups = { {3,2} } },
+    ["sights_none"] = { Bodygroups = { {1,1} } },
+    ["barrel"] = { Bodygroups = { {2,1} } },
+    ["stock"] = { Bodygroups = { {3,1} } },
+    ["mag_ext"] = { Bodygroups = { {4,1} }, ClipSizeAdd = 50 },
+    ["mag_none"] = { Bodygroups = { {4,2} } },
 
-	["rpm"] = { RPMOverride = 252 },
+    ["reflex"] = { Bodygroups = { {1,1} } },
+    ["telescopic"] = { Bodygroups = { {1,1} } },
+
+	["rpm"] = { RPMOverride = 550 },
     ["highcal"] = {
 		BodyDamageMults = {
-			[HITGROUP_HEAD] = 2.5,
+			[HITGROUP_HEAD] = 1.6,
 			[HITGROUP_CHEST] = 1,
 			[HITGROUP_STOMACH] = 1,
-			[HITGROUP_LEFTARM] = 0.9,
-			[HITGROUP_RIGHTARM] = 0.9,
-			[HITGROUP_LEFTLEG] = 0.9,
-			[HITGROUP_RIGHTLEG] = 0.9,
+			[HITGROUP_LEFTARM] = 1,
+			[HITGROUP_RIGHTARM] = 1,
+			[HITGROUP_LEFTLEG] = 1,
+			[HITGROUP_RIGHTLEG] = 1,
 		}
     },
 }
-
-SWEP.lastfunnyubgl = false
-SWEP.Hook_ModifyBodygroups = function(wep, data)
-    -- local eles = data.elements
-    -- local model = data.model
-    -- local ubgl = wep:GetUBGL()
-
-    -- if ubgl then
-        -- wep.hideubglthing = false
-    -- elseif wep.lastfunnyubgl then
-        -- timer.Simple(wep:Clip2() > 0 and 1.5 or 0, function()
-            -- if IsValid(wep) then
-                -- wep.hideubglthing = true
-            -- end
-        -- end)
-    -- end
-    
-    -- wep.lastfunnyubgl = ubgl
-
-    -- if eles["gl"] and ((wep:GetUBGL() and wep:Clip2() > 0) or (wep:StillWaiting() and !wep.hideubglthing)) then
-        -- model:SetBodygroup(5, 2)
-    -- end
-end
 
 SWEP.Attachments = {
     { -- 1
@@ -557,32 +572,29 @@ SWEP.Attachments = {
     },
     { -- 2
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " I",
-        Category = {"codww2_atts", "codww2_atts_sniper"},
-		RejectAttachments = { 
-			["codww2_lens_sight"] = true,
-			["codww2_aperture_sight"] = true,
-		},
+        Category = {"codww2_atts", "codww2_atts_lmg"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(7, 0, 6.5),
     },
     { -- 3
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " II",
-        Category = {"codww2_atts2", "codww2_atts2_sniper"},
+        Category = {"codww2_atts2", "codww2_atts2_lmg"},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(5, 0, 6.5),
     },
     { -- 4
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " III",
-        Category = {"codww2_atts3", "codww2_atts3_sniper"},
+        Category = {"codww2_atts3", "codww2_atts3_lmg"},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(3, 0, 6.5),
     },
     { -- 5
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " IV",
-        Category = {"codww2_atts4", "codww2_atts4_sniper"},
+        Category = {"codww2_atts4", "codww2_atts4_lmg"},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(1, 0, 6.5),
@@ -593,10 +605,10 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("codww2_category_variant"),
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
-        Category = "codww2_var_karabin",
+        Category = "codww2_var_lewis",
 		CosmeticOnly = true,
 		Icon_Offset = Vector(5, 0, 6.5),
-		Installed = "codww2_variant_karabin",
+		Installed = "codww2_variant_lewis",
 		Integral = true,
     },
     { -- 7
@@ -612,19 +624,9 @@ SWEP.Attachments = {
         CosmeticOnly = true,
         Category = {"charm"},
         Bone = "tag_weapon",
-        Pos = Vector(3, -0.6, 3.75),
+        Pos = Vector(0, -0.525, 4.525),
 		Icon_Offset = Vector(1, 0.875, 6.5 - 4.525),
 		Scale = 1,
 		Hidden = false
-    },
-    { -- 9 Default
-        PrintName = "Default Scope",
-        Category = {"codww2_atts_default"},
-		Bone = "tag_weapon",
-        Pos = Vector(0, 0, 0),
-		Installed = "codww2_sniper_scope",
-		Integral = true,
-		ExcludeElements = {"telescopic", "irons"},
-		Hidden = true
     },
 }

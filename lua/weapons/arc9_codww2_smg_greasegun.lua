@@ -38,7 +38,7 @@ SWEP.WorldModelOffset = {
     Ang = Angle(-5, 0, 180),
     TPIKPos = Vector(-12, 4.5, -4.25),
     TPIKAng = Angle(-12.5, -1, 172.5),
-    Scale = 1
+    Scale = 0.85
 }
 
 -------------------------- DAMAGE PROFILE
@@ -177,22 +177,27 @@ SWEP.MeleeSwingSound = "CoDWW2.Melee.Swing.SMG"
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.1011, -4.3, 1.0349),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-4.1011, -4.3, 1.0349), -- Location (-2 | 1 | 3) from Blender on bone tag_ads
+    Ang = Angle(0, 0, 0), -- Rotation (NONE | 3 | NONE) from Blender on bone tag_ads; Remove two zeroes after point when applying.
     Magnification = 1.1,
-    ViewModelFOV = 65,
+    ViewModelFOV = 60,
 }
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
-    local attached = self:GetElements()
-     if attached["reflex"] then
-        return {
-			Pos = Vector(-4.1011, -5.0079, 0.5829),
-			Ang = Angle(0, 0, 0),
-			Magnification = 1.1,
-			ViewModelFOV = 65,
-        }
-    end
+local attached = self:GetElements()
+local V, A, Mag, FOV = Vector(-4.1011, -4.3, 1.0349), Angle(0, 0, 0), 1.1, 60
+
+if attached["reflex"] then
+	V = Vector(-4.1011, -5.0079, 0.5829)
+end
+
+return {
+	Pos = V,
+	Ang = A,
+	Magnification = Mag,
+	ViewModelFOV = FOV,
+}
+
 end
 
 SWEP.ViewModelFOVBase = 65
@@ -204,20 +209,6 @@ SWEP.SprintMidPoint = {
 
 SWEP.ActivePos = Vector(0, -2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
-
-SWEP.MovingMidPoint = {
-    Pos = Vector(-0.5, -0.5, -0.5),
-    Ang = Angle(0, 0, -5)
-}
-
-SWEP.MovingPos = Vector(-1, -0.8, -1)
-SWEP.MovingAng = Angle(0, 0, -10)
-
-SWEP.CrouchPos = Vector(-1, -0.5, -1)
-SWEP.CrouchAng = Angle(0, 0, -5)
-
-SWEP.SprintPos = Vector(0, 0, 0)
-SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(16, 50, 5)
@@ -683,7 +674,7 @@ SWEP.AttachmentTableOverrides = {
 		Model = "models/mokaww2/atts/greasegun_reflex.mdl",
     },
     ["codww2_lens_sight"] = {
-		ActivateElements = {"lens", "lens_small"}
+		ActivateElements = {"lens"}
     },
 }
 

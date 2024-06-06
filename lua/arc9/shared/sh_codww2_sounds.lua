@@ -373,6 +373,18 @@ sound.Add( {
     }
 } )
 
+sound.Add( {
+    name = "CoDWW2.Melee.Hit.Player.Bayonet",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {
+        "mokaww2/wpn/bayonet/wpn_bayonet_stab_plr_01.ogg",
+        "mokaww2/wpn/bayonet/wpn_bayonet_stab_plr_02.ogg",
+        "mokaww2/wpn/bayonet/wpn_bayonet_stab_plr_03.ogg",
+        "mokaww2/wpn/bayonet/wpn_bayonet_stab_plr_04.ogg",
+    }
+} )
+
 ------------ Casings --------------
 ARC9.CoDWW2_ShellsTable_Large = {
     "mokaww2/shells/shell_bounce_lg01.ogg",
