@@ -34,10 +34,10 @@ L["codww2_category_weapon_grenade"] = "Grenade"
 local ww2rare = {
 	default = "Standard Issue",
 	common = "Common",
-	rare = "<color=0,115,179>Rare</color>",
-	legendary = "<color=0,115,179>Legendary</color>",
-	epic = "<color=96,71,132>Epic</color>",
-	heroic = "<color=135,0,0>Heroic</color>",
+	rare = "<color=0,165,255>Rare</color>",
+	legendary = "<color=147,110,204>Legendary</color>",
+	epic = "<color=255,170,0>Epic</color>",
+	heroic = "<color=255,50,50>Heroic</color>",
 }
 
 L["codww2_rarity_default"] = ww2rare.default
@@ -124,7 +124,6 @@ L["codww2_lens_sight.description"] = "Lens sight scope."
 L["codww2_telescopic_sight.printname"] = "4x Optic"
 L["codww2_telescopic_sight.description"] = "4x enhanced zoom."
 
-L["codww2_telescopic_sight_sniper.printname"] = ARC9:GetPhrase("codww2_telescopic_sight.printname") or "4x Optic"
 L["codww2_telescopic_sight_sniper.description"] = "4x enhanced zoom.\n\n<color=255,255,0>Sharpshooter Focus does not work with this attachment.</color>"
 
 ////////// Other
@@ -168,7 +167,6 @@ L["codww2_suppressor.printname"] = "Suppressor"
 L["codww2_suppressor.description"] = "Reduces weapon sound and you remain hidden from radar when firing."
 
 L["codww2_suppressor_smg.printname"] = "SMG Suppressor"
-L["codww2_suppressor_smg.description"] = ARC9:GetPhrase("codww2_suppressor.description") or "Reduces weapon sound and you remain hidden from radar when firing."
 
 L["codww2_suppressor.short"] = "S"
 
@@ -245,94 +243,94 @@ L["codww2_camo_chrome.printname"] = "Chrome"
 
 ////////////////////  Reticles
 ////////// Lens Sight
-L["codww2_reticle_lens_01.printname"] = "Pinpoint"
-L["codww2_reticle_lens_01.description"] = ww2rare.default
+L["codww2_reticle_lens_1.printname"] = "Pinpoint"
+L["codww2_reticle_lens_1.description"] = ww2rare.default
 
-L["codww2_reticle_lens_02.printname"] = "Crosscut"
-L["codww2_reticle_lens_02.description"] = ww2rare.default
+L["codww2_reticle_lens_2.printname"] = "Crosscut"
+L["codww2_reticle_lens_2.description"] = ww2rare.default
 
-L["codww2_reticle_lens_03.printname"] = "Vanilla"
-L["codww2_reticle_lens_03.description"] = ww2rare.default
+L["codww2_reticle_lens_3.printname"] = "Vanilla"
+L["codww2_reticle_lens_3.description"] = ww2rare.default
 
-L["codww2_reticle_lens_04.printname"] = "Frame"
-L["codww2_reticle_lens_04.description"] = ww2rare.default
+L["codww2_reticle_lens_4.printname"] = "Frame"
+L["codww2_reticle_lens_4.description"] = ww2rare.default
 
-L["codww2_reticle_lens_05.printname"] = "Bisect"
-L["codww2_reticle_lens_05.description"] = ww2rare.default
+L["codww2_reticle_lens_5.printname"] = "Bisect"
+L["codww2_reticle_lens_5.description"] = ww2rare.default
 
-L["codww2_reticle_lens_06.printname"] = "Strife"
-L["codww2_reticle_lens_06.description"] = ww2rare.default
+L["codww2_reticle_lens_6.printname"] = "Strife"
+L["codww2_reticle_lens_6.description"] = ww2rare.default
 
-L["codww2_reticle_lens_07.printname"] = "Rival"
-L["codww2_reticle_lens_07.description"] = ww2rare.default
+L["codww2_reticle_lens_7.printname"] = "Rival"
+L["codww2_reticle_lens_7.description"] = ww2rare.default
 
-L["codww2_reticle_lens_08.printname"] = "Ascend"
-L["codww2_reticle_lens_08.description"] = ww2rare.default
+L["codww2_reticle_lens_8.printname"] = "Ascend"
+L["codww2_reticle_lens_8.description"] = ww2rare.default
 
-L["codww2_reticle_lens_09.printname"] = "Desolate"
-L["codww2_reticle_lens_09.description"] = ww2rare.default
+L["codww2_reticle_lens_9.printname"] = "Desolate"
+L["codww2_reticle_lens_9.description"] = ww2rare.default
 
 L["codww2_reticle_lens_10.printname"] = "Saucer"
 L["codww2_reticle_lens_10.description"] = ww2rare.default
 
 ////////// Reflex Sight
-L["codww2_reticle_reflex_01.printname"] = "Up-And-Down"
-L["codww2_reticle_reflex_01.description"] = ww2rare.default
+L["codww2_reticle_reflex_1.printname"] = "Up-And-Down"
+L["codww2_reticle_reflex_1.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_02.printname"] = "Crisscross"
-L["codww2_reticle_reflex_02.description"] = ww2rare.default
+L["codww2_reticle_reflex_2.printname"] = "Crisscross"
+L["codww2_reticle_reflex_2.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_03.printname"] = "Slant"
-L["codww2_reticle_reflex_03.description"] = ww2rare.default
+L["codww2_reticle_reflex_3.printname"] = "Slant"
+L["codww2_reticle_reflex_3.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_04.printname"] = "Speck"
-L["codww2_reticle_reflex_04.description"] = ww2rare.default
+L["codww2_reticle_reflex_4.printname"] = "Speck"
+L["codww2_reticle_reflex_4.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_05.printname"] = "Duple"
-L["codww2_reticle_reflex_05.description"] = ww2rare.default
+L["codww2_reticle_reflex_5.printname"] = "Duple"
+L["codww2_reticle_reflex_5.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_06.printname"] = "Droplet"
-L["codww2_reticle_reflex_06.description"] = ww2rare.default
+L["codww2_reticle_reflex_6.printname"] = "Droplet"
+L["codww2_reticle_reflex_6.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_07.printname"] = "Perimeter"
-L["codww2_reticle_reflex_07.description"] = ww2rare.default
+L["codww2_reticle_reflex_7.printname"] = "Perimeter"
+L["codww2_reticle_reflex_7.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_08.printname"] = "Crate"
-L["codww2_reticle_reflex_08.description"] = ww2rare.default
+L["codww2_reticle_reflex_8.printname"] = "Crate"
+L["codww2_reticle_reflex_8.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_09.printname"] = "Brink"
-L["codww2_reticle_reflex_09.description"] = ww2rare.default
+L["codww2_reticle_reflex_9.printname"] = "Brink"
+L["codww2_reticle_reflex_9.description"] = ww2rare.default
 
 L["codww2_reticle_reflex_10.printname"] = "Dot"
 L["codww2_reticle_reflex_10.description"] = ww2rare.default
 
 ////////// 4x Scope
-L["codww2_reticle_telescopic_01.printname"] = "Steadfast" -- ger_k98
-L["codww2_reticle_telescopic_01.description"] = ww2rare.default
+L["codww2_reticle_telescopic_1.printname"] = "Steadfast" -- ger_k98
+L["codww2_reticle_telescopic_1.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_02.printname"] = "Calculated" -- jpn_type38
-L["codww2_reticle_telescopic_02.description"] = ww2rare.default
+L["codww2_reticle_telescopic_2.printname"] = "Calculated" -- jpn_type38
+L["codww2_reticle_telescopic_2.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_03.printname"] = "Lean" -- pol_kbsp1938
-L["codww2_reticle_telescopic_03.description"] = ww2rare.default
+L["codww2_reticle_telescopic_3.printname"] = "Lean" -- pol_kbsp1938
+L["codww2_reticle_telescopic_3.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_04.printname"] = "Paradigm" -- usa_springfield
-L["codww2_reticle_telescopic_04.description"] = ww2rare.default
+L["codww2_reticle_telescopic_4.printname"] = "Paradigm" -- usa_springfield
+L["codww2_reticle_telescopic_4.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_05.printname"] = "Rooted" -- ger_acog
-L["codww2_reticle_telescopic_05.description"] = ww2rare.default
+L["codww2_reticle_telescopic_5.printname"] = "Rooted" -- ger_acog
+L["codww2_reticle_telescopic_5.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_06.printname"] = "Intrepid" -- 12
-L["codww2_reticle_telescopic_06.description"] = ww2rare.default
+L["codww2_reticle_telescopic_6.printname"] = "Intrepid" -- 12
+L["codww2_reticle_telescopic_6.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_07.printname"] = "Exemplar" -- 07
-L["codww2_reticle_telescopic_07.description"] = ww2rare.default
+L["codww2_reticle_telescopic_7.printname"] = "Exemplar" -- 07
+L["codww2_reticle_telescopic_7.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_08.printname"] = "Standard"
-L["codww2_reticle_telescopic_08.description"] = ww2rare.default
+L["codww2_reticle_telescopic_8.printname"] = "Standard"
+L["codww2_reticle_telescopic_8.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_09.printname"] = "Focal"
-L["codww2_reticle_telescopic_09.description"] = ww2rare.default
+L["codww2_reticle_telescopic_9.printname"] = "Focal"
+L["codww2_reticle_telescopic_9.description"] = ww2rare.default
 
 L["codww2_reticle_telescopic_10.printname"] = "Eagle Eye"
 L["codww2_reticle_telescopic_10.description"] = ww2rare.default
@@ -647,12 +645,10 @@ L["codww2_wep_smoke_grenade_type"] = "Tactical Area of Effect Grenade"
 L["codww2_wep_tabun"] = "Mk. V Gas Grenade"
 L["codww2_wep_tabun_desc"] = "Device that unleashes a poisonous smoke screen which blurs the vision and impairs movement."
 L["codww2_wep_tabun_flavor"] = "4 Meter Effect Radius. Lasts for 5 Seconds."
-L["codww2_wep_tabun_type"] = ARC9:GetPhrase("codww2_wep_smoke_grenade_type") or "Tactical Area of Effect Grenade"
 
 L["codww2_wep_signal_flare"] = "Signal Flare"
 L["codww2_wep_signal_flare_desc"] = "Device that produces an intense light, blinding and disorienting targets that are in its field of view."
 L["codww2_wep_signal_flare_flavor"] = "6 Meter Effect Radius, Lasts for 5 Seconds\n\nOnly affects enemies looking in direction of device."
-L["codww2_wep_signal_flare_type"] = ARC9:GetPhrase("codww2_wep_smoke_grenade_type") or "Tactical Area of Effect Grenade"
 
 ///////////////////////////////////////// Realistic Weapon Names
 //////////////////////////////// Settings
@@ -719,6 +715,510 @@ L["codww2_wep_p38_real"] = "Walther P38"
 L["codww2_wep_reich_real"] = "M1879 Reichsrevolver"
 
 ///////////////////////////////////////// Additional Content / DLC
+////////////////////  Camos
+///////////////// Overlord
+-- L["codww2_camo_greenspot.printname"] = "Frogskin"
+-- L["codww2_camo_greenspot.description"] = "First widespread camouflage used by the United States Military."
+
+////////////////////  Reticles
+/////////////////  Lens Sight
+L["codww2_reticle_lens_dlc_1.printname"] = "Eclipse" -- 00
+L["codww2_reticle_lens_dlc_1.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_2.printname"] = "Constitution" -- 01
+L["codww2_reticle_lens_dlc_2.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_3.printname"] = "Brawn" -- 02
+L["codww2_reticle_lens_dlc_3.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_4.printname"] = "Axehead" -- 03
+L["codww2_reticle_lens_dlc_4.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_5.printname"] = "Intelligence" -- 04
+L["codww2_reticle_lens_dlc_5.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_6.printname"] = "Archway" -- 05
+L["codww2_reticle_lens_dlc_6.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_7.printname"] = "Tunnel" -- 06
+L["codww2_reticle_lens_dlc_7.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_8.printname"] = "Dauntless" -- 07
+L["codww2_reticle_lens_dlc_8.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_9.printname"] = "Ascendant" -- 08
+L["codww2_reticle_lens_dlc_9.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_10.printname"] = "Millennium" -- 09
+L["codww2_reticle_lens_dlc_10.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_11.printname"] = "Keystone" -- 10
+L["codww2_reticle_lens_dlc_11.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_12.printname"] = "Safehaven" -- 11
+L["codww2_reticle_lens_dlc_12.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_13.printname"] = "Vengeance" -- 12
+L["codww2_reticle_lens_dlc_13.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_14.printname"] = "Ironclad" -- 13
+L["codww2_reticle_lens_dlc_14.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_15.printname"] = "Watchtower" -- 14
+L["codww2_reticle_lens_dlc_15.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_16.printname"] = "Barricade" -- 15
+L["codww2_reticle_lens_dlc_16.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_17.printname"] = "Backfire" -- 16
+L["codww2_reticle_lens_dlc_17.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_18.printname"] = "Accolade" -- 17
+L["codww2_reticle_lens_dlc_18.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_19.printname"] = "Gauntlet" -- 18
+L["codww2_reticle_lens_dlc_19.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_20.printname"] = "Lucid" -- 19
+L["codww2_reticle_lens_dlc_20.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_21.printname"] = "Gratitude" -- 20
+L["codww2_reticle_lens_dlc_21.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_22.printname"] = "Splice" -- 21
+L["codww2_reticle_lens_dlc_22.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_23.printname"] = "Charisma" -- 22
+L["codww2_reticle_lens_dlc_23.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_24.printname"] = "Stalemate" -- 23
+L["codww2_reticle_lens_dlc_24.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_25.printname"] = "Medidian" -- 24
+L["codww2_reticle_lens_dlc_25.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_26.printname"] = "Varsity" -- 25
+L["codww2_reticle_lens_dlc_26.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_27.printname"] = "Anvil" -- 26
+L["codww2_reticle_lens_dlc_27.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_28.printname"] = "Cobalt" -- Blitzkrieg, 27
+L["codww2_reticle_lens_dlc_28.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
+
+L["codww2_reticle_lens_dlc_29.printname"] = "Bodyguard" -- 28
+L["codww2_reticle_lens_dlc_29.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_30.printname"] = "Mincemeat" -- 29
+L["codww2_reticle_lens_dlc_30.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_31.printname"] = "Piledriver" -- 30
+L["codww2_reticle_lens_dlc_31.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_32.printname"] = "Hot Crossed" -- 31
+L["codww2_reticle_lens_dlc_32.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_33.printname"] = "Vigilante" -- 32
+L["codww2_reticle_lens_dlc_33.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_34.printname"] = "Hourglass" -- 33
+L["codww2_reticle_lens_dlc_34.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_35.printname"] = "Target Locked" -- 34
+L["codww2_reticle_lens_dlc_35.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_36.printname"] = "Tulip" -- 35
+L["codww2_reticle_lens_dlc_36.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_37.printname"] = "Saturn" -- 36
+L["codww2_reticle_lens_dlc_37.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_38.printname"] = "Cherry" -- 37
+L["codww2_reticle_lens_dlc_38.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_39.printname"] = "Chomp" -- 38
+L["codww2_reticle_lens_dlc_39.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_40.printname"] = "Biohazard" -- Undead, 39
+L["codww2_reticle_lens_dlc_40.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.undead)
+
+L["codww2_reticle_lens_dlc_41.printname"] = "Diamond Cutter" -- 40
+L["codww2_reticle_lens_dlc_41.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_42.printname"] = "Keyhole" -- 41
+L["codww2_reticle_lens_dlc_42.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_43.printname"] = "Trapped" -- 42
+L["codww2_reticle_lens_dlc_43.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_44.printname"] = "Crunchy" -- 43
+L["codww2_reticle_lens_dlc_44.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_45.printname"] = "Red Burst" -- 44
+L["codww2_reticle_lens_dlc_45.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_46.printname"] = "Tac" -- 45
+L["codww2_reticle_lens_dlc_46.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_47.printname"] = "Rank Up" -- 46
+L["codww2_reticle_lens_dlc_47.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_48.printname"] = "Invasion" -- 47
+L["codww2_reticle_lens_dlc_48.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_49.printname"] = "Tunnel Vision" -- 48
+L["codww2_reticle_lens_dlc_49.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_50.printname"] = "Droopy" -- 49
+L["codww2_reticle_lens_dlc_50.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_51.printname"] = "Legend Wheel" -- 50
+L["codww2_reticle_lens_dlc_51.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_52.printname"] = "Monitor" -- 51
+L["codww2_reticle_lens_dlc_52.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_53.printname"] = "Centripetal" -- 52
+L["codww2_reticle_lens_dlc_53.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_54.printname"] = "Pinch" -- 53
+L["codww2_reticle_lens_dlc_54.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_55.printname"] = "Suspect" -- 54
+L["codww2_reticle_lens_dlc_55.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_56.printname"] = "Target Locked II" -- 55
+L["codww2_reticle_lens_dlc_56.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_57.printname"] = "Hurricane" -- 56
+L["codww2_reticle_lens_dlc_57.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_58.printname"] = "Fidget Spinner" -- 57
+L["codww2_reticle_lens_dlc_58.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_59.printname"] = "Locked" -- 58
+L["codww2_reticle_lens_dlc_59.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_60.printname"] = "Accomplished" -- 59
+L["codww2_reticle_lens_dlc_60.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_61.printname"] = "Periscope" -- 60
+L["codww2_reticle_lens_dlc_61.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_62.printname"] = "Opposition" -- 61
+L["codww2_reticle_lens_dlc_62.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_63.printname"] = "Cursor" -- 62
+L["codww2_reticle_lens_dlc_63.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_64.printname"] = "Birdie" -- 63
+L["codww2_reticle_lens_dlc_64.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_65.printname"] = "Bloodshot" -- Covert, 64
+L["codww2_reticle_lens_dlc_65.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.covert)
+
+L["codww2_reticle_lens_dlc_66.printname"] = "You Are Here" -- 65
+L["codww2_reticle_lens_dlc_66.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_67.printname"] = "Toilet Seat" -- 66
+L["codww2_reticle_lens_dlc_67.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_68.printname"] = "Pivot" -- 67
+L["codww2_reticle_lens_dlc_68.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_69.printname"] = "Dome" -- 68
+L["codww2_reticle_lens_dlc_69.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_70.printname"] = "Brilliant" -- 69
+L["codww2_reticle_lens_dlc_70.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_71.printname"] = "Heart" -- 70
+L["codww2_reticle_lens_dlc_71.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_72.printname"] = "Bat" -- 71
+L["codww2_reticle_lens_dlc_72.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_73.printname"] = "Pumpkin" -- Halloween, 72
+L["codww2_reticle_lens_dlc_73.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
+
+L["codww2_reticle_lens_dlc_74.printname"] = "Turtle" -- 73
+L["codww2_reticle_lens_dlc_74.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_75.printname"] = "Barycenter" -- 74
+L["codww2_reticle_lens_dlc_75.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_76.printname"] = "Purist" -- 75
+L["codww2_reticle_lens_dlc_76.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_77.printname"] = "Tic Tac Toe" -- 76
+L["codww2_reticle_lens_dlc_77.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_78.printname"] = "The Helm" -- 77
+L["codww2_reticle_lens_dlc_78.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_79.printname"] = "Assassin" -- 78
+L["codww2_reticle_lens_dlc_79.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_80.printname"] = "Headhunter" -- 79
+L["codww2_reticle_lens_dlc_80.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_lens_dlc_81.printname"] = "Trisect" -- 80
+L["codww2_reticle_lens_dlc_81.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+/////////////////  Reflex Sight
+L["codww2_reticle_reflex_dlc_1.printname"] = "Symbol" -- 00
+L["codww2_reticle_reflex_dlc_1.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_2.printname"] = "Breach" -- 01
+L["codww2_reticle_reflex_dlc_2.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_3.printname"] = "Diadem" -- 02
+L["codww2_reticle_reflex_dlc_3.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_4.printname"] = "Quadrangle" -- 03
+L["codww2_reticle_reflex_dlc_4.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_5.printname"] = "Frantic" -- 04
+L["codww2_reticle_reflex_dlc_5.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_6.printname"] = "Crusader" -- 05
+L["codww2_reticle_reflex_dlc_6.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_7.printname"] = "Fortitude" -- 06
+L["codww2_reticle_reflex_dlc_7.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_8.printname"] = "Bravado" -- 07
+L["codww2_reticle_reflex_dlc_8.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_9.printname"] = "Spark" -- 08
+L["codww2_reticle_reflex_dlc_9.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_10.printname"] = "Compass" -- 09
+L["codww2_reticle_reflex_dlc_10.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_11.printname"] = "Landmark" -- 10
+L["codww2_reticle_reflex_dlc_11.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_12.printname"] = "Capital" -- 11
+L["codww2_reticle_reflex_dlc_12.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_13.printname"] = "Menace" -- 12
+L["codww2_reticle_reflex_dlc_13.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_14.printname"] = "Ruthless" -- 13
+L["codww2_reticle_reflex_dlc_14.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_15.printname"] = "Cycle" -- 14
+L["codww2_reticle_reflex_dlc_15.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_16.printname"] = "Chronicle" -- 15
+L["codww2_reticle_reflex_dlc_16.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_17.printname"] = "Switchback" -- 16
+L["codww2_reticle_reflex_dlc_17.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_18.printname"] = "Majestic" -- 17
+L["codww2_reticle_reflex_dlc_18.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_19.printname"] = "Mascot" -- 18
+L["codww2_reticle_reflex_dlc_19.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_20.printname"] = "Dragoon" -- 19
+L["codww2_reticle_reflex_dlc_20.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_21.printname"] = "Stonewall" -- 20
+L["codww2_reticle_reflex_dlc_21.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_22.printname"] = "Vitality" -- 21
+L["codww2_reticle_reflex_dlc_22.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_23.printname"] = "Pointblank" -- 22
+L["codww2_reticle_reflex_dlc_23.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_24.printname"] = "Chariot" -- 23
+L["codww2_reticle_reflex_dlc_24.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_25.printname"] = "Strength" -- 24
+L["codww2_reticle_reflex_dlc_25.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_26.printname"] = "Independence" -- 25
+L["codww2_reticle_reflex_dlc_26.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_27.printname"] = "Predator" -- 26
+L["codww2_reticle_reflex_dlc_27.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_28.printname"] = "Aggressor" -- Blitzkrieg, 27
+L["codww2_reticle_reflex_dlc_28.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
+
+L["codww2_reticle_reflex_dlc_29.printname"] = "Beast" -- 28
+L["codww2_reticle_reflex_dlc_29.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_30.printname"] = "Hunter" -- 29
+L["codww2_reticle_reflex_dlc_30.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_31.printname"] = "Instigator" -- 30
+L["codww2_reticle_reflex_dlc_31.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_32.printname"] = "Trap" -- 31
+L["codww2_reticle_reflex_dlc_32.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_33.printname"] = "Symmetrical" -- 32
+L["codww2_reticle_reflex_dlc_33.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_34.printname"] = "Concentric" -- 33
+L["codww2_reticle_reflex_dlc_34.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_35.printname"] = "Slope" -- 34
+L["codww2_reticle_reflex_dlc_35.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_36.printname"] = "Arrowhead" -- 35
+L["codww2_reticle_reflex_dlc_36.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_37.printname"] = "Alien" -- 36
+L["codww2_reticle_reflex_dlc_37.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_38.printname"] = "Brackets" -- 37
+L["codww2_reticle_reflex_dlc_38.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_39.printname"] = "Peace" -- 38
+L["codww2_reticle_reflex_dlc_39.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_40.printname"] = "Undead Eye" -- Undead, 39
+L["codww2_reticle_reflex_dlc_40.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.undead)
+
+L["codww2_reticle_reflex_dlc_41.printname"] = "Shooting Stars" -- 40
+L["codww2_reticle_reflex_dlc_41.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_42.printname"] = "Acquisition" -- 41
+L["codww2_reticle_reflex_dlc_42.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_43.printname"] = "The Zone" -- 42
+L["codww2_reticle_reflex_dlc_43.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_44.printname"] = "Quarterly Adjustment" -- 43
+L["codww2_reticle_reflex_dlc_44.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_45.printname"] = "Sections" -- 44
+L["codww2_reticle_reflex_dlc_45.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_46.printname"] = "Trifecta" -- 45
+L["codww2_reticle_reflex_dlc_46.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_47.printname"] = "Truest" -- 46
+L["codww2_reticle_reflex_dlc_47.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_48.printname"] = "Neutical" -- 47
+L["codww2_reticle_reflex_dlc_48.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_49.printname"] = "Radius" -- 48
+L["codww2_reticle_reflex_dlc_49.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_50.printname"] = "The Clamp" -- 49
+L["codww2_reticle_reflex_dlc_50.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_51.printname"] = "Drive" -- 50
+L["codww2_reticle_reflex_dlc_51.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_52.printname"] = "Okay" -- 51
+L["codww2_reticle_reflex_dlc_52.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_53.printname"] = "Imperial" -- 52
+L["codww2_reticle_reflex_dlc_53.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_54.printname"] = "Convergence" -- 53
+L["codww2_reticle_reflex_dlc_54.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_55.printname"] = "Undertaker" -- 54
+L["codww2_reticle_reflex_dlc_55.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_56.printname"] = "Illuminati" -- 55
+L["codww2_reticle_reflex_dlc_56.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_57.printname"] = "Meow" -- 56
+L["codww2_reticle_reflex_dlc_57.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_58.printname"] = "Antenna" -- 57
+L["codww2_reticle_reflex_dlc_58.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_59.printname"] = "Transcendence" -- 58
+L["codww2_reticle_reflex_dlc_59.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_60.printname"] = "Nucleus" -- 59
+L["codww2_reticle_reflex_dlc_60.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_61.printname"] = "Creation" -- 60
+L["codww2_reticle_reflex_dlc_61.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_62.printname"] = "Feed the Fish" -- 61
+L["codww2_reticle_reflex_dlc_62.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_63.printname"] = "Inertia" -- 62
+L["codww2_reticle_reflex_dlc_63.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_64.printname"] = "Exactitude" -- 63
+L["codww2_reticle_reflex_dlc_64.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_65.printname"] = "Strikezone" -- 64
+L["codww2_reticle_reflex_dlc_65.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.covert)
+
+L["codww2_reticle_reflex_dlc_66.printname"] = "Echolocation" -- 65
+L["codww2_reticle_reflex_dlc_66.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_67.printname"] = "Magic Wand" -- 66
+L["codww2_reticle_reflex_dlc_67.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_68.printname"] = "Beam" -- Covert, 67
+L["codww2_reticle_reflex_dlc_68.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_69.printname"] = "Critical Mass" -- 68
+L["codww2_reticle_reflex_dlc_69.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_70.printname"] = "Expansion" -- 69
+L["codww2_reticle_reflex_dlc_70.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_71.printname"] = "Backlash" -- 70
+L["codww2_reticle_reflex_dlc_71.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_72.printname"] = "Impaled" -- 71
+L["codww2_reticle_reflex_dlc_72.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_73.printname"] = "Squid" -- 72
+L["codww2_reticle_reflex_dlc_73.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
+
+L["codww2_reticle_reflex_dlc_74.printname"] = "Relic" -- Halloween, 73
+L["codww2_reticle_reflex_dlc_74.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_75.printname"] = "Shuriken" -- 74
+L["codww2_reticle_reflex_dlc_75.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_76.printname"] = "Motherboard" -- 75
+L["codww2_reticle_reflex_dlc_76.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_77.printname"] = "Lightning" -- 76
+L["codww2_reticle_reflex_dlc_77.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_78.printname"] = "Skelly" -- 77
+L["codww2_reticle_reflex_dlc_78.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_79.printname"] = "Insignia" -- 78
+L["codww2_reticle_reflex_dlc_79.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_80.printname"] = "Birdhouse" -- 79
+L["codww2_reticle_reflex_dlc_80.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+L["codww2_reticle_reflex_dlc_81.printname"] = "Heartbreak" -- 80
+L["codww2_reticle_reflex_dlc_81.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.other)
+
+///////////////// Reflex Sight
+////////// Overlord
+-- L["codww2_reticle_reflex_1.printname"] = "Up-And-Down"
+-- L["codww2_reticle_reflex_1.description"] = ww2rare.common
+
+///////////////// 4x Scope
+////////// Overlord
+-- L["codww2_reticle_telescopic_1.printname"] = "Steadfast"
+-- L["codww2_reticle_telescopic_1.description"] = ww2rare.common
+
 ///////////////////////////// Weapon Variants
 //////////////////// Rifles
 //////////// Base
@@ -1125,251 +1625,3 @@ L["codww2_wep_dagger_loot3"] = "Corkscrew"
 L["codww2_wep_hammer_loot1"] = "Hard-hitter"
 L["codww2_wep_hammer_loot2"] = "Skeleton Key"
 L["codww2_wep_hammer_loot3"] = "Hammerhead"
-
-////////// IGNORE - ENGLISH FILE ONLY
-L["codww2_extended_mag2.printname"] = ARC9:GetPhrase("codww2_extended_mag.printname") or "Extended Mag"
-L["codww2_extended_mag2.description"] = ARC9:GetPhrase("codww2_extended_mag.description") or "Increases your weapon's magazine size."
-L["codww2_grip2.printname"] = ARC9:GetPhrase("codww2_grip.printname") or "Grip"
-L["codww2_grip2.description"] = ARC9:GetPhrase("codww2_grip.description") or "Reduces weapon recoil while aiming down sight."
-L["codww2_extended_range2.printname"] = ARC9:GetPhrase("codww2_extended_range.printname") or "Advanced Rifling"
-L["codww2_extended_range2.description"] = ARC9:GetPhrase("codww2_extended_range.description") or "Increases damage falloff range."
-L["codww2_dragon_breath2.printname"] = ARC9:GetPhrase("codww2_dragon_breath.printname") or "Incendiary Shells"
-L["codww2_dragon_breath2.description"] = ARC9:GetPhrase("codww2_dragon_breath.description") or "Pellets that light enemies on fire and do damage over time."
-L["codww2_fast_ads2.printname"] = ARC9:GetPhrase("codww2_fast_ads.printname") or "Quickdraw"
-L["codww2_fast_ads2.description"] = ARC9:GetPhrase("codww2_fast_ads.description") or "Aim down sight faster."
-L["codww2_reduced_sway2.printname"] = ARC9:GetPhrase("codww2_reduced_sway.printname") or "Ballistic Calibration"
-L["codww2_reduced_sway2.description"] = ARC9:GetPhrase("codww2_reduced_sway.description") or "Reduces sway."
-L["codww2_head_damage2.printname"] = ARC9:GetPhrase("codww2_head_damage.printname") or "High Caliber"
-L["codww2_head_damage2.description"] = ARC9:GetPhrase("codww2_head_damage.description") or "Increases head shot damage."
-L["codww2_fmj2.printname"] = ARC9:GetPhrase("codww2_fmj.printname") or "Full Metal Jacket"
-L["codww2_fmj2.description"] = ARC9:GetPhrase("codww2_fmj.description") or "Increases damage through surfaces."
-L["codww2_hipfire2.printname"] = ARC9:GetPhrase("codww2_hipfire.printname") or "Steady Aim"
-L["codww2_hipfire2.description"] = ARC9:GetPhrase("codww2_hipfire.description") or "Better accuracy when firing from the hip."
-L["codww2_m30_rifle2.printname"] = ARC9:GetPhrase("codww2_m30_rifle.printname") or "Rifle Bullet"
-L["codww2_m30_rifle2.description"] = ARC9:GetPhrase("codww2_m30_rifle.description") or "Enables rifle bullet to be used from the 3rd chamber. <color=255,100,100>Does not work with Incendiary Shells or Resistance Division.</color>"
-L["codww2_rapid_fire2.printname"] = ARC9:GetPhrase("codww2_rapid_fire.printname") or "Rapid Fire"
-L["codww2_rapid_fire2.description"] = ARC9:GetPhrase("codww2_rapid_fire.description") or "Increases weapon fire rate."
-L["codww2_grenade_launcher2.printname"] = ARC9:GetPhrase("codww2_grenade_launcher.printname") or "Rifle Grenade"
-L["codww2_grenade_launcher2.description"] = ARC9:GetPhrase("codww2_grenade_launcher.description") or "Mounted grenades which can be launched."
-L["codww2_suppressor2.printname"] = ARC9:GetPhrase("codww2_suppressor.printname") or "Suppressor"
-L["codww2_suppressor2.description"] = ARC9:GetPhrase("codww2_suppressor.description") or "Reduces weapon sound and you remain hidden from radar when firing."
-L["codww2_suppressor_smg2.printname"] = ARC9:GetPhrase("codww2_suppressor_smg.printname") or "SMG Suppressor"
-L["codww2_suppressor_smg2.description"] = ARC9:GetPhrase("codww2_suppressor.description") or "Reduces weapon sound and you remain hidden from radar when firing."
-L["codww2_bayonet2.printname"] = ARC9:GetPhrase("codww2_bayonet.printname") or "Bayonet"
-L["codww2_bayonet2.description"] = ARC9:GetPhrase("codww2_bayonet.description") or "Bayonet mounted at end of rifle which provides one-hit kill melee attacks."
-L["codww2_tactical_knife2.printname"] = ARC9:GetPhrase("codww2_tactical_knife.printname") or "Tactical Knife"
-L["codww2_tactical_knife2.description"] = ARC9:GetPhrase("codww2_tactical_knife.description") or "Carry a tactical knife in your off-hand for fast one-hit melee attacks."
-L["codww2_fast_mag2.printname"] = ARC9:GetPhrase("codww2_fast_mag.printname") or "Fast Reload"
-L["codww2_fast_mag2.description"] = ARC9:GetPhrase("codww2_fast_mag.description") or "Increases reload speed."
-L["codww2_explosive_tips2.printname"] = ARC9:GetPhrase("codww2_explosive_tips.printname") or "Explosive Tips"
-L["codww2_explosive_tips2.description"] = ARC9:GetPhrase("codww2_explosive_tips.description") or "Fire bolts that detonate with a deadly explosion a short time after impact."
-L["codww2_tribolt2.printname"] = ARC9:GetPhrase("codww2_tribolt.printname") or "Tri-Bolt"
-L["codww2_tribolt2.description"] = ARC9:GetPhrase("codww2_tribolt.description") or "Fire 3 bolts at a time."
-L["codww2_fast_bolt2.printname"] = ARC9:GetPhrase("codww2_fast_bolt.printname") or "Fast Bolt"
-L["codww2_fast_bolt2.description"] = ARC9:GetPhrase("codww2_fast_bolt.description") or "Fire aerodynamic bolts that reach your target more quickly."
-
-L["codww2_extended_mag3.printname"] = ARC9:GetPhrase("codww2_extended_mag.printname") or "Extended Mag"
-L["codww2_extended_mag3.description"] = ARC9:GetPhrase("codww2_extended_mag.description") or "Increases your weapon's magazine size."
-L["codww2_grip3.printname"] = ARC9:GetPhrase("codww2_grip.printname") or "Grip"
-L["codww2_grip3.description"] = ARC9:GetPhrase("codww2_grip.description") or "Reduces weapon recoil while aiming down sight."
-L["codww2_extended_range3.printname"] = ARC9:GetPhrase("codww2_extended_range.printname") or "Advanced Rifling"
-L["codww2_extended_range3.description"] = ARC9:GetPhrase("codww2_extended_range.description") or "Increases damage falloff range."
-L["codww2_dragon_breath3.printname"] = ARC9:GetPhrase("codww2_dragon_breath.printname") or "Incendiary Shells"
-L["codww2_dragon_breath3.description"] = ARC9:GetPhrase("codww2_dragon_breath.description") or "Pellets that light enemies on fire and do damage over time."
-L["codww2_fast_ads3.printname"] = ARC9:GetPhrase("codww2_fast_ads.printname") or "Quickdraw"
-L["codww2_fast_ads3.description"] = ARC9:GetPhrase("codww2_fast_ads.description") or "Aim down sight faster."
-L["codww2_reduced_sway3.printname"] = ARC9:GetPhrase("codww2_reduced_sway.printname") or "Ballistic Calibration"
-L["codww2_reduced_sway3.description"] = ARC9:GetPhrase("codww2_reduced_sway.description") or "Reduces sway."
-L["codww2_head_damage3.printname"] = ARC9:GetPhrase("codww2_head_damage.printname") or "High Caliber"
-L["codww2_head_damage3.description"] = ARC9:GetPhrase("codww2_head_damage.description") or "Increases head shot damage."
-L["codww2_fmj3.printname"] = ARC9:GetPhrase("codww2_fmj.printname") or "Full Metal Jacket"
-L["codww2_fmj3.description"] = ARC9:GetPhrase("codww2_fmj.description") or "Increases damage through surfaces."
-L["codww2_hipfire3.printname"] = ARC9:GetPhrase("codww2_hipfire.printname") or "Steady Aim"
-L["codww2_hipfire3.description"] = ARC9:GetPhrase("codww2_hipfire.description") or "Better accuracy when firing from the hip."
-L["codww2_m30_rifle3.printname"] = ARC9:GetPhrase("codww2_m30_rifle.printname") or "Rifle Bullet"
-L["codww2_m30_rifle3.description"] = ARC9:GetPhrase("codww2_m30_rifle.description") or "Enables rifle bullet to be used from the 3rd chamber. <color=255,100,100>Does not work with Incendiary Shells or Resistance Division.</color>"
-L["codww2_rapid_fire3.printname"] = ARC9:GetPhrase("codww2_rapid_fire.printname") or "Rapid Fire"
-L["codww2_rapid_fire3.description"] = ARC9:GetPhrase("codww2_rapid_fire.description") or "Increases weapon fire rate."
-L["codww2_grenade_launcher3.printname"] = ARC9:GetPhrase("codww2_grenade_launcher.printname") or "Rifle Grenade"
-L["codww2_grenade_launcher3.description"] = ARC9:GetPhrase("codww2_grenade_launcher.description") or "Mounted grenades which can be launched."
-L["codww2_suppressor3.printname"] = ARC9:GetPhrase("codww2_suppressor.printname") or "Suppressor"
-L["codww2_suppressor3.description"] = ARC9:GetPhrase("codww2_suppressor.description") or "Reduces weapon sound and you remain hidden from radar when firing."
-L["codww2_suppressor_smg3.printname"] = ARC9:GetPhrase("codww2_suppressor_smg.printname") or "SMG Suppressor"
-L["codww2_suppressor_smg3.description"] = ARC9:GetPhrase("codww2_suppressor.description") or "Reduces weapon sound and you remain hidden from radar when firing."
-L["codww2_bayonet3.printname"] = ARC9:GetPhrase("codww2_bayonet.printname") or "Bayonet"
-L["codww2_bayonet3.description"] = ARC9:GetPhrase("codww2_bayonet.description") or "Bayonet mounted at end of rifle which provides one-hit kill melee attacks."
-L["codww2_tactical_knife3.printname"] = ARC9:GetPhrase("codww2_tactical_knife.printname") or "Tactical Knife"
-L["codww2_tactical_knife3.description"] = ARC9:GetPhrase("codww2_tactical_knife.description") or "Carry a tactical knife in your off-hand for fast one-hit melee attacks."
-L["codww2_fast_mag3.printname"] = ARC9:GetPhrase("codww2_fast_mag.printname") or "Fast Reload"
-L["codww2_fast_mag3.description"] = ARC9:GetPhrase("codww2_fast_mag.description") or "Increases reload speed."
-L["codww2_explosive_tips3.printname"] = ARC9:GetPhrase("codww2_explosive_tips.printname") or "Explosive Tips"
-L["codww2_explosive_tips3.description"] = ARC9:GetPhrase("codww2_explosive_tips.description") or "Fire bolts that detonate with a deadly explosion a short time after impact."
-L["codww2_tribolt3.printname"] = ARC9:GetPhrase("codww2_tribolt.printname") or "Tri-Bolt"
-L["codww2_tribolt3.description"] = ARC9:GetPhrase("codww2_tribolt.description") or "Fire 3 bolts at a time."
-L["codww2_fast_bolt3.printname"] = ARC9:GetPhrase("codww2_fast_bolt.printname") or "Fast Bolt"
-L["codww2_fast_bolt3.description"] = ARC9:GetPhrase("codww2_fast_bolt.description") or "Fire aerodynamic bolts that reach your target more quickly."
-
-L["codww2_extended_mag4.printname"] = ARC9:GetPhrase("codww2_extended_mag.printname") or "Extended Mag"
-L["codww2_extended_mag4.description"] = ARC9:GetPhrase("codww2_extended_mag.description") or "Increases your weapon's magazine size."
-L["codww2_grip4.printname"] = ARC9:GetPhrase("codww2_grip.printname") or "Grip"
-L["codww2_grip4.description"] = ARC9:GetPhrase("codww2_grip.description") or "Reduces weapon recoil while aiming down sight."
-L["codww2_extended_range4.printname"] = ARC9:GetPhrase("codww2_extended_range.printname") or "Advanced Rifling"
-L["codww2_extended_range4.description"] = ARC9:GetPhrase("codww2_extended_range.description") or "Increases damage falloff range."
-L["codww2_dragon_breath4.printname"] = ARC9:GetPhrase("codww2_dragon_breath.printname") or "Incendiary Shells"
-L["codww2_dragon_breath4.description"] = ARC9:GetPhrase("codww2_dragon_breath.description") or "Pellets that light enemies on fire and do damage over time."
-L["codww2_fast_ads4.printname"] = ARC9:GetPhrase("codww2_fast_ads.printname") or "Quickdraw"
-L["codww2_fast_ads4.description"] = ARC9:GetPhrase("codww2_fast_ads.description") or "Aim down sight faster."
-L["codww2_reduced_sway4.printname"] = ARC9:GetPhrase("codww2_reduced_sway.printname") or "Ballistic Calibration"
-L["codww2_reduced_sway4.description"] = ARC9:GetPhrase("codww2_reduced_sway.description") or "Reduces sway."
-L["codww2_head_damage4.printname"] = ARC9:GetPhrase("codww2_head_damage.printname") or "High Caliber"
-L["codww2_head_damage4.description"] = ARC9:GetPhrase("codww2_head_damage.description") or "Increases head shot damage."
-L["codww2_fmj4.printname"] = ARC9:GetPhrase("codww2_fmj.printname") or "Full Metal Jacket"
-L["codww2_fmj4.description"] = ARC9:GetPhrase("codww2_fmj.description") or "Increases damage through surfaces."
-L["codww2_hipfire4.printname"] = ARC9:GetPhrase("codww2_hipfire.printname") or "Steady Aim"
-L["codww2_hipfire4.description"] = ARC9:GetPhrase("codww2_hipfire.description") or "Better accuracy when firing from the hip."
-L["codww2_m30_rifle4.printname"] = ARC9:GetPhrase("codww2_m30_rifle.printname") or "Rifle Bullet"
-L["codww2_m30_rifle4.description"] = ARC9:GetPhrase("codww2_m30_rifle.description") or "Enables rifle bullet to be used from the 3rd chamber. <color=255,100,100>Does not work with Incendiary Shells or Resistance Division.</color>"
-L["codww2_rapid_fire4.printname"] = ARC9:GetPhrase("codww2_rapid_fire.printname") or "Rapid Fire"
-L["codww2_rapid_fire4.description"] = ARC9:GetPhrase("codww2_rapid_fire.description") or "Increases weapon fire rate."
-L["codww2_grenade_launcher4.printname"] = ARC9:GetPhrase("codww2_grenade_launcher.printname") or "Rifle Grenade"
-L["codww2_grenade_launcher4.description"] = ARC9:GetPhrase("codww2_grenade_launcher.description") or "Mounted grenades which can be launched."
-L["codww2_suppressor4.printname"] = ARC9:GetPhrase("codww2_suppressor.printname") or "Suppressor"
-L["codww2_suppressor4.description"] = ARC9:GetPhrase("codww2_suppressor.description") or "Reduces weapon sound and you remain hidden from radar when firing."
-L["codww2_suppressor_smg4.printname"] = ARC9:GetPhrase("codww2_suppressor_smg.printname") or "SMG Suppressor"
-L["codww2_suppressor_smg4.description"] = ARC9:GetPhrase("codww2_suppressor.description") or "Reduces weapon sound and you remain hidden from radar when firing."
-L["codww2_bayonet4.printname"] = ARC9:GetPhrase("codww2_bayonet.printname") or "Bayonet"
-L["codww2_bayonet4.description"] = ARC9:GetPhrase("codww2_bayonet.description") or "Bayonet mounted at end of rifle which provides one-hit kill melee attacks."
-L["codww2_tactical_knife4.printname"] = ARC9:GetPhrase("codww2_tactical_knife.printname") or "Tactical Knife"
-L["codww2_tactical_knife4.description"] = ARC9:GetPhrase("codww2_tactical_knife.description") or "Carry a tactical knife in your off-hand for fast one-hit melee attacks."
-L["codww2_fast_mag4.printname"] = ARC9:GetPhrase("codww2_fast_mag.printname") or "Fast Reload"
-L["codww2_fast_mag4.description"] = ARC9:GetPhrase("codww2_fast_mag.description") or "Increases reload speed."
-L["codww2_explosive_tips4.printname"] = ARC9:GetPhrase("codww2_explosive_tips.printname") or "Explosive Tips"
-L["codww2_explosive_tips4.description"] = ARC9:GetPhrase("codww2_explosive_tips.description") or "Fire bolts that detonate with a deadly explosion a short time after impact."
-L["codww2_tribolt4.printname"] = ARC9:GetPhrase("codww2_tribolt.printname") or "Tri-Bolt"
-L["codww2_tribolt4.description"] = ARC9:GetPhrase("codww2_tribolt.description") or "Fire 3 bolts at a time."
-L["codww2_fast_bolt4.printname"] = ARC9:GetPhrase("codww2_fast_bolt.printname") or "Fast Bolt"
-L["codww2_fast_bolt4.description"] = ARC9:GetPhrase("codww2_fast_bolt.description") or "Fire aerodynamic bolts that reach your target more quickly."
-
-///////////////////////////// Weapon Default Variants
-//////////////////// Rifles
-//////////// Base
-L["codww2_variant_m1941.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_m1garand.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_stg44.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_m1a1.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_fg42.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_bar.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_svt40.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////// DLC
-L["codww2_variant_g43.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_volk.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_type5.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_m2carbine.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_m1935.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_avs36.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_federov.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_sudaev.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_charlton.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_kgm21.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_grofuss.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_wimmer.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////////////// Submachine Guns
-//////////// Base
-L["codww2_variant_greasegun.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_ppsh41.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_type100.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_mp28.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_thompson.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_mp40.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////// DLC
-L["codww2_variant_sten.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_beretta.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_mas38.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_sterling.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_nambu.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_zk383.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_ribeyrolles.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_tokyo.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_emp44.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_blyskawica.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_erma.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_austen.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_m2hyde.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_bechowiec.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////////////// Light Machine Guns
-//////////// Base
-L["codww2_variant_lewis.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_mg15.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_bren.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_mg42.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-//////////// DLC
-L["codww2_variant_breda30.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_mg81.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_m1919.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_vmg1927.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_lad.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_chatellerault.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////////////// Sniper Rifles
-//////////// Base
-L["codww2_variant_karabin.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_leeenfield.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_springfield.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_kar98.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////// DLC
-L["codww2_variant_arisaka.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_leveraction.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_ptrs41.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_delisle.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_mosin.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_sdk.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_wz35.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_mas36.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////////////// Shotguns
-//////////// Base
-L["codww2_variant_winchester1897.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_m30.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_walther.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_model21.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////// DLC
-L["codww2_variant_blunderbuss.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////////////// Pistols
-//////////// Base
-L["codww2_variant_luger.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_m1911.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_m712.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////// DLC
-L["codww2_variant_p38.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_enfieldno2.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_reich.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////////////// Launchers
-//////////// Base
-L["codww2_variant_m1bazooka.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_panzerschreck.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////// DLC
-L["codww2_variant_dp28.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////////////// Melees
-//////////// Base
-L["codww2_variant_shovelmp.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-
-//////////// DLC
-L["codww2_variant_icepick.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_trenchknife.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_combatknife.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_baseballbat.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_axe.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_sword.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_dagger.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"
-L["codww2_variant_hammer.printname"] = ARC9:GetPhrase("codww2_rarity_default") or "Standard Issue"

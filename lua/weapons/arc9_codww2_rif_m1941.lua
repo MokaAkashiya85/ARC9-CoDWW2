@@ -220,7 +220,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(19, 50, 5)
 SWEP.CustomizeRotateAnchor = Vector(19, -3, -4)
 SWEP.CustomizeSnapshotFOV = 65
-SWEP.CustomizeSnapshotPos = Vector(-1, 25, 2.5)
+SWEP.CustomizeSnapshotPos = Vector(-3, 25, 2.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -909,6 +909,42 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if eles["gl"] and ((wep:GetUBGL() and wep:Clip2() > 0) or (wep:StillWaiting() and !wep.hideubglthing)) then
         model:SetBodygroup(5, 2)
     end
+end
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+	local animation = anim
+
+	if wep:HasElement("anim_epic") and anim == "inspect" then -- "Epic" rarity weapon variant; usually only an inspect animation using this
+		animation =  "epic_" .. animation
+	end
+
+	if wep:HasElement("anim_mm") then -- "Marksman" weapon variant
+		animation =  "mm_" .. animation
+	end
+	
+	if wep:HasElement("anim_cqb") then -- "CQB" weapon variant
+		animation =  "cqb_" .. animation
+	end
+	
+	if wep:HasElement("mag_ext") then
+		if anim == "reload" or anim == "reload_empty" then
+			animation = animation .. "_ext"
+		end
+	end
+		
+	if wep:HasElement("bayonet") then
+		if anim == "bash" then
+			animation = animation .. "_bayonet"
+		end
+	end
+	
+	if wep:HasElement("gl") then
+		if wep:Clip2() == 0 and (anim == "enter_ubgl" or anim == "exit_ubgl") then
+			animation = animation .. "_empty"
+		end
+	end
+
+	return animation
 end
 
 SWEP.Attachments = {

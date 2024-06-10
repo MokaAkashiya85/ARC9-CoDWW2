@@ -34,10 +34,10 @@ L["codww2_category_weapon_grenade"] = "수류탄"
 local ww2rare = {
 	default = "표준 지급",
 	common = "일반",
-	rare = "<color=0,115,179>희귀</color>",
-	legendary = "<color=0,115,179>전설</color>",
-	epic = "<color=96,71,132>영웅</color>",
-	heroic = "<color=135,0,0>영웅</color>",
+	rare = "<color=0,165,255>희귀</color>",
+	legendary = "<color=147,110,204>전설</color>",
+	epic = "<color=255,170,0>영웅</color>",
+	heroic = "<color=255,50,50>영웅</color>",
 }
 
 L["codww2_rarity_default"] = ww2rare.default
@@ -243,94 +243,94 @@ L["codww2_camo_chrome.printname"] = "크롬"
 
 ////////////////////  Reticles
 ////////// Lens Sight
-L["codww2_reticle_lens_01.printname"] = "핀포인트"
-L["codww2_reticle_lens_01.description"] = ww2rare.default
+L["codww2_reticle_lens_1.printname"] = "핀포인트"
+L["codww2_reticle_lens_1.description"] = ww2rare.default
 
-L["codww2_reticle_lens_02.printname"] = "교차"
-L["codww2_reticle_lens_02.description"] = ww2rare.default
+L["codww2_reticle_lens_2.printname"] = "교차"
+L["codww2_reticle_lens_2.description"] = ww2rare.default
 
-L["codww2_reticle_lens_03.printname"] = "바닐라"
-L["codww2_reticle_lens_03.description"] = ww2rare.default
+L["codww2_reticle_lens_3.printname"] = "바닐라"
+L["codww2_reticle_lens_3.description"] = ww2rare.default
 
-L["codww2_reticle_lens_04.printname"] = "프레임"
-L["codww2_reticle_lens_04.description"] = ww2rare.default
+L["codww2_reticle_lens_4.printname"] = "프레임"
+L["codww2_reticle_lens_4.description"] = ww2rare.default
 
-L["codww2_reticle_lens_05.printname"] = "이등분"
-L["codww2_reticle_lens_05.description"] = ww2rare.default
+L["codww2_reticle_lens_5.printname"] = "이등분"
+L["codww2_reticle_lens_5.description"] = ww2rare.default
 
-L["codww2_reticle_lens_06.printname"] = "스트라이프"
-L["codww2_reticle_lens_06.description"] = ww2rare.default
+L["codww2_reticle_lens_6.printname"] = "스트라이프"
+L["codww2_reticle_lens_6.description"] = ww2rare.default
 
-L["codww2_reticle_lens_07.printname"] = "라이벌"
-L["codww2_reticle_lens_07.description"] = ww2rare.default
+L["codww2_reticle_lens_7.printname"] = "라이벌"
+L["codww2_reticle_lens_7.description"] = ww2rare.default
 
-L["codww2_reticle_lens_08.printname"] = "상승"
-L["codww2_reticle_lens_08.description"] = ww2rare.default
+L["codww2_reticle_lens_8.printname"] = "상승"
+L["codww2_reticle_lens_8.description"] = ww2rare.default
 
-L["codww2_reticle_lens_09.printname"] = "적막"
-L["codww2_reticle_lens_09.description"] = ww2rare.default
+L["codww2_reticle_lens_9.printname"] = "적막"
+L["codww2_reticle_lens_9.description"] = ww2rare.default
 
 L["codww2_reticle_lens_10.printname"] = "밑받침"
 L["codww2_reticle_lens_10.description"] = ww2rare.default
 
 ////////// Reflex Sight
-L["codww2_reticle_reflex_01.printname"] = "위아래"
-L["codww2_reticle_reflex_01.description"] = ww2rare.default
+L["codww2_reticle_reflex_1.printname"] = "위아래"
+L["codww2_reticle_reflex_1.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_02.printname"] = "십자형"
-L["codww2_reticle_reflex_02.description"] = ww2rare.default
+L["codww2_reticle_reflex_2.printname"] = "십자형"
+L["codww2_reticle_reflex_2.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_03.printname"] = "기울기"
-L["codww2_reticle_reflex_03.description"] = ww2rare.default
+L["codww2_reticle_reflex_3.printname"] = "기울기"
+L["codww2_reticle_reflex_3.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_04.printname"] = "입자"
-L["codww2_reticle_reflex_04.description"] = ww2rare.default
+L["codww2_reticle_reflex_4.printname"] = "입자"
+L["codww2_reticle_reflex_4.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_05.printname"] = "두 배"
-L["codww2_reticle_reflex_05.description"] = ww2rare.default
+L["codww2_reticle_reflex_5.printname"] = "두 배"
+L["codww2_reticle_reflex_5.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_06.printname"] = "방울"
-L["codww2_reticle_reflex_06.description"] = ww2rare.default
+L["codww2_reticle_reflex_6.printname"] = "방울"
+L["codww2_reticle_reflex_6.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_07.printname"] = "둘레"
-L["codww2_reticle_reflex_07.description"] = ww2rare.default
+L["codww2_reticle_reflex_7.printname"] = "둘레"
+L["codww2_reticle_reflex_7.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_08.printname"] = "상자"
-L["codww2_reticle_reflex_08.description"] = ww2rare.default
+L["codww2_reticle_reflex_8.printname"] = "상자"
+L["codww2_reticle_reflex_8.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_09.printname"] = "끝"
-L["codww2_reticle_reflex_09.description"] = ww2rare.default
+L["codww2_reticle_reflex_9.printname"] = "끝"
+L["codww2_reticle_reflex_9.description"] = ww2rare.default
 
 L["codww2_reticle_reflex_10.printname"] = "도트"
 L["codww2_reticle_reflex_10.description"] = ww2rare.default
 
 ////////// 4x Scope
-L["codww2_reticle_telescopic_01.printname"] = "불변" -- ger_k98
-L["codww2_reticle_telescopic_01.description"] = ww2rare.default
+L["codww2_reticle_telescopic_1.printname"] = "불변" -- ger_k98
+L["codww2_reticle_telescopic_1.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_02.printname"] = "계산" -- jpn_type38
-L["codww2_reticle_telescopic_02.description"] = ww2rare.default
+L["codww2_reticle_telescopic_2.printname"] = "계산" -- jpn_type38
+L["codww2_reticle_telescopic_2.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_03.printname"] = "기울이기" -- pol_kbsp1938
-L["codww2_reticle_telescopic_03.description"] = ww2rare.default
+L["codww2_reticle_telescopic_3.printname"] = "기울이기" -- pol_kbsp1938
+L["codww2_reticle_telescopic_3.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_04.printname"] = "패러다임" -- usa_springfield
-L["codww2_reticle_telescopic_04.description"] = ww2rare.default
+L["codww2_reticle_telescopic_4.printname"] = "패러다임" -- usa_springfield
+L["codww2_reticle_telescopic_4.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_05.printname"] = "회전" -- ger_acog
-L["codww2_reticle_telescopic_05.description"] = ww2rare.default
+L["codww2_reticle_telescopic_5.printname"] = "회전" -- ger_acog
+L["codww2_reticle_telescopic_5.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_06.printname"] = "인터피드" -- 12
-L["codww2_reticle_telescopic_06.description"] = ww2rare.default
+L["codww2_reticle_telescopic_6.printname"] = "인터피드" -- 12
+L["codww2_reticle_telescopic_6.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_07.printname"] = "모범" -- 07
-L["codww2_reticle_telescopic_07.description"] = ww2rare.default
+L["codww2_reticle_telescopic_7.printname"] = "모범" -- 07
+L["codww2_reticle_telescopic_7.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_08.printname"] = "스탠다드"
-L["codww2_reticle_telescopic_08.description"] = ww2rare.default
+L["codww2_reticle_telescopic_8.printname"] = "스탠다드"
+L["codww2_reticle_telescopic_8.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_09.printname"] = "초점"
-L["codww2_reticle_telescopic_09.description"] = ww2rare.default
+L["codww2_reticle_telescopic_9.printname"] = "초점"
+L["codww2_reticle_telescopic_9.description"] = ww2rare.default
 
 L["codww2_reticle_telescopic_10.printname"] = "이글 아이"
 L["codww2_reticle_telescopic_10.description"] = ww2rare.default

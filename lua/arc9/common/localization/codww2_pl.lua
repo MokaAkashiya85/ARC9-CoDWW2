@@ -34,10 +34,10 @@ L["codww2_category_weapon_grenade"] = "Granat"
 local ww2rare = {
 	default = "Standardowe",
 	common = "Pospolity",
-	rare = "<color=0,115,179>Rzadki</color>",
-	legendary = "<color=0,115,179>Legendarny</color>",
-	epic = "<color=96,71,132>Epicki</color>",
-	heroic = "<color=135,0,0>Heroiczny</color>",
+	rare = "<color=0,165,255>Rzadki</color>",
+	legendary = "<color=147,110,204>Legendarny</color>",
+	epic = "<color=255,170,0>Epicki</color>",
+	heroic = "<color=255,50,50>Heroiczny</color>",
 }
 
 L["codww2_rarity_default"] = ww2rare.default
@@ -243,94 +243,94 @@ L["codww2_camo_chrome.printname"] = "Chrom"
 
 ////////////////////  Reticles
 ////////// Lens Sight
-L["codww2_reticle_lens_01.printname"] = "W cel"
-L["codww2_reticle_lens_01.description"] = ww2rare.default
+L["codww2_reticle_lens_1.printname"] = "W cel"
+L["codww2_reticle_lens_1.description"] = ww2rare.default
 
-L["codww2_reticle_lens_02.printname"] = "Krzyżyk"
-L["codww2_reticle_lens_02.description"] = ww2rare.default
+L["codww2_reticle_lens_2.printname"] = "Krzyżyk"
+L["codww2_reticle_lens_2.description"] = ww2rare.default
 
-L["codww2_reticle_lens_03.printname"] = "Zwykły"
-L["codww2_reticle_lens_03.description"] = ww2rare.default
+L["codww2_reticle_lens_3.printname"] = "Zwykły"
+L["codww2_reticle_lens_3.description"] = ww2rare.default
 
-L["codww2_reticle_lens_04.printname"] = "Ramka"
-L["codww2_reticle_lens_04.description"] = ww2rare.default
+L["codww2_reticle_lens_4.printname"] = "Ramka"
+L["codww2_reticle_lens_4.description"] = ww2rare.default
 
-L["codww2_reticle_lens_05.printname"] = "Cięcie"
-L["codww2_reticle_lens_05.description"] = ww2rare.default
+L["codww2_reticle_lens_5.printname"] = "Cięcie"
+L["codww2_reticle_lens_5.description"] = ww2rare.default
 
-L["codww2_reticle_lens_06.printname"] = "Konflikt"
-L["codww2_reticle_lens_06.description"] = ww2rare.default
+L["codww2_reticle_lens_6.printname"] = "Konflikt"
+L["codww2_reticle_lens_6.description"] = ww2rare.default
 
-L["codww2_reticle_lens_07.printname"] = "Rywal"
-L["codww2_reticle_lens_07.description"] = ww2rare.default
+L["codww2_reticle_lens_7.printname"] = "Rywal"
+L["codww2_reticle_lens_7.description"] = ww2rare.default
 
-L["codww2_reticle_lens_08.printname"] = "Wzniesienie"
-L["codww2_reticle_lens_08.description"] = ww2rare.default
+L["codww2_reticle_lens_8.printname"] = "Wzniesienie"
+L["codww2_reticle_lens_8.description"] = ww2rare.default
 
-L["codww2_reticle_lens_09.printname"] = "Spustoszenie"
-L["codww2_reticle_lens_09.description"] = ww2rare.default
+L["codww2_reticle_lens_9.printname"] = "Spustoszenie"
+L["codww2_reticle_lens_9.description"] = ww2rare.default
 
 L["codww2_reticle_lens_10.printname"] = "Spodek"
 L["codww2_reticle_lens_10.description"] = ww2rare.default
 
 ////////// Reflex Sight
-L["codww2_reticle_reflex_01.printname"] = "Góra i dół"
-L["codww2_reticle_reflex_01.description"] = ww2rare.default
+L["codww2_reticle_reflex_1.printname"] = "Góra i dół"
+L["codww2_reticle_reflex_1.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_02.printname"] = "Przecięcie"
-L["codww2_reticle_reflex_02.description"] = ww2rare.default
+L["codww2_reticle_reflex_2.printname"] = "Przecięcie"
+L["codww2_reticle_reflex_2.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_03.printname"] = "Krzywa"
-L["codww2_reticle_reflex_03.description"] = ww2rare.default
+L["codww2_reticle_reflex_3.printname"] = "Krzywa"
+L["codww2_reticle_reflex_3.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_04.printname"] = "Pyłek"
-L["codww2_reticle_reflex_04.description"] = ww2rare.default
+L["codww2_reticle_reflex_4.printname"] = "Pyłek"
+L["codww2_reticle_reflex_4.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_05.printname"] = "Podwójny"
-L["codww2_reticle_reflex_05.description"] = ww2rare.default
+L["codww2_reticle_reflex_5.printname"] = "Podwójny"
+L["codww2_reticle_reflex_5.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_06.printname"] = "Kropla"
-L["codww2_reticle_reflex_06.description"] = ww2rare.default
+L["codww2_reticle_reflex_6.printname"] = "Kropla"
+L["codww2_reticle_reflex_6.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_07.printname"] = "Perymetr"
-L["codww2_reticle_reflex_07.description"] = ww2rare.default
+L["codww2_reticle_reflex_7.printname"] = "Perymetr"
+L["codww2_reticle_reflex_7.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_08.printname"] = "Skrzynka"
-L["codww2_reticle_reflex_08.description"] = ww2rare.default
+L["codww2_reticle_reflex_8.printname"] = "Skrzynka"
+L["codww2_reticle_reflex_8.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_09.printname"] = "Krawędź"
-L["codww2_reticle_reflex_09.description"] = ww2rare.default
+L["codww2_reticle_reflex_9.printname"] = "Krawędź"
+L["codww2_reticle_reflex_9.description"] = ww2rare.default
 
 L["codww2_reticle_reflex_10.printname"] = "Kropka"
 L["codww2_reticle_reflex_10.description"] = ww2rare.default
 
 ////////// 4x Scope
-L["codww2_reticle_telescopic_01.printname"] = "Wytrzymały" -- ger_k98
-L["codww2_reticle_telescopic_01.description"] = ww2rare.default
+L["codww2_reticle_telescopic_1.printname"] = "Wytrzymały" -- ger_k98
+L["codww2_reticle_telescopic_1.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_02.printname"] = "Kalkulacja" -- jpn_type38
-L["codww2_reticle_telescopic_02.description"] = ww2rare.default
+L["codww2_reticle_telescopic_2.printname"] = "Kalkulacja" -- jpn_type38
+L["codww2_reticle_telescopic_2.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_03.printname"] = "Smukły" -- pol_kbsp1938
-L["codww2_reticle_telescopic_03.description"] = ww2rare.default
+L["codww2_reticle_telescopic_3.printname"] = "Smukły" -- pol_kbsp1938
+L["codww2_reticle_telescopic_3.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_04.printname"] = "Paradygmat" -- usa_springfield
-L["codww2_reticle_telescopic_04.description"] = ww2rare.default
+L["codww2_reticle_telescopic_4.printname"] = "Paradygmat" -- usa_springfield
+L["codww2_reticle_telescopic_4.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_05.printname"] = "Osadzony" -- ger_acog
-L["codww2_reticle_telescopic_05.description"] = ww2rare.default
+L["codww2_reticle_telescopic_5.printname"] = "Osadzony" -- ger_acog
+L["codww2_reticle_telescopic_5.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_06.printname"] = "Bystry" -- 12
-L["codww2_reticle_telescopic_06.description"] = ww2rare.default
+L["codww2_reticle_telescopic_6.printname"] = "Bystry" -- 12
+L["codww2_reticle_telescopic_6.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_07.printname"] = "Przykładny" -- 07
-L["codww2_reticle_telescopic_07.description"] = ww2rare.default
+L["codww2_reticle_telescopic_7.printname"] = "Przykładny" -- 07
+L["codww2_reticle_telescopic_7.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_08.printname"] = "Standardowy"
-L["codww2_reticle_telescopic_08.description"] = ww2rare.default
+L["codww2_reticle_telescopic_8.printname"] = "Standardowy"
+L["codww2_reticle_telescopic_8.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_09.printname"] = "Ogniskowy"
-L["codww2_reticle_telescopic_09.description"] = ww2rare.default
+L["codww2_reticle_telescopic_9.printname"] = "Ogniskowy"
+L["codww2_reticle_telescopic_9.description"] = ww2rare.default
 
 L["codww2_reticle_telescopic_10.printname"] = "Sokole oko"
 L["codww2_reticle_telescopic_10.description"] = ww2rare.default
@@ -661,10 +661,10 @@ L["codww2_wep_signal_flare_flavor"] = "6-metrowy promień rażenia, czas trwania
 ///////////////////////////// Weapon Variants
 //////////////////// Rifles
 //////////// Base
-L["codww2_wep_m1941_loot0"] = "The Cook"
-L["codww2_wep_m1941_loot1"] = "Battle Watch"
-L["codww2_wep_m1941_loot2"] = "Jawbreaker"
-L["codww2_wep_m1941_loot3"] = "Savior"
+L["codww2_wep_m1941_loot0"] = "Kuchmistrz"
+L["codww2_wep_m1941_loot1"] = "Zegarek bojowy"
+L["codww2_wep_m1941_loot2"] = "Łamacz szczęk"
+L["codww2_wep_m1941_loot3"] = "Zbawca"
 
 L["codww2_wep_m1garand_loot0"] = "Rookie"
 L["codww2_wep_m1garand_loot1"] = "Front Line"

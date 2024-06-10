@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "mokaww2\reticles\dlc\s2_ret_mdlc_telescopic_012_hdr"
+	"$basetexturetransform" "center .5 .5 scale 0.98 0.98 rotate 0 translate 0 0"
+	"$translucent" "1"
+	"$color2" "{ 0 0 0 }"
+}

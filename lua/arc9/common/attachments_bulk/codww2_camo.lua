@@ -1,5 +1,6 @@
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// -- Universal Stuff
+local ATT = {}
 
 local universalshit = {
 	Category = "universal_camo",
@@ -14,7 +15,7 @@ local sortingorder = 0
 
 ////////////////////////////////////////////////////////////////////// -- Challenges
 ///////////////////////////// -- Frogskin
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "Frogskin"
 ATT.Icon = Material("mokaww2/camosicons/greenspot.png")

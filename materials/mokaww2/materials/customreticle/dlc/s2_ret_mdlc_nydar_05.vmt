@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "mokaww2\reticles\dlc\s2_ret_mdlc_nydar_005_hdr"
+	"$translucent" "1"
+	"$color2" "{ 232 212 120 }"
+}

@@ -1,6 +1,7 @@
 ////////////////////////////////////////////////////////////////////// -- Reticles
-///////////////////////////// -- Reflex Sight
 local ATT = {}
+////////////////////////////////////////////////////////// -- Reflex Sight
+ATT = {}
 
 ATT.PrintName = "Reflex Reticle 1"
 ATT.Icon = Material("mokaww2/reticles/png/reflex01.png")
@@ -9,9 +10,8 @@ ATT.SortOrder = 1
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_1"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_01")
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_1")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -22,9 +22,8 @@ ATT.SortOrder = 2
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_2"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_02")
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_2")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -35,9 +34,8 @@ ATT.SortOrder = 3
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_3"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_03")
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_3")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -48,9 +46,8 @@ ATT.SortOrder = 4
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_4"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_04")
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_4")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -61,9 +58,8 @@ ATT.SortOrder = 5
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_5"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_05")
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_5")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -74,9 +70,8 @@ ATT.SortOrder = 6
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_6"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_06")
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_6")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -87,9 +82,8 @@ ATT.SortOrder = 7
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_7"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_07")
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_7")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -100,9 +94,8 @@ ATT.SortOrder = 8
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_8"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_08")
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_8")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -113,9 +106,8 @@ ATT.SortOrder = 9
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_9"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_09")
+ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_9")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -126,12 +118,11 @@ ATT.SortOrder = 10
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_reflex"}
-ATT.ActivateElements = {"reflexreticle_10"}
 
 ARC9.LoadAttachment(ATT, "codww2_reticle_reflex_10")
 
-///////////////////////////// -- Lens Sight
-local ATT = {}
+////////////////////////////////////////////////////////// -- Lens Sight
+ATT = {}
 
 ATT.PrintName = "Lens Reticle 1"
 ATT.Icon = Material("mokaww2/reticles/png/lens01.png")
@@ -140,9 +131,8 @@ ATT.SortOrder = 1
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_1"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_lens_01")
+ARC9.LoadAttachment(ATT, "codww2_reticle_lens_1")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -153,9 +143,8 @@ ATT.SortOrder = 2
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_2"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_lens_02")
+ARC9.LoadAttachment(ATT, "codww2_reticle_lens_2")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -166,9 +155,8 @@ ATT.SortOrder = 3
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_3"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_lens_03")
+ARC9.LoadAttachment(ATT, "codww2_reticle_lens_3")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -179,9 +167,8 @@ ATT.SortOrder = 4
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_4"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_lens_04")
+ARC9.LoadAttachment(ATT, "codww2_reticle_lens_4")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -192,9 +179,8 @@ ATT.SortOrder = 5
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_5"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_lens_05")
+ARC9.LoadAttachment(ATT, "codww2_reticle_lens_5")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -205,9 +191,8 @@ ATT.SortOrder = 6
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_6"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_lens_06")
+ARC9.LoadAttachment(ATT, "codww2_reticle_lens_6")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -218,9 +203,8 @@ ATT.SortOrder = 7
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_7"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_lens_07")
+ARC9.LoadAttachment(ATT, "codww2_reticle_lens_7")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -231,9 +215,8 @@ ATT.SortOrder = 8
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_8"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_lens_08")
+ARC9.LoadAttachment(ATT, "codww2_reticle_lens_8")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -244,9 +227,8 @@ ATT.SortOrder = 9
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_9"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_lens_09")
+ARC9.LoadAttachment(ATT, "codww2_reticle_lens_9")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -257,12 +239,11 @@ ATT.SortOrder = 10
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_lens"}
-ATT.ActivateElements = {"lensreticle_10"}
 
 ARC9.LoadAttachment(ATT, "codww2_reticle_lens_10")
 
-///////////////////////////// -- 4x Scope
-local ATT = {}
+////////////////////////////////////////////////////////// -- 4x Scope
+ATT = {}
 
 ATT.PrintName = "Telescopic Reticle 1"
 ATT.Icon = Material("mokaww2/reticles/png/ger_k98.png")
@@ -271,9 +252,8 @@ ATT.SortOrder = 1
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_1"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_01")
+ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_1")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -284,9 +264,8 @@ ATT.SortOrder = 2
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_2"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_02")
+ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_2")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -297,9 +276,8 @@ ATT.SortOrder = 3
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_3"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_03")
+ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_3")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -310,9 +288,8 @@ ATT.SortOrder = 4
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_4"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_04")
+ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_4")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -323,9 +300,8 @@ ATT.SortOrder = 5
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_5"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_05")
+ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_5")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -336,9 +312,8 @@ ATT.SortOrder = 6
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_6"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_06")
+ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_6")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -349,9 +324,8 @@ ATT.SortOrder = 7
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_7"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_07")
+ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_7")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -362,9 +336,8 @@ ATT.SortOrder = 8
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_8"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_08")
+ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_8")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -375,9 +348,8 @@ ATT.SortOrder = 9
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_9"}
 
-ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_09")
+ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_9")
 ------------------------------------------------------------------
 ATT = {}
 
@@ -388,6 +360,5 @@ ATT.SortOrder = 10
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Reticles"
 ATT.Category = {"codww2_reticle_telescopic"}
-ATT.ActivateElements = {"telescopicreticle_10"}
 
 ARC9.LoadAttachment(ATT, "codww2_reticle_telescopic_10")

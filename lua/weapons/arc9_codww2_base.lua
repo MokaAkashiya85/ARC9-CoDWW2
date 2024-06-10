@@ -145,63 +145,6 @@ SWEP.SpreadAddBipod = -0.05
 SWEP.AimDownSightsTimeMultBipod = 0.5
 SWEP.ReloadTimeMultBipod = 0.75
 
-SWEP.Hook_TranslateAnimation = function(wep, anim)
-	local animation = anim
-	if wep:HasElement("incendiary") then -- Shotgun Incendiary Shells
-		if anim == "reload_start" or anim == "reload_insert" or anim == "reload_finish" then
-			if wep:Clip1() == 0 then
-				animation = "inc_" .. animation .. "_empty"
-			else
-				animation = "inc_" .. animation
-			end
-		end
-	end
-	
-	if wep:HasElement("tacknife") then -- Handgun Tactical Knife
-		animation =  "tacknife_" .. animation
-	end
-
-	if wep:HasElement("anim_epic") then -- "Epic" rarity weapon variant; usually only an inspect animation using this
-		animation =  "epic_" .. animation
-	end
-
-	if wep:HasElement("anim_mm") then -- "Marksman" weapon variant
-		animation =  "mm_" .. animation
-	end
-	
-	if wep:HasElement("anim_cqb") then -- "CQB" weapon variant
-		animation =  "cqb_" .. animation
-	end
-	
-	if wep:HasElement("mag_ext") then
-		if anim == "reload" or anim == "reload_empty" or anim == "fire" or anim == "fire_sights" then
-			animation = animation .. "_ext"
-		end
-	end
-		
-	if wep:HasElement("bayonet") then
-		if anim == "bash" then
-			animation = animation .. "_bayonet"
-		end
-	end
-	
-	if wep:HasElement("gl") then
-		if wep:Clip2() == 0 and (anim == "enter_ubgl" or anim == "exit_ubgl") then
-			animation = animation .. "_empty"
-		end
-	end
-		
-	if wep:HasElement("grip") and anim == "inspect" then
-		animation = animation .. "_grip"
-	end
-		
-	if wep:GetBipod() then
-		animation = "bipod_" .. animation
-	end
-		
-	return animation
-end
-
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
 

@@ -92,7 +92,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.75
+SWEP.Recoil = 4
 
 SWEP.RecoilPatternDrift = 0
 
@@ -108,7 +108,7 @@ SWEP.RecoilRandomSide = 0.66
 SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1.75 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.5
 
@@ -116,7 +116,7 @@ SWEP.RecoilMultCrouch = 0.8
 
 SWEP.RecoilMultMove = 1.25
 
-SWEP.RecoilPerShot = 1
+SWEP.RecoilPerShot = 3
 SWEP.RecoilMax = 3
 
 -------------------------- VISUAL RECOIL
@@ -191,7 +191,7 @@ end
 
 return {
 	Pos = V,
-	Ang = Angle(0, 0, 0),
+	Ang = A,
 	Magnification = 1.1,
 	ViewModelFOV = 65,
 }
@@ -212,7 +212,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(20, 35, 2.5)
 SWEP.CustomizeRotateAnchor = Vector(20, -4.25, -4)
 SWEP.CustomizeSnapshotFOV = 65
-SWEP.CustomizeSnapshotPos = Vector(1, 25, 2.5)
+SWEP.CustomizeSnapshotPos = Vector(-4, 5, 1.25)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -1007,6 +1007,34 @@ SWEP.AttachmentElements = {
 		}
     },
 }
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+	local animation = anim
+
+	if wep:HasElement("tacknife") then -- Handgun Tactical Knife
+		animation =  "tacknife_" .. animation
+	end
+
+	if wep:HasElement("anim_epic") and anim == "inspect" then -- "Epic" rarity weapon variant; usually only an inspect animation using this
+		animation =  "epic_" .. animation
+	end
+
+	if wep:HasElement("anim_mm") then -- "Marksman" weapon variant
+		animation =  "mm_" .. animation
+	end
+
+	if wep:HasElement("mag_ext") then
+		if anim == "reload" or anim == "reload_empty" then
+			animation = animation .. "_ext"
+		end
+	end
+
+	if wep:HasElement("pistolgrip") and anim == "inspect" then
+		animation = animation .. "_grip"
+	end
+
+	return animation
+end
 
 SWEP.Attachments = {
     { -- 1

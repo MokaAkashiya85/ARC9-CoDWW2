@@ -1,6 +1,7 @@
 ////////////////////////////////////////////////////////////////////// -- Optics & General Attachments in Slot 1
-///////////////////////////// -- Sights
 local ATT = {}
+////////////////////////////////////////////////////////// -- Sights
+ATT = {}
 
 ATT.PrintName = "Default Sniper Scope"
 ATT.Icon = Material("mokaww2/icons/atts/reflex.png")
@@ -84,10 +85,19 @@ local skinval = swep.ReflexReticleMaterial
 	end
 
     for ind = 0, 999 do -- Reticles
-        local val = eles["reflexreticle_" .. ind]
+        local val = eles["codww2_reticle_reflex_" .. ind]
+		local valdlc = eles["codww2_reticle_reflex_dlc_" .. ind]
+		local customreticlepath = "mokaww2/materials/customreticle/"
+
         if val then
-            model:SetSubMaterial(swep.ReflexReticleMat or 3, "mokaww2/materials/customreticle/reflex_" .. ind)
+            customreticlepath = customreticlepath .. "reflex_" .. ind
+		elseif valdlc then
+            customreticlepath = customreticlepath .. "dlc/s2_ret_mdlc_nydar_0" .. (ind - 1)
         end
+		
+		if val or valdlc then
+			model:SetSubMaterial(swep.ReflexReticleMat or 3, customreticlepath)
+		end
     end
 
 end
@@ -151,10 +161,22 @@ local sa = swep:GetSightAmount()
 	end
 
     for ind = 0, 999 do -- Reticles
-        local val = eles["lensreticle_" .. ind]
+        local val = eles["codww2_reticle_lens_" .. ind]
+		local valdlc = eles["codww2_reticle_lens_dlc_" .. ind]
+		local customreticlepath = "mokaww2/materials/customreticle/"
+
         if val then
-            model:SetSubMaterial(3, "mokaww2/materials/customreticle/lens_" .. ind)
+            customreticlepath = customreticlepath .. "lens_" .. ind
+		elseif valdlc then
+            customreticlepath = customreticlepath .. "dlc/s2_ret_mdlc_lens_0" .. (ind - 1)
+			-- if ind >= 27 then 
+				-- customreticlepath = customreticlepath .. "dlc/s2_ret_mdlc_lens_0" .. ind
+			-- end
         end
+		
+		if val or valdlc then
+			model:SetSubMaterial(swep.LensReticleMat or 3, customreticlepath)
+		end
     end
 
 end
@@ -210,10 +232,19 @@ local skinval = swep.WW2ScopeReticleMat
 	end
 
     for ind = 0, 999 do -- Reticles
-        local val = eles["telescopicreticle_" .. ind]
+        local val = eles["codww2_reticle_telescopic_" .. ind]
+		local valdlc = eles["codww2_reticle_telescopic_dlc_" .. ind]
+		local customreticlepath = "mokaww2/materials/customreticle/"
+
         if val then
-            model:SetSubMaterial(swep.ScopeReticleMat or 2, "mokaww2/materials/customreticle/scope_" .. ind)
+            customreticlepath = customreticlepath .. "scope_" .. ind
+		elseif valdlc then
+            customreticlepath = customreticlepath .. "dlc/s2_ret_mdlc_telescopic_0" .. (ind - 1)
         end
+		
+		if val or valdlc then
+			model:SetSubMaterial(swep.ScopeReticleMat or 2, customreticlepath)
+		end
     end
 
 end
@@ -281,10 +312,19 @@ local skinval = swep.WW2ScopeReticleMat
 	end
 
     for ind = 0, 999 do -- Reticles
-        local val = eles["telescopicreticle_" .. ind]
+        local val = eles["codww2_reticle_telescopic_" .. ind]
+		local valdlc = eles["codww2_reticle_telescopic_dlc_" .. ind]
+		local customreticlepath = "mokaww2/materials/customreticle/"
+
         if val then
-            model:SetSubMaterial(swep.ScopeReticleMat or 2, "mokaww2/materials/customreticle/scope_" .. ind)
+            customreticlepath = customreticlepath .. "scope_" .. ind
+		elseif valdlc then
+            customreticlepath = customreticlepath .. "dlc/s2_ret_mdlc_telescopic_0" .. (ind - 1)
         end
+		
+		if val or valdlc then
+			model:SetSubMaterial(swep.ScopeReticleMat or 2, customreticlepath)
+		end
     end
 
 end
@@ -301,7 +341,7 @@ end
 
 ARC9.LoadAttachment(ATT, "codww2_telescopic_sight_sniper")
 ------------------------------------------------------------------
-///////////////////////////// -- Other Attachments
+////////////////////////////////////////////////////////// -- Other Attachments
 ATT = {}
 
 ATT.PrintName = "Extended Mag"
@@ -683,12 +723,12 @@ ARC9.LoadAttachment(ATT, "codww2_debug_anim_epic")
 ATT = {}
 
 ATT.PrintName = "\"Grip\" Animation Override"
-ATT.Description = "Overrides animations to use \"Grip\" animations (if they exist).\nIntended for <color=255,255,100>debugging handguns</color>!"
+ATT.Description = "Overrides the inspect animation to use a \"Grip\" inspect animation (if it exists).\nIntended for <color=255,255,100>debugging handguns</color>!"
 ATT.Folder = "DEBUG"
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
-ATT.Category = {"codww2_atts4"}
-ATT.ActivateElements = {"grip"}
+ATT.Category = {"codww2_atts4_pistol"}
+ATT.ActivateElements = {"pistolgrip"}
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_grip")
 ------------------------------------------------------------------

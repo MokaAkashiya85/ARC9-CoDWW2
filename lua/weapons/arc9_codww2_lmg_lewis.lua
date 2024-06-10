@@ -231,7 +231,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(21, 50, 5)
 SWEP.CustomizeRotateAnchor = Vector(21, -5, -4)
 SWEP.CustomizeSnapshotFOV = 65
-SWEP.CustomizeSnapshotPos = Vector(-1, 25, 2.5)
+SWEP.CustomizeSnapshotPos = Vector(-3.5, 35, 2.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -426,6 +426,7 @@ SWEP.Animations = {
         Source = {"reg_melee"},
 		Mult = 1,
     },
+
  -- Bipod Animations
     ["enter_bipod"] = {
         Source = "bipod_draw",
@@ -507,6 +508,247 @@ SWEP.Animations = {
     ["bipod_idle"] = {
         Source = "bipod_idle",
     },
+
+-- Marksman Animations
+    ["mm_enter_sights"] = {
+        Source = "mm_idle",
+    },
+    ["mm_fire"] = {
+        Source = "mm_fire",
+    },
+    ["mm_fire_sights"] = {
+        Source = "mm_fire_ads",
+    },
+    ["mm_fire_ext"] = {
+        Source = "mm_fire_ext",
+    },
+    ["mm_fire_sights_ext"] = {
+        Source = "mm_fire_ads_ext",
+    },
+    ["mm_reload"] = {
+        Source = "mm_reload",
+		MinProgress = 0.925,
+		RefillProgress = 0.8,
+		FireASAP = true,
+        EventTable = {
+			{s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2},
+            {s = pathr .. "wpn_rhino_empty_magin.ogg", t = 4.5},
+            {s = pathr .. "wpn_thor_empty_magin.ogg", t = 5},
+            {s = pathr .. "wpn_thor_tac_smack.ogg", t = 5.8},
+        },
+    },
+    ["mm_reload_empty"] = {
+        Source = "mm_reload_empty",
+		MinProgress = 0.95,
+		RefillProgress = 0.85,
+		FireASAP = true,
+        EventTable = {
+			{s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2},
+            {s = pathr .. "wpn_rhino_empty_magin.ogg", t = 4.5},
+            {s = pathr .. "wpn_thor_empty_magin.ogg", t = 5},
+            {s = pathr .. "wpn_thor_tac_smack.ogg", t = 5.8},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 6.7},
+        },
+    },
+    ["mm_reload_ext"] = {
+        Source = "mm_reload_ext",
+		MinProgress = 0.95,
+		RefillProgress = 0.825,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_lewis_tac_ext_unlock.ogg", t = 1},
+            {s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2.75},
+            {s = path .. "wpn_lewis_tac_ext_magin.ogg", t = 4.75},
+        },
+    },
+    ["mm_reload_empty_ext"] = {
+        Source = "mm_reload_ext_empty",
+		MinProgress = 0.925,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_lewis_empty_ext_unlock.ogg", t = 1},
+            {s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2.75},
+            {s = path .. "wpn_lewis_empty_ext_magin.ogg", t = 4.75},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 6.5},
+        },
+    },
+    ["mm_ready"] = {
+        Source = "mm_draw_first",
+		MinProgress = 0.95,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Large.Raise", t = 0},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 0.4},
+        },
+    },
+    ["mm_draw"] = {
+        Source = "mm_draw",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Large.Raise", t = 0},
+        },
+    },
+    ["mm_holster"] = {
+        Source = "mm_holster",
+        EventTable = {
+            {s = "CoDWW2.Large.Holster", t = 0},
+        },
+    },
+    ["mm_idle"] = {
+        Source = "mm_idle",
+    },
+    ["mm_idle_sprint"] = {
+        Source = "mm_sprint",
+    },
+    ["mm_exit_sprint"] = {
+        Source = "mm_sprint_out",
+		Time = 3,
+    },
+    ["mm_enter_sprint"] = {
+        Source = "mm_sprint_in",
+		Time = 0.8,
+    },
+    ["mm_inspect"] = {
+        Source = "mm_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_lewis_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_lewis_inspect_stndrd_pt_02.ogg", t = 3.3},
+        },
+    },
+    ["mm_bash"] = {
+        Source = {"mm_melee"},
+		Mult = 1,
+    },
+
+-- CQB Animations
+    ["cqb_enter_sights"] = {
+        Source = "cqb_idle",
+    },
+    ["cqb_fire"] = {
+        Source = "cqb_fire",
+    },
+    ["cqb_fire_sights"] = {
+        Source = "cqb_fire_ads",
+    },
+    ["cqb_fire_ext"] = {
+        Source = "cqb_fire_ext",
+    },
+    ["cqb_fire_sights_ext"] = {
+        Source = "cqb_fire_ads_ext",
+    },
+    ["cqb_reload"] = {
+        Source = "cqb_reload",
+		MinProgress = 0.925,
+		RefillProgress = 0.8,
+		FireASAP = true,
+        EventTable = {
+			{s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2},
+            {s = pathr .. "wpn_rhino_empty_magin.ogg", t = 4.5},
+            {s = pathr .. "wpn_thor_empty_magin.ogg", t = 5},
+            {s = pathr .. "wpn_thor_tac_smack.ogg", t = 5.8},
+        },
+    },
+    ["cqb_reload_empty"] = {
+        Source = "cqb_reload_empty",
+		MinProgress = 0.95,
+		RefillProgress = 0.85,
+		FireASAP = true,
+        EventTable = {
+			{s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2},
+            {s = pathr .. "wpn_rhino_empty_magin.ogg", t = 4.5},
+            {s = pathr .. "wpn_thor_empty_magin.ogg", t = 5},
+            {s = pathr .. "wpn_thor_tac_smack.ogg", t = 5.8},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 6.7},
+        },
+    },
+    ["cqb_reload_ext"] = {
+        Source = "cqb_reload_ext",
+		MinProgress = 0.95,
+		RefillProgress = 0.825,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_lewis_tac_ext_unlock.ogg", t = 1},
+            {s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2.75},
+            {s = path .. "wpn_lewis_tac_ext_magin.ogg", t = 4.75},
+        },
+    },
+    ["cqb_reload_empty_ext"] = {
+        Source = "cqb_reload_ext_empty",
+		MinProgress = 0.925,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_lewis_empty_ext_unlock.ogg", t = 1},
+            {s = pathr .. "wpn_rhino_empty_magout.ogg", t = 2.75},
+            {s = path .. "wpn_lewis_empty_ext_magin.ogg", t = 4.75},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 6.5},
+        },
+    },
+    ["cqb_ready"] = {
+        Source = "cqb_draw_first",
+		MinProgress = 0.95,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Large.Raise", t = 0},
+            {s = pathr .. "wpn_lsat_empty_charge.ogg", t = 0.4},
+        },
+    },
+    ["cqb_draw"] = {
+        Source = "cqb_draw",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Large.Raise", t = 0},
+        },
+    },
+    ["cqb_holster"] = {
+        Source = "cqb_holster",
+        EventTable = {
+            {s = "CoDWW2.Large.Holster", t = 0},
+        },
+    },
+    ["cqb_idle"] = {
+        Source = "cqb_idle",
+    },
+    ["cqb_idle_sprint"] = {
+        Source = "cqb_sprint",
+    },
+    ["cqb_exit_sprint"] = {
+        Source = "cqb_sprint_out",
+		Time = 3,
+    },
+    ["cqb_enter_sprint"] = {
+        Source = "cqb_sprint_in",
+		Time = 0.8,
+    },
+    ["cqb_inspect"] = {
+        Source = "cqb_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_lewis_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_lewis_inspect_stndrd_pt_02.ogg", t = 3.3},
+        },
+    },
+    ["cqb_bash"] = {
+        Source = {"cqb_melee"},
+		Mult = 1,
+    },
+
+-- Epic inspect
+    ["epic_inspect"] = {
+        Source = "epic_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_lewis_inspect_epic_pt_01.ogg", t = 0},
+			{s = path .. "wpn_lewis_inspect_epic_pt_02.ogg", t = 2.85},
+        },
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -536,6 +778,35 @@ SWEP.AttachmentTableOverrides = {
 		-- ActivateElements = {"lens", "lens_small"}
     },
 }
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+	local animation = anim
+	local b = wep:GetBipod()
+
+	if wep:HasElement("anim_epic") and !b then -- "Epic" rarity weapon variant; usually only an inspect animation using this
+		animation =  "epic_" .. animation
+	end
+
+	if wep:HasElement("anim_mm") and !b then -- "Marksman" weapon variant
+		animation =  "cqb_" .. animation
+	end
+	
+	if wep:HasElement("anim_cqb") and !b then -- "CQB" weapon variant
+		animation =  "cqb_" .. animation
+	end
+	
+	if wep:HasElement("mag_ext") then
+		if anim == "reload" or anim == "reload_empty" or anim == "fire" or anim == "fire_sights" then
+			animation = animation .. "_ext"
+		end
+	end
+
+	if b then
+		animation = "bipod_" .. animation
+	end
+		
+	return animation
+end
 
 SWEP.AttachmentElements = {
     ["base_none"] = { Bodygroups = { {0,1} } },
@@ -624,7 +895,7 @@ SWEP.Attachments = {
         CosmeticOnly = true,
         Category = {"charm"},
         Bone = "tag_weapon",
-        Pos = Vector(0, -0.525, 4.525),
+        Pos = Vector(0, -2.075, 5.35),
 		Icon_Offset = Vector(1, 0.875, 6.5 - 4.525),
 		Scale = 1,
 		Hidden = false

@@ -21,7 +21,7 @@ SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_assets") ] = "Sledgehammer Games"
 }
 
-SWEP.ReflexReticleMat = 2
+SWEP.ReflexReticleMat = 3
 -- SWEP.ReflexReticlePos = 0
 -- SWEP.ReflexReticleRotate = -90
 
@@ -214,7 +214,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(16, 50, 5)
 SWEP.CustomizeRotateAnchor = Vector(16, -4.25, -4)
 SWEP.CustomizeSnapshotFOV = 65
-SWEP.CustomizeSnapshotPos = Vector(1, 25, 2.5)
+SWEP.CustomizeSnapshotPos = Vector(-1, 17.5, 2.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -387,7 +387,7 @@ SWEP.Animations = {
     },
     ["enter_sprint"] = {
         Source = "reg_sprint_in",
-		Time = 2,
+		Time = 1.75,
     },
     ["inspect"] = {
         Source = "reg_inspect",
@@ -713,6 +713,30 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if eles["suppressor"] and (silfiremode or gfat > 1) then
         model:SetBodygroup(5, 1)
     end
+end
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+	local animation = anim
+
+	if wep:HasElement("anim_epic") and anim == "inspect" then -- "Epic" rarity weapon variant; usually only an inspect animation using this
+		animation =  "epic_" .. animation
+	end
+
+	if wep:HasElement("anim_mm") then -- "Marksman" weapon variant
+		animation =  "mm_" .. animation
+	end
+	
+	if wep:HasElement("anim_cqb") then -- "CQB" weapon variant
+		animation =  "cqb_" .. animation
+	end
+	
+	if wep:HasElement("mag_ext") then
+		if anim == "reload" or anim == "reload_empty" then
+			animation = animation .. "_ext"
+		end
+	end
+
+	return animation
 end
 
 SWEP.Attachments = {

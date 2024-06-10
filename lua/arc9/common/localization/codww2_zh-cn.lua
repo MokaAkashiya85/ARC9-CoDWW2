@@ -34,10 +34,10 @@ L["codww2_category_weapon_grenade"] = "手雷"
 local ww2rare = {
 	default = "标准装备",
 	common = "普通",
-	rare = "<color=0,115,179>稀有</color>",
-	legendary = "<color=0,115,179>传奇</color>",
-	epic = "<color=96,71,132>史诗</color>",
-	heroic = "<color=135,0,0>英雄</color>",
+	rare = "<color=0,165,255>稀有</color>",
+	legendary = "<color=147,110,204>传奇</color>",
+	epic = "<color=255,170,0>史诗</color>",
+	heroic = "<color=255,50,50>英雄</color>",
 }
 
 L["codww2_rarity_default"] = ww2rare.default
@@ -243,94 +243,94 @@ L["codww2_camo_chrome.printname"] = "铬合金"
 
 ////////////////////  Reticles
 ////////// Lens Sight
-L["codww2_reticle_lens_01.printname"] = "精准"
-L["codww2_reticle_lens_01.description"] = ww2rare.default
+L["codww2_reticle_lens_1.printname"] = "精准"
+L["codww2_reticle_lens_1.description"] = ww2rare.default
 
-L["codww2_reticle_lens_02.printname"] = "横切"
-L["codww2_reticle_lens_02.description"] = ww2rare.default
+L["codww2_reticle_lens_2.printname"] = "横切"
+L["codww2_reticle_lens_2.description"] = ww2rare.default
 
-L["codww2_reticle_lens_03.printname"] = "香草"
-L["codww2_reticle_lens_03.description"] = ww2rare.default
+L["codww2_reticle_lens_3.printname"] = "香草"
+L["codww2_reticle_lens_3.description"] = ww2rare.default
 
-L["codww2_reticle_lens_04.printname"] = "框架"
-L["codww2_reticle_lens_04.description"] = ww2rare.default
+L["codww2_reticle_lens_4.printname"] = "框架"
+L["codww2_reticle_lens_4.description"] = ww2rare.default
 
-L["codww2_reticle_lens_05.printname"] = "对分"
-L["codww2_reticle_lens_05.description"] = ww2rare.default
+L["codww2_reticle_lens_5.printname"] = "对分"
+L["codww2_reticle_lens_5.description"] = ww2rare.default
 
-L["codww2_reticle_lens_06.printname"] = "争论"
-L["codww2_reticle_lens_06.description"] = ww2rare.default
+L["codww2_reticle_lens_6.printname"] = "争论"
+L["codww2_reticle_lens_6.description"] = ww2rare.default
 
-L["codww2_reticle_lens_07.printname"] = "对手"
-L["codww2_reticle_lens_07.description"] = ww2rare.default
+L["codww2_reticle_lens_7.printname"] = "对手"
+L["codww2_reticle_lens_7.description"] = ww2rare.default
 
-L["codww2_reticle_lens_08.printname"] = "爬升"
-L["codww2_reticle_lens_08.description"] = ww2rare.default
+L["codww2_reticle_lens_8.printname"] = "爬升"
+L["codww2_reticle_lens_8.description"] = ww2rare.default
 
-L["codww2_reticle_lens_09.printname"] = "凄凉"
-L["codww2_reticle_lens_09.description"] = ww2rare.default
+L["codww2_reticle_lens_9.printname"] = "凄凉"
+L["codww2_reticle_lens_9.description"] = ww2rare.default
 
 L["codww2_reticle_lens_10.printname"] = "茶托"
 L["codww2_reticle_lens_10.description"] = ww2rare.default
 
 ////////// Reflex Sight
-L["codww2_reticle_reflex_01.printname"] = "颠簸"
-L["codww2_reticle_reflex_01.description"] = ww2rare.default
+L["codww2_reticle_reflex_1.printname"] = "颠簸"
+L["codww2_reticle_reflex_1.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_02.printname"] = "交错"
-L["codww2_reticle_reflex_02.description"] = ww2rare.default
+L["codww2_reticle_reflex_2.printname"] = "交错"
+L["codww2_reticle_reflex_2.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_03.printname"] = "倾侧"
-L["codww2_reticle_reflex_03.description"] = ww2rare.default
+L["codww2_reticle_reflex_3.printname"] = "倾侧"
+L["codww2_reticle_reflex_3.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_04.printname"] = "斑点"
-L["codww2_reticle_reflex_04.description"] = ww2rare.default
+L["codww2_reticle_reflex_4.printname"] = "斑点"
+L["codww2_reticle_reflex_4.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_05.printname"] = "二倍"
-L["codww2_reticle_reflex_05.description"] = ww2rare.default
+L["codww2_reticle_reflex_5.printname"] = "二倍"
+L["codww2_reticle_reflex_5.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_06.printname"] = "水滴"
-L["codww2_reticle_reflex_06.description"] = ww2rare.default
+L["codww2_reticle_reflex_6.printname"] = "水滴"
+L["codww2_reticle_reflex_6.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_07.printname"] = "周长"
-L["codww2_reticle_reflex_07.description"] = ww2rare.default
+L["codww2_reticle_reflex_7.printname"] = "周长"
+L["codww2_reticle_reflex_7.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_08.printname"] = "弹坑"
-L["codww2_reticle_reflex_08.description"] = ww2rare.default
+L["codww2_reticle_reflex_8.printname"] = "弹坑"
+L["codww2_reticle_reflex_8.description"] = ww2rare.default
 
-L["codww2_reticle_reflex_09.printname"] = "边缘"
-L["codww2_reticle_reflex_09.description"] = ww2rare.default
+L["codww2_reticle_reflex_9.printname"] = "边缘"
+L["codww2_reticle_reflex_9.description"] = ww2rare.default
 
 L["codww2_reticle_reflex_10.printname"] = "点"
 L["codww2_reticle_reflex_10.description"] = ww2rare.default
 
 ////////// 4x Scope
-L["codww2_reticle_telescopic_01.printname"] = "坚定" -- ger_k98
-L["codww2_reticle_telescopic_01.description"] = ww2rare.default
+L["codww2_reticle_telescopic_1.printname"] = "坚定" -- ger_k98
+L["codww2_reticle_telescopic_1.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_02.printname"] = "计算" -- jpn_type38
-L["codww2_reticle_telescopic_02.description"] = ww2rare.default
+L["codww2_reticle_telescopic_2.printname"] = "计算" -- jpn_type38
+L["codww2_reticle_telescopic_2.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_03.printname"] = "倾斜" -- pol_kbsp1938
-L["codww2_reticle_telescopic_03.description"] = ww2rare.default
+L["codww2_reticle_telescopic_3.printname"] = "倾斜" -- pol_kbsp1938
+L["codww2_reticle_telescopic_3.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_04.printname"] = "模范" -- usa_springfield
-L["codww2_reticle_telescopic_04.description"] = ww2rare.default
+L["codww2_reticle_telescopic_4.printname"] = "模范" -- usa_springfield
+L["codww2_reticle_telescopic_4.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_05.printname"] = "扎根" -- ger_acog
-L["codww2_reticle_telescopic_05.description"] = ww2rare.default
+L["codww2_reticle_telescopic_5.printname"] = "扎根" -- ger_acog
+L["codww2_reticle_telescopic_5.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_06.printname"] = "强悍" -- 12
-L["codww2_reticle_telescopic_06.description"] = ww2rare.default
+L["codww2_reticle_telescopic_6.printname"] = "强悍" -- 12
+L["codww2_reticle_telescopic_6.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_07.printname"] = "榜样" -- 07
-L["codww2_reticle_telescopic_07.description"] = ww2rare.default
+L["codww2_reticle_telescopic_7.printname"] = "榜样" -- 07
+L["codww2_reticle_telescopic_7.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_08.printname"] = "标准"
-L["codww2_reticle_telescopic_08.description"] = ww2rare.default
+L["codww2_reticle_telescopic_8.printname"] = "标准"
+L["codww2_reticle_telescopic_8.description"] = ww2rare.default
 
-L["codww2_reticle_telescopic_09.printname"] = "聚焦"
-L["codww2_reticle_telescopic_09.description"] = ww2rare.default
+L["codww2_reticle_telescopic_9.printname"] = "聚焦"
+L["codww2_reticle_telescopic_9.description"] = ww2rare.default
 
 L["codww2_reticle_telescopic_10.printname"] = "鹰眼"
 L["codww2_reticle_telescopic_10.description"] = ww2rare.default
@@ -661,10 +661,10 @@ L["codww2_wep_signal_flare_flavor"] = "效果半径6米，持续5秒。\n\n只�
 ///////////////////////////// Weapon Variants
 //////////////////// Rifles
 //////////// Base
-L["codww2_wep_m1941_loot0"] = "The Cook"
-L["codww2_wep_m1941_loot1"] = "Battle Watch"
-L["codww2_wep_m1941_loot2"] = "Jawbreaker"
-L["codww2_wep_m1941_loot3"] = "Savior"
+L["codww2_wep_m1941_loot0"] = "厨师"
+L["codww2_wep_m1941_loot1"] = "观战者"
+L["codww2_wep_m1941_loot2"] = "碎颌者"
+L["codww2_wep_m1941_loot3"] = "救世主"
 
 L["codww2_wep_m1garand_loot0"] = "Rookie"
 L["codww2_wep_m1garand_loot1"] = "Front Line"

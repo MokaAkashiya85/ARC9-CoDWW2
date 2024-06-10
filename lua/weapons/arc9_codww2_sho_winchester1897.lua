@@ -228,7 +228,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(14, 50, 5)
 SWEP.CustomizeRotateAnchor = Vector(14, -3, -4)
 SWEP.CustomizeSnapshotFOV = 65
-SWEP.CustomizeSnapshotPos = Vector(-1, 30, 2.5)
+SWEP.CustomizeSnapshotPos = Vector(-3, 25, 1.25)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -532,6 +532,33 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	
 	-- print(wep:GetFinishFiremodeAnimTime())
 	
+end
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+	local animation = anim
+	if wep:HasElement("incendiary") then -- Shotgun Incendiary Shells
+		if anim == "reload_start" or anim == "reload_insert" or anim == "reload_finish" then
+			if wep:Clip1() == 0 then
+				animation = "inc_" .. animation .. "_empty"
+			else
+				animation = "inc_" .. animation
+			end
+		end
+	end
+
+	if wep:HasElement("anim_epic") and anim == "inspect" then -- "Epic" rarity weapon variant; usually only an inspect animation using this
+		animation =  "epic_" .. animation
+	end
+
+	if wep:HasElement("anim_mm") then -- "Marksman" weapon variant
+		animation =  "mm_" .. animation
+	end
+	
+	if wep:HasElement("anim_cqb") then -- "CQB" weapon variant
+		animation =  "cqb_" .. animation
+	end
+
+	return animation
 end
 
 SWEP.Attachments = {

@@ -224,7 +224,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(20, 50, 5)
 SWEP.CustomizeRotateAnchor = Vector(20, -5, -4)
 SWEP.CustomizeSnapshotFOV = 65
-SWEP.CustomizeSnapshotPos = Vector(-1, 35, 2.5)
+SWEP.CustomizeSnapshotPos = Vector(-5, 25, 0.75)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -465,6 +465,83 @@ SWEP.Animations = {
         Source = {"reg_melee_empty"},
 		Mult = 0.8,
     },
+
+-- Marksman Animations
+    ["mm_reload_empty"] = {
+        Source = "mm_reload_empty",
+		MinProgress = 0.925,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_karabin_empty_magout.ogg", t = 0.375},
+            {s = path .. "wpn_karabin_empty_magin.ogg", t = 1.25},
+            {s = path .. "wpn_karabin_empty_charge.ogg", t = 2.15},
+        },
+    },
+    ["mm_reload_empty_ext"] = {
+        Source = "mm_reload_ext_empty",
+		MinProgress = 0.925,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_karabin_empty_magout.ogg", t = 0.375},
+            {s = path .. "wpn_karabin_empty_magin.ogg", t = 1.25},
+            {s = path .. "wpn_karabin_empty_charge.ogg", t = 2.15},
+        },
+    },
+    ["mm_ready"] = {
+        Source = "mm_draw_first",
+		MinProgress = 0.95,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+            {s = path .. "wpn_karabin_fpo_charge.ogg", t = 0.66},
+        },
+    },
+	
+-- CQB Animations
+    ["cqb_reload_empty"] = {
+        Source = "cqb_reload_empty",
+		MinProgress = 0.925,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_karabin_empty_magout.ogg", t = 0.375},
+            {s = path .. "wpn_karabin_empty_magin.ogg", t = 1.25},
+            {s = path .. "wpn_karabin_empty_charge.ogg", t = 2.15},
+        },
+    },
+    ["cqb_reload_empty_ext"] = {
+        Source = "cqb_reload_ext_empty",
+		MinProgress = 0.925,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_karabin_empty_magout.ogg", t = 0.375},
+            {s = path .. "wpn_karabin_empty_magin.ogg", t = 1.25},
+            {s = path .. "wpn_karabin_empty_charge.ogg", t = 2.15},
+        },
+    },
+    ["cqb_ready"] = {
+        Source = "cqb_draw_first",
+		MinProgress = 0.95,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+            {s = path .. "wpn_karabin_fpo_charge.ogg", t = 0.66},
+        },
+    },
+
+-- Epic Inspect
+    ["epic_inspect"] = {
+        Source = "epic_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_karabin_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_karabin_inspect_stndrd_pt_02.ogg", t = 2.25},
+        },
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -524,27 +601,27 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.lastfunnyubgl = false
-SWEP.Hook_ModifyBodygroups = function(wep, data)
-    -- local eles = data.elements
-    -- local model = data.model
-    -- local ubgl = wep:GetUBGL()
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+	local animation = anim
+	if wep:HasElement("anim_epic") then -- "Epic" rarity weapon variant; usually only an inspect animation using this
+		animation =  "epic_" .. animation
+	end
 
-    -- if ubgl then
-        -- wep.hideubglthing = false
-    -- elseif wep.lastfunnyubgl then
-        -- timer.Simple(wep:Clip2() > 0 and 1.5 or 0, function()
-            -- if IsValid(wep) then
-                -- wep.hideubglthing = true
-            -- end
-        -- end)
-    -- end
-    
-    -- wep.lastfunnyubgl = ubgl
+	if wep:HasElement("anim_mm") then -- "Marksman" weapon variant
+		animation =  "mm_" .. animation
+	end
+	
+	if wep:HasElement("anim_cqb") then -- "CQB" weapon variant
+		animation =  "cqb_" .. animation
+	end
+	
+	if wep:HasElement("mag_ext") then
+		if anim == "reload" or anim == "reload_empty" then
+			animation = animation .. "_ext"
+		end
+	end
 
-    -- if eles["gl"] and ((wep:GetUBGL() and wep:Clip2() > 0) or (wep:StillWaiting() and !wep.hideubglthing)) then
-        -- model:SetBodygroup(5, 2)
-    -- end
+	return animation
 end
 
 SWEP.Attachments = {

@@ -18,10 +18,6 @@
     "$envmap" "env_cubemap"
     "$envmaptint" "[0.165 0.161 0.165]"                 
 
-    "$detailblendmode" "4"
-    "$detailblendfactor" "0.7"
-	"$detailscale" "0.25"
-
     "Proxies"
     {
         "Arc9EnvMapTint"
@@ -30,12 +26,5 @@
             "max" "0.15"
             "color" "[0.165 0.161 0.165]"
         }
-	   "CustomCamo" 
-        {
-		  "camoTexture" $detail
-	       // "camoScale" $detailscale
-            "blend" $detailblendfactor
-            "color" "[0.8 0.8 0.8]"
-	   }
     }
 }
