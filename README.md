@@ -1,7 +1,9 @@
-# [ARC9] Call of Duty: World War 2
-Weapon pack from [Call of Duty: World War 2](https://store.steampowered.com/app/476600/Call_of_Duty_WWII/) that includes the base and DLC weapons, attachments and camouflages.
+# [ARC9] Call of Duty: WWII
+Weapon pack from [Call of Duty: WWII](https://store.steampowered.com/app/476600/Call_of_Duty_WWII/) that, once complete, will include all base and DLC weapons, attachments, camouflages, reticles and charms.
 
-If you want to make any improvements or better changes for this, feel free to make a PR (Pull Request).
+Do you have any feedback to the pack? Put it up in the Issues page.
+
+Can you make improvements or better changes to the pack? Feel free to make a PR (Pull Request).
 
 ## 🔽 Required Items
 
