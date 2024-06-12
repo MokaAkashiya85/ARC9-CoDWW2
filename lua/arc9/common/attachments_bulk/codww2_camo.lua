@@ -18,7 +18,7 @@ local sortingorder = 0
 ATT = {}
 
 ATT.PrintName = "Frogskin"
-ATT.Icon = Material("mokaww2/camosicons/greenspot.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_greenspot.png")
 ATT.CustomCamoTexture = "mokaww2/camos/greenspot"
 
 table.Merge(ATT, universalshit)
@@ -31,7 +31,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_greenspot")
 local ATT = {}
 
 ATT.PrintName = "Brownspot"
-ATT.Icon = Material("mokaww2/camosicons/brownspot.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_brownspot.png")
 ATT.CustomCamoTexture = "mokaww2/camos/brownspot"
 
 table.Merge(ATT, universalshit)
@@ -44,7 +44,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_brownspot")
 local ATT = {}
 
 ATT.PrintName = "Heeres-Splittermuster 31"
-ATT.Icon = Material("mokaww2/camosicons/heeres.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_heeres.png")
 ATT.CustomCamoTexture = "mokaww2/camos/heeres"
 
 table.Merge(ATT, universalshit)
@@ -57,7 +57,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_heeres")
 local ATT = {}
 
 ATT.PrintName = "Leibermuster"
-ATT.Icon = Material("mokaww2/camosicons/leibermuster.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_leibermuster.png")
 ATT.CustomCamoTexture = "mokaww2/camos/leibermuster"
 
 table.Merge(ATT, universalshit)
@@ -70,7 +70,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_leibermuster")
 local ATT = {}
 
 ATT.PrintName = "Leibermuster"
-ATT.Icon = Material("mokaww2/camosicons/peapattern.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_peapattern.png")
 ATT.CustomCamoTexture = "mokaww2/camos/peapattern"
 
 table.Merge(ATT, universalshit)
@@ -83,7 +83,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_peapattern")
 local ATT = {}
 
 ATT.PrintName = "Oakleaf"
-ATT.Icon = Material("mokaww2/camosicons/oakleaf.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_oakleaf.png")
 ATT.CustomCamoTexture = "mokaww2/camos/oakleaf"
 
 table.Merge(ATT, universalshit)
@@ -96,7 +96,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_oakleaf")
 local ATT = {}
 
 ATT.PrintName = "Palm Tree"
-ATT.Icon = Material("mokaww2/camosicons/palmtree.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_palmtree.png")
 ATT.CustomCamoTexture = "mokaww2/camos/palmtree"
 
 table.Merge(ATT, universalshit)
@@ -109,7 +109,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_palmtree")
 local ATT = {}
 
 ATT.PrintName = "Platanenmuster"
-ATT.Icon = Material("mokaww2/camosicons/planetree.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_planetree.png")
 ATT.CustomCamoTexture = "mokaww2/camos/planetree"
 
 table.Merge(ATT, universalshit)
@@ -122,7 +122,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_planetree")
 local ATT = {}
 
 ATT.PrintName = "Ambush"
-ATT.Icon = Material("mokaww2/camosicons/panzer.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_panzer.png")
 ATT.CustomCamoTexture = "mokaww2/camos/panzer"
 
 table.Merge(ATT, universalshit)
@@ -135,7 +135,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_panzer")
 local ATT = {}
 
 ATT.PrintName = "M1916"
-ATT.Icon = Material("mokaww2/camosicons/m1916.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_m1916.png")
 ATT.CustomCamoTexture = "mokaww2/camos/m1916"
 
 table.Merge(ATT, universalshit)
@@ -148,7 +148,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_m1916")
 local ATT = {}
 
 ATT.PrintName = "Snow"
-ATT.Icon = Material("mokaww2/camosicons/snow.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_snow.png")
 ATT.CustomCamoTexture = "mokaww2/camos/snow"
 
 table.Merge(ATT, universalshit)
@@ -161,7 +161,7 @@ ARC9.LoadAttachment(ATT, "codww2_camo_snow")
 local ATT = {}
 
 ATT.PrintName = "Cheetah"
-ATT.Icon = Material("mokaww2/camosicons/cheetah.png")
+ATT.Icon = Material("mokaww2/icons/camos/camo_leopard1.png")
 ATT.CustomCamoTexture = "mokaww2/camos/cheetah"
 
 table.Merge(ATT, universalshit)
