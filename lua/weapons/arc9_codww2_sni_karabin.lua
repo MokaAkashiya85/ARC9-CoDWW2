@@ -380,8 +380,23 @@ SWEP.Animations = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
         },
     },
+    ["draw_quick"] = {
+        Source = "reg_draw",
+		Mult = 0.6,
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+        },
+    },
     ["holster"] = {
         Source = "reg_holster",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["holster_quick"] = {
+        Source = "reg_holster_quick",
         EventTable = {
             {s = "CoDWW2.Rifle.Holster", t = 0},
         },
@@ -432,8 +447,23 @@ SWEP.Animations = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
         },
     },
+    ["draw_quick_empty"] = {
+        Source = "reg_draw_empty",
+		Mult = 0.6,
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+        },
+    },
     ["holster_empty"] = {
         Source = "reg_holster_empty",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["holster_quick_empty"] = {
+        Source = "reg_holster_quick_empty",
         EventTable = {
             {s = "CoDWW2.Rifle.Holster", t = 0},
         },

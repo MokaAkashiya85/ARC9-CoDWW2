@@ -373,8 +373,23 @@ SWEP.Animations = {
             {s = path .. "wpn_win_pullout_grab.ogg", t = 0.35},
         },
     },
+    ["draw_quick"] = {
+        Source = "reg_draw_quick",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Medium.Raise", t = 0},
+            -- {s = path .. "wpn_win_pullout_grab.ogg", t = 0.35},
+        },
+    },
     ["holster"] = {
         Source = "reg_holster",
+        EventTable = {
+            {s = "CoDWW2.Medium.Holster", t = 0},
+        },
+    },
+    ["holster_quick"] = {
+        Source = "reg_holster_quick",
         EventTable = {
             {s = "CoDWW2.Medium.Holster", t = 0},
         },

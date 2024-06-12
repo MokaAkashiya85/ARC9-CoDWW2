@@ -145,19 +145,44 @@ ATT.Attachments = {
     },
 }
 
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 0
+ATT.RTScopeFOV = 65 / 6
+ATT.RTScopeShadowIntensity = 0
+ATT.RTScopeBlackBox = false
+ATT.RTScopeBlackBoxShadow = false
+
+-- ATT.Sights = { -- Handled by the weapon itself, due to models being different.
+    -- {
+		-- Pos = Vector(-7, 0, -5.835),
+		-- Ang = Angle(0, 90, 0),
+		-- ViewModelFOV = 65,
+		-- Magnification = 1.1,
+		-- Blur = true,
+    -- },
+-- }
+
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
 local sa = swep:GetSightAmount()
 	
-	if eles["lens_small"] then
-		modelsizeads = 3
-		modelsize = 2
+	-- if eles["lens_small"] then
+		-- modelsizeads = 3
+		-- modelsize = 2
+	-- end
+
+	local function findbone()
+		bn = model:LookupBone("tag_reticle_default")
+		return bn
 	end
-	
+
 	if sa >= 0.85 then
-		model:SetBodygroup(0, modelsizeads or 1)
+		-- model:SetBodygroup(0, modelsizeads or 1)
+		model:ManipulateBonePosition(findbone(), Vector( -0.075, 0, 0 ) ) -- Moves the reticle bone if it is too far forward or back.
+		-- model:ManipulateBoneAngles(findbone(), Angle( 0, 0, 0 ) ) -- Rotates the reticle bone if it is not aligned correctly by default.
 	else
-		model:SetBodygroup(0, modelsize or 0)
+		-- model:SetBodygroup(0, modelsize or 0)
+		model:ManipulateBonePosition(findbone(), Vector( 0, 0, 0 ) ) -- Moves the reticle bone if it is too far forward or back.
 	end
 
     for ind = 0, 999 do -- Reticles
@@ -175,7 +200,7 @@ local sa = swep:GetSightAmount()
         end
 		
 		if val or valdlc then
-			model:SetSubMaterial(swep.LensReticleMat or 3, customreticlepath)
+			model:SetSubMaterial(swep.LensReticleMat or 2, customreticlepath)
 		end
     end
 

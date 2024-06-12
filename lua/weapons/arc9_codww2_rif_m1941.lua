@@ -364,11 +364,24 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
-            {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
+        },
+    },
+    ["draw_quick"] = {
+        Source = "reg_draw_quick",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
         },
     },
     ["holster"] = {
         Source = "reg_holster",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["holster_quick"] = {
+        Source = "reg_holster_quick",
         EventTable = {
             {s = "CoDWW2.Rifle.Holster", t = 0},
         },
@@ -425,7 +438,6 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
-            {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
         },
     },
     ["holster_ubgl"] = {
@@ -563,11 +575,24 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
-            {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
+        },
+    },
+    ["mm_draw_quick"] = {
+        Source = "mm_draw_quick",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
         },
     },
     ["mm_holster"] = {
         Source = "mm_holster",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["mm_holster_quick"] = {
+        Source = "mm_holster_quick",
         EventTable = {
             {s = "CoDWW2.Rifle.Holster", t = 0},
         },
@@ -726,11 +751,24 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
-            {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
+        },
+    },
+    ["cqb_draw_quick"] = {
+        Source = "cqb_draw_quick",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
         },
     },
     ["cqb_holster"] = {
         Source = "cqb_holster",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["cqb_holster_quick"] = {
+        Source = "cqb_holster_quick",
         EventTable = {
             {s = "CoDWW2.Rifle.Holster", t = 0},
         },

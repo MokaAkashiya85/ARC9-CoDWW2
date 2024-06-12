@@ -369,8 +369,22 @@ SWEP.Animations = {
             {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
         },
     },
+    ["draw_quick"] = {
+        Source = "reg_draw_quick",
+		MinProgress = 0.5,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Small.Raise", t = 0},
+        },
+    },
     ["holster"] = {
         Source = "reg_holster",
+        EventTable = {
+            {s = "CoDWW2.Small.Holster", t = 0},
+        },
+    },
+    ["holster_quick"] = {
+        Source = "reg_holster_quick",
         EventTable = {
             {s = "CoDWW2.Small.Holster", t = 0},
         },
@@ -486,8 +500,22 @@ SWEP.Animations = {
             {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
         },
     },
+    ["mm_draw_quick"] = {
+        Source = "mm_draw_quick",
+		MinProgress = 0.5,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Small.Raise", t = 0},
+        },
+    },
     ["mm_holster"] = {
         Source = "mm_holster",
+        EventTable = {
+            {s = "CoDWW2.Small.Holster", t = 0},
+        },
+    },
+    ["mm_holster_quick"] = {
+        Source = "mm_holster_quick",
         EventTable = {
             {s = "CoDWW2.Small.Holster", t = 0},
         },
@@ -603,8 +631,22 @@ SWEP.Animations = {
             {s = path .. "wpn_greasegun_pullout_charge.ogg", t = 0},
         },
     },
+    ["cqb_draw_quick"] = {
+        Source = "cqb_draw_quick",
+		MinProgress = 0.5,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Small.Raise", t = 0},
+        },
+    },
     ["cqb_holster"] = {
         Source = "cqb_holster",
+        EventTable = {
+            {s = "CoDWW2.Small.Holster", t = 0},
+        },
+    },
+    ["cqb_holster_quick"] = {
+        Source = "cqb_holster_quick",
         EventTable = {
             {s = "CoDWW2.Small.Holster", t = 0},
         },
@@ -674,7 +716,16 @@ SWEP.AttachmentTableOverrides = {
 		Model = "models/mokaww2/atts/greasegun_reflex.mdl",
     },
     ["codww2_lens_sight"] = {
-		ActivateElements = {"lens"}
+		ActivateElements = {"lens"},
+		Sights = {
+			{
+				Pos = Vector(-7, 0, -5.835),
+				Ang = Angle(0, 90, 0),
+				ViewModelFOV = 65,
+				Magnification = 1.1,
+				Blur = true,
+			},
+		},
     },
 }
 
