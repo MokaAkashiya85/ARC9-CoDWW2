@@ -1048,7 +1048,7 @@ SWEP.Attachments = {
         Category = {"charm"},
         Bone = "tag_weapon",
         Pos = Vector(0, -0.525, 4.525),
-		Icon_Offset = Vector(1, 0.875, 6.5 - 4.525),
+		Icon_Offset = Vector(1, 0.525, 6.5 - 4.525),
 		Scale = 1,
 		Hidden = false
     },
