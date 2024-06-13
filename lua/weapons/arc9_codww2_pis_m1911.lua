@@ -30,7 +30,7 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/mokaww2/weapons/m1911.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7, 4.75, -6),
+    Pos = Vector(-13.5, 4.75, -3.5),
     Ang = Angle(-5, 0, 180),
     TPIKPos = Vector(-18, 2, 0),
     TPIKAng = Angle(-12.5, -1, 172.5),
@@ -157,7 +157,7 @@ SWEP.RecoilModifierCapSights = 0.25
 
 -------------------------- HANDLING
 
-SWEP.SpeedMult = 0.95 -- Walk speed multiplier
+SWEP.SpeedMult = 1 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.8 -- When aiming
 
 SWEP.AimDownSightsTime = 0.1 -- How long it takes to go from hip fire to aiming down sights.

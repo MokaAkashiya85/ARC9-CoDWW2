@@ -716,7 +716,7 @@ ATT.Description = "Overrides animations to use \"Marksman\" animations (if they 
 ATT.Folder = "DEBUG"
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
-ATT.Category = {"codww2_atts4"}
+ATT.Category = {"codww2_training"}
 ATT.ActivateElements = {"anim_mm"}
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_mm")
@@ -728,7 +728,7 @@ ATT.Description = "Overrides animations to use \"CQB\" animations (if they exist
 ATT.Folder = "DEBUG"
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
-ATT.Category = {"codww2_atts4"}
+ATT.Category = {"codww2_training"}
 ATT.ActivateElements = {"anim_cqb"}
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_cqb")
@@ -740,7 +740,7 @@ ATT.Description = "Overrides animations to use \"Epic\" animations (if they exis
 ATT.Folder = "DEBUG"
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
-ATT.Category = {"codww2_atts4"}
+ATT.Category = {"codww2_training"}
 ATT.ActivateElements = {"anim_epic"}
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_epic")
@@ -752,7 +752,7 @@ ATT.Description = "Overrides the inspect animation to use a \"Grip\" inspect ani
 ATT.Folder = "DEBUG"
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
-ATT.Category = {"codww2_atts4_pistol"}
+ATT.Category = {"codww2_training_pistol"}
 ATT.ActivateElements = {"pistolgrip"}
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_grip")

@@ -127,7 +127,7 @@ SWEP.DistantShootSoundUBGL = "CoDWW2.RifleGrenade.Tail"
 SWEP.HasSightsUBGL = false
 SWEP.TriggerDelayUBGL = false
 
-SWEP.ShootEntUBGL = "codww2_rifle_grenade"
+SWEP.ShootEntUBGL = "arc9_codww2_rifle_grenade"
 SWEP.ShootEntForceUBGL = 2500
 
 SWEP.MuzzleParticleUBGL = "muzzleflash_suppressed"
