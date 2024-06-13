@@ -142,19 +142,19 @@ SWEP.UseVisualRecoil = true
 SWEP.PhysicalVisualRecoil = false
 SWEP.VisualRecoilCenter = Vector(7, 5, 5)
 
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 2
 SWEP.VisualRecoilUp = 0.25
 SWEP.VisualRecoilRoll = 7.5
-SWEP.VisualRecoilSide = -0.1
+SWEP.VisualRecoilSide = -0.15
 
-SWEP.VisualRecoilPositionBump = 1.33
-SWEP.VisualRecoilPositionBumpUp = 0.66
+SWEP.VisualRecoilPositionBump = 5
+SWEP.VisualRecoilPositionBumpUp = 1.5
 SWEP.VisualRecoilMultCrouch = .85
-SWEP.VisualRecoilMultSights = 0
+SWEP.VisualRecoilMultSights = 2
 
 SWEP.VisualRecoilSpringPunchDamping = 11
 SWEP.VisualRecoilDampingConst = 80
-SWEP.VisualRecoilDampingConstSights = 80
+SWEP.VisualRecoilDampingConstSights = 150
 
 -------------------------- SPREAD
 

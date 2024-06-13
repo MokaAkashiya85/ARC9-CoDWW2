@@ -138,12 +138,12 @@ SWEP.PhysicalVisualRecoil = false
 SWEP.VisualRecoilCenter = Vector(7, 5, 5)
 
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = -1
+SWEP.VisualRecoilUp = -0.25
 SWEP.VisualRecoilRoll = 10
 SWEP.VisualRecoilSide = -0.1
 
-SWEP.VisualRecoilPositionBump = 0.75
-SWEP.VisualRecoilPositionBumpUp = -1.25
+SWEP.VisualRecoilPositionBump = -2.5
+SWEP.VisualRecoilPositionBumpUp = -1
 SWEP.VisualRecoilMultCrouch = .85
 SWEP.VisualRecoilMultSights = 0
 
