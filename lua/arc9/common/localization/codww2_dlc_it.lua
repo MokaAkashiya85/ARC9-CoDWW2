@@ -40,205 +40,205 @@ local ww2op = {
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// Additional Content / DLC
 ////////////////////  Camos
-L["codww2_camo_dlc_1.printname"] = "Olive Drab"
+L["codww2_camo_dlc_1.printname"] = "Verde oliva"
 L["codww2_camo_dlc_1.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_2.printname"] = "Canary"
+L["codww2_camo_dlc_2.printname"] = "Giallo canarino"
 L["codww2_camo_dlc_2.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_3.printname"] = "Sunset"
+L["codww2_camo_dlc_3.printname"] = "Tramonto"
 L["codww2_camo_dlc_3.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_4.printname"] = "Candy Apple"
+L["codww2_camo_dlc_4.printname"] = "Mela candita"
 L["codww2_camo_dlc_4.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
 L["codww2_camo_dlc_5.printname"] = "Pitch"
 L["codww2_camo_dlc_5.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_6.printname"] = "Tattoo"
+L["codww2_camo_dlc_6.printname"] = "Tatuaggio"
 L["codww2_camo_dlc_6.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_7.printname"] = "Victory"
+L["codww2_camo_dlc_7.printname"] = "Vittoria"
 L["codww2_camo_dlc_7.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_8.printname"] = "Stone Leopard"
+L["codww2_camo_dlc_8.printname"] = "Leopardo di pietra"
 L["codww2_camo_dlc_8.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_9.printname"] = "Woodland Stripes"
+L["codww2_camo_dlc_9.printname"] = "Strisce foresta"
 L["codww2_camo_dlc_9.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_10.printname"] = "Brutal Tiger"
+L["codww2_camo_dlc_10.printname"] = "Tigre brutale"
 L["codww2_camo_dlc_10.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_11.printname"] = "Pot of Gold"
+L["codww2_camo_dlc_11.printname"] = "Pentola d'oro"
 L["codww2_camo_dlc_11.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_12.printname"] = "Blind Luck"
+L["codww2_camo_dlc_12.printname"] = "Fortuna cieca"
 L["codww2_camo_dlc_12.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_camo_dlc_13.printname"] = "Ruby"
+L["codww2_camo_dlc_13.printname"] = "Rubino"
 L["codww2_camo_dlc_13.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
 
-L["codww2_camo_dlc_14.printname"] = "Wood Paneled"
+L["codww2_camo_dlc_14.printname"] = "Parquet"
 L["codww2_camo_dlc_14.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
 
-L["codww2_camo_dlc_15.printname"] = "Turquoise"
+L["codww2_camo_dlc_15.printname"] = "Turchese"
 L["codww2_camo_dlc_15.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
 
-L["codww2_camo_dlc_16.printname"] = "C.O.D.E. Fear Not Camo"
+L["codww2_camo_dlc_16.printname"] = "Mimetica Nessuna paura C.O.D.E."
 L["codww2_camo_dlc_16.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
 
-L["codww2_camo_dlc_17.printname"] = "Rattlesnake"
+L["codww2_camo_dlc_17.printname"] = "Serpente a sonagli"
 L["codww2_camo_dlc_17.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_camo_dlc_18.printname"] = "Jade"
+L["codww2_camo_dlc_18.printname"] = "Giada"
 L["codww2_camo_dlc_18.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_camo_dlc_19.printname"] = "Carbon Stripes"
+L["codww2_camo_dlc_19.printname"] = "Strisce carbonio"
 L["codww2_camo_dlc_19.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_camo_dlc_20.printname"] = "Rotten"
+L["codww2_camo_dlc_20.printname"] = "Marcio"
 L["codww2_camo_dlc_20.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_camo_dlc_21.printname"] = "Stitches"
+L["codww2_camo_dlc_21.printname"] = "Sutura"
 L["codww2_camo_dlc_21.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_camo_dlc_22.printname"] = "Teeth"
+L["codww2_camo_dlc_22.printname"] = "Denti"
 L["codww2_camo_dlc_22.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_camo_dlc_23.printname"] = "Amethyst"
+L["codww2_camo_dlc_23.printname"] = "Ametista"
 L["codww2_camo_dlc_23.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_24.printname"] = "Lapis Lazuli"
+L["codww2_camo_dlc_24.printname"] = "Lapislazzuli"
 L["codww2_camo_dlc_24.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_25.printname"] = "Purple Passion"
+L["codww2_camo_dlc_25.printname"] = "Passione purpurea"
 L["codww2_camo_dlc_25.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_26.printname"] = "Parachute"
+L["codww2_camo_dlc_26.printname"] = "Paracadute"
 L["codww2_camo_dlc_26.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_27.printname"] = "Clouds"
+L["codww2_camo_dlc_27.printname"] = "Nubi"
 L["codww2_camo_dlc_27.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_28.printname"] = "Metalflage"
+L["codww2_camo_dlc_28.printname"] = "Scaglie metalliche"
 L["codww2_camo_dlc_28.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
 L["codww2_camo_dlc_29.printname"] = "Disco"
 L["codww2_camo_dlc_29.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_30.printname"] = "Amphibious"
+L["codww2_camo_dlc_30.printname"] = "Anfibio"
 L["codww2_camo_dlc_30.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_31.printname"] = "Noir Black"
+L["codww2_camo_dlc_31.printname"] = "Nero noir"
 L["codww2_camo_dlc_31.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_32.printname"] = "Echo Fox Camo"
+L["codww2_camo_dlc_32.printname"] = "Mimetica Echo Fox"
 L["codww2_camo_dlc_32.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_33.printname"] = "Epsilon Camo"
+L["codww2_camo_dlc_33.printname"] = "Mimetica Epsilon"
 L["codww2_camo_dlc_33.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_34.printname"] = "eUnited Camo"
+L["codww2_camo_dlc_34.printname"] = "Mimetica eUnited"
 L["codww2_camo_dlc_34.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_35.printname"] = "Evil Geniuses Camo"
+L["codww2_camo_dlc_35.printname"] = "Mimetica Evil Geniuses"
 L["codww2_camo_dlc_35.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_36.printname"] = "FaZe Clan Camo"
+L["codww2_camo_dlc_36.printname"] = "Mimetica FaZe Clan"
 L["codww2_camo_dlc_36.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_37.printname"] = "Luminosity Gaming Camo"
+L["codww2_camo_dlc_37.printname"] = "Mimetica Luminosity Gaming"
 L["codww2_camo_dlc_37.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_38.printname"] = "Mindfreak Camo"
+L["codww2_camo_dlc_38.printname"] = "Mimetica Mindfreak"
 L["codww2_camo_dlc_38.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_39.printname"] = "OpTic Gaming Camo"
+L["codww2_camo_dlc_39.printname"] = "Mimetica OpTic Gaming"
 L["codww2_camo_dlc_39.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_40.printname"] = "Red Reserve Camo"
+L["codww2_camo_dlc_40.printname"] = "Mimetica Red Reserve"
 L["codww2_camo_dlc_40.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_41.printname"] = "Rise Nation Camo"
+L["codww2_camo_dlc_41.printname"] = "Mimetica Rise Nation"
 L["codww2_camo_dlc_41.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_42.printname"] = "Splyce Camo"
+L["codww2_camo_dlc_42.printname"] = "Mimetica Splyce"
 L["codww2_camo_dlc_42.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_43.printname"] = "Team EnVyUs Camo"
+L["codww2_camo_dlc_43.printname"] = "Mimetica Team EnVyUs"
 L["codww2_camo_dlc_43.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_44.printname"] = "Team Kaliber Camo"
+L["codww2_camo_dlc_44.printname"] = "Mimetica Team Kaliber"
 L["codww2_camo_dlc_44.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_45.printname"] = "Vitality Camo"
+L["codww2_camo_dlc_45.printname"] = "Mimetica Vitality"
 L["codww2_camo_dlc_45.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_46.printname"] = "UNILAD Camo"
+L["codww2_camo_dlc_46.printname"] = "Mimetica UNILAD"
 L["codww2_camo_dlc_46.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_47.printname"] = "World League Camo"
+L["codww2_camo_dlc_47.printname"] = "Mimetica Lega mondiale"
 L["codww2_camo_dlc_47.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_camo_dlc_48.printname"] = "Mother of Pearl"
+L["codww2_camo_dlc_48.printname"] = "Madreperla"
 L["codww2_camo_dlc_48.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_49.printname"] = "Racer"
+L["codww2_camo_dlc_49.printname"] = "Corridore"
 L["codww2_camo_dlc_49.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_50.printname"] = "Speckled"
+L["codww2_camo_dlc_50.printname"] = "Chiazze"
 L["codww2_camo_dlc_50.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_51.printname"] = "Watermelon"
+L["codww2_camo_dlc_51.printname"] = "Anguria"
 L["codww2_camo_dlc_51.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_52.printname"] = "Vinyl"
+L["codww2_camo_dlc_52.printname"] = "Vinile"
 L["codww2_camo_dlc_52.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_53.printname"] = "Hypnotist"
+L["codww2_camo_dlc_53.printname"] = "Ipnotista"
 L["codww2_camo_dlc_53.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_54.printname"] = "Beachside"
+L["codww2_camo_dlc_54.printname"] = "Costiero"
 L["codww2_camo_dlc_54.description"] = ww2rare.epic .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_55.printname"] = "Cherry Pie"
+L["codww2_camo_dlc_55.printname"] = "Torta di ciliegie"
 L["codww2_camo_dlc_55.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_56.printname"] = "Summer Dreaming"
+L["codww2_camo_dlc_56.printname"] = "Sogno estivo"
 L["codww2_camo_dlc_56.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_57.printname"] = "Treegate"
+L["codww2_camo_dlc_57.printname"] = "Cancello alberato"
 L["codww2_camo_dlc_57.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_camo_dlc_58.printname"] = "Electric Blue"
+L["codww2_camo_dlc_58.printname"] = "Blu elettrico"
 L["codww2_camo_dlc_58.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
 L["codww2_camo_dlc_59.printname"] = "Bunker"
 L["codww2_camo_dlc_59.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_camo_dlc_60.printname"] = "Redacted"
+L["codww2_camo_dlc_60.printname"] = "Secretato"
 L["codww2_camo_dlc_60.description"] = ww2rare.epic .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_camo_dlc_61.printname"] = "Atomic"
+L["codww2_camo_dlc_61.printname"] = "Atomico"
 L["codww2_camo_dlc_61.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_camo_dlc_62.printname"] = "Retrofuture"
+L["codww2_camo_dlc_62.printname"] = "Retrofuturo"
 L["codww2_camo_dlc_62.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_camo_dlc_63.printname"] = "Power Surge"
+L["codww2_camo_dlc_63.printname"] = "Picco energetico"
 L["codww2_camo_dlc_63.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_camo_dlc_64.printname"] = "Amphibious"
+L["codww2_camo_dlc_64.printname"] = "Anfibio"
 L["codww2_camo_dlc_64.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_camo_dlc_65.printname"] = "Gilded Dragon"
+L["codww2_camo_dlc_65.printname"] = "Drago dorato"
 L["codww2_camo_dlc_65.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_camo_dlc_66.printname"] = "Bubble Wrap"
+L["codww2_camo_dlc_66.printname"] = "Imbottitura"
 L["codww2_camo_dlc_66.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_camo_dlc_67.printname"] = "Gore"
+L["codww2_camo_dlc_67.printname"] = "Cruento"
 L["codww2_camo_dlc_67.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
 L["codww2_camo_dlc_68.printname"] = "Skullz"
@@ -247,19 +247,19 @@ L["codww2_camo_dlc_68.description"] = ww2rare.common .. "\n" .. string.format(ww
 L["codww2_camo_dlc_69.printname"] = "Jeepers Peepers"
 L["codww2_camo_dlc_69.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_camo_dlc_70.printname"] = "Mischief"
+L["codww2_camo_dlc_70.printname"] = "Misfatto"
 L["codww2_camo_dlc_70.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_camo_dlc_71.printname"] = "Bat Outta Hell"
+L["codww2_camo_dlc_71.printname"] = "Pipistrello infernale"
 L["codww2_camo_dlc_71.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_camo_dlc_72.printname"] = "Trick or Treat"
+L["codww2_camo_dlc_72.printname"] = "Dolcetto o scherzetto"
 L["codww2_camo_dlc_72.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_camo_dlc_73.printname"] = "Evil Grin"
+L["codww2_camo_dlc_73.printname"] = "Ghigno malvagio"
 L["codww2_camo_dlc_73.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_camo_dlc_74.printname"] = "Devil's Candy"
+L["codww2_camo_dlc_74.printname"] = "Dolcetti diabolici"
 L["codww2_camo_dlc_74.description"] = ww2rare.epic .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
 ////////////////////  Reticles
@@ -733,7 +733,7 @@ L["codww2_reticle_reflex_dlc_74.description"] = ww2rare.common .. "\n" .. string
 L["codww2_reticle_reflex_dlc_75.printname"] = "Shuriken" -- 74
 L["codww2_reticle_reflex_dlc_75.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_reticle_reflex_dlc_76.printname"] = "Mhalloweenboard" -- 75
+L["codww2_reticle_reflex_dlc_76.printname"] = "Motherboard" -- 75
 L["codww2_reticle_reflex_dlc_76.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
 L["codww2_reticle_reflex_dlc_77.printname"] = "Lightning" -- 76

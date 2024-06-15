@@ -733,7 +733,7 @@ L["codww2_reticle_reflex_dlc_74.description"] = ww2rare.common .. "\n" .. string
 L["codww2_reticle_reflex_dlc_75.printname"] = "Shuriken" -- 74
 L["codww2_reticle_reflex_dlc_75.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_reticle_reflex_dlc_76.printname"] = "Mhalloweenboard" -- 75
+L["codww2_reticle_reflex_dlc_76.printname"] = "Motherboard" -- 75
 L["codww2_reticle_reflex_dlc_76.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
 L["codww2_reticle_reflex_dlc_77.printname"] = "Lightning" -- 76
