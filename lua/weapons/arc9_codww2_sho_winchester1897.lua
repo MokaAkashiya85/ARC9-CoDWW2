@@ -30,10 +30,6 @@ SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_assets") ] = "Sledgehammer Games"
 }
 
-SWEP.CustomCrosshair = true
-SWEP.CustomCrosshairMaterial = Material("hud/arc9_cod2019/shotguncrosshair.png", "mips smooth")
-SWEP.CustomCrosshairSize = 30
-
 SWEP.ViewModel = "models/mokaww2/weapons/winchester1897.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
@@ -92,6 +88,11 @@ SWEP.SupplyLimit = 4 -- Amount of magazines of ammo this gun can take from an AR
 SWEP.DrawCrosshair = true
 SWEP.Crosshair = true
 SWEP.ForceStandardCrosshair = true
+
+SWEP.CustomCrosshair = true
+SWEP.CustomCrosshairSingle = true
+SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
+SWEP.CustomCrosshairSize = 30
 
 SWEP.ManualAction = true
 SWEP.ManualActionNoLastCycle = true

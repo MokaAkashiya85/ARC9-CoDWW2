@@ -69,7 +69,11 @@ SWEP.SupplyLimit = 4 -- Amount of magazines of ammo this gun can take from an AR
 
 SWEP.DrawCrosshair = true
 SWEP.Crosshair = true
-SWEP.MissileCrosshair = true
+
+SWEP.CustomCrosshair = true
+SWEP.CustomCrosshairSingle = true
+SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
+SWEP.CustomCrosshairSize = 30
 
 -------------------------- FIREMODES
 
