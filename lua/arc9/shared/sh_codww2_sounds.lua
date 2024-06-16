@@ -501,3 +501,21 @@ sound.Add( {
 		"mokaww2/wpn/shotgun/wpn_shotgun_fire_lyr_04.ogg",
     }
 } )
+
+------------ M1 Garand Ping ------------
+sound.Add( {
+    name = "CoDWW2.M1Garand.Ping",
+    channel = CHAN_AUTO,
+    volume = 0.25,
+    sound = {
+		"mokaww2/wpn/m1garand/m1garand_ping_01.ogg",
+		"mokaww2/wpn/m1garand/m1garand_ping_02.ogg",
+		"mokaww2/wpn/m1garand/m1garand_ping_03.ogg",
+		"mokaww2/wpn/m1garand/m1garand_ping_04.ogg",
+		"mokaww2/wpn/m1garand/m1garand_ping_05.ogg",
+		"mokaww2/wpn/m1garand/m1garand_ping_06.ogg",
+		"mokaww2/wpn/m1garand/m1garand_ping_07.ogg",
+		"mokaww2/wpn/m1garand/m1garand_ping_08.ogg",
+		"mokaww2/wpn/m1garand/m1garand_ping_09.ogg",
+    }
+} )

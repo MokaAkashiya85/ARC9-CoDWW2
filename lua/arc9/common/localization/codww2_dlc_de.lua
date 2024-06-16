@@ -267,7 +267,7 @@ L["codww2_camo_dlc_74.description"] = ww2rare.epic .. "\n" .. string.format(ww2o
 L["codww2_reticle_lens_dlc_1.printname"] = "Eclipse" -- 00
 L["codww2_reticle_lens_dlc_1.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_reticle_lens_dlc_2.printname"] = "Constitution" -- 01
+L["codww2_reticle_lens_dlc_2.printname"] = "Konstitution" -- 01
 L["codww2_reticle_lens_dlc_2.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
 L["codww2_reticle_lens_dlc_3.printname"] = "Brawn" -- 02
@@ -276,7 +276,7 @@ L["codww2_reticle_lens_dlc_3.description"] = ww2rare.common .. "\n" .. string.fo
 L["codww2_reticle_lens_dlc_4.printname"] = "Axehead" -- 03
 L["codww2_reticle_lens_dlc_4.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_reticle_lens_dlc_5.printname"] = "Intelligence" -- 04
+L["codww2_reticle_lens_dlc_5.printname"] = "Aufklärung" -- 04
 L["codww2_reticle_lens_dlc_5.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
 L["codww2_reticle_lens_dlc_6.printname"] = "Archway" -- 05
@@ -342,94 +342,94 @@ L["codww2_reticle_lens_dlc_25.description"] = ww2rare.common .. "\n" .. string.f
 L["codww2_reticle_lens_dlc_26.printname"] = "Varsity" -- 25
 L["codww2_reticle_lens_dlc_26.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_reticle_lens_dlc_27.printname"] = "Anvil" -- 26
+L["codww2_reticle_lens_dlc_27.printname"] = "Amboss" -- 26
 L["codww2_reticle_lens_dlc_27.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
 
-L["codww2_reticle_lens_dlc_28.printname"] = "Cobalt" -- Blitzkrieg, 27
+L["codww2_reticle_lens_dlc_28.printname"] = "Kobalt" -- Blitzkrieg, 27
 L["codww2_reticle_lens_dlc_28.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
 
-L["codww2_reticle_lens_dlc_29.printname"] = "Bodyguard" -- 28
+L["codww2_reticle_lens_dlc_29.printname"] = "Leibwache" -- 28
 L["codww2_reticle_lens_dlc_29.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
 
-L["codww2_reticle_lens_dlc_30.printname"] = "Mincemeat" -- 29
+L["codww2_reticle_lens_dlc_30.printname"] = "Hackfleisch" -- 29
 L["codww2_reticle_lens_dlc_30.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
 
-L["codww2_reticle_lens_dlc_31.printname"] = "Piledriver" -- 30
+L["codww2_reticle_lens_dlc_31.printname"] = "Ramme" -- 30
 L["codww2_reticle_lens_dlc_31.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.blitzkrieg)
 
-L["codww2_reticle_lens_dlc_32.printname"] = "Hot Crossed" -- 31
+L["codww2_reticle_lens_dlc_32.printname"] = "Heißes Kreuz" -- 31
 L["codww2_reticle_lens_dlc_32.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_reticle_lens_dlc_33.printname"] = "Vigilante" -- 32
+L["codww2_reticle_lens_dlc_33.printname"] = "Wachsam" -- 32
 L["codww2_reticle_lens_dlc_33.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_reticle_lens_dlc_34.printname"] = "Hourglass" -- 33
+L["codww2_reticle_lens_dlc_34.printname"] = "Sanduhr" -- 33
 L["codww2_reticle_lens_dlc_34.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_reticle_lens_dlc_35.printname"] = "Target Locked" -- 34
+L["codww2_reticle_lens_dlc_35.printname"] = "Ziel erfasst" -- 34
 L["codww2_reticle_lens_dlc_35.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_reticle_lens_dlc_36.printname"] = "Tulip" -- 35
+L["codww2_reticle_lens_dlc_36.printname"] = "Tulpe" -- 35
 L["codww2_reticle_lens_dlc_36.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
 L["codww2_reticle_lens_dlc_37.printname"] = "Saturn" -- 36
 L["codww2_reticle_lens_dlc_37.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_reticle_lens_dlc_38.printname"] = "Cherry" -- 37
+L["codww2_reticle_lens_dlc_38.printname"] = "Kirsche" -- 37
 L["codww2_reticle_lens_dlc_38.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_reticle_lens_dlc_39.printname"] = "Chomp" -- 38
+L["codww2_reticle_lens_dlc_39.printname"] = "Mampf" -- 38
 L["codww2_reticle_lens_dlc_39.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_reticle_lens_dlc_40.printname"] = "Biohazard" -- Undead, 39
+L["codww2_reticle_lens_dlc_40.printname"] = "Biogefahr" -- Undead, 39
 L["codww2_reticle_lens_dlc_40.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_reticle_lens_dlc_41.printname"] = "Diamond Cutter" -- 40
+L["codww2_reticle_lens_dlc_41.printname"] = "Diamantschneider" -- 40
 L["codww2_reticle_lens_dlc_41.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.undead)
 
-L["codww2_reticle_lens_dlc_42.printname"] = "Keyhole" -- 41
+L["codww2_reticle_lens_dlc_42.printname"] = "Schlüsselloch" -- 41
 L["codww2_reticle_lens_dlc_42.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_reticle_lens_dlc_43.printname"] = "Trapped" -- 42
+L["codww2_reticle_lens_dlc_43.printname"] = "Gefangen" -- 42
 L["codww2_reticle_lens_dlc_43.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_reticle_lens_dlc_44.printname"] = "Crunchy" -- 43
+L["codww2_reticle_lens_dlc_44.printname"] = "Knusprig" -- 43
 L["codww2_reticle_lens_dlc_44.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_reticle_lens_dlc_45.printname"] = "Red Burst" -- 44
+L["codww2_reticle_lens_dlc_45.printname"] = "Rotsalve" -- 44
 L["codww2_reticle_lens_dlc_45.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_reticle_lens_dlc_46.printname"] = "Tac" -- 45
+L["codww2_reticle_lens_dlc_46.printname"] = "Tak" -- 45
 L["codww2_reticle_lens_dlc_46.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_reticle_lens_dlc_47.printname"] = "Rank Up" -- 46
+L["codww2_reticle_lens_dlc_47.printname"] = "Aufstieg" -- 46
 L["codww2_reticle_lens_dlc_47.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
 L["codww2_reticle_lens_dlc_48.printname"] = "Invasion" -- 47
 L["codww2_reticle_lens_dlc_48.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_reticle_lens_dlc_49.printname"] = "Tunnel Vision" -- 48
+L["codww2_reticle_lens_dlc_49.printname"] = "Tunnelblick" -- 48
 L["codww2_reticle_lens_dlc_49.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_reticle_lens_dlc_50.printname"] = "Droopy" -- 49
+L["codww2_reticle_lens_dlc_50.printname"] = "Schlapp" -- 49
 L["codww2_reticle_lens_dlc_50.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
-L["codww2_reticle_lens_dlc_51.printname"] = "Legend Wheel" -- 50
+L["codww2_reticle_lens_dlc_51.printname"] = "Legendenrad" -- 50
 L["codww2_reticle_lens_dlc_51.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.liberty)
 
 L["codww2_reticle_lens_dlc_52.printname"] = "Monitor" -- 51
 L["codww2_reticle_lens_dlc_52.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_reticle_lens_dlc_53.printname"] = "Centripetal" -- 52
+L["codww2_reticle_lens_dlc_53.printname"] = "Radial" -- 52
 L["codww2_reticle_lens_dlc_53.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_reticle_lens_dlc_54.printname"] = "Pinch" -- 53
+L["codww2_reticle_lens_dlc_54.printname"] = "Quetschen" -- 53
 L["codww2_reticle_lens_dlc_54.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_reticle_lens_dlc_55.printname"] = "Suspect" -- 54
+L["codww2_reticle_lens_dlc_55.printname"] = "Verdächtig" -- 54
 L["codww2_reticle_lens_dlc_55.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_reticle_lens_dlc_56.printname"] = "Target Locked II" -- 55
+L["codww2_reticle_lens_dlc_56.printname"] = "Ziel erfasst II" -- 55
 L["codww2_reticle_lens_dlc_56.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
 L["codww2_reticle_lens_dlc_57.printname"] = "Hurricane" -- 56
@@ -438,13 +438,13 @@ L["codww2_reticle_lens_dlc_57.description"] = ww2rare.rare .. "\n" .. string.for
 L["codww2_reticle_lens_dlc_58.printname"] = "Fidget Spinner" -- 57
 L["codww2_reticle_lens_dlc_58.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_reticle_lens_dlc_59.printname"] = "Locked" -- 58
+L["codww2_reticle_lens_dlc_59.printname"] = "Gesperrt" -- 58
 L["codww2_reticle_lens_dlc_59.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_reticle_lens_dlc_60.printname"] = "Accomplished" -- 59
+L["codww2_reticle_lens_dlc_60.printname"] = "Geschafft" -- 59
 L["codww2_reticle_lens_dlc_60.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
-L["codww2_reticle_lens_dlc_61.printname"] = "Periscope" -- 60
+L["codww2_reticle_lens_dlc_61.printname"] = "Periskop" -- 60
 L["codww2_reticle_lens_dlc_61.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.summer)
 
 L["codww2_reticle_lens_dlc_62.printname"] = "Opposition" -- 61
@@ -453,40 +453,40 @@ L["codww2_reticle_lens_dlc_62.description"] = ww2rare.common .. "\n" .. string.f
 L["codww2_reticle_lens_dlc_63.printname"] = "Cursor" -- 62
 L["codww2_reticle_lens_dlc_63.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_reticle_lens_dlc_64.printname"] = "Birdie" -- 63
+L["codww2_reticle_lens_dlc_64.printname"] = "Vögelchen" -- 63
 L["codww2_reticle_lens_dlc_64.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_reticle_lens_dlc_65.printname"] = "Bloodshot" -- Covert, 64
+L["codww2_reticle_lens_dlc_65.printname"] = "Blutunterlaufen" -- Covert, 64
 L["codww2_reticle_lens_dlc_65.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_reticle_lens_dlc_66.printname"] = "You Are Here" -- 65
+L["codww2_reticle_lens_dlc_66.printname"] = "Du bist hier" -- 65
 L["codww2_reticle_lens_dlc_66.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_reticle_lens_dlc_67.printname"] = "Toilet Seat" -- 66
+L["codww2_reticle_lens_dlc_67.printname"] = "Toilettensitz" -- 66
 L["codww2_reticle_lens_dlc_67.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_reticle_lens_dlc_68.printname"] = "Pivot" -- 67
+L["codww2_reticle_lens_dlc_68.printname"] = "Sternschritt" -- 67
 L["codww2_reticle_lens_dlc_68.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_reticle_lens_dlc_69.printname"] = "Dome" -- 68
+L["codww2_reticle_lens_dlc_69.printname"] = "Kuppel" -- 68
 L["codww2_reticle_lens_dlc_69.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_reticle_lens_dlc_70.printname"] = "Brilliant" -- 69
+L["codww2_reticle_lens_dlc_70.printname"] = "Brillant" -- 69
 L["codww2_reticle_lens_dlc_70.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_reticle_lens_dlc_71.printname"] = "Heart" -- 70
+L["codww2_reticle_lens_dlc_71.printname"] = "Herz" -- 70
 L["codww2_reticle_lens_dlc_71.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.covert)
 
-L["codww2_reticle_lens_dlc_72.printname"] = "Bat" -- 71
+L["codww2_reticle_lens_dlc_72.printname"] = "Fledermaus" -- 71
 L["codww2_reticle_lens_dlc_72.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_reticle_lens_dlc_73.printname"] = "Pumpkin" -- Halloween, 72
+L["codww2_reticle_lens_dlc_73.printname"] = "Kürbis" -- Halloween, 72
 L["codww2_reticle_lens_dlc_73.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_reticle_lens_dlc_74.printname"] = "Turtle" -- 73
+L["codww2_reticle_lens_dlc_74.printname"] = "Schildkröte" -- 73
 L["codww2_reticle_lens_dlc_74.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_reticle_lens_dlc_75.printname"] = "Barycenter" -- 74
+L["codww2_reticle_lens_dlc_75.printname"] = "Baryzentrum" -- 74
 L["codww2_reticle_lens_dlc_75.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
 L["codww2_reticle_lens_dlc_76.printname"] = "Purist" -- 75
@@ -495,16 +495,16 @@ L["codww2_reticle_lens_dlc_76.description"] = ww2rare.common .. "\n" .. string.f
 L["codww2_reticle_lens_dlc_77.printname"] = "Tic Tac Toe" -- 76
 L["codww2_reticle_lens_dlc_77.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_reticle_lens_dlc_78.printname"] = "The Helm" -- 77
+L["codww2_reticle_lens_dlc_78.printname"] = "Das Ruder" -- 77
 L["codww2_reticle_lens_dlc_78.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_reticle_lens_dlc_79.printname"] = "Assassin" -- 78
+L["codww2_reticle_lens_dlc_79.printname"] = "Attentäter" -- 78
 L["codww2_reticle_lens_dlc_79.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_reticle_lens_dlc_80.printname"] = "Headhunter" -- 79
+L["codww2_reticle_lens_dlc_80.printname"] = "Kopfgeldjäger" -- 79
 L["codww2_reticle_lens_dlc_80.description"] = ww2rare.legendary .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
-L["codww2_reticle_lens_dlc_81.printname"] = "Trisect" -- 80
+L["codww2_reticle_lens_dlc_81.printname"] = "Dreigeteilt" -- 80
 L["codww2_reticle_lens_dlc_81.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.halloween)
 
 /////////////////  Reflex Sight

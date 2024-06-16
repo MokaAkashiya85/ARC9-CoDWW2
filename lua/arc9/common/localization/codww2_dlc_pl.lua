@@ -264,10 +264,10 @@ L["codww2_camo_dlc_74.description"] = ww2rare.epic .. "\n" .. string.format(ww2o
 
 ////////////////////  Reticles
 /////////////////  Lens Sight
-L["codww2_reticle_lens_dlc_1.printname"] = "Eclipse" -- 00
+L["codww2_reticle_lens_dlc_1.printname"] = "Zaćmienie" -- 00
 L["codww2_reticle_lens_dlc_1.description"] = ww2rare.rare .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
-L["codww2_reticle_lens_dlc_2.printname"] = "Constitution" -- 01
+L["codww2_reticle_lens_dlc_2.printname"] = "Konstytucja" -- 01
 L["codww2_reticle_lens_dlc_2.description"] = ww2rare.common .. "\n" .. string.format(ww2op.partof, ww2op.shamrock)
 
 L["codww2_reticle_lens_dlc_3.printname"] = "Brawn" -- 02
