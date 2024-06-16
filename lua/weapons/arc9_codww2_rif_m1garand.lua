@@ -38,9 +38,9 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/mokaww2/weapons/m1garand.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7, 4.75, -6),
+    Pos = Vector(-3.5, 4.75, -5.25),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-12, 4.5, -4.25),
+    TPIKPos = Vector(-6, 5, -6),
     TPIKAng = Angle(-12.5, -1, 172.5),
     Scale = 0.85
 }
