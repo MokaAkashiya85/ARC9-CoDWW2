@@ -147,10 +147,11 @@ ATT.Attachments = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 0
-ATT.RTScopeFOV = 65 / 6
+ATT.RTScopeFOV = 65 / 7.5
 ATT.RTScopeShadowIntensity = 0
 ATT.RTScopeBlackBox = false
 ATT.RTScopeBlackBoxShadow = false
+ATT.ScopeScreenRatio = 0.125
 
 -- ATT.Sights = { -- Handled by the weapon itself, due to models being different.
     -- {
@@ -178,7 +179,7 @@ local sa = swep:GetSightAmount()
 
 	if sa >= 0.85 then
 		-- model:SetBodygroup(0, modelsizeads or 1)
-		model:ManipulateBonePosition(findbone(), Vector( -0.075, 0, 0 ) ) -- Moves the reticle bone if it is too far forward or back.
+		model:ManipulateBonePosition(findbone(), Vector( -0.1, 0, 0 ) ) -- Moves the reticle bone if it is too far forward or back.
 		-- model:ManipulateBoneAngles(findbone(), Angle( 0, 0, 0 ) ) -- Rotates the reticle bone if it is not aligned correctly by default.
 	else
 		-- model:SetBodygroup(0, modelsize or 0)

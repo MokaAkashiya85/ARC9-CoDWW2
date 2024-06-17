@@ -13,6 +13,10 @@ SWEP.Category = "ARC9 - CoD: WWII"
 SWEP.PrintName = ARC9:GetPhrase("codww2_wep_greasegun") or "Grease Gun"
 SWEP.Description = ARC9:GetPhrase("codww2_wep_greasegun_desc") or "Automatic SMG with low recoil and steady fire rate."
 
+if GetConVar("arc9_ww2_real_names"):GetBool() then
+	SWEP.PrintName = ARC9:GetPhrase("codww2_wep_greasegun_real") or "M3 Grease Gun"
+end
+
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_smg") or "Submachine Gun"
 SWEP.Class = SWEP.SubCategory
 

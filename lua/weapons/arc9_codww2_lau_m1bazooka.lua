@@ -1,7 +1,7 @@
 AddCSLuaFile()
--- if CLIENT then
-    -- killicon.Add( "arc9_cod2019_ar_ak47", "vgui/killicons/cod2019_ar_ak47.png", Color(251, 85, 25, 255))
--- end
+if CLIENT then
+    killicon.Add( "arc9_codww2_rocket_bazooka", "mokaww2/killicons/m1bazooka.png", Color(255, 255, 255, 255))
+end
 
 -- SWEP.LoadoutImage = "entities/loadout/arc9_cod2019_ar_ak47.png"
 

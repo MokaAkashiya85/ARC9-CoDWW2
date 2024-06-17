@@ -7,14 +7,9 @@ SWEP.PrintName = "CoDWW2 Base"
 
 SWEP.SecondarySupplyLimit = 6
 
--- if CLIENT then
-    -- killicon.Add( "arc9_cod2019_proj_40mmgl_hel", "vgui/killicons/cod2019_m203.png", Color(251, 85, 25, 255))
-    -- killicon.Add( "arc9_cod2019_proj_40mmgl_flash", "vgui/killicons/cod2019_m203.png", Color(251, 85, 25, 255))
-    -- killicon.Add( "arc9_cod2019_proj_40mmgl_smoke", "vgui/killicons/cod2019_m203.png", Color(251, 85, 25, 255))
-    -- killicon.Add( "arc9_cod2019_proj_40mmgl_inc", "vgui/killicons/cod2019_m203.png", Color(251, 85, 25, 255))
-    -- killicon.Add( "arc9_cod2019_proj_40mmgl_stun", "vgui/killicons/cod2019_m203.png", Color(251, 85, 25, 255))
-    -- killicon.Add( "arc9_cod2019_proj_40mmgl_snapshot", "vgui/killicons/cod2019_m203.png", Color(251, 85, 25, 255))
--- end
+if CLIENT then
+    killicon.Add( "arc9_codww2_rifle_grenade", "mokaww2/killicons/riflenade.png", Color(255, 255, 255, 255))
+end
 
 -------------------------- MELEE
 
@@ -109,6 +104,7 @@ SWEP.UBGLClipSize = 1
 SWEP.UBGLFiremode = 1
 SWEP.UBGLFiremodeName = ARC9:GetPhrase("codww2_grenade_launcher.printname")
 SWEP.UBGLChamberSize = 0
+SWEP.RPMUBGL = 150
 SWEP.ShootVolumeUBGL = 130
 
 SWEP.SpreadUBGL = 0

@@ -7,11 +7,6 @@ SWEP.PrintName = "CoDWW2 Base Nade"
 
 -------------------------- MELEE
 
-SWEP.MeleeHitSound = "COD2019.Melee.HitBody"
-SWEP.MeleeHitWallSound = "COD2019.Melee.HitWall"
-SWEP.MeleeSwingSound = "COD2019.Melee.Swing"
-SWEP.BackstabSound = "COD2019.Melee.HitBody"
-
 function SWEP:DrawWorldModel() -- custom func to never draw custommodel when on ground and use regular wm
     local owner = self:GetOwner()
 

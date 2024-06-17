@@ -13,6 +13,10 @@ SWEP.Category = "ARC9 - CoD: WWII"
 SWEP.PrintName = ARC9:GetPhrase("codww2_wep_m1911") or "1911"
 SWEP.Description = ARC9:GetPhrase("codww2_wep_m1911_desc") or "High damage semi-automatic pistol with moderate recoil."
 
+if GetConVar("arc9_ww2_real_names"):GetBool() then
+	SWEP.PrintName = ARC9:GetPhrase("codww2_wep_m1911_real") or "Colt 1911"
+end
+
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_pistol") or "Pistol"
 SWEP.Class = SWEP.SubCategory
 
