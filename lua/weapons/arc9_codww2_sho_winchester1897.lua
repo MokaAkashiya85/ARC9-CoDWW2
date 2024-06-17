@@ -13,9 +13,7 @@ SWEP.Category = "ARC9 - CoD: WWII"
 SWEP.PrintName = ARC9:GetPhrase("codww2_wep_winchester1897") or "Combat Shotgun"
 SWEP.Description = ARC9:GetPhrase("codww2_wep_winchester1897_desc") or "Pump-action shotgun with high damage that delivers one hit kills in close quarters."
 
-if GetConVar("arc9_ww2_real_names"):GetBool() then
-	SWEP.PrintName = ARC9:GetPhrase("codww2_wep_winchester1897_real") or "Winchester 1897 \"Trench Gun\""
-end
+SWEP.TrueName = ARC9:GetPhrase("codww2_wep_winchester1897_real") or "Winchester 1897 \"Trench Gun\""
 
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_shotgun") or "Shotgun"
 SWEP.Class = SWEP.SubCategory

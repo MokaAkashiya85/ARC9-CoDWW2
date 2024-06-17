@@ -13,9 +13,7 @@ SWEP.Category = "ARC9 - CoD: WWII"
 SWEP.PrintName = ARC9:GetPhrase("codww2_wep_m1941") or "M1941"
 SWEP.Description = ARC9:GetPhrase("codww2_wep_m1941_desc") or "Automatic rifle with a fast fire rate and moderate damage."
 
-if GetConVar("arc9_ww2_real_names"):GetBool() then
-	SWEP.PrintName = ARC9:GetPhrase("codww2_wep_m1941_real") or "M1941 Johnson Rifle"
-end
+SWEP.TrueName = ARC9:GetPhrase("codww2_wep_m1941_real") or "M1941 Johnson Rifle"
 
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_ar") or "Rifle"
 SWEP.Class = SWEP.SubCategory
