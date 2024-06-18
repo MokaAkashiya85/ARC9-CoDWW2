@@ -359,7 +359,7 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "reg_draw_first",
-		MinProgress = 0.95,
+		MinProgress = 0.75,
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
@@ -368,7 +368,7 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "reg_draw",
-		MinProgress = 0.75,
+		MinProgress = 0.6,
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
@@ -376,7 +376,7 @@ SWEP.Animations = {
     },
     ["draw_quick"] = {
         Source = "reg_draw_quick",
-		MinProgress = 0.75,
+		MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
@@ -583,7 +583,7 @@ SWEP.Animations = {
     },
     ["cqb_ready"] = {
         Source = "cqb_draw_first",
-		MinProgress = 0.95,
+		MinProgress = 0.75,
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
@@ -592,7 +592,7 @@ SWEP.Animations = {
     },
     ["cqb_draw"] = {
         Source = "cqb_draw",
-		MinProgress = 0.75,
+		MinProgress = 0.6,
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
@@ -600,7 +600,7 @@ SWEP.Animations = {
     },
     ["cqb_draw_quick"] = {
         Source = "cqb_draw_quick",
-		MinProgress = 0.75,
+		MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
             {s = "CoDWW2.Rifle.Raise", t = 0},
