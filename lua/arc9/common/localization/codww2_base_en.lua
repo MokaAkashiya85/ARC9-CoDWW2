@@ -90,25 +90,30 @@ L["codww2_category_charm"] = "Weapon Charms"
 L["codww2_category_pistolgrip"] = "Pistol Grips" -- Only Certain Handguns
 
 //////////// Base
-L["codww2_category_training"] = "Basic Training" -- DIVISIONS_CAC_QUALIFICATION_CAPS
-L["codww2_category_attachment"] = "Attachment" -- LUA_MENU_ATTACHMENT 
+L["codww2_category_training"] = "Basic Training"
+L["codww2_category_attachment"] = "Attachment"
 
 ////////////////////  Basic Training Attachments
--- DIVISIONS_CAC_DLC3_ESCALATION | DIVISIONS_CAC_DLC3_DESC_ESCALATION
 L["codww2_training_escalation.printname"] = "Escalation"
 L["codww2_training_escalation.description"] = "Shortly after kills, aim down sight significantly faster.\nBonus: Multi-kills instantly refill magazine."
 
--- DIVISIONS_CAC_HUSTLE | DIVISIONS_CAC_DESC_HUSTLE
 L["codww2_training_hustle.printname"] = "Hustle"
 L["codww2_training_hustle.description"] = "Reload faster and while sprinting."
 
--- DIVISIONS_CAC_GUNSLINGER | DIVISIONS_CAC_DESC_GUNSLINGER
 L["codww2_training_gunslinger.printname"] = "Gunslinger"
 L["codww2_training_gunslinger.description"] = "Fire guns while sprinting and diving."
 
--- DIVISIONS_CAC_SCOPED | DIVISIONS_CAC_DESC_SCOPED
 L["codww2_training_scoped.printname"] = "Scoped"
 L["codww2_training_scoped.description"] = "While aiming down sights, have less idle sway and move faster."
+
+///////////  Throwback Training Attachments
+L["codww2_training_throwback"] = "Throwback"
+
+L["codww2_training_doubletap.printname"] = "Double Tap"
+L["codww2_training_doubletap.description"] = "Greatly increased fire rate of weapons.\nBonus: Significantly improved hip-fire accuracy."
+
+L["codww2_training_stoppingpower.printname"] = "Stopping Power"
+L["codww2_training_stoppingpower.description"] = "Deal increased bullet damage."
 
 ////////////////////  Base Attachments
 ////////// Sights

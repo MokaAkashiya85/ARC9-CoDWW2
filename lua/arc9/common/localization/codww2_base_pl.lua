@@ -90,25 +90,30 @@ L["codww2_category_charm"] = "Talizmany"
 L["codww2_category_pistolgrip"] = "Uchwyty do pistoletu" -- Only Certain Handguns
 
 //////////// Base
-L["codww2_category_training"] = "Trening podstawowy" -- DIVISIONS_CAC_QUALIFICATION_CAPS
-L["codww2_category_attachment"] = "Dodatek" -- LUA_MENU_ATTACHMENT 
+L["codww2_category_training"] = "Trening podstawowy"
+L["codww2_category_attachment"] = "Dodatek"
 
 ////////////////////  Basic Training Attachments
--- DIVISIONS_CAC_DLC3_ESCALATION | DIVISIONS_CAC_DLC3_DESC_ESCALATION
 L["codww2_training_escalation.printname"] = "Eskalacja"
 L["codww2_training_escalation.description"] = "Znacznie szybsze celowanie tuż po zabiciu wroga\nPremia: Wielobójstwa natychmiast przeładowują broń."
 
--- DIVISIONS_CAC_HUSTLE | DIVISIONS_CAC_DESC_HUSTLE
 L["codww2_training_hustle.printname"] = "Pośpiech"
 L["codww2_training_hustle.description"] = "Szybsze przeładowywanie i możliwość przeładowywania w biegu."
 
--- DIVISIONS_CAC_GUNSLINGER | DIVISIONS_CAC_DESC_GUNSLINGER
 L["codww2_training_gunslinger.printname"] = "Rewolwerowiec"
 L["codww2_training_gunslinger.description"] = "Strzelanie w biegu i w trakcie nurkowania."
 
--- DIVISIONS_CAC_SCOPED | DIVISIONS_CAC_DESC_SCOPED
 L["codww2_training_scoped.printname"] = "Przybliżenie"
 L["codww2_training_scoped.description"] = "Szybsze poruszanie się podczas korzystania z przyrządów celowniczych. Broń mniej się wtedy kołysze."
+
+///////////  Throwback Training Attachments
+L["codww2_training_throwback"] = "Retro"
+
+L["codww2_training_doubletap.printname"] = "Podwójny strzał"
+L["codww2_training_doubletap.description"] = "Znacznie zwiększa szybkostrzelność broni.\nPremia: Znacznie poprawiona celność strzałów z biodra."
+
+L["codww2_training_stoppingpower.printname"] = "Moc obalająca"
+L["codww2_training_stoppingpower.description"] = "Zwiększona siła rażenia broni palnej."
 
 ////////////////////  Base Attachments
 ////////// Sights

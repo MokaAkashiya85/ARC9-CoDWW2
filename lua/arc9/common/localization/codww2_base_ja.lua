@@ -90,25 +90,30 @@ L["codww2_category_charm"] = "武器チャーム"
 L["codww2_category_pistolgrip"] = "ハンドガングリップ" -- Only Certain Handguns
 
 //////////// Base
-L["codww2_category_training"] = "基礎トレーニング" -- DIVISIONS_CAC_QUALIFICATION_CAPS
-L["codww2_category_attachment"] = "アタッチメント" -- LUA_MENU_ATTACHMENT 
+L["codww2_category_training"] = "基礎トレーニング"
+L["codww2_category_attachment"] = "アタッチメント"
 
 ////////////////////  Basic Training Attachments
--- DIVISIONS_CAC_DLC3_ESCALATION | DIVISIONS_CAC_DLC3_DESC_ESCALATION
 L["codww2_training_escalation.printname"] = "過激化"
 L["codww2_training_escalation.description"] = "キル直後にエイムが著しく速くなる\nボーナス: マルチキルで即座にマガジン補充"
 
--- DIVISIONS_CAC_HUSTLE | DIVISIONS_CAC_DESC_HUSTLE
 L["codww2_training_hustle.printname"] = "ハッスル"
 L["codww2_training_hustle.description"] = "リロードが速くなり、ダッシュ中もリロードできるようになる"
 
--- DIVISIONS_CAC_GUNSLINGER | DIVISIONS_CAC_DESC_GUNSLINGER
 L["codww2_training_gunslinger.printname"] = "ガンスリンガー"
 L["codww2_training_gunslinger.description"] = "ダッシュおよびダイビング中に銃を撃つ"
 
--- DIVISIONS_CAC_SCOPED | DIVISIONS_CAC_DESC_SCOPED
 L["codww2_training_scoped.printname"] = "スコープ"
 L["codww2_training_scoped.description"] = "エイム中の動きが速くなり、揺れが小さくなる"
+
+///////////  Throwback Training Attachments
+L["codww2_training_throwback"] = "スローバック"
+
+L["codww2_training_doubletap.printname"] = "ダブルタップ"
+L["codww2_training_doubletap.description"] = "武器の連射速度が飛躍的に上がる\nボーナス: 腰撃ち時の命中率が格段に向上"
+
+L["codww2_training_stoppingpower.printname"] = "ストッピングパワー"
+L["codww2_training_stoppingpower.description"] = "銃弾によって与えるダメージを増加"
 
 ////////////////////  Base Attachments
 ////////// Sights

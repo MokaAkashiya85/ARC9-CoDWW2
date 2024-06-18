@@ -90,25 +90,30 @@ L["codww2_category_charm"] = "Pingentes de arma"
 L["codww2_category_pistolgrip"] = "Empunhaduras da pistola" -- Only Certain Handguns
 
 //////////// Base
-L["codww2_category_training"] = "Treinamento básico" -- DIVISIONS_CAC_QUALIFICATION_CAPS
-L["codww2_category_attachment"] = "Acessório" -- LUA_MENU_ATTACHMENT 
+L["codww2_category_training"] = "Treinamento básico"
+L["codww2_category_attachment"] = "Acessório"
 
 ////////////////////  Basic Training Attachments
--- DIVISIONS_CAC_DLC3_ESCALATION | DIVISIONS_CAC_DLC3_DESC_ESCALATION
 L["codww2_training_escalation.printname"] = "Escalada"
 L["codww2_training_escalation.description"] = "Após abater um inimigo, alinha a mira mais rápido.\nBônus: Baixas múltiplas recarregam instantaneamente o carregador."
 
--- DIVISIONS_CAC_HUSTLE | DIVISIONS_CAC_DESC_HUSTLE
 L["codww2_training_hustle.printname"] = "Pressa"
 L["codww2_training_hustle.description"] = "Recarregue mais rápido e enquanto corre."
 
--- DIVISIONS_CAC_GUNSLINGER | DIVISIONS_CAC_DESC_GUNSLINGER
 L["codww2_training_gunslinger.printname"] = "Pistoleiro"
 L["codww2_training_gunslinger.description"] = "Dispare enquanto corre ou se joga no chão."
 
--- DIVISIONS_CAC_SCOPED | DIVISIONS_CAC_DESC_SCOPED
 L["codww2_training_scoped.printname"] = "Com mira"
 L["codww2_training_scoped.description"] = "Caminhe mais rápido e tenha menos oscilação enquanto mira."
+
+///////////  Throwback Training Attachments
+L["codww2_training_throwback"] = "Nostalgia"
+
+L["codww2_training_doubletap.printname"] = "Tiro duplo"
+L["codww2_training_doubletap.description"] = "Aumento significativo da cadência de tiro.\nBônus: Aumento significativo da precisão de tiros livres."
+
+L["codww2_training_stoppingpower.printname"] = "Poder de imobilização"
+L["codww2_training_stoppingpower.description"] = "Dano de projétil aumentado."
 
 ////////////////////  Base Attachments
 ////////// Sights

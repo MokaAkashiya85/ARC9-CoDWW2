@@ -90,25 +90,30 @@ L["codww2_category_charm"] = "Амулеты для оружия"
 L["codww2_category_pistolgrip"] = "Пистолетные рукоятки" -- Only Certain Handguns
 
 //////////// Base
-L["codww2_category_training"] = "Базовая подготовка" -- DIVISIONS_CAC_QUALIFICATION_CAPS
-L["codww2_category_attachment"] = "Модуль" -- LUA_MENU_ATTACHMENT 
+L["codww2_category_training"] = "Базовая подготовка"
+L["codww2_category_attachment"] = "Модуль"
 
 ////////////////////  Basic Training Attachments
--- DIVISIONS_CAC_DLC3_ESCALATION | DIVISIONS_CAC_DLC3_DESC_ESCALATION
 L["codww2_training_escalation.printname"] = "Эскалация"
 L["codww2_training_escalation.description"] = "Существенное ускорение прицеливания после убийства.\nДополнительно: мгновенное заполнение магазина оружия после массового убийства."
 
--- DIVISIONS_CAC_HUSTLE | DIVISIONS_CAC_DESC_HUSTLE
 L["codww2_training_hustle.printname"] = "Спешка"
 L["codww2_training_hustle.description"] = "Ускоренная перезарядка; возможность перезарядки на бегу."
 
--- DIVISIONS_CAC_GUNSLINGER | DIVISIONS_CAC_DESC_GUNSLINGER
 L["codww2_training_gunslinger.printname"] = "Реакция"
 L["codww2_training_gunslinger.description"] = "Возможность стрелять на бегу и во время нырка."
 
--- DIVISIONS_CAC_SCOPED | DIVISIONS_CAC_DESC_SCOPED
 L["codww2_training_scoped.printname"] = "Оптика"
 L["codww2_training_scoped.description"] = "Ускорение перемещения и уменьшение раскачки оружия при прицеливании."
+
+///////////  Throwback Training Attachments
+L["codww2_training_throwback"] = "Классика"
+
+L["codww2_training_doubletap.printname"] = "Двойной выстрел"
+L["codww2_training_doubletap.description"] = "Существенное повышение скорострельности оружия.\nДополнительно: существенное повышение точности стрельбы от бедра."
+
+L["codww2_training_stoppingpower.printname"] = "Убойная сила"
+L["codww2_training_stoppingpower.description"] = "Увеличение урона от пуль."
 
 ////////////////////  Base Attachments
 ////////// Sights

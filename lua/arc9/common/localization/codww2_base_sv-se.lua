@@ -90,25 +90,30 @@ L["codww2_category_charm"] = "Vapensmycken"
 L["codww2_category_pistolgrip"] = "Pistolgrepp" -- Only Certain Handguns
 
 //////////// Base
-L["codww2_category_training"] = "Simpel träning" -- DIVISIONS_CAC_QUALIFICATION_CAPS
-L["codww2_category_attachment"] = "Tillbehör" -- LUA_MENU_ATTACHMENT 
+L["codww2_category_training"] = "Simpel träning"
+L["codww2_category_attachment"] = "Tillbehör"
 
 ////////////////////  Basic Training Attachments
--- DIVISIONS_CAC_DLC3_ESCALATION | DIVISIONS_CAC_DLC3_DESC_ESCALATION
 L["codww2_training_escalation.printname"] = "Upptrappning"
 L["codww2_training_escalation.description"] = "Kort efter dråp, gå in i siktet mycket snabbare.\nBonus: Flertal dråp fyller på magasinet."
 
--- DIVISIONS_CAC_HUSTLE | DIVISIONS_CAC_DESC_HUSTLE
 L["codww2_training_hustle.printname"] = "Snabbhet"
 L["codww2_training_hustle.description"] = "Ladda om snabbare och när du springer."
 
--- DIVISIONS_CAC_GUNSLINGER | DIVISIONS_CAC_DESC_GUNSLINGER
 L["codww2_training_gunslinger.printname"] = "Gunslinger"
 L["codww2_training_gunslinger.description"] = "Skjut vapen medans du springer och dyker."
 
--- DIVISIONS_CAC_SCOPED | DIVISIONS_CAC_DESC_SCOPED
 L["codww2_training_scoped.printname"] = "Siktad"
 L["codww2_training_scoped.description"] = "I siktet, ha mindre sväjning och rör dig snabbare."
+
+///////////  Throwback Training Attachments
+L["codww2_training_throwback"] = "Gammaldags"
+
+L["codww2_training_doubletap.printname"] = "Dubbeltryck"
+L["codww2_training_doubletap.description"] = "Drastiskt ökad eldhastighet på vapen.\nBonus: Förbättrar kraftigt träffsäkerheten från höften."
+
+L["codww2_training_stoppingpower.printname"] = "Stoppkraft"
+L["codww2_training_stoppingpower.description"] = "Dela ökad skottskada."
 
 ////////////////////  Base Attachments
 ////////// Sights

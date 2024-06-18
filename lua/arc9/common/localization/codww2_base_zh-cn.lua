@@ -90,25 +90,30 @@ L["codww2_category_charm"] = "武器挂件"
 L["codww2_category_pistolgrip"] = "手枪握把" -- Only Certain Handguns
 
 //////////// Base
-L["codww2_category_training"] = "基础训练" -- DIVISIONS_CAC_QUALIFICATION_CAPS
-L["codww2_category_attachment"] = "配件" -- LUA_MENU_ATTACHMENT 
+L["codww2_category_training"] = "基础训练"
+L["codww2_category_attachment"] = "配件"
 
 ////////////////////  Basic Training Attachments
--- DIVISIONS_CAC_DLC3_ESCALATION | DIVISIONS_CAC_DLC3_DESC_ESCALATION
 L["codww2_training_escalation.printname"] = "局势升级"
 L["codww2_training_escalation.description"] = "在完成击杀后的短时间内，大幅加快举枪瞄准速度。\n额外：在完成连杀后自动填装弹药。"
 
--- DIVISIONS_CAC_HUSTLE | DIVISIONS_CAC_DESC_HUSTLE
 L["codww2_training_hustle.printname"] = "急速"
 L["codww2_training_hustle.description"] = "在冲刺中装弹。装弹速度提高。"
 
--- DIVISIONS_CAC_GUNSLINGER | DIVISIONS_CAC_DESC_GUNSLINGER
 L["codww2_training_gunslinger.printname"] = "枪客"
 L["codww2_training_gunslinger.description"] = "可在冲刺和扑倒时射击。"
 
--- DIVISIONS_CAC_SCOPED | DIVISIONS_CAC_DESC_SCOPED
 L["codww2_training_scoped.printname"] = "枪法熟练"
 L["codww2_training_scoped.description"] = "举枪瞄准时枪支晃动减小，移动速度提高。"
+
+///////////  Throwback Training Attachments
+L["codww2_training_throwback"] = "怀旧"
+
+L["codww2_training_doubletap.printname"] = "急速射击"
+L["codww2_training_doubletap.description"] = "大幅加快武器射速。\n额外：大幅增加腰际射击精度。"
+
+L["codww2_training_stoppingpower.printname"] = "停止作用"
+L["codww2_training_stoppingpower.description"] = "增大子弹威力。"
 
 ////////////////////  Base Attachments
 ////////// Sights

@@ -90,25 +90,30 @@ L["codww2_category_charm"] = "Waffentalismane"
 L["codww2_category_pistolgrip"] = "Pistolengriffe" -- Only Certain Handguns
 
 //////////// Base
-L["codww2_category_training"] = "Grundausbildung" -- DIVISIONS_CAC_QUALIFICATION_CAPS
-L["codww2_category_attachment"] = "Aufsatz" -- LUA_MENU_ATTACHMENT 
+L["codww2_category_training"] = "Grundausbildung"
+L["codww2_category_attachment"] = "Aufsatz"
 
 ////////////////////  Basic Training Attachments
--- DIVISIONS_CAC_DLC3_ESCALATION | DIVISIONS_CAC_DLC3_DESC_ESCALATION
 L["codww2_training_escalation.printname"] = "Eskalation"
 L["codww2_training_escalation.description"] = "Nutzen Sie kurz nach Abschüssen schneller die Zielvorrichtung.\nBonus: Magazine werden durch Mehrfachabschüsse direkt wieder aufgefüllt."
 
--- DIVISIONS_CAC_HUSTLE | DIVISIONS_CAC_DESC_HUSTLE
 L["codww2_training_hustle.printname"] = "Eile"
 L["codww2_training_hustle.description"] = "Sie können schneller und auch im Sprinten nachladen."
 
--- DIVISIONS_CAC_GUNSLINGER | DIVISIONS_CAC_DESC_GUNSLINGER
 L["codww2_training_gunslinger.printname"] = "Revolverheld"
 L["codww2_training_gunslinger.description"] = "Sie können Waffen beim Sprinten und während des Hechtsprungs abfeuern."
 
--- DIVISIONS_CAC_SCOPED | DIVISIONS_CAC_DESC_SCOPED
 L["codww2_training_scoped.printname"] = "Zielfernrohr"
 L["codww2_training_scoped.description"] = "Schnelleres Bewegen und reduzierte Waffenbewegung bei Verwendung der Zielvorrichtung."
+
+///////////  Throwback Training Attachments
+L["codww2_training_throwback"] = "Rückblick"
+
+L["codww2_training_doubletap.printname"] = "Doppeldrücker"
+L["codww2_training_doubletap.description"] = "Deutlich schnellere Feuerrate für Waffen.\nBonus: Deutlich gesteigerte Präzision aus der Hüfte."
+
+L["codww2_training_stoppingpower.printname"] = "Feuerkraft"
+L["codww2_training_stoppingpower.description"] = "Stark erhöhter Patronenschaden."
 
 ////////////////////  Base Attachments
 ////////// Sights

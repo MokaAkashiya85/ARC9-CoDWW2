@@ -90,25 +90,30 @@ L["codww2_category_charm"] = "무기 장식품"
 L["codww2_category_pistolgrip"] = "권총 손잡이" -- Only Certain Handguns
 
 //////////// Base
-L["codww2_category_training"] = "기초 훈련" -- DIVISIONS_CAC_QUALIFICATION_CAPS
-L["codww2_category_attachment"] = "부속" -- LUA_MENU_ATTACHMENT 
+L["codww2_category_training"] = "기초 훈련"
+L["codww2_category_attachment"] = "부속"
 
 ////////////////////  Basic Training Attachments
--- DIVISIONS_CAC_DLC3_ESCALATION | DIVISIONS_CAC_DLC3_DESC_ESCALATION
 L["codww2_training_escalation.printname"] = "광란"
 L["codww2_training_escalation.description"] = "적을 처치한 즉시 조준 사격 속도가 매우 빨라집니다.\n보너스: 다중 처치를 하면 탄창이 즉시 채워집니다."
 
--- DIVISIONS_CAC_HUSTLE | DIVISIONS_CAC_DESC_HUSTLE
 L["codww2_training_hustle.printname"] = "신속"
 L["codww2_training_hustle.description"] = "재장전 속도가 빨라지고 전력질주 시에도 재장전할 수 있습니다."
 
--- DIVISIONS_CAC_GUNSLINGER | DIVISIONS_CAC_DESC_GUNSLINGER
 L["codww2_training_gunslinger.printname"] = "건슬링거"
 L["codww2_training_gunslinger.description"] = "전력질주 및 강하 시에도 총을 발사할 수 있습니다."
 
--- DIVISIONS_CAC_SCOPED | DIVISIONS_CAC_DESC_SCOPED
 L["codww2_training_scoped.printname"] = "정조준"
 L["codww2_training_scoped.description"] = "조준 사격 상태에서 이동 속도가 빨라지고 흔들림이 감소합니다."
+
+///////////  Throwback Training Attachments
+L["codww2_training_throwback"] = "역전"
+
+L["codww2_training_doubletap.printname"] = "더블탭"
+L["codww2_training_doubletap.description"] = "발사 속도가 매우 증가합니다\n보너스: 지향사격 정확도가 대폭 향상됩니다."
+
+L["codww2_training_stoppingpower.printname"] = "저지력"
+L["codww2_training_stoppingpower.description"] = "탄환 피해량이 증가합니다."
 
 ////////////////////  Base Attachments
 ////////// Sights
