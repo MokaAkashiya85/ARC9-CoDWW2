@@ -151,6 +151,7 @@ ATT.RTScopeFOV = 65 / 7.5
 ATT.RTScopeShadowIntensity = 0
 ATT.RTScopeBlackBox = false
 ATT.RTScopeBlackBoxShadow = false
+ATT.RTCollimator = true
 ATT.ScopeScreenRatio = 0.125
 
 -- ATT.Sights = { -- Handled by the weapon itself, due to models being different.
