@@ -522,6 +522,231 @@ SWEP.Animations = {
 		Mult = 0.85,
     },
 
+ -- CQB Animations
+    ["cqb_enter_sights"] = {
+        Source = "cqb_idle",
+    },
+    ["cqb_fire"] = {
+        Source = "cqb_fire",
+    },
+    ["cqb_fire_sights"] = {
+        Source = "cqb_fire_ads",
+    },
+    ["cqb_reload"] = {
+        Source = "cqb_reload",
+		MinProgress = 0.8,
+		RefillProgress = 0.65,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_m1garand_foley_start.ogg", t = 0},
+			{s = path2 .. "wpn_john_empty_open.ogg", t = 0.1},
+            -- {s = path .. "wpn_m1_grenade_click.ogg", t = 1.05, v = 0.5},
+            {s = path .. "wpn_m1garand_magin.ogg", t = 1.15, v = 0.5},
+            {s = path .. "wpn_m1garand_charge.ogg", t = 1.975},
+        },
+    },
+    ["cqb_reload_empty"] = {
+        Source = "cqb_reload_empty",
+		MinProgress = 0.8,
+		RefillProgress = 0.6,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_m1garand_foley_start.ogg", t = 0},
+			-- {s = path2 .. "wpn_john_empty_open.ogg", t = 0.1},
+            -- {s = path .. "wpn_m1_grenade_click.ogg", t = 0.725, v = 0.5},
+            {s = path .. "wpn_m1garand_magin.ogg", t = 0.8, v = 0.5},
+            {s = path .. "wpn_m1garand_charge.ogg", t = 1.65},
+        },
+    },
+    ["cqb_reload_ext"] = {
+        Source = "cqb_reload_ext",
+		MinProgress = 0.925,
+		RefillProgress = 0.55,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_m1garand_foley_start.ogg", t = 0},
+			{s = path .. "wpn_m1g_tac_ext_magout.ogg", t = 0.2},
+            {s = path .. "wpn_m1g_tac_ext_magin.ogg", t = 0.9},
+        },
+    },
+    ["cqb_reload_empty_ext"] = {
+        Source = "cqb_reload_ext_empty",
+		MinProgress = 0.925,
+		RefillProgress = 0.675,
+		FireASAP = true,
+        EventTable = {
+			{s = path .. "wpn_m1garand_foley_start.ogg", t = 0},
+			{s = path .. "wpn_m1g_tac_ext_magout.ogg", t = 0.2},
+            {s = path .. "wpn_m1g_tac_ext_magin.ogg", t = 1},
+            {s = path .. "wpn_m1garand_charge.ogg", t = 1.65},
+        },
+    },
+    ["cqb_ready"] = {
+        Source = "cqb_draw_first",
+		MinProgress = 0.95,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+            {s = path .. "wpn_m1garand_charge.ogg", t = 0.5},
+        },
+    },
+    ["cqb_draw"] = {
+        Source = "cqb_draw",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+        },
+    },
+    ["cqb_draw_quick"] = {
+        Source = "cqb_draw_quick",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+        },
+    },
+    ["cqb_holster"] = {
+        Source = "cqb_holster",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["cqb_holster_quick"] = {
+        Source = "cqb_holster_quick",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["cqb_idle"] = {
+        Source = "cqb_idle",
+    },
+    ["cqb_idle_sprint"] = {
+        Source = "cqb_sprint",
+    },
+    ["cqb_exit_sprint"] = {
+        Source = "cqb_sprint_out",
+		Time = 5,
+    },
+    ["cqb_enter_sprint"] = {
+        Source = "cqb_sprint_in",
+		Time = 1.25,
+    },
+    ["cqb_inspect"] = {
+        Source = "cqb_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_m1g_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_m1g_inspect_stndrd_pt_02.ogg", t = 3.25},
+        },
+    },
+    ["cqb_inspect_ext"] = {
+        Source = "cqb_inspect_ext",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_m1g_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_m1g_inspect_stndrd_pt_02.ogg", t = 3.25},
+        },
+    },
+    ["cqb_bash"] = {
+        Source = {"cqb_melee"},
+		Mult = 0.75,
+    },
+    ["cqb_bash_bayonet"] = {
+        Source = {"cqb_melee_bayonet"},
+		Mult = 0.85,
+    },
+
+-- Empty CQB Animations
+    ["cqb_enter_sights_empty"] = {
+        Source = "cqb_idle_empty",
+    },
+    ["cqb_fire_empty"] = {
+        Source = "cqb_fire_last",
+        EventTable = { {s = "CoDWW2.M1Garand.Ping", t = 0} },
+    },
+    ["cqb_fire_sights_empty"] = {
+        Source = "cqb_fire_ads_last",
+        EventTable = { {s = "CoDWW2.M1Garand.Ping", t = 0} },
+    },
+    ["cqb_fire_empty_ext"] = {
+        Source = "cqb_fire_last_ext",
+    },
+    ["cqb_fire_sights_empty_ext"] = {
+        Source = "cqb_fire_ads_last_ext",
+    },
+    ["cqb_draw_empty"] = {
+        Source = "cqb_draw_empty",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+        },
+    },
+    ["cqb_draw_quick_empty"] = {
+        Source = "cqb_draw_quick_empty",
+		MinProgress = 0.75,
+		FireASAP = true,
+        EventTable = {
+            {s = "CoDWW2.Rifle.Raise", t = 0},
+        },
+    },
+    ["cqb_holster_empty"] = {
+        Source = "cqb_holster_empty",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["cqb_holster_quick_empty"] = {
+        Source = "cqb_holster_quick_empty",
+        EventTable = {
+            {s = "CoDWW2.Rifle.Holster", t = 0},
+        },
+    },
+    ["cqb_idle_empty"] = {
+        Source = "cqb_idle_empty",
+    },
+    ["cqb_idle_sprint_empty"] = {
+        Source = "cqb_sprint_empty",
+    },
+    ["cqb_exit_sprint_empty"] = {
+        Source = "cqb_sprint_out_empty",
+		Time = 5,
+    },
+    ["cqb_enter_sprint_empty"] = {
+        Source = "cqb_sprint_in_empty",
+		Time = 1.25,
+    },
+    ["cqb_inspect_empty"] = {
+        Source = "cqb_inspect_empty",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_m1g_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_m1g_inspect_stndrd_pt_02.ogg", t = 3.25},
+        },
+    },
+    ["cqb_inspect_ext_empty"] = {
+        Source = "cqb_inspect_ext_empty",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_m1g_inspect_stndrd_pt_01.ogg", t = 0},
+			{s = path .. "wpn_m1g_inspect_stndrd_pt_02.ogg", t = 3.25},
+        },
+    },
+    ["cqb_bash_empty"] = {
+        Source = {"cqb_melee_empty"},
+		Mult = 0.75,
+    },
+    ["cqb_bash_empty_bayonet"] = {
+        Source = {"cqb_melee_bayonet_empty"},
+		Mult = 0.85,
+    },
+
+
 -- Rifle Grenade
     ["fire_ubgl"] = {
         Source = "reg_gl_fire",
@@ -609,6 +834,87 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+        },
+    },
+	
+-- Rifle Grenade Marksman Animations
+    ["mm_reload_ubgl"] = {
+        Source = "mm_gl_reload",
+		MinProgress = 0.825,
+		RefillProgress = 0.425,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+			{s = paths .. "wpn_rifle_grenade_on.ogg", t = 0.9},
+        },
+    },
+    ["mm_enter_ubgl"] = {
+        Source = {"mm_gl_enter"},
+		MinProgress = 0.9,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+			{s = paths .. "wpn_rifle_grenade_on.ogg", t = 0.9},
+        },
+    },
+    ["mm_exit_ubgl"] = {
+        Source = {"mm_gl_exit"},
+		MinProgress = 0.85,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+			{s = paths .. "wpn_rifle_grenade_off.ogg", t = 0.7},
+        },
+    },	
+	
+-- Epic Inspect
+    ["epic_inspect"] = {
+        Source = "epic_inspect",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_m1g_inspect_epic_pt_01.ogg", t = 0},
+			{s = path .. "wpn_m1g_inspect_epic_pt_02.ogg", t = 2},
+        },
+    },
+	
+    ["epic_inspect_empty"] = {
+        Source = "epic_inspect_empty",
+		MinProgress = 0.1,
+		FireASAP = true,
+        EventTable = {
+            {s = path .. "wpn_m1g_inspect_epic_pt_01.ogg", t = 0},
+			{s = path .. "wpn_m1g_inspect_epic_pt_02.ogg", t = 2},
+        },
+    },
+	
+-- Rifle Grenade Epic Animations
+    ["epic_reload_ubgl"] = {
+        Source = "epic_gl_reload",
+		MinProgress = 0.825,
+		RefillProgress = 0.425,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+			{s = paths .. "wpn_rifle_grenade_on.ogg", t = 0.9},
+        },
+    },
+    ["epic_enter_ubgl"] = {
+        Source = {"epic_gl_enter"},
+		MinProgress = 0.9,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+			{s = paths .. "wpn_rifle_grenade_on.ogg", t = 0.9},
+        },
+    },
+    ["epic_exit_ubgl"] = {
+        Source = {"epic_gl_exit"},
+		MinProgress = 0.85,
+		FireASAP = true,
+        EventTable = {
+            {s = paths .. "wpn_rifle_gl_foley_start.ogg", t = 0},
+			{s = paths .. "wpn_rifle_grenade_off.ogg", t = 0.7},
         },
     },
 }
@@ -712,17 +1018,17 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 	if wep:HasElement("anim_cqb") then -- "CQB" weapon variant
 		animation =  "cqb_" .. animation
 	end
-	
-	if wep:HasElement("mag_ext") then
-		animation = animation .. "_ext"
-	end
-		
+
 	if wep:HasElement("bayonet") then
 		if anim == "bash" or anim == "bash_empty" then
 			animation = animation .. "_bayonet"
 		end
 	end
 	
+	if wep:HasElement("mag_ext") and (anim == "reload" or anim == "reload_empty" or anim == "fire_empty" or anim == "fire_sights_empty" or anim == "inspect") then
+		animation = animation .. "_ext"
+	end
+		
 	if wep:HasElement("gl") then
 		if wep:Clip2() == 0 and (anim == "enter_ubgl" or anim == "exit_ubgl") then
 			animation = animation .. "_empty"
