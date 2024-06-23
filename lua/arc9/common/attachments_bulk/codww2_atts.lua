@@ -17,6 +17,8 @@ ATT.ModelAngleOffset = Angle(0, -90, 0)
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 10 / 1.1
+ATT.RTScopeRes = 512
+ATT.RTScopeReticle = Material("mokaww2/reticles/bg.png", "mips smooth")
 
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
@@ -153,6 +155,8 @@ ATT.RTScopeBlackBox = false
 ATT.RTScopeBlackBoxShadow = false
 ATT.RTCollimator = true
 ATT.ScopeScreenRatio = 0.125
+-- ATT.RTScopeRes = 512
+-- ATT.RTScopeReticle = Material("mokaww2/reticles/bg.png", "mips smooth")
 
 -- ATT.Sights = { -- Handled by the weapon itself, due to models being different.
     -- {
@@ -238,6 +242,8 @@ ATT.Attachments = {
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 10 / 1
+ATT.RTScopeRes = 512
+ATT.RTScopeReticle = Material("mokaww2/reticles/bg.png", "mips smooth")
 
 ATT.DrawFunc = function(swep, model) 
 local eles = swep:GetElements()
@@ -316,6 +322,8 @@ ATT.Attachments = {
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 10 / 1
+ATT.RTScopeRes = 512
+ATT.RTScopeReticle = Material("mokaww2/reticles/bg.png", "mips smooth")
 
 ATT.NoAimAssist = false
 
