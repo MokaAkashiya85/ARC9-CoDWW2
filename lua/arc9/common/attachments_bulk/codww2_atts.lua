@@ -155,8 +155,8 @@ ATT.RTScopeBlackBox = false
 ATT.RTScopeBlackBoxShadow = false
 ATT.RTCollimator = true
 ATT.ScopeScreenRatio = 0.125
--- ATT.RTScopeRes = 512
--- ATT.RTScopeReticle = Material("mokaww2/reticles/bg.png", "mips smooth")
+ATT.RTScopeRes = 512
+ATT.RTScopeReticle = Material("mokaww2/reticles/bg_lens.png", "mips smooth")
 
 -- ATT.Sights = { -- Handled by the weapon itself, due to models being different.
     -- {
