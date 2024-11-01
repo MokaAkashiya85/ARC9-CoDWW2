@@ -16,8 +16,8 @@ ATT.ModelAngleOffset = Angle(0, -90, 0)
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 10 / 1.1
-ATT.RTScopeRes = 512
+ATT.RTScopeMagnification = 8
+ATT.ScopeScreenRatio = 950/1080
 ATT.RTScopeReticle = Material("mokaww2/reticles/bg.png", "mips smooth")
 
 ATT.DrawFunc = function(swep, model) 
@@ -149,13 +149,12 @@ ATT.Attachments = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 0
-ATT.RTScopeFOV = 65 / 7.5
+ATT.RTScopeMagnification = 1
+ATT.ScopeScreenRatio = 100/1080
 ATT.RTScopeShadowIntensity = 0
 ATT.RTScopeBlackBox = false
 ATT.RTScopeBlackBoxShadow = false
 ATT.RTCollimator = true
-ATT.ScopeScreenRatio = 0.125
-ATT.RTScopeRes = 512
 ATT.RTScopeReticle = Material("mokaww2/reticles/bg_lens.png", "mips smooth")
 
 -- ATT.Sights = { -- Handled by the weapon itself, due to models being different.
@@ -241,8 +240,8 @@ ATT.Attachments = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 10 / 1
-ATT.RTScopeRes = 512
+ATT.RTScopeMagnification = 4
+ATT.ScopeScreenRatio = 600/1080
 ATT.RTScopeReticle = Material("mokaww2/reticles/bg.png", "mips smooth")
 
 ATT.DrawFunc = function(swep, model) 
@@ -296,7 +295,7 @@ ARC9.LoadAttachment(ATT, "codww2_telescopic_sight")
 ------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "4x Optic"
+ATT.PrintName = "4x Optic (Snipers)"
 ATT.Icon = Material("mokaww2/icons/atts/4xscope.png")
 ATT.Description = ""
 
@@ -321,8 +320,8 @@ ATT.Attachments = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 10 / 1
-ATT.RTScopeRes = 512
+ATT.RTScopeMagnification = 4
+ATT.ScopeScreenRatio = 600/1080
 ATT.RTScopeReticle = Material("mokaww2/reticles/bg.png", "mips smooth")
 
 ATT.NoAimAssist = false

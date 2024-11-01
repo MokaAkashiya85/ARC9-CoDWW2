@@ -718,6 +718,7 @@ SWEP.AttachmentTableOverrides = {
 		Model = "models/mokaww2/atts/greasegun_reflex.mdl",
     },
     ["codww2_lens_sight"] = {
+		ScopeScreenRatio = 175/1080,
 		ActivateElements = {"lens"},
 		Sights = {
 			{
