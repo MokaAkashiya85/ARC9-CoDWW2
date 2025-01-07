@@ -97,6 +97,8 @@ SWEP.FiremodeAnimLock = true -- Firemode animation cannot be interrupted
 SWEP.UBGLCancelAnim = true
 SWEP.CantPeek = true
 
+SWEP.AimAssistRange = 100 / ARC9.HUToM
+
 -------------------------- GL Stats
 
 SWEP.UBGLAmmo = "smg1_grenade"
