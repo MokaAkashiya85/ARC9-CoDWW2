@@ -14,7 +14,7 @@ SWEP.PrintName = ARC9:GetPhrase("codww2_wep_lewis") or "Lewis"
 SWEP.Description = ARC9:GetPhrase("codww2_wep_lewis_desc") or "Full-auto LMG with moderate recoil and high damage."
 
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_lmg") or "Light Machine Gun"
-SWEP.Class = SWEP.SubCategory
+SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_numberless_lmg") or "Light Machine Gun"
 
 SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_author") ] = "Moka",
@@ -430,7 +430,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "reg_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_lewis_inspect_stndrd_pt_01.ogg", t = 0},
@@ -641,7 +641,7 @@ SWEP.Animations = {
     },
     ["mm_inspect"] = {
         Source = "mm_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_lewis_inspect_stndrd_pt_01.ogg", t = 0},
@@ -770,7 +770,7 @@ SWEP.Animations = {
     },
     ["cqb_inspect"] = {
         Source = "cqb_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_lewis_inspect_stndrd_pt_01.ogg", t = 0},
@@ -785,7 +785,7 @@ SWEP.Animations = {
 -- Epic inspect
     ["epic_inspect"] = {
         Source = "epic_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_lewis_inspect_epic_pt_01.ogg", t = 0},
@@ -894,21 +894,24 @@ SWEP.Attachments = {
     },
     { -- 3
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " II",
-        Category = {"codww2_atts2", "codww2_atts2_lmg"},
+        Category = {"codww2_atts", "codww2_atts_lmg"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(5, 0, 6.5),
     },
     { -- 4
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " III",
-        Category = {"codww2_atts3", "codww2_atts3_lmg"},
+        Category = {"codww2_atts", "codww2_atts_lmg"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(3, 0, 6.5),
     },
     { -- 5
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " IV",
-        Category = {"codww2_atts4", "codww2_atts4_lmg"},
+        Category = {"codww2_atts", "codww2_atts_lmg"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(1, 0, 6.5),

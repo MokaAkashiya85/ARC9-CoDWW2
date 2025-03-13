@@ -99,6 +99,9 @@ SWEP.CantPeek = true
 
 SWEP.AimAssistRange = 100 / ARC9.HUToM
 
+SWEP.FireInterruptInspect = true
+SWEP.SightsInterruptInspect = true
+
 -------------------------- GL Stats
 
 SWEP.UBGLAmmo = "smg1_grenade"

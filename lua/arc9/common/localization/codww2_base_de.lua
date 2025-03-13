@@ -14,18 +14,18 @@ L["codww2_assets"] = "Vermögenswerte2"
 L["codww2_author"] = "Autor1"
 
 /////////// Weapon Categories
-L["codww2_category_weapon_ar"] = "Gewehr"
-L["codww2_category_weapon_smg"] = "MP"
-L["codww2_category_weapon_shotgun"] = "Schrotflinte"
-L["codww2_category_weapon_lmg"] = "Leichtes Maschinengewehr"
-L["codww2_category_weapon_sniper"] = "Scharfschützengewehr"
+L["codww2_category_weapon_ar"] = "1Gewehr"
+L["codww2_category_weapon_smg"] = "2MP"
+L["codww2_category_weapon_shotgun"] = "3Schrotflinte"
+L["codww2_category_weapon_lmg"] = "4Leichtes Maschinengewehr"
+L["codww2_category_weapon_sniper"] = "5Scharfschützengewehr"
 
-L["codww2_category_weapon_pistol"] = "Pistole"
-L["codww2_category_weapon_pistol_akimbo"] = "Pistole (Akimbo)"
-L["codww2_category_weapon_launcher"] = "Werfer"
-L["codww2_category_weapon_melee"] = "Nahkampf"
+L["codww2_category_weapon_pistol"] = "6Pistole"
+L["codww2_category_weapon_pistol_akimbo"] = "6Pistole (Akimbo)"
+L["codww2_category_weapon_launcher"] = "7Werfer"
+L["codww2_category_weapon_melee"] = "8Nahkampf"
 
-L["codww2_category_weapon_grenade"] = "Granate"
+L["codww2_category_weapon_grenade"] = "9Granate"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachment Descriptions

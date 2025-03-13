@@ -14,18 +14,18 @@ L["codww2_assets"] = "자산2"
 L["codww2_author"] = "작가1"
 
 /////////// Weapon Categories
-L["codww2_category_weapon_ar"] = "소총"
-L["codww2_category_weapon_smg"] = "기관단총"
-L["codww2_category_weapon_shotgun"] = "산탄총"
-L["codww2_category_weapon_lmg"] = "경기관총"
-L["codww2_category_weapon_sniper"] = "저격소총"
+L["codww2_category_weapon_ar"] = "1소총"
+L["codww2_category_weapon_smg"] = "2기관단총"
+L["codww2_category_weapon_shotgun"] = "3산탄총"
+L["codww2_category_weapon_lmg"] = "4경기관총"
+L["codww2_category_weapon_sniper"] = "5저격소총"
 
-L["codww2_category_weapon_pistol"] = "권총"
-L["codww2_category_weapon_pistol_akimbo"] = "권총 (Akimbo)"
-L["codww2_category_weapon_launcher"] = "발사기"
-L["codww2_category_weapon_melee"] = "근접 공격"
+L["codww2_category_weapon_pistol"] = "6권총"
+L["codww2_category_weapon_pistol_akimbo"] = "6권총 (Akimbo)"
+L["codww2_category_weapon_launcher"] = "7발사기"
+L["codww2_category_weapon_melee"] = "8근접 공격"
 
-L["codww2_category_weapon_grenade"] = "수류탄"
+L["codww2_category_weapon_grenade"] = "9수류탄"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachment Descriptions

@@ -14,7 +14,7 @@ SWEP.PrintName = ARC9:GetPhrase("codww2_wep_m1bazooka") or "M1 Bazooka"
 SWEP.Description = ARC9:GetPhrase("codww2_wep_m1bazooka_desc") or "Accurate anti-aircraft launcher."
 
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_launcher") or "Launcher"
-SWEP.Class = SWEP.SubCategory
+SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_numberless_launcher") or "Launcher"
 
 SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_author") ] = "Moka",

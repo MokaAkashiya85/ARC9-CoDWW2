@@ -14,18 +14,18 @@ L["codww2_assets"] = "Aktywa2"
 L["codww2_author"] = "Autor1"
 
 /////////// Weapon Categories
-L["codww2_category_weapon_ar"] = "Karabin"
-L["codww2_category_weapon_smg"] = "Pistolet maszynowy"
-L["codww2_category_weapon_shotgun"] = "Strzelba"
-L["codww2_category_weapon_lmg"] = "Lekki karabin maszynowy"
-L["codww2_category_weapon_sniper"] = "Karabin snajperski"
+L["codww2_category_weapon_ar"] = "1Karabin"
+L["codww2_category_weapon_smg"] = "2Pistolet maszynowy"
+L["codww2_category_weapon_shotgun"] = "3Strzelba"
+L["codww2_category_weapon_lmg"] = "4Lekki karabin maszynowy"
+L["codww2_category_weapon_sniper"] = "5Karabin snajperski"
 
-L["codww2_category_weapon_pistol"] = "Pistolet"
-L["codww2_category_weapon_pistol_akimbo"] = "Pistolet (Akimbo)"
-L["codww2_category_weapon_launcher"] = "Wyrzutnia"
-L["codww2_category_weapon_melee"] = "Atak wręcz"
+L["codww2_category_weapon_pistol"] = "6Pistolet"
+L["codww2_category_weapon_pistol_akimbo"] = "6Pistolet (Akimbo)"
+L["codww2_category_weapon_launcher"] = "7Wyrzutnia"
+L["codww2_category_weapon_melee"] = "8Atak wręcz"
 
-L["codww2_category_weapon_grenade"] = "Granat"
+L["codww2_category_weapon_grenade"] = "9Granat"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachment Descriptions

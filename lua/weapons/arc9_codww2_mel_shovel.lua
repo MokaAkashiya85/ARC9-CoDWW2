@@ -14,7 +14,7 @@ SWEP.PrintName = ARC9:GetPhrase("codww2_wep_shovelmp") or "US Shovel"
 SWEP.Description = ARC9:GetPhrase("codww2_wep_shovelmp_desc") or "One hit melee kill."
 
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_melee") or "Melee"
-SWEP.Class = SWEP.SubCategory
+SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_numberless_melee") or "Melee"
 
 SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_author") ] = "Moka",

@@ -14,18 +14,18 @@ L["codww2_assets"] = "資産2"
 L["codww2_author"] = "著者1"
 
 /////////// Weapon Categories
-L["codww2_category_weapon_ar"] = "ライフル"
-L["codww2_category_weapon_smg"] = "サブマシンガン"
-L["codww2_category_weapon_shotgun"] = "ショットガン"
-L["codww2_category_weapon_lmg"] = "ライトマシンガン"
-L["codww2_category_weapon_sniper"] = "スナイパー"
+L["codww2_category_weapon_ar"] = "1ライフル"
+L["codww2_category_weapon_smg"] = "2サブマシンガン"
+L["codww2_category_weapon_shotgun"] = "3ショットガン"
+L["codww2_category_weapon_lmg"] = "4ライトマシンガン"
+L["codww2_category_weapon_sniper"] = "5スナイパー"
 
-L["codww2_category_weapon_pistol"] = "ハンドガン"
-L["codww2_category_weapon_pistol_akimbo"] = "ハンドガン (Akimbo)"
-L["codww2_category_weapon_launcher"] = "ランチャー"
-L["codww2_category_weapon_melee"] = "近接攻撃"
+L["codww2_category_weapon_pistol"] = "6ハンドガン"
+L["codww2_category_weapon_pistol_akimbo"] = "6ハンドガン (Akimbo)"
+L["codww2_category_weapon_launcher"] = "7ランチャー"
+L["codww2_category_weapon_melee"] = "8近接攻撃"
 
-L["codww2_category_weapon_grenade"] = "グレネード"
+L["codww2_category_weapon_grenade"] = "9グレネード"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachment Descriptions

@@ -16,7 +16,7 @@ SWEP.Description = ARC9:GetPhrase("codww2_wep_greasegun_desc") or "Automatic SMG
 SWEP.TrueName = ARC9:GetPhrase("codww2_wep_greasegun_real") or "M3 Grease Gun"
 
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_smg") or "Submachine Gun"
-SWEP.Class = SWEP.SubCategory
+SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_numberless_smg") or "Submachine Gun"
 
 SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_author") ] = "Moka",
@@ -407,7 +407,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "reg_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_gg_inspect_stndrd_pt_01.ogg", t = 0},
@@ -538,7 +538,7 @@ SWEP.Animations = {
     },
     ["mm_inspect"] = {
         Source = "mm_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_gg_inspect_stndrd_pt_01.ogg", t = 0},
@@ -669,7 +669,7 @@ SWEP.Animations = {
     },
     ["cqb_inspect"] = {
         Source = "epic_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_gg_inspect_epic_pt_01.ogg", t = 0},
@@ -698,7 +698,7 @@ SWEP.Animations = {
 	-- Epic Animations
     ["epic_inspect"] = {
         Source = "epic_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_gg_inspect_epic_pt_01.ogg", t = 0},
@@ -810,21 +810,21 @@ SWEP.Attachments = {
     },
     { -- 3
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " II",
-        Category = {"codww2_atts2", "codww2_atts2_smg"},
+        Category = {"codww2_atts", "codww2_atts_smg"},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(5, 0, 6.5),
     },
     { -- 4
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " III",
-        Category = {"codww2_atts3", "codww2_atts3_smg"},
+        Category = {"codww2_atts", "codww2_atts_smg"},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(3, 0, 6.5),
     },
     { -- 5
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " IV",
-        Category = {"codww2_atts4", "codww2_atts4_smg"},
+        Category = {"codww2_atts", "codww2_atts_smg"},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(1, 0, 6.5),

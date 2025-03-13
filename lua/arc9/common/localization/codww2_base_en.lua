@@ -14,18 +14,18 @@ L["codww2_assets"] = "Assets2"
 L["codww2_author"] = "Author1"
 
 /////////// Weapon Categories
-L["codww2_category_weapon_ar"] = "Rifle"
-L["codww2_category_weapon_smg"] = "Submachine Gun"
-L["codww2_category_weapon_shotgun"] = "Shotgun"
-L["codww2_category_weapon_lmg"] = "Light Machine Gun"
-L["codww2_category_weapon_sniper"] = "Sniper Rifle"
+L["codww2_category_weapon_ar"] = "1Rifle"
+L["codww2_category_weapon_smg"] = "2Submachine Gun"
+L["codww2_category_weapon_shotgun"] = "3Shotgun"
+L["codww2_category_weapon_lmg"] = "4Light Machine Gun"
+L["codww2_category_weapon_sniper"] = "5Sniper Rifle"
 
-L["codww2_category_weapon_pistol"] = "Pistol"
-L["codww2_category_weapon_pistol_akimbo"] = "Pistol (Akimbo)"
-L["codww2_category_weapon_launcher"] = "Launcher"
-L["codww2_category_weapon_melee"] = "Melee"
+L["codww2_category_weapon_pistol"] = "6Pistol"
+L["codww2_category_weapon_pistol_akimbo"] = "6Pistol (Akimbo)"
+L["codww2_category_weapon_launcher"] = "7Launcher"
+L["codww2_category_weapon_melee"] = "8Melee"
 
-L["codww2_category_weapon_grenade"] = "Grenade"
+L["codww2_category_weapon_grenade"] = "9Grenade"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachment Descriptions

@@ -14,18 +14,18 @@ L["codww2_assets"] = "Tillgångar2"
 L["codww2_author"] = "Skapare1"
 
 /////////// Weapon Categories
-L["codww2_category_weapon_ar"] = "Gevär"
-L["codww2_category_weapon_smg"] = "Kulsprutepistol"
-L["codww2_category_weapon_shotgun"] = "Hagelbössa"
-L["codww2_category_weapon_lmg"] = "Lätt Kulspruta"
-L["codww2_category_weapon_sniper"] = "Prickskyttegevär"
+L["codww2_category_weapon_ar"] = "1Gevär"
+L["codww2_category_weapon_smg"] = "2Kulsprutepistol"
+L["codww2_category_weapon_shotgun"] = "3Hagelbössa"
+L["codww2_category_weapon_lmg"] = "4Lätt Kulspruta"
+L["codww2_category_weapon_sniper"] = "5Prickskyttegevär"
 
-L["codww2_category_weapon_pistol"] = "Pistol"
-L["codww2_category_weapon_pistol_akimbo"] = "Pistol (Akimbo)"
-L["codww2_category_weapon_launcher"] = "Kastare"
-L["codww2_category_weapon_melee"] = "Närstrid"
+L["codww2_category_weapon_pistol"] = "6Pistol"
+L["codww2_category_weapon_pistol_akimbo"] = "6Pistol (Akimbo)"
+L["codww2_category_weapon_launcher"] = "7Kastare"
+L["codww2_category_weapon_melee"] = "8Närstrid"
 
-L["codww2_category_weapon_grenade"] = "Granat"
+L["codww2_category_weapon_grenade"] = "9Granat"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachment Descriptions

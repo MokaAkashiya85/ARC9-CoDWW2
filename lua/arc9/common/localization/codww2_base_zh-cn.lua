@@ -14,18 +14,18 @@ L["codww2_assets"] = "資產2"
 L["codww2_author"] = "作者1"
 
 /////////// Weapon Categories
-L["codww2_category_weapon_ar"] = "步枪"
-L["codww2_category_weapon_smg"] = "微型冲锋枪"
-L["codww2_category_weapon_shotgun"] = "霰弹枪"
-L["codww2_category_weapon_lmg"] = "轻机枪"
-L["codww2_category_weapon_sniper"] = "狙击步枪"
+L["codww2_category_weapon_ar"] = "1步枪"
+L["codww2_category_weapon_smg"] = "2微型冲锋枪"
+L["codww2_category_weapon_shotgun"] = "3霰弹枪"
+L["codww2_category_weapon_lmg"] = "4轻机枪"
+L["codww2_category_weapon_sniper"] = "5狙击步枪"
 
-L["codww2_category_weapon_pistol"] = "手枪"
-L["codww2_category_weapon_pistol_akimbo"] = "手枪 (Akimbo)"
-L["codww2_category_weapon_launcher"] = "发射器"
-L["codww2_category_weapon_melee"] = "近战"
+L["codww2_category_weapon_pistol"] = "6手枪"
+L["codww2_category_weapon_pistol_akimbo"] = "6手枪 (Akimbo)"
+L["codww2_category_weapon_launcher"] = "7发射器"
+L["codww2_category_weapon_melee"] = "8近战"
 
-L["codww2_category_weapon_grenade"] = "手雷"
+L["codww2_category_weapon_grenade"] = "9手雷"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachment Descriptions

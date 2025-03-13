@@ -16,7 +16,7 @@ SWEP.Description = ARC9:GetPhrase("codww2_wep_m1941_desc") or "Automatic rifle w
 SWEP.TrueName = ARC9:GetPhrase("codww2_wep_m1941_real") or "M1941 Johnson Rifle"
 
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_ar") or "Rifle"
-SWEP.Class = SWEP.SubCategory
+SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_numberless_ar") or "Rifle"
 
 SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_author") ] = "Moka",
@@ -404,7 +404,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "reg_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_john_inspect_stndrd_pt_01.ogg", t = 0},
@@ -464,7 +464,7 @@ SWEP.Animations = {
     },
     ["inspect_ubgl"] = {
         Source = "reg_gl_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_john_inspect_stndrd_pt_01.ogg", t = 0},
@@ -615,7 +615,7 @@ SWEP.Animations = {
     },
     ["mm_inspect"] = {
         Source = "mm_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_john_inspect_stndrd_pt_01.ogg", t = 0},
@@ -644,7 +644,7 @@ SWEP.Animations = {
     },
     ["mm_inspect_ubgl"] = {
         Source = "mm_gl_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_john_inspect_stndrd_pt_01.ogg", t = 0},
@@ -791,7 +791,7 @@ SWEP.Animations = {
     },
     ["cqb_inspect"] = {
         Source = "cqb_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_john_inspect_stndrd_pt_01.ogg", t = 0},
@@ -820,7 +820,7 @@ SWEP.Animations = {
     },
     ["cqb_inspect_ubgl"] = {
         Source = "cqb_gl_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_john_inspect_stndrd_pt_01.ogg", t = 0},
@@ -866,7 +866,7 @@ SWEP.Animations = {
 
     ["epic_inspect"] = {
         Source = "epic_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_john_inspect_epic_pt_01.ogg", t = 0},
@@ -1005,21 +1005,24 @@ SWEP.Attachments = {
     },
     { -- 3
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " II",
-        Category = {"codww2_atts2", "codww2_atts2_rifle"},
+        Category = {"codww2_atts", "codww2_atts_rifle"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(5, 0, 6.5),
     },
     { -- 4
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " III",
-        Category = {"codww2_atts3", "codww2_atts3_rifle"},
+        Category = {"codww2_atts", "codww2_atts_rifle"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(3, 0, 6.5),
     },
     { -- 5
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " IV",
-        Category = {"codww2_atts4", "codww2_atts4_rifle"},
+        Category = {"codww2_atts", "codww2_atts_rifle"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(1, 0, 6.5),

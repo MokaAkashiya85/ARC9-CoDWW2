@@ -16,7 +16,7 @@ SWEP.Description = ARC9:GetPhrase("codww2_wep_winchester1897_desc") or "Pump-act
 SWEP.TrueName = ARC9:GetPhrase("codww2_wep_winchester1897_real") or "Winchester 1897 \"Trench Gun\""
 
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_shotgun") or "Shotgun"
-SWEP.Class = SWEP.SubCategory
+SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_numberless_shotgun") or "Shotgun"
 
 SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_author") ] = "Moka",
@@ -89,12 +89,12 @@ SWEP.SupplyLimit = 4 -- Amount of magazines of ammo this gun can take from an AR
 
 SWEP.DrawCrosshair = true
 SWEP.Crosshair = true
-SWEP.ForceStandardCrosshair = true
+SWEP.ForceStandardCrosshair = false
 
-SWEP.CustomCrosshair = true
-SWEP.CustomCrosshairSingle = true
-SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
-SWEP.CustomCrosshairSize = 30
+-- SWEP.CustomCrosshair = true
+-- SWEP.CustomCrosshairSingle = true
+-- SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
+-- SWEP.CustomCrosshairSize = 30
 
 SWEP.ManualAction = true
 SWEP.ManualActionNoLastCycle = true
@@ -413,7 +413,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "reg_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_win_inspect_stndrd_pt_01.ogg", t = 0},
@@ -467,7 +467,7 @@ SWEP.Animations = {
 
     ["epic_inspect"] = {
         Source = "epic_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_win_inspect_epic_pt_01.ogg", t = 0},
@@ -597,21 +597,24 @@ SWEP.Attachments = {
     },
     { -- 3
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " II",
-        Category = {"codww2_atts2", "codww2_atts2_shotgun"},
+        Category = {"codww2_atts", "codww2_atts_shotgun"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(5, 0, 6.5),
     },
     { -- 4
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " III",
-        Category = {"codww2_atts3", "codww2_atts3_shotgun"},
+        Category = {"codww2_atts", "codww2_atts_shotgun"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(3, 0, 6.5),
     },
     { -- 5
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " IV",
-        Category = {"codww2_atts4", "codww2_atts4_shotgun"},
+        Category = {"codww2_atts", "codww2_atts_shotgun"},
+		RejectAttachments = { ["codww2_lens_sight"] = true},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(1, 0, 6.5),

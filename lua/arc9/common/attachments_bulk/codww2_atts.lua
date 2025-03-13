@@ -51,6 +51,7 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
 ATT.ActivateElements = {"reflex"}
+ATT.Max = 1
 
 -- ATT.Model = "models/mokaww2/atts/gen_lens.mdl"
 ATT.BoneMerge = true
@@ -115,6 +116,7 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_sniper"}
 ATT.ActivateElements = {"irons"}
+ATT.Max = 1
 
 ATT.SwayMult = 0.1
 
@@ -131,6 +133,7 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
 ATT.ActivateElements = {"lens"}
+ATT.Max = 1
 
 ATT.Model = "models/mokaww2/atts/lens_sight.mdl"
 ATT.BoneMerge = true
@@ -222,6 +225,7 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_rifle", "codww2_atts_lmg"}
 ATT.ActivateElements = {"telescopic"}
+ATT.Max = 1
 
 -- ATT.Model = "models/mokaww2/atts/m1941_scope.mdl"
 ATT.BoneMerge = true
@@ -302,6 +306,7 @@ ATT.Description = ""
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_sniper"}
 ATT.ActivateElements = {"telescopic"}
+ATT.Max = 1
 
 -- ATT.Model = "models/mokaww2/atts/m1941_scope.mdl"
 ATT.BoneMerge = true
@@ -384,8 +389,9 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
-ATT.ActivateElements = {"mag_ext", "extmag1"}
-ATT.ExcludeElements = {"extmag2", "extmag3", "extmag4"}
+ATT.ActivateElements = {"mag_ext"}
+ATT.ExcludeElements = {"incendiary"}
+ATT.Max = 1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("autostat.clipsize") ] = "+33%",
@@ -403,8 +409,7 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
-ATT.ActivateElements = {"grip", "grip1"}
-ATT.ExcludeElements = {"grip2", "grip3", "grip4"}
+ATT.ActivateElements = {"grip"}
 
 ATT.RecoilMultSights = 0.925
 ATT.VisualRecoilMultSights = 0.925
@@ -419,8 +424,8 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
-ATT.ActivateElements = {"advrif", "advrif1"}
-ATT.ExcludeElements = {"advrif2", "advrif3", "advrif4"}
+-- ATT.ActivateElements = {"advrif"}
+ATT.Max = 1
 
 ATT.RangeMaxMult = 2
 
@@ -434,8 +439,9 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_shotgun"}
-ATT.ActivateElements = {"incendiary", "incendiary1"}
-ATT.ExcludeElements = {"incendiary2", "incendiary3", "incendiary4"}
+ATT.ActivateElements = {"incendiary"}
+ATT.ExcludeElements = {"mag_ext"}
+ATT.Max = 1
 
 ATT.RangeMaxMult = 0.33
 
@@ -448,7 +454,7 @@ ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
 ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomCons = {
-	[ ARC9:GetPhrase("autostat.clipsize") .. " (" .. ARC9:GetPhrase("codww2_wep_winchester1897") .. ")" ] = "3+1",
+	[ ARC9:GetPhrase("codww2_wep_winchester1897") .. ": " .. ARC9:GetPhrase("autostat.clipsize") ] = "3+1",
 }
 
 -- This is code from the CoD2019 pack - consider replacing at some point
@@ -494,8 +500,8 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
-ATT.ActivateElements = {"fastads", "fastads1"}
-ATT.ExcludeElements = {"fastads2", "fastads3", "fastads4"}
+ATT.ActivateElements = {"fastads"}
+ATT.Max = 1
 
 ATT.AimDownSightsTimeMult = 0.5
 
@@ -524,8 +530,8 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
-ATT.ActivateElements = {"highcal", "highcal1"}
-ATT.ExcludeElements = {"highcal2", "highcal3", "highcal4"}
+ATT.ActivateElements = {"highcal"}
+ATT.Max = 1
 
 -- Assign BodyDamageMults manually per weapon.
 -- Take original BodyDamageMults and increase HITGROUP_HEAD with 0.5.
@@ -540,8 +546,8 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
-ATT.ActivateElements = {"fmj", "fmj1"}
-ATT.ExcludeElements = {"fmj2", "fmj3", "fmj4"}
+ATT.ActivateElements = {"fmj"}
+ATT.Max = 1
 
 ATT.PenetrationMult = 1.33
 
@@ -555,8 +561,8 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
-ATT.ActivateElements = {"hipfire", "hipfire1"}
-ATT.ExcludeElements = {"hipfire2", "hipfire3", "hipfire4"}
+ATT.ActivateElements = {"hipfire"}
+ATT.Max = 1
 
 ATT.SpreadMultHipFire = 0.45
 
@@ -570,8 +576,8 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts"}
-ATT.ActivateElements = {"rpm", "rpm1"}
-ATT.ExcludeElements = {"rpm2", "rpm3", "rpm4"}
+ATT.ActivateElements = {"rpm"}
+ATT.Max = 1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("autostat.rpm") ] = "",
@@ -589,8 +595,9 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_rifle"}
-ATT.ActivateElements = {"gl", "gl1"}
-ATT.ExcludeElements = {"gl2", "gl3", "gl4", "bayonet2", "bayonet3", "bayonet4"}
+ATT.ActivateElements = {"gl"}
+ATT.ExcludeElements = {"bayonet"}
+ATT.Max = 1
 
 ATT.UBGL = true
 ATT.NoAimAssistUBGL = true
@@ -605,8 +612,8 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_pistol"}
-ATT.ActivateElements = {"suppressor", "suppressor1"}
-ATT.ExcludeElements = {"suppressor2", "suppressor3", "suppressor4"}
+ATT.ActivateElements = {"suppressor"}
+ATT.Max = 1
 
 ATT.Model = "models/mokaww2/atts/suppressor.mdl"
 ATT.BoneMerge = true
@@ -630,8 +637,8 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_smg"}
-ATT.ActivateElements = {"suppressor", "suppressor1"}
-ATT.ExcludeElements = {"suppressor2", "suppressor3", "suppressor4"}
+ATT.ActivateElements = {"suppressor"}
+ATT.Max = 1
 
 ATT.Silencer = true
 
@@ -667,8 +674,9 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_rifle"}
-ATT.ActivateElements = {"bayonet", "bayonet1"}
-ATT.ExcludeElements = {"bayonet2", "bayonet3", "bayonet4", "gl2", "gl3", "gl4"}
+ATT.ActivateElements = {"bayonet"}
+ATT.ExcludeElements = {"gl"}
+ATT.Max = 1
 
 ATT.Model = "models/mokaww2/atts/bayonet.mdl"
 ATT.BoneMerge = true
@@ -700,8 +708,8 @@ ATT.Description = ""
 
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_atts_pistol"}
-ATT.ActivateElements = {"tacknife", "tacknife1"}
-ATT.ExcludeElements = {"tacknife2", "tacknife3", "tacknife4"}
+ATT.ActivateElements = {"tacknife"}
+ATT.Max = 1
 
 ATT.Model = "models/mokaww2/atts/tacknife.mdl"
 ATT.BoneMerge = true
@@ -727,6 +735,7 @@ ATT.Folder = "DEBUG"
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_training"}
 ATT.ActivateElements = {"anim_mm"}
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_mm")
 ------------------------------------------------------------------
@@ -739,6 +748,7 @@ ATT.Folder = "DEBUG"
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_training"}
 ATT.ActivateElements = {"anim_cqb"}
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_cqb")
 ------------------------------------------------------------------
@@ -751,6 +761,7 @@ ATT.Folder = "DEBUG"
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_training"}
 ATT.ActivateElements = {"anim_epic"}
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_epic")
 ------------------------------------------------------------------
@@ -763,6 +774,7 @@ ATT.Folder = "DEBUG"
 ATT.MenuCategory = "ARC9 - CoDWW2 Attachments Slot 1"
 ATT.Category = {"codww2_training_pistol"}
 ATT.ActivateElements = {"pistolgrip"}
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "codww2_debug_anim_grip")
 ------------------------------------------------------------------

@@ -14,18 +14,18 @@ L["codww2_assets"] = "Ресурсы2"
 L["codww2_author"] = "Автор1"
 
 /////////// Weapon Categories
-L["codww2_category_weapon_ar"] = "Винтовки"
-L["codww2_category_weapon_smg"] = "Пистолет-пулемет"
-L["codww2_category_weapon_shotgun"] = "Дробовик"
-L["codww2_category_weapon_lmg"] = "Ручной пулемет"
-L["codww2_category_weapon_sniper"] = "Снайперская винтовка"
+L["codww2_category_weapon_ar"] = "1Винтовки"
+L["codww2_category_weapon_smg"] = "2Пистолет-пулемет"
+L["codww2_category_weapon_shotgun"] = "3Дробовик"
+L["codww2_category_weapon_lmg"] = "4Ручной пулемет"
+L["codww2_category_weapon_sniper"] = "5Снайперская винтовка"
 
-L["codww2_category_weapon_pistol"] = "Пистолет"
-L["codww2_category_weapon_pistol_akimbo"] = "Пистолет (Akimbo)"
-L["codww2_category_weapon_launcher"] = "Гранатомет"
-L["codww2_category_weapon_melee"] = "Рукопашная"
+L["codww2_category_weapon_pistol"] = "6Пистолет"
+L["codww2_category_weapon_pistol_akimbo"] = "6Пистолет (Akimbo)"
+L["codww2_category_weapon_launcher"] = "7Гранатомет"
+L["codww2_category_weapon_melee"] = "8Рукопашная"
 
-L["codww2_category_weapon_grenade"] = "Граната"
+L["codww2_category_weapon_grenade"] = "9Граната"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachment Descriptions

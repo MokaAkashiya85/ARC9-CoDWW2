@@ -16,7 +16,7 @@ SWEP.Description = ARC9:GetPhrase("codww2_wep_m1911_desc") or "High damage semi-
 SWEP.TrueName = ARC9:GetPhrase("codww2_wep_m1911_real") or "Colt 1911"
 
 SWEP.SubCategory = ARC9:GetPhrase("codww2_category_weapon_pistol") or "Pistol"
-SWEP.Class = SWEP.SubCategory
+SWEP.Class = ARC9:GetPhrase("codww2_category_weapon_numberless_pistol") or "Pistol"
 
 SWEP.Credits = {
     [ ARC9:GetPhrase("codww2_author") ] = "Moka",
@@ -388,7 +388,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "reg_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -397,7 +397,7 @@ SWEP.Animations = {
     },
     ["inspect_grip"] = {
         Source = "reg_inspect_grip",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -449,7 +449,7 @@ SWEP.Animations = {
     },
     ["inspect_empty"] = {
         Source = "reg_inspect_empty",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -458,7 +458,7 @@ SWEP.Animations = {
     },
     ["inspect_grip_empty"] = {
         Source = "reg_inspect_empty_grip",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -553,7 +553,7 @@ SWEP.Animations = {
     },
     ["tacknife_inspect"] = {
         Source = "reg_knife_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -562,7 +562,7 @@ SWEP.Animations = {
     },
     ["tacknife_inspect_grip"] = {
         Source = "reg_knife_inspect_grip",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -614,7 +614,7 @@ SWEP.Animations = {
     },
     ["tacknife_inspect_empty"] = {
         Source = "reg_knife_inspect_empty",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -623,7 +623,7 @@ SWEP.Animations = {
     },
     ["tacknife_inspect_grip_empty"] = {
         Source = "reg_knife_inspect_empty_grip",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -718,7 +718,7 @@ SWEP.Animations = {
     },
     ["mm_inspect"] = {
         Source = "mm_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -727,7 +727,7 @@ SWEP.Animations = {
     },
     ["mm_inspect_grip"] = {
         Source = "mm_inspect_grip",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -780,7 +780,7 @@ SWEP.Animations = {
     },
     ["mm_inspect_empty"] = {
         Source = "mm_inspect_empty",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -789,7 +789,7 @@ SWEP.Animations = {
     },
     ["mm_inspect_grip_empty"] = {
         Source = "mm_inspect_empty_grip",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -884,7 +884,7 @@ SWEP.Animations = {
     },
     ["mm_tacknife_inspect"] = {
         Source = "mm_knife_inspect",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -893,7 +893,7 @@ SWEP.Animations = {
     },
     ["mm_tacknife_inspect_grip"] = {
         Source = "mm_knife_inspect_grip",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -945,7 +945,7 @@ SWEP.Animations = {
     },
     ["mm_tacknife_inspect_empty"] = {
         Source = "mm_knife_inspect_empty",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -954,7 +954,7 @@ SWEP.Animations = {
     },
     ["mm_tacknife_inspect_grip_empty"] = {
         Source = "mm_knife_inspect_empty_grip",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_stndrd_pt_01.ogg", t = 0},
@@ -968,7 +968,7 @@ SWEP.Animations = {
 	-- Epic Animations
     ["epic_inspect"] = {
         Source = "reg_inspect_epic",
-		MinProgress = 0.1,
+		MinProgress = 0.9,
 		FireASAP = true,
         EventTable = {
             {s = path .. "wpn_1911_inspect_epic_pt_01.ogg", t = 0},
@@ -1059,21 +1059,33 @@ SWEP.Attachments = {
     },
     { -- 3
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " II",
-        Category = {"codww2_atts2", "codww2_atts2_pistol"},
+        Category = {"codww2_atts", "codww2_atts_pistol"},
+		RejectAttachments = { 
+			["codww2_lens_sight"] = true,
+			["codww2_aperture_sight"] = true,
+		},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(2, 0, 6.5),
     },
     { -- 4
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " III",
-        Category = {"codww2_atts3", "codww2_atts3_pistol"},
+        Category = {"codww2_atts", "codww2_atts_pistol"},
+		RejectAttachments = { 
+			["codww2_lens_sight"] = true,
+			["codww2_aperture_sight"] = true,
+		},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(0.5, 0, 6.5),
     },
     { -- 5
         PrintName = ARC9:GetPhrase("codww2_category_attachment") .. " IV",
-        Category = {"codww2_atts4", "codww2_atts4_pistol"},
+        Category = {"codww2_atts", "codww2_atts_pistol"},
+		RejectAttachments = { 
+			["codww2_lens_sight"] = true,
+			["codww2_aperture_sight"] = true,
+		},
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Icon_Offset = Vector(-1, 0, 6.5),
