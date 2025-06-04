@@ -101,6 +101,7 @@ SWEP.AimAssistRange = 100 / ARC9.HUToM
 
 SWEP.FireInterruptInspect = true
 SWEP.SightsInterruptInspect = true
+SWEP.SprintCancelsReload = true
 
 -------------------------- GL Stats
 

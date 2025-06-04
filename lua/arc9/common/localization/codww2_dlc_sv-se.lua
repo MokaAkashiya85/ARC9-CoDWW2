@@ -23,17 +23,17 @@ local ww2rare = {
 //////////////////// Operations
 
 local ww2op = {
-	partof = "Tillhör %s",
+	partof = "Del av \"%s\"",
 	other = "Operation: Overlord",
-	winter = "Vinter Belägring",
-	resistance = "Motstånd",
-	shamrock = "\"Shamrock & Awe\"",
-	blitzkrieg = "\"Blitzkrieg\"",
-	undead = "Odöda",
-	liberty = "Angrepp mot Frihet",
-	summer = "Sommardagar",
-	covert = "Hemligt Angrepp",
-	halloween = "Halloween Skräck",
+	winter = "Winter Siege",
+	resistance = "Resistance",
+	shamrock = "Shamrock and Awe",
+	blitzkrieg = "Blitzkrieg",
+	undead = "Undead",
+	liberty = "Liberty Strike",
+	summer = "Days of Summer",
+	covert = "Covert Storm",
+	halloween = "Halloween Scream",
 	special = "Special",
 }
 

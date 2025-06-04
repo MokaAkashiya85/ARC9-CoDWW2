@@ -122,7 +122,8 @@ SWEP.RecoilRandomSide = 0.85
 SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 1
 
 SWEP.RecoilKick = 0.5
 
@@ -744,7 +745,7 @@ SWEP.Attachments = {
 		Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
 		Installed = "codww2_sniper_scope",
-		Integral = false,
+		Integral = "codww2_sniper_scope",
 		ExcludeElements = {"telescopic", "irons"},
 		Hidden = true
     },

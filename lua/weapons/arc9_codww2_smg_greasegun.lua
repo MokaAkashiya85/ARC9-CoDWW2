@@ -98,7 +98,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.75
+SWEP.Recoil = 0.5
 
 SWEP.RecoilPatternDrift = 0
 
@@ -114,7 +114,8 @@ SWEP.RecoilRandomSide = 0.66
 SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 1
 
 SWEP.RecoilKick = 0.5
 

@@ -100,7 +100,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 2
+SWEP.Recoil = 1.33
 
 SWEP.RecoilPatternDrift = 0
 
@@ -116,7 +116,8 @@ SWEP.RecoilRandomSide = 0.85
 SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.75 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 1
 
 SWEP.RecoilKick = 0.5
 
@@ -316,7 +317,6 @@ SWEP.Animations = {
         EventTable = {
 			{s = path .. "wpn_m1garand_foley_start.ogg", t = 0},
 			{s = path2 .. "wpn_john_empty_open.ogg", t = 0.1},
-            -- {s = path .. "wpn_m1_grenade_click.ogg", t = 1.05, v = 0.5},
             {s = path .. "wpn_m1garand_magin.ogg", t = 1.15, v = 0.5},
             {s = path .. "wpn_m1garand_charge.ogg", t = 1.975},
         },
@@ -328,8 +328,6 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_m1garand_foley_start.ogg", t = 0},
-			-- {s = path2 .. "wpn_john_empty_open.ogg", t = 0.1},
-            -- {s = path .. "wpn_m1_grenade_click.ogg", t = 0.725, v = 0.5},
             {s = path .. "wpn_m1garand_magin.ogg", t = 0.8, v = 0.5},
             {s = path .. "wpn_m1garand_charge.ogg", t = 1.65},
         },
@@ -540,7 +538,6 @@ SWEP.Animations = {
         EventTable = {
 			{s = path .. "wpn_m1garand_foley_start.ogg", t = 0},
 			{s = path2 .. "wpn_john_empty_open.ogg", t = 0.1},
-            -- {s = path .. "wpn_m1_grenade_click.ogg", t = 1.05, v = 0.5},
             {s = path .. "wpn_m1garand_magin.ogg", t = 1.15, v = 0.5},
             {s = path .. "wpn_m1garand_charge.ogg", t = 1.975},
         },
@@ -552,8 +549,6 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
 			{s = path .. "wpn_m1garand_foley_start.ogg", t = 0},
-			-- {s = path2 .. "wpn_john_empty_open.ogg", t = 0.1},
-            -- {s = path .. "wpn_m1_grenade_click.ogg", t = 0.725, v = 0.5},
             {s = path .. "wpn_m1garand_magin.ogg", t = 0.8, v = 0.5},
             {s = path .. "wpn_m1garand_charge.ogg", t = 1.65},
         },
@@ -981,27 +976,27 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.lastfunnyubgl = false
+-- SWEP.lastfunnyubgl = false
 SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local eles = data.elements
-    local model = data.model
-    local ubgl = wep:GetUBGL()
+    -- local eles = data.elements
+    -- local model = data.model
+    -- local ubgl = wep:GetUBGL()
 
-    if ubgl then
-        wep.hideubglthing = false
-    elseif wep.lastfunnyubgl then
-        timer.Simple(wep:Clip2() > 0 and 1.5 or 0, function()
-            if IsValid(wep) then
-                wep.hideubglthing = true
-            end
-        end)
-    end
+    -- if ubgl then
+        -- wep.hideubglthing = false
+    -- elseif wep.lastfunnyubgl then
+        -- timer.Simple(wep:Clip2() > 0 and 1.5 or 0, function()
+            -- if IsValid(wep) then
+                -- wep.hideubglthing = true
+            -- end
+        -- end)
+    -- end
     
-    wep.lastfunnyubgl = ubgl
+    -- wep.lastfunnyubgl = ubgl
 
-    if eles["gl"] and ((wep:GetUBGL() and wep:Clip2() > 0) or (wep:StillWaiting() and !wep.hideubglthing)) then
-        model:SetBodygroup(5, 2)
-    end
+    -- if eles["gl"] and ((wep:GetUBGL() and wep:Clip2() > 0) or (wep:StillWaiting() and !wep.hideubglthing)) then
+        -- model:SetBodygroup(5, 2)
+    -- end
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
